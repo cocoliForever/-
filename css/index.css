@@ -1,0 +1,38 @@
+.hd_top_bar{
+  height: 30px;
+  border-bottom:solid 1px #e5e5e5; 
+  background:#f4f4f4;
+  line-height: 30px;
+}
+.hd_indexprovce{
+  position: relative;
+  z-index: 600;
+}
+.hd_indexprovce a{
+  float: left;
+  display: block;
+  height: 30px;
+  padding: 0 10px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  color: #666;
+}
+.hd_indexprovce a:hover{
+  color: red;
+}
+.hd_indexprovce i{
+  color: red;
+}
+.hd_city_select{
+  position: absolute;
+  z-index: -1;
+  width: 720px;
+  background: #fff;
+  border: solid 1px #dbdbdb;
+  top: 29px;
+  left: 0;
+  overflow: hidden;
+}
+.hd_indexprovce a:fixed{
+  
+}
