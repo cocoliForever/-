@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+/* 顶部样式 */
+.hd_header_wrap {
+    background-color: #fff;
+}
+.hp_top_bar{
+    height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f4f4f4;
+    line-height: 30px;
+}
+/* 一号店首页样式 */
+.hp_top_bar .top_home{
+    float:left;
+    display: block;
+    height: 30px;
+    padding: 0 10px;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    color: #666;
+}
+.top_home .iconfont{
+    color:#ff4040;
+    
+}
+/* 设置地址板块样式 */
+.hp_top_bar .top_address{
+    position: relative;
+    float:left;
+}
+.top_address .city{
+    float: left;
+    display: block;
+    height: 30px;
+    padding: 0 10px;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    color: #666;
+}
+.city .iconfont{
+    color:#ff4040;
+}
+/* 右边登录注册板块样式 */
+.hp_top_bar .top_right{
+    float: right;
+    color: #666;
+}
+
+
+
+
+
+/* 顶部搜索板块样式 */
+.hp_header{
+    height:110px;
+}
+/* 左边一号店logo样式 */
+.hp_header .header_logo{
+    float:left;
+    width: 205px;
+    height: 110px;
+}
+.header_logo img{
+    width: 205px;
+    height: 110px;  
+}
+/* 一号店搜索及购物车样式 */
+.hp_header .header_right{
+    float: right;
+    width: 974px;
+    padding: 32px 14px 0 35px;
+}
+/* 搜索框样式 */
+.header_search{
+    position: relative;
+    z-index: 501;
+    padding-top: 40px;
+    float: left;
+    width: 754px;
+}
+
+
+
+
+
+
+
+/* 话费充值板块样式 */
+.container-main{
+    background-color: #f5f5f5;
+    padding: 30px 0 80px;
+}
+.container-crm{
+    width: 1220px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 1px 1px #fafafa;
+    padding: 40px 0 40px 56px;
+}
+/* 充值操作样式s */
+.crm-left{
+    float: left;
+    width: 540px;
+}
+
+
