@@ -35,7 +35,6 @@ a.blue_link {
 a.blue_link:hover {
   color: #f60
 }
-
 .clearfix:after {
   display: block;
   content: ".";
@@ -43,12 +42,11 @@ a.blue_link:hover {
   visibility: hidden;
   clear: both;
   font-size: 0;
-  line-height: 0
+  line-height: 0;
 }
-
-.clearfix {
-  *zoom:1}
-
+.clearfix{
+  *zoom:1
+}
 img {
   border: 0 none;
   vertical-align: top

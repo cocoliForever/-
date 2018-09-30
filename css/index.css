@@ -8,7 +8,7 @@
   position: relative;
   z-index: 600;
 }
-.hd_indexprovce a{
+.hd_indexprovce .hd_topbar_city{
   float: left;
   display: block;
   height: 30px;
@@ -25,7 +25,7 @@
 }
 .hd_city_select{
   position: absolute;
-  z-index: -1;
+  z-index: 200;
   width: 720px;
   background: #fff;
   border: solid 1px #dbdbdb;
@@ -33,6 +33,17 @@
   left: 0;
   overflow: hidden;
 }
-.hd_indexprovce a:fixed{
-  
+.hd_indexprovce a:focus{
+  background:#ffffff;
+}
+.hd_city_select .hd_city_close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 20px;
+  padding: 5px;
+  font-family: "Tahoma";
+  font-size: 20px;
+  color:#ccc;
+  line-height: 20px;
 }
