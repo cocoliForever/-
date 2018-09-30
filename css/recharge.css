@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    
+
 }
 /* 顶部样式 */
 .hd_header_wrap {
@@ -191,9 +191,9 @@
 .crm-ul .par_value:nth-child(n+5){
     margin-top: 24px;
 }
-.crm-ul .crm-price{
+/* .crm-ul .crm-price{
 
-}
+} */
 /* 暂无金币 */
 .crm-checkbox{
     cursor: not-allowed;
