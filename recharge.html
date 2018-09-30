@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>话费充值,流量充值_一号店充值</title>
     <link rel="stylesheet" href="css/resete.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_858123_yp5gyzukghb.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_858123_xlq76yr16sm.css">
     <link rel="stylesheet" href="css/recharge.css">
 </head>
 <body>
@@ -70,28 +70,83 @@
     <div class="container-main">
         <div class="container-crm">
             <div class="crm-left">
+                <!-- 话费充值 -->
                 <div class="crm-title">
                     <h3>话费充值</h3>
                 </div>
                 <div class="crm-body">
                     <table>
                         <tbody>
+                            <!-- 手机号码 -->
                             <tr>
-                                <td>手机号:</td>
-                                <td class="crm-td"></td>
+                                <td>手机号码:</td>
+                                <td class="crm-td">
+                                    <div class="input-box">
+                                        <input id="crm-tel" type="text" placeholder="请输入手机号" maxlength="11">
+                                        <span><i class="iconfont icon-duihao"></i></span>  
+                                    </div>
+                                </td>
                             </tr>
+                            <!-- 充值面额 -->
                             <tr>
-                                <td>充值面值:</td>
+                                <td valign="top" class="crm-value">充值面值:</td>
+                                <td class="crm-td">
+                                    <div class="table-item">
+                                        <ul class="crm-ul">
+                                            <li class="par_value">
+                                                <div class="crm-price">10元</div>
+                                            </li>
+                                            <li class="par_value">
+                                                <div class="crm-price">20元</div>
+                                            </li>
+                                            <li class="par_value">
+                                                <div class="crm-price">30元</div>
+                                            </li>
+                                            <li class="par_value">
+                                                <div class="crm-price">50元</div>
+                                            </li>
+                                            <li class="par_value">
+                                                <div class="crm-price">100元</div>
+                                            </li>
+                                            <li class="par_value">
+                                                <div class="crm-price">200元</div>
+                                            </li>
+                                            <li class="par_value">
+                                                <div class="crm-price">300元</div>
+                                            </li>
+                                            <li class="par_value">
+                                                <div class="crm-price">400元</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
                             </tr>
-                            <tr></tr>
-                            <tr></tr>
+                            <!-- 金币选择 -->
+                            <tr>
+                                <td></td>
+                                <td class="crm-td">
+                                    <div class="crm-checkbox">
+                                        <table>
+                                            <span class="cc"></span>
+                                            <span>暂无金币可用</span>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- 支付 -->
+                            <tr>
+                                <td></td>
+                                <td class="crm-td">
+                                    <div class="crm-submit">
+                                        <button class="submit-btn">支付</button>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
-      
 </body>
 </html>

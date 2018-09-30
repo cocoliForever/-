@@ -52,6 +52,7 @@
 
 
 
+
 /* 顶部搜索板块样式 */
 .hp_header{
     height:110px;
@@ -104,5 +105,133 @@
     float: left;
     width: 540px;
 }
+.crm-left .crm-title{
+    width: 540px;
+    height: 32px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.crm-title h3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff3c3c;
+}
+/* 充值板块的通用样式 */
+.crm-body{
+    padding-top: 30px;
+    padding-left: 16px;
+}
+.crm-body table{
+    color: #666;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+.crm-body table tr td:first-child{
+    width:60px;
+}
+.crm-td{
+    padding-left: 12px;
+    position: relative;
+}
+.table-item{
+    margin-left: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* 手机号码 */
+.crm-td .input-box{
+    width: 314px;
+    height: 30px;
+    position: relative;
+} 
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dedede;
+    padding: 0 96px 0 20px;
+    font-size: 12px;
+    outline: 0;
+}
+.input-box span{
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    font-size: 12px;
+}
+.input-box .iconfont{
+    font-size: 16px;
+    color: #80c688;
+    vertical-align: -2px;
+}
+/* 充值面额 */
+.crm-body .crm-value{
+    padding-top: 30px;
+}
+.crm-ul{
+    margin: 0 -8px;
+}
+.crm-ul .par_value{
+    color: #a0a0a0;
+    border-color: #dedede;
+    cursor: not-allowed;
+    float: left;
+    width: 96px;
+    height: 54px;
+    border: 1px solid #dedede;
+    margin: 0 8px 0 8px;
+    text-align: center;
+    padding: 8px 0;
+}
+.crm-ul .par_value:nth-child(n+5){
+    margin-top: 24px;
+}
+.crm-ul .crm-price{
+
+}
+/* 暂无金币 */
+.crm-checkbox{
+    cursor: not-allowed;
+    position: relative;
+    color: #999;
+}
+.crm-checkbox span{
+    display: inline-block;
+    font-size: 14px;
+}
+.crm-checkbox .cc{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    vertical-align: -1px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+}
+/* 支付 */
+.submit-btn{
+    color: #a0a0a0;
+    border:1px solid #dedede;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+    width: 128px;
+    height: 36px;
+    font-size: 14px;
+    margin-top: 25px;  
+}
+
+
+
+
+
+
+
+
+
 
 
