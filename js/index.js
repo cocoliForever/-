@@ -24,7 +24,8 @@
         $('.hd_city_input i').css('display','none');
         $('.hd_city_search .hd_citys_close').css('display','block');
       }
-    }),
+    })
+  }),
     // 点击出现提示内容和点击关闭提示内容
     $(function(){
       $('.hd_city_suggest').on('click','a',function(){
@@ -80,25 +81,44 @@
     }),
     // 搜索提示的出现和消失
     $(function(){
-      var $num=0,s;
-      $('.hd_search_ipt').click(s=function(){
+      $('.hd_search_ipt').click(function(){
         $('.hd_search_tips_result').css("display","block");
-        $num = 1;
-        return $num
+      }).on('mouseleave',function(){
+        $('.hd_search_tips_result').css("display","none");
       })
       $('.hd_search_history_new').on('mouseenter',function(){
         $('.hd_search_tips_result').css("display","block");
       }).on('mouseleave',function(){
         $('.hd_search_tips_result').css("display","none");
       })
-      //未解决从输入框划出时搜索提示消失
-      // if(s()){
-      //   $('.hd_search_ipt').on('mouseenter',function(){
-      //     $('.hd_search_tips_result').css("display","block");
-      //   }).on('mouseleave',function(){
-      //     $('.hd_search_tips_result').css("display","none");
-      //   })
-      // }
+    }),
+    // 解决banner图列表旁边的展示列表中的a元素转为行内块元素产生的4px的间隙
+    $(function(){
+      $('.hd_good_category dd').contents().filter(function(){
+        return this.nodeType===3;
+        }).remove();
+    // banner图列表旁边的展示列表中的a元素鼠标浮上去肢体变粗
+      $('.hd_good_category dd a').hover(function(){
+        $(this).css("fontWeight","bold");
+      },function(){
+        $(this).css('fontWeight','400');
+      })
+    }),
+    // banner图列表旁边的展示列表中的li标签浮上去展示详情列表以及背景色变化字体颜色变化
+    $(function(){
+      var nums = 0;
+      $('.mod_hd_allsort ul li').hover(function(){
+        $(this).css("background","#ffffff");
+        nums = $(this).index();
+        $('.hd_show_sort').eq(nums).css('display','block');
+        $('.mod_hd_allsort .iconfont').eq(nums).css("color","red");
+        $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#666");
+        console.log($('.mod_hd_allsort .hd_allsort li h3').eq(nums))
+      },function(){
+        $(this).css("background","#444444");
+        $('.hd_show_sort').eq(nums).css('display','none');
+        $('.mod_hd_allsort .iconfont').eq(nums).css("color","#666");
+        $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#fff")
+      })
     })
-  })
 })()

@@ -206,6 +206,20 @@
 .hd_topbar_right .hd_dl{
   color: #ff4040;
 }
+.hd_topbar_right a{
+  color: #666;
+}
+.hd_topbar_right .iconfont {
+  vertical-align: top;
+  color: #aaa;
+  font-size: 14px;
+}
+.hd_topbar_right li:hover .iconfont{
+  color:#ff4040;
+}
+.hd_topbar_right li:hover a{
+  color:#ff4040;
+}
 .hd_menu{
   float: left;
   min-width: 66px;
@@ -712,7 +726,81 @@
   white-space: nowrap;
   font-family: 'microsoft yahei';
 }
-.mod_hd_allsort .hd_allsort li:hover{
+/* banner 图左边的导航列表 end */
+/* banner 图左边的导航列表跟随的分页 */
+.hd_show_sort{
+  position: absolute;
+  top: 0;
+  left: 205px;
+  width: 1024px;
+  min-height: 390px;
+  padding-top: 10px;
+  z-index: 10;
+  overflow: hidden;
+  border: 0;
+  box-shadow: 4px 0px 6px rgba(0,0,0,0.2);
+  background-color: #fff;
+  zoom: 1;
+}
+.hd_good_category{
+  float: left;
+  width: 747px;
+  padding: 2px 14px 10px 14px;
+  border-right: 1px solid #f2f2f2;
+}
+.hd_good_category dt{
+  float: left;
+  width: 72px;
+  height: 39px;
+  padding-right: 9px;
+  line-height: 38px;
+  font-weight: bold;
+  text-align: right;
+  overflow: hidden;
+}
+.hd_good_category dt a{
   color:#666;
-  background:#fff;
+}
+.hd_good_category dt i{
+  font-family: "\5b8b\4f53";
+  font-style: normal;
+  color: #666;
+  display: inline-block;
+  width: 12.23px;
+  height: 12px;
+}
+.hd_good_category dd{
+  float: left;
+  display: block;
+  width: 657px;
+  padding: 7px 0;
+  border-bottom:1px solid #f2f2f2;
+  line-height: 24px;
+}
+.hd_good_category dd a{
+  color: #666;
+  margin:0 9px;
+  display: inline-block;
+}
+.hd_good_logo{
+  width: 228px;
+  padding-left: 20px;
+  padding-top: 6px;
+  font-size: 0;
+}
+.mod_hd_allsort .seller_logo a {
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  margin: 0 19px 12px 10px;
+}
+.seller_pic{
+  padding-top:2px;
+  width: 205px;
+  height: 110px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.actives{
+  color:#666!important;
 }

@@ -104,3 +104,6 @@ button::-moz-focus-inner {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.activeColorRed{
+  color:red !important;
+} 
