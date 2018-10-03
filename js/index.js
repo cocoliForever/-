@@ -112,13 +112,13 @@
         nums = $(this).index();
         $('.hd_show_sort').eq(nums).css('display','block');
         $('.mod_hd_allsort .iconfont').eq(nums).css("color","red");
-        $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#666");
-        console.log($('.mod_hd_allsort .hd_allsort li h3').eq(nums))
+        // $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#666");
+        // console.log($('.mod_hd_allsort .hd_allsort li h3').eq(nums))
       },function(){
         $(this).css("background","#444444");
         $('.hd_show_sort').eq(nums).css('display','none');
         $('.mod_hd_allsort .iconfont').eq(nums).css("color","#666");
-        $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#fff")
+        // $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#fff")
       })
     })
 })()
