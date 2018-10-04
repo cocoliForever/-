@@ -246,7 +246,6 @@
   left: 0px;
   display: none;
   width: 86px;
-  *width: 88px;
   padding: 5px 0;
   border: 1px solid #dbdbdb;
   border-top: 0 none;
@@ -801,6 +800,12 @@
   display: inline-block;
   margin-bottom: 14px;
 }
+.seller_pic a{
+  display: inline-block;
+  width: 205px;
+  height: 110px;
+  margin-bottom: 14px;
+}
 .actives{
   color:#666!important;
-}
+}        

@@ -15,6 +15,14 @@
     //   })
     // }
   }),
+  //导航头右边的客户服务一栏分栏下单栏目鼠标浮上去肢体颜色变化
+  $(function(){
+    $('.hd_menu_list a').hover(function(){
+      $(this).css("color","#ff4040");
+    },function(){
+      $(this).css("color","#666");
+    })
+  }),
   $(function(){
     $('.hd_city_input input').on('keyup',function(){
       $('.hd_city_suggest').css('display','block');
@@ -107,18 +115,17 @@
     // banner图列表旁边的展示列表中的li标签浮上去展示详情列表以及背景色变化字体颜色变化
     $(function(){
       var nums = 0;
-      $('.mod_hd_allsort ul li').hover(function(){
+      $('.mod_hd_allsort ul .frw').hover(function(){
         $(this).css("background","#ffffff");
         nums = $(this).index();
         $('.hd_show_sort').eq(nums).css('display','block');
         $('.mod_hd_allsort .iconfont').eq(nums).css("color","red");
-        // $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#666");
-        // console.log($('.mod_hd_allsort .hd_allsort li h3').eq(nums))
+        $('.mod_hd_allsort .hd_allsort li h3').eq(nums).css("color","#666").find('a').css("color","#666");
       },function(){
         $(this).css("background","#444444");
         $('.hd_show_sort').eq(nums).css('display','none');
         $('.mod_hd_allsort .iconfont').eq(nums).css("color","#666");
-        // $('.mod_hd_allsort .hd_allsort li h3,a').css("color","#fff")
+        $('.mod_hd_allsort .hd_allsort li h3').eq(nums).css("color","#fff").find('a').css("color","#fff");
       })
     })
 })()
