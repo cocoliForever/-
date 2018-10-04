@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+
+}
+
+
+
+/* 轮播部分 */
+.import_banner{
+    position: relative;
+    min-width: 1228px;
+}
+/* 切换菜单 */
+.import_category{
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+}
+/* 菜单栏 */
+.category_tab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 174px;
+    height: 408px;
+    background-color: #47403c;
+}
+.category_tab .item{
+    height:45px;
+    line-height:45px;
+}
+.category_tab .item a{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 126px;
+    height: 44px;
+    margin: 0 24px;
+    border-bottom: 1px solid #504841;
+}
+.category_tab .item .iconfont{
+    display: inline-block;
+    vertical-align: middle;
+    color: #b4a078;
+    font-size: 20px;
+    margin-right: 16px;
+}
+.category_tab .item .category_title{
+    color: #fff4ea;
+    font-weight: bold;
+    font-size: 14px;
+}
+.category_tab .item .category_arrow{
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 5px;
+    height: 9px;
+    overflow: hidden;
+    background: url(../img/import_arrow_sprite.png) no-repeat 0 -9px;
+}
+/* 内容栏 */
+.category_con{
+    position: absolute;
+    top: 0;
+    left: 173px;
+    z-index: 2;
+    height: 406px;
+    border: 1px solid #948366;
+    background-color: #fff;
+}
+
+/* 轮播 */
+.import_slide{
+    position: relative;
+    height: 408px;
+}
+.slide_con{
+    position:relative;
+    height: 100%;
+}
+.slide_con ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 408px;
+    display: list-item;
+}
+.slide_con ul li a{
+    display: block;
+    width: 1228px;
+    margin: 0 auto;
+}
+.slide_con ul li img{
+    width: 1054px;
+    height: 408px;
+    margin-left: 174px;
+    border: 0 none;
+    vertical-align: top;
+}
+
+
+
+
+
+
