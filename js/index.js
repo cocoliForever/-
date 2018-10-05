@@ -127,5 +127,16 @@
         $('.mod_hd_allsort .iconfont').eq(nums).css("color","#666");
         $('.mod_hd_allsort .hd_allsort li h3').eq(nums).css("color","#fff").find('a').css("color","#fff");
       })
+    }),
+    //把banner图旁边的详情列表的最后一号的底部边框去掉
+    $(function(){
+      for(var i=0;i<$('.hd_good_category').length;i++){
+        $('.hd_good_category').eq(i).find('dl').last().find('dd').css("borderBottom","0px");
+      }
+    }),
+    // banner图的切换
+    $(function(){
+      $('.promo_wrapper ul li')
+
     })
 })()

@@ -808,4 +808,156 @@
 }
 .actives{
   color:#666!important;
-}        
+} 
+/* banner 图左边的导航列表跟随的分页结束 */
+/* 个人中心开始 */
+.mod_personal_center{
+  position: absolute;
+  width: 205px;
+  padding-top: 56px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  background-color: #fff;
+  right: 20px;
+  z-index: 120;
+  background-image: url('http://img.yihaodianimg.com/front-homepage/index/images/vip_bg2.png?801dc06');
+  background-repeat: no-repeat;
+}    
+.avata_pic_wrap{
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+  border-radius: 50%;
+  top: -26px;
+  left: 67px;
+  filter: none;
+  background: rgba(0,0,0,0.1);
+}  
+.avata_pic_wrap a{
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* background: url('http://img.yihaodianimg.com/front-homepage/index/images/globalhead_sprite.png?801dc06') no-repeat 0 -150px; */
+}   
+.avata_pic_wrap img{
+  width: 64px;
+  height: 64px;
+}              
+.unlogin_box{
+  padding-bottom: 30px;
+  line-height: 20px;
+  text-align: center;
+  color: #999;
+}
+.tips{
+  height: 16px;
+  padding: 0px 5px;
+  line-height: 16px;
+  overflow: hidden;
+}
+.btn_wrap{
+  margin-top:13px;
+}
+.btn_wrap a{
+  display: inline-block;
+  width: 68px;
+  height: 24px;
+  margin: 0 5px;
+  color:  #ff4040;
+  border: 1px solid #ff4040;
+  border-radius: 13px;
+  text-align: center;
+}
+.notice_list{
+  height: 72px;
+  padding: 9px 12px;
+  overflow: hidden;
+}
+.notice_list a em{
+  color: #ff4040;
+}
+/* 个人中心样式结束 */
+/* banner切换样式开始 */
+.mod_promo_show{
+  position: relative;
+  height: 400px;
+  z-index: 90;
+}
+.promo_wrapper{
+  position: relative;
+  z-index: 1;
+}
+.mod_promo_show .promo_wrapper li{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.mod_promo_show .promo_wrapper li a{
+  display: block;
+  width: 1228px;
+  height: 400px;
+  margin: 0 auto;
+}
+.mod_promo_show .promo_wrapper .promo_img{
+  height: 400px;
+  margin-left: 205px;
+}
+.mod_promo_show .promonum_show{
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  bottom: 15px;
+  width: auto;
+}
+.mod_promo_show .promonum_show ol{
+  /* float: left; */
+  position: relative;
+  left: -50%;
+  text-align: right;
+  white-space: nowrap; /*规定段落文本不能进行换行 */
+}
+.mod_promo_show .promonum_show ol li {
+  display: inline-block;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mod_promo_show .promonum_show ol li i {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: .7;
+}
+.mod_promo_show a.show_next, .mod_promo_show a.show_pre{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 178px;
+  left: 50%;
+  z-index: 4;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  text-align: center;
+  line-height: 44px;
+}
+.mod_promo_show a.show_next {
+  margin-left: 335px;
+}
+.mod_promo_show a.show_next .iconfont, .mod_promo_show a.show_pre .iconfont {
+  font-size: 28px;
+  opacity: .3;
+}
+.mod_promo_show a.show_pre {
+  margin-left: -399px;
+}

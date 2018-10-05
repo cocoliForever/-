@@ -107,3 +107,7 @@ button::-moz-focus-inner {
 .activeColorRed{
   color:red !important;
 } 
+.cur{
+  background-color: #ff4040;
+  opacity: 1;
+}
