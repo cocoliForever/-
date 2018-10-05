@@ -76,6 +76,7 @@
     position: relative;
     height: 408px;
 }
+/* 轮播图片 */
 .slide_con{
     position:relative;
     height: 100%;
@@ -101,9 +102,156 @@
     border: 0 none;
     vertical-align: top;
 }
+/* 轮播点 */
+.slide_num{
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 2;
+    width: auto;
+    height: 10px;
+    margin-left: -5px;
+}
+.slide_num ol{
+    float: left;
+    position: relative;
+    left: -50%;
+    margin-left: 174px;
+    text-align: right;
+    white-space: nowrap;
+}
+.slide_num ol li{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    margin-left: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.slide_num ol .cur{
+    width: 23px;
+    border-radius: 6px;
+    background-color: #645144;
+}
+/* 轮播按钮 */
+.slide_arrow{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    text-align: center;
+}
+.slide_arrow span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #fff;
+    cursor:pointer;
+}
+ .import_slide .slide_arrow .iconfont{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 25px;
+    height: 16px;
+    margin-top: 13px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.slide_left{
+   margin-left:-430px;
+}
+.slide_right{
+    margin-left:560px;
+}
 
 
-
-
-
-
+/* 板块通用 */
+.import_white{
+    background-color: #f3f3f3;
+}
+.import_block{
+    min-width: 1228px;
+    padding-top: 25px;
+}
+/* 全球精选 */
+.import_seckill{
+    padding: 25px 0;
+}
+/* 标题 */
+.module_title{
+    padding-bottom: 13px;
+}
+.module_title .qqjx{
+    color: #645144;
+    font: normal 24px Microsoft YaHei;
+}
+.module_title .qqjx span{
+    padding-left: 5px;
+    color: #585151;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+/* 内容 */
+.slide_module{
+    position: relative;
+}
+/* 切换按钮 */
+.slide_module_opt{
+    position: absolute;
+    top: -45px;
+    right: 0;  
+}
+.slide_page{
+    display: inline-block;
+    padding-right: 8px;
+    color: #666;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.slide_module_opt .slide_arrow{
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 44px;
+    margin-top: -22px;
+    text-align: center;
+}
+ .slide_arrow .arrow{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-left: 4px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    background-color: #fff;
+    text-align: center;
+ } 
+ .slide_arrow .arrow .iconfont{
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    overflow: hidden;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size:12px;
+    
+}
+ /* .slide_arrow .slide_left .iconfont{
+    background-position: -5px -11px;    
+ }
+ .slide_arrow .slide_right .iconfont{
+    background-position: -5px 0;
+} */
