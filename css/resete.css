@@ -110,4 +110,5 @@ button::-moz-focus-inner {
 .cur{
   background-color: #ff4040;
   opacity: 1;
+  border:solid 2px #fff;
 }

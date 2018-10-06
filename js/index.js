@@ -136,7 +136,69 @@
     }),
     // banner图的切换
     $(function(){
-      $('.promo_wrapper ul li')
-
+      var len = $('.promo_wrapper ul li').length;
+      var li = $('.promo_wrapper ul li');
+      var index = 0;
+      $('.show_next').on('click',function(){
+        li.eq(index).css('display','none').stop().animate({
+          'opacity':'0'
+        })
+        index++;
+        if(index === len){
+          index = 0;
+        }
+        changePage(index);
+      }),
+      $('.show_pre').on('click',function(){
+        li.eq(index).css('display','none').stop().animate({
+          'opacity':'0'
+        })
+        index--;
+        if(index === -1){
+          index = len-1;
+        }
+        changePage(index);
+      }),
+      timer = setTimeout(function(){
+        $('.show_next').click();
+      },3000)
+      function changePage(num){
+        clearTimeout(timer);
+        changeActive(num);
+        li.eq(num).css('display','block').stop().animate({
+          opacity:1
+        },function(){
+          timer = setTimeout(function(){
+            $('.show_next').click()
+          },3000)
+        })
+      }
+      //点击小点切换图片和小点的背景颜色
+      var dots = $('.promonum_show ol li');
+      function changeActive(i){
+        if(i === len){
+          i=0;
+        }
+        dots.removeClass('cur').eq(i).addClass('cur');
+      }
+      $('.promonum_show ol').on('click','li',function(){
+        var i = $(this).index();
+        index = i;
+        li.not(li.eq(index)).css('display','none').stop().animate({
+          'opacity':'0'
+        })//把其他的变为none，透明度变为0
+        changePage(index);//这里的点击要切换图片和改变类名两者要同步进行所以不能调用changeActive()函数要调用changePage()
+      })
+      //鼠标浮上去左右切换图标出现和消失
+      $('.promo_wrapper li,.promonum_show,a.show_pre,a.show_next').on('mouseenter',function(){
+        $('a.show_pre,a.show_next').fadeIn(20);
+        clearTimeout(timer);
+      })
+      $('.promo_wrapper li,.promonum_show,a.show_pre,a.show_next').on('mouseleave',function(){
+        $('a.show_pre,a.show_next').fadeOut(20);
+        timer = setTimeout(function(){
+          $('.show_next').click()
+        },3000)
+      })
     })
 })()

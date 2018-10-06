@@ -953,6 +953,7 @@
 }
 .mod_promo_show a.show_next {
   margin-left: 335px;
+  display:none;
 }
 .mod_promo_show a.show_next .iconfont, .mod_promo_show a.show_pre .iconfont {
   font-size: 28px;
@@ -960,4 +961,5 @@
 }
 .mod_promo_show a.show_pre {
   margin-left: -399px;
+  display:none;
 }
