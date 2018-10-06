@@ -100,7 +100,6 @@ button::-moz-focus-inner {
 
 .ellipsis {
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -108,7 +107,7 @@ button::-moz-focus-inner {
   color:red !important;
 } 
 .cur{
-  background-color: #ff4040;
-  opacity: 1;
-  border:solid 2px #fff;
+  background: #ff4040;
+  opacity: 0.8;
+  /* border:solid 2px #fff; */
 }

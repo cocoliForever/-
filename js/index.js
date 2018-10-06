@@ -141,7 +141,8 @@
       var index = 0;
       $('.show_next').on('click',function(){
         li.eq(index).css('display','none').stop().animate({
-          'opacity':'0'
+          'opacity':'0',
+          'z-index':'0'
         })
         index++;
         if(index === len){
@@ -151,7 +152,8 @@
       }),
       $('.show_pre').on('click',function(){
         li.eq(index).css('display','none').stop().animate({
-          'opacity':'0'
+          'opacity':'0',
+          'z-index':'0'
         })
         index--;
         if(index === -1){
@@ -166,7 +168,8 @@
         clearTimeout(timer);
         changeActive(num);
         li.eq(num).css('display','block').stop().animate({
-          opacity:1
+          'opacity':1,
+          'z-index':1
         },function(){
           timer = setTimeout(function(){
             $('.show_next').click()
@@ -181,12 +184,13 @@
         }
         dots.removeClass('cur').eq(i).addClass('cur');
       }
-      $('.promonum_show ol').on('click','li',function(){
+      $('.promonum_show ol').on('mouseenter','li',function(){
         var i = $(this).index();
         index = i;
         li.not(li.eq(index)).css('display','none').stop().animate({
-          'opacity':'0'
-        })//把其他的变为none，透明度变为0
+          'opacity':'0',
+          'z-index':'0'
+        },3000)//把其他的变为none，透明度变为0
         changePage(index);//这里的点击要切换图片和改变类名两者要同步进行所以不能调用changeActive()函数要调用changePage()
       })
       //鼠标浮上去左右切换图标出现和消失
@@ -200,5 +204,44 @@
           $('.show_next').click()
         },3000)
       })
+    }),
+      //未解决问题banner图结束未完成问题当点击左右切换按钮后，鼠标浮上去不能让轮播停止
+      //1好抢购切换
+      $(function(){
+        //鼠标浮上去图片改变位置
+        var i = 0,s=0,num=0;
+        console.log(num)
+        $('.prod').hover(function(){
+          i = $(this).index();
+          $('.pro_pic').eq(i).animate({left:-5});
+        },function(){
+          $('.pro_pic').eq(i).animate({left:0});
+        })
+          $('.next').addClass('next_clickable');//先让右切换按钮出来
+          //点击左右切换按钮切换图片
+        $('.seckill_list_wrap .next').on('click',function(){
+          s++;
+          $('.seckill_list ul').animate({'marginLeft':(s*-1020)},500);
+          pd(s)
+        })
+        $('.seckill_list_wrap .pre').on('click',function(){
+          s--;
+          $('.seckill_list ul').animate({'marginLeft':(s*-1020)},500);
+          pd(s);
+        })
+        // 控制按钮的出现和消失函数
+        function pd(t){
+          if(t ===0){
+            $('.next').addClass('next_clickable');
+            $('.pre').removeClass('prev_clickable');
+          }else if(t === 1){
+            $('.next').addClass('next_clickable');
+            $('.pre').addClass('prev_clickable');
+          }else if(t === 2){
+            $('.next').removeClass('next_clickable');
+            $('.pre').addClass('prev_clickable');
+          }
+        }
     })
+  
 })()

@@ -931,7 +931,6 @@
   cursor: pointer;
 }
 .mod_promo_show .promonum_show ol li i {
-  -moz-border-radius: 50%;
   border-radius: 50%;
   display: block;
   width: 12px;
@@ -963,3 +962,145 @@
   margin-left: -399px;
   display:none;
 }
+/* banner图样式结束 */
+/* 1号抢购样式开始 */
+.mod_seckill{
+  margin-top: 10px;
+}
+.banner_wrapper{
+  position: relative;
+  width: 205px;
+  float: left;
+  height: 140px;
+}
+.banner_wrapper img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.banner_wrapper .confirm_btn{
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  padding-right: 20px;
+  background: #b5012f url('http://img.yihaodianimg.com/front-homepage/index/images/btn_more.png?801dc06') no-repeat 66px center;
+  border-radius: 13px;
+  left: 61px;
+  bottom: 10px;
+  color: #fff;
+  line-height: 25px;
+  text-align: right;
+}
+.seckill_list_wrap{
+  position: relative;
+  z-index: 100;
+  float: left;
+  width: 1023px;
+  height: 140px;
+  overflow: hidden;
+  background: #fff;
+}
+.seckill_list_wrap a.pre,a.next{
+  position: absolute;
+    z-index: 115;
+    top: 50px;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    transition: transform .4s ease;
+}
+.seckill_list_wrap a.pre{
+  left: -30px;
+}
+.seckill_list_wrap a.next{
+  right: -30px;
+}
+.mod_seckill .seckill_list_wrap .next_clickable{
+  transform: translate3d(-35px,0,0);
+  background-color: rgba(0,0,0,0.15);
+  display: block;
+}
+.mod_seckill .seckill_list_wrap a.prev_clickable{
+  transform: translate3d(35px,0,0);
+  background-color: rgba(0,0,0,0.15);
+  display: block;
+}
+.seckill_list_wrap ul{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 99999px;
+}
+.dotted_line{
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  height: 70px;
+  width:1px;
+  border: dotted 1px #e5e5e5;
+}
+.mod_seckill .seckill_list li {
+  position: relative;
+  z-index: 100;
+  width: 256px;
+  float: left;
+}
+.seckill_list .prod a{
+  display: block;
+  padding:15px 20px;
+}
+.pro_detail{
+  float:left;
+  width: 100px;
+
+}
+.seckill_list .pro_name {
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+}
+.seckill_list .pro_price {
+  margin-bottom: 2px;
+  color: #ff4040;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Microsoft Yahei";
+  line-height: 18px;
+}
+.mod_seckill .seckill_list .reference_price {
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  color: #aaa;
+  font-family: "Microsoft Yahei";
+  line-height: 20px;
+  white-space: nowrap;
+}
+.mod_seckill .seckill_list .pro_pic {
+  float: right;
+  width: 110px;
+  height: 110px;
+  position: relative;
+  transition: transform .4s ease;
+}
+.mod_seckill .seckill_list .marking_lable {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 32px;
+  height: 28px;
+  padding: 5px 2px 4px 3px;
+  overflow: hidden;
+  background: url('http://img.yihaodianimg.com/front-homepage/index/images/globalhead_sprite.png?801dc06') no-repeat -160px -150px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+}
+/* 1号抢购样式结束 */
