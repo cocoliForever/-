@@ -224,9 +224,9 @@
     z-index: 2;
     top: 50%;
     left: 50%;
-    width: 80px;
+    width: 90px;
     height: 44px;
-    margin-top: -22px;
+    margin-top: -14px;
     text-align: center;
 }
  .slide_arrow .arrow{
@@ -249,9 +249,53 @@
     font-size:12px;
     
 }
- /* .slide_arrow .slide_left .iconfont{
-    background-position: -5px -11px;    
- }
- .slide_arrow .slide_right .iconfont{
-    background-position: -5px 0;
-} */
+/* 切换的内容 */
+.slide_module_con{
+    position: relative;
+    overflow: hidden;
+}  
+.slide_list{
+    width: 2480px;
+} 
+.screen_slide_list{
+float: left;
+width: 1240px;
+}
+.screen_slide_list .item{
+    width: 180px;
+    margin: 0px 1px 1px 0;
+    padding: 0 33px;
+}
+.screen_slide_list .item .pro_pic{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 20px 0 0;
+}
+.screen_slide_list .item .pro_pic img{
+    width: 100%;
+    height: 100%;
+}
+.screen_slide_list .pro_sale{
+    display: none;
+}
+.screen_slide_list .pro_price{
+    height: 14px;
+    overflow: hidden;
+    font-family: 'Century Gothic';
+    line-height: 14px;
+    text-align: center;
+    padding-top: 10px; 
+} 
+.pro_price .price_special{
+    width: 100%;
+    /* overflow: hidden; */
+    color: #ed1b2f;
+    font-size: 16px;
+    vertical-align: middle;
+} 
+
+
+
+
+
