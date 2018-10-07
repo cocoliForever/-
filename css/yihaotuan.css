@@ -2,6 +2,9 @@
 input{
     outline: none;
 }
+.m_tuan_box .hd {
+   padding: 0 15px 15px;
+}
 .hd_header_wrap {
     background-color: #fff;
 }
@@ -357,7 +360,7 @@ img {
     background: url(http://img.yihaodianimg.com/tuangou/groupon/tuanimages/cd_bg.png?40b8e14) left no-repeat;
 }
 .skiphop .hd {
-    /* // overflow: hidden; */
+    /* overflow: hidden; */
     height: 45px;
     position: relative;
     color: #fff;
@@ -404,15 +407,15 @@ img {
     margin: 20px;
     position: relative;
 }
-.skiphop .slide-screen {
-    width: 100%;
-    overflow: hidden;
-}
 .skiphop .slide-screen, .skiphop .slide-screen .slide-wrap {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
+}
+.skiphop .slide-screen {
+    width: 100%;
+    overflow: hidden;
 }
 .skiphop .slide-wrap {
     margin: 0 30px;
@@ -496,9 +499,6 @@ img {
 .explosion {
     padding-top: 25px;
 }
-.m_tuan_box .hd {
-    padding: 0 15px 15px;
-}
 .m_tuan_box .hd .h2 {
     float: left;
     padding-left: 1px;
@@ -520,6 +520,9 @@ img {
     *padding-bottom: 20px;
 }
 .grouplist li {
+    position: relative;
+    top: 0;
+    left: 0;
     float: left;
     background-color: #fff;
     margin: 0 15px 15px 0;
@@ -742,12 +745,51 @@ em {
 
 
 
+/* 客户服务下拉菜单 */
+.hd_top_bar .hd_topbar_right .hd_menu_list {
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    display: none;
+    width: 89px;
+    *width: 91px;
+    padding: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-top: 0 none;
+    background-color: #fff;
+}
+.hd_top_bar .hd_topbar_right .hd_menu_list a {
+   display: block;
+   padding: 0 0 0 10px;
+   line-height: 26px;
+}
+/* App下载 */
+.hd_top_bar .hd_topbar_right .hd_qrcode_bg {
+   position: absolute;
+   top: 30px;
+   left: -10px;
+   display: none;
+   padding: 15px 9px 9px;
+   border: 1px solid #e5e5e5;
+   background-color: #fff;
+}
+.hd_top_bar .hd_topbar_right .hd_qrcode_bg p {
+   text-align: center;
+   line-height: 12px;
+   margin-bottom: 7px;
+}
+.hd_top_bar .hd_topbar_right .hd_qrcode_bg img {
+   width: 90px;
+   height: 90px;
+}
 
 
 
 
 
-
+.hover{
+    border-bottom:solid 2px red;
+}
 
 
 

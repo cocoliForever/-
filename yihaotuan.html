@@ -49,12 +49,23 @@
                 <a href="###">客户服务</a>
                 <i class="iconfont iconfont-hi">&#xe886;</i>
               </div>
+              <div class="hd_menu_list">
+                <a href="###">包裹跟踪</a>
+                <a href="###">在线退换货</a>
+              </div>
             </li>
             <li class="hd_has_child">
               <div class="hd_title">
                 <a href="###">
                   <i class="iconfont fl ic icon-mr">&#xe603;</i>
                   APP下载
+                </a>
+              </div>
+              <div class="hd_qrcode_bg">
+                <p>扫描二维码</p>
+                <p>下载1号店APP</p>
+                <a href="###">
+                  <img src="https://img.yihaodianimg.com/front-homepage/index/images/qryhd.png" alt="">
                 </a>
               </div>
             </li>
@@ -177,16 +188,16 @@
           <span class="tit">凑单专区</span>
           <ul class="ctrl-box tiggerBox">
             <li class="item on">10元以下
-              <i class="arrow"></i>
+              <i class="arrow" style="display:block;"></i>
             </li>
-            <li class="item on">10-20元
-              <i class="arrow"></i>
+            <li class="item ">10-20元
+              <i class="arrow" style="display:none;"></i>
             </li>
-            <li class="item on">20-30元
-              <i class="arrow"></i>
+            <li class="item ">20-30元
+              <i class="arrow" style="display:none;"></i>
             </li>
-            <li class="item on">30-40元
-              <i class="arrow"></i>
+            <li class="item ">30-40元
+              <i class="arrow" style="display:none;"></i>
             </li>
           </ul>
         </div>
@@ -249,9 +260,21 @@
                       <i class="iconfont cart-icon">&#xe889;</i>
                     </p>
                   </a>
+                </div>
+              </div>
+              <div class="prev-btn-box">
+                <span class="arrow-btn btnPrev"></span>
+              </div>
+              <div class="next-btn-box">
+                <span class="arrow-btn next btnNext"></span>
+              </div>
+            </div>
+            <div class="slide-screen" style="opacity:0;z-index:0;position: absolute;">
+              <div class="slide-wrap" style="display: block;">
+                <div class="slide-con">
                   <a href="###" class="con">
                     <img class="pic" src="https://img12.360buyimg.com/n12/s450x450_jfs/t22471/269/663334124/140497/3e757823/5b3b33d4Ne70d05f6.jpg" alt="">
-                    <p class="info">良品铺子芒果干 果干类 蜜饯果干 果脯果干 芒果水果干 零食芒果片 休闲食品108g</p>
+                    <p class="info">良品铺子芒果干 </p>
                     <p class="price">
                       <del class="symbol">￥</del>
                       9.9
@@ -285,9 +308,21 @@
                       <i class="iconfont cart-icon">&#xe889;</i>
                     </p>
                   </a>
+                </div>
+              </div>
+              <div class="prev-btn-box">
+                <span class="arrow-btn btnPrev"></span>
+              </div>
+              <div class="next-btn-box">
+                <span class="arrow-btn next btnNext"></span>
+              </div>
+            </div>
+            <div class="slide-screen" style="opacity:0;z-index:0;position: absolute;">
+              <div class="slide-wrap" style="display: block;">
+                <div class="slide-con">
                   <a href="###" class="con">
                     <img class="pic" src="https://img12.360buyimg.com/n12/s450x450_jfs/t22471/269/663334124/140497/3e757823/5b3b33d4Ne70d05f6.jpg" alt="">
-                    <p class="info">良品铺子芒果干 果干类 蜜饯果干 果脯果干 芒果水果干 零食芒果片 休闲食品108g</p>
+                    <p class="info">良品铺子 </p>
                     <p class="price">
                       <del class="symbol">￥</del>
                       9.9
@@ -315,6 +350,27 @@
                   <a href="###" class="con">
                     <img class="pic" src="https://img12.360buyimg.com/n12/s450x450_jfs/t22471/269/663334124/140497/3e757823/5b3b33d4Ne70d05f6.jpg" alt="">
                     <p class="info">良品铺子芒果干 果干类 蜜饯果干 果脯果干 芒果水果干 零食芒果片 休闲食品108g</p>
+                    <p class="price">
+                      <del class="symbol">￥</del>
+                      9.9
+                      <i class="iconfont cart-icon">&#xe889;</i>
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="prev-btn-box">
+                <span class="arrow-btn btnPrev"></span>
+              </div>
+              <div class="next-btn-box">
+                <span class="arrow-btn next btnNext"></span>
+              </div>
+            </div>
+            <div class="slide-screen" style="opacity:0;z-index:0;position: absolute;">
+              <div class="slide-wrap" style="display: block;">
+                <div class="slide-con">
+                  <a href="###" class="con">
+                    <img class="pic" src="https://img12.360buyimg.com/n12/s450x450_jfs/t22471/269/663334124/140497/3e757823/5b3b33d4Ne70d05f6.jpg" alt="">
+                    <p class="info">良品 </p>
                     <p class="price">
                       <del class="symbol">￥</del>
                       9.9
@@ -836,7 +892,7 @@
       <a href="###">2</a>
       <a href="###">3</a>
       <a href="###">4</a>
-      <a href="" class="espage">...</a>
+      <a href="###" class="espage">...</a>
       <a href="###">14</a>
       <a href="###" class="nextpage">
         下一页
@@ -850,5 +906,9 @@
     </span>
     <span class="result_price">参考价是厂商（供应商）提供的建议零售价。</span>
   </div>
+  <script src="js/ejs.js"></script>
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/public.js"></script>
+  <script src="js/yihaotuan.js"></script>
 </body>
 </html>
