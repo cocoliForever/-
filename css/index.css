@@ -34,9 +34,9 @@
   left: 0;
   /* overflow: hidden; */
 }
-.hd_indexprovce a:focus{
+/* .hd_indexprovce a:focus{
   background:#ffffff;
-}
+} */
 .hd_city_select .hd_city_close{
   position: absolute;
   top: 5px;

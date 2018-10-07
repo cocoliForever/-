@@ -3,17 +3,20 @@
   //点击出现送货地址导航头城市搜索出现
   $(function(){
     $('.hd_indexprovce a').on('click',function(){
+      $(this).css('background','#ffffff')
       $('.hd_city_select').css('display','block');
     })
-    $('.hd_city_select .hd_city_close').on('click',function(){
+    $('.hd_city_close').on('click',function(){
       $('.hd_city_select').css('display','none');
+      $('.hd_indexprovce a').css('background','#f4f4f4')
     })
     //点击其他区域也能关闭送货地址列表暂未完成
-    // if($('.hd_city_select').css('display') === 'block'){
-    //   $('').on("click",function(){
-    //     $('.hd_city_select').css('display','none');
-    //   })
-    // }
+  //     $('div').not('div.hd_city_select div.hd_indexprovce').on("click",function(){
+  //       console.log($('.hd_city_select').css('display'))
+  //       if($('.hd_city_select').css('display') === 'block'){
+  //       $('.hd_city_select').css('display','none');
+  //       }
+  //     })
   }),
   //导航头右边的客户服务一栏分栏下单栏目鼠标浮上去肢体颜色变化
   $(function(){
@@ -89,13 +92,10 @@
     }),
     // 搜索提示的出现和消失
     $(function(){
-      $('.hd_search_ipt').click(function(){
-        $('.hd_search_tips_result').css("display","block");
+      $('.hd_search_from').click(function(){
+        $('.hd_search_tips_result').css("display","block");      
       }).on('mouseleave',function(){
         $('.hd_search_tips_result').css("display","none");
-      })
-      $('.hd_search_history_new').on('mouseenter',function(){
-        $('.hd_search_tips_result').css("display","block");
       }).on('mouseleave',function(){
         $('.hd_search_tips_result').css("display","none");
       })
