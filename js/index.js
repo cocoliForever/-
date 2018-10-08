@@ -2,23 +2,43 @@
 (function(){
   //点击出现送货地址导航头城市搜索出现
   $(function(){
-    $('.hd_indexprovce a').on('click',function(){
+    $('.hd_indexprovce a').on('click',function(e){
+      e.stopPropagation();
       $(this).css('background','#ffffff')
       $('.hd_city_select').css('display','block');
+      $(document).on('click.a', function() {
+        if(!$('.hd_city_select:hidden').length && !$('.hd_city_input input,.hd_city_innitial_tit')){
+          $('.hd_city_select').hide();
+          $('.hd_indexprovce a').css('background','#f4f4f4')
+          $(this).off('.a')
+        }
+      })
     })
     $('.hd_city_close').on('click',function(){
       $('.hd_city_select').css('display','none');
       $('.hd_indexprovce a').css('background','#f4f4f4')
     })
+
+    
     //点击其他区域也能关闭送货地址列表暂未完成
-  //     $('div').not('div.hd_city_select div.hd_indexprovce').on("click",function(){
-  //       console.log($('.hd_city_select').css('display'))
-  //       if($('.hd_city_select').css('display') === 'block'){
-  //       $('.hd_city_select').css('display','none');
-  //       }
-  //     })
+      // $('div').not('div.hd_city_select').on("click",function(){
+      //   console.log($('.hd_city_select').css('display'))
+      //   if($('.hd_city_select').css('display') === 'block'){
+      //   $('.hd_city_select').css('display','none');
+      //   }
+      // })
   }),
-  //导航头右边的客户服务一栏分栏下单栏目鼠标浮上去肢体颜色变化
+  //点击字母到达对应的位置
+  $(function(){
+    var e = 0 ;
+    $('.hd_city_initial a').on('click',function(){
+      e = $(this).index();
+      console.log(e)
+      $('.hd_city_list li').eq(e)
+      console.log($('.hd_city_list li').eq(0))
+    })
+  })
+  //导航头右边的客户服务一栏分栏下单栏目鼠标浮上去字体颜色变化
   $(function(){
     $('.hd_menu_list a').hover(function(){
       $(this).css("color","#ff4040");
@@ -105,7 +125,7 @@
       $('.hd_good_category dd').contents().filter(function(){
         return this.nodeType===3;
         }).remove();
-    // banner图列表旁边的展示列表中的a元素鼠标浮上去肢体变粗
+    // banner图列表旁边的展示列表中的a元素鼠标浮上去字体变粗
       $('.hd_good_category dd a').hover(function(){
         $(this).css("fontWeight","bold");
       },function(){
@@ -139,7 +159,8 @@
       var len = $('.promo_wrapper ul li').length;
       var li = $('.promo_wrapper ul li');
       var index = 0;
-      $('.show_next').on('click',function(){
+      $('.show_next').on('click',function(e){
+        e.stopPropagation();
         li.eq(index).css('display','none').stop().animate({
           'opacity':'0',
           'z-index':'0'
@@ -150,7 +171,9 @@
         }
         changePage(index);
       }),
-      $('.show_pre').on('click',function(){
+      $('.show_pre').on('click',function(e){
+        e.stopPropagation();
+
         li.eq(index).css('display','none').stop().animate({
           'opacity':'0',
           'z-index':'0'
