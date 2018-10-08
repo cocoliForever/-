@@ -8,7 +8,6 @@
 .import_category{
     position: relative;
     z-index: 3;
-    margin: 0 auto;
 }
 /* 菜单栏 */
 .category_tab{
@@ -55,18 +54,49 @@
     background: url(../img/import_arrow_sprite.png) no-repeat 0 -9px;
 }
 /* 内容栏 */
+.category_tab .active{
+    background-color:red;
+}
+.panel_con .active{
+    display:none;
+}
 .category_con{
     position: absolute;
     top: 0;
     left: 173px;
-    z-index: 2;
+    z-index: 6;
     height: 406px;
     border: 1px solid #948366;
     background-color: #fff;
 }
 .category_con .panel_con{
-    
+    height: 100%;
 } 
+.panel_con .category_item{
+    width:185px;
+    float:left;
+    padding:0 25px;
+}
+.category_item .item{
+    margin-bottom: 25px;
+}
+.category_item .item dt{
+    width: 175px;
+    height: 30px;
+    overflow: hidden;
+    margin: 5px 0;
+    padding: 0 5px;
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+}
+.category_item .item dd{
+    display: inline-block;
+    *display: inline;
+    width: 90px;
+    line-height: 23px;
+}
+
+
 
 
 /* 轮播 */

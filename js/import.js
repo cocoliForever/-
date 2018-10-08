@@ -1,4 +1,16 @@
 $(function(){
+    //  tab切换
+    $('li.item').on('mouseenter',function(){
+        $(this).addClass('active').siblings('.active').removeClass('active')
+        $('.panel_con').eq($(this).index()).show().siblings().hide()
+    })
+    $('.import_category').mouseleave(function(){
+        $('.panel_con').hide()
+        $(this).find('li.active').removeClass('active')
+        
+    })
+
+
     // 全球精选轮播
     $(".slide_left").mouseover(function(){
         $(this).css('backgroundColor','#ccc')
