@@ -7,43 +7,19 @@ $( function () {
   } )
 } )
 //上面待解决：当点击提示框，怎样解决其不消失
-$( function () {
-    var $num=0,s;
-    $( '#navCategoryMould' ).on( 'mouseover','li.item ', function () {
-      $num=$( this ).index();
-      /* 点击元素.添加类名(active).所有同胞(有active类名的).删除类名(active) */
-      $( this ).addClass( 'active' ).siblings( '.active' ).removeClass( 'active' )
-      /* li.第对应下标的那个组成jquery对象.添加类名(active).所有同胞(有active类名的).删除类名(active) */
-      $( '.panel_con' ).eq($num).css({
-        'display':'block'
-      })
-      move($num);
-    } ).on('mouseout','li.item',function(){
-      console.log($num)
-        if($( '.panel_con' ).eq($( this ).index()).css('display') === 'block'){
-          $( this ).addClass( 'active' )
-           $( '.panel_con' ).eq($( this ).index()).css({
-           'display':'block'
-         })
-        }else{
-         $( this ).removeClass( 'active' )
-         $( '.panel_con' ).eq($( this ).index()).css({
-         'display':'none'
-       })
-        }
-    })
-    console.log($num)
-    function move($num){
-      $( '.panel_con' ).eq( $num ).on('mouseleave',s=function(){
-        $(this).css('display','none')
-      })
+$(function(){
+  $('li.item').mouseover(function(){
+    $( this ).addClass( 'active' ).siblings( '.active' ).removeClass( 'active' )
+    $('.panel_con').eq($(this).index()).show().siblings().hide();
+  })
+//上面正常写tab切换，下面leave的事件对象是两部分父集，即可实现类似hover的效果！
+$('.import_category').mouseleave(function(){
+  $('.panel_con').hide();
+  $( this ).find('li.active').removeClass( 'active' )
+})
 
-    }
+})
 
-  //没法hover到显示的盒子上
- 
-
-} )
 //轮播图
 $( function () {
 
@@ -96,7 +72,7 @@ $( function () {
   var $prev = $( '.slide_arrow .prev' )
   var $next = $( '.slide_arrow .next' )
   var $shopList = $( '.slide_list' )
-  $('.screen_slide_list .item').on('mouseover',function(){
-    $(this).children('.pro_pic img').css(marginTop,"5px")
-  })
+  // $('.screen_slide_list .item').on('mouseover',function(){
+  //   $(this).children('.pro_pic img').css(marginTop,"5px")
+  // })
 } )
