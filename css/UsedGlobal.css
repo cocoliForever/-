@@ -457,10 +457,7 @@ color: #ff4040 ;
 	width: 185px;
 	padding: 0 25px;
 }
-.import_category .category_con .active {
-	display: block;
-	z-index:999;
-}
+
 .category_con .item dt {
 	width: 175px;
 	height: 30px;
@@ -707,11 +704,7 @@ color: #ff4040 ;
     width: 180px;
     height: 180px;
     margin: 20px 0 0;
-    -webkit-transition: -webkit-transform .4s ease;
-    transition: -webkit-transform .4s ease;
-    -o-transition: transform .4s ease;
     transition: transform .4s ease;
-    transition: transform .4s ease,-webkit-transform .4s ease;
 }
 .import_slide_product .item .pro_pic a {
     display: block;
@@ -794,6 +787,7 @@ color: #ff4040 ;
 }
 .import_slide_product .item .btn_buy:hover {
     background-color: #ff3838;
+    color: #fff;
 }
 .import_slide_product .item .btn_buy {
     display: inline-block;
