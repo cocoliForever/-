@@ -117,19 +117,25 @@
     width: 100%;
     position: relative;
 }
-.banner ul li{
+
+.banner .images li{
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
 }
+.banner .dots .cur{
+    background: #fff;
+}
 .banner .dots{
     position: absolute;
-    bottom:0;
+    bottom:-498px;
+    z-index: 2;
     left:50%;
     width: 300px;
     height: 50px;
     margin-left:-150px;} 
+    
  .banner .dots li{
     float: left;
     width: 20px;
@@ -139,12 +145,11 @@
     background-color:rgba(0,255,255,0.2);
     margin:15px 19px;} 
  
-
 .outer .content{
     width: 990px;
     margin: 0 auto;
 }
-.banner .dots .dot1{background-color: #fff};
+
 .shops div{
     background:url(https://img11.360buyimg.com/cms/jfs/t12472/354/2465767342/102280/7a3be85/5a4221e0N7fc40ed8.jpg) no-repeat center center;height: 321px;
 }
@@ -162,6 +167,7 @@
     overflow: hidden;
     padding: 5px 0;
     height: 90px;
+    margin-bottom: 10px;
 }
 .banner_brand .brand_name {
     overflow: hidden;
@@ -172,16 +178,21 @@
     margin-left: 10px;
     padding: 5px
 }
+.banner_brand .brand_name li .abl{
+ display: block;
+}
 .brand_name li div{
     width: 150px;
     height:80px;
 }
 
 .brand_name li div img{
-    width: 100%;
-    height: 100%
+    width: 150px;
+    height: 80px
 }
 .brand_name li div .imgs{
+    width: 156px;
+    height: 86px;
     display: none;
 }
 .nav{
