@@ -115,14 +115,36 @@
 }
 .banner{
     width: 100%;
+    position: relative;
 }
-.banner img{
+.banner ul li{
     width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
-.content{
+.banner .dots{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    width: 300px;
+    height: 50px;
+    margin-left:-150px;} 
+ .banner .dots li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color:rgba(0,255,255,0.2);
+    margin:15px 19px;} 
+ 
+
+.outer .content{
     width: 990px;
     margin: 0 auto;
 }
+.banner .dots .dot1{background-color: #fff};
 .shops div{
     background:url(https://img11.360buyimg.com/cms/jfs/t12472/354/2465767342/102280/7a3be85/5a4221e0N7fc40ed8.jpg) no-repeat center center;height: 321px;
 }
@@ -201,6 +223,7 @@
     margin-left: 10px;
     float: left;
     position: relative;
+    background-color: #fff;
 }
 .set_right .anynav span{
     display: block;
@@ -230,4 +253,57 @@
     border:7px solid transparent;
     border-bottom-color:#E4393c;
     margin: 0 auto;
+}
+.table{
+    display: none;
+}
+.table li{
+    width: 20%;
+    float: left;
+    position: relative;
+}
+.jitem{
+    border-left: 1px solid #F1F1F1;
+    border-top: 1px solid #F1F1F1;
+    padding: 5px 10px 0;
+}
+.jptic{
+    height: 100px;
+    padding: 5px 0;
+    text-align: center;
+}
+.jptic img{
+    width: 100px;
+}
+.jpinfo{
+    padding-bottom: 5px;
+}
+.jpinfo p{
+    height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+}
+.jpinfo span{
+    display: block;
+    color: #E4393c;
+
+}
+.jpinfo span em{
+    font-size: 15px;
+}
+.notout{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,.5)
+}
+.notout span{
+    display: block;
+    background: url(https://img10.360buyimg.com/cms/jfs/t2977/349/2488392477/6460/7b22cb4c/57b136c4N366eaa28.png);
+    height: 160px;;
+}
+.active{
+    display: block;
 }
