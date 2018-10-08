@@ -226,7 +226,7 @@
 
 
     $('.index-rbar').on('click',function(){
-      $('body,html').animate({
+      $('body,html').stop().animate({
         'scrollTop':'0'
       },200)
     })
