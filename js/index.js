@@ -239,22 +239,23 @@
         //鼠标浮上去图片改变位置
         var i = 0,s=0,num=0;
         console.log(num)
+        $('.pro_pic').eq(i).css('opacity','0.8')
         $('.prod').hover(function(){
           i = $(this).index();
-          $('.pro_pic').eq(i).animate({left:-5});
+          $('.pro_pic').eq(i).stop().animate({left:-5,opacity:1});
         },function(){
-          $('.pro_pic').eq(i).animate({left:0});
+          $('.pro_pic').eq(i).stop().animate({left:0,opacity:0.8});
         })
           $('.next').addClass('next_clickable');//先让右切换按钮出来
           //点击左右切换按钮切换图片
         $('.seckill_list_wrap .next').on('click',function(){
           s++;
-          $('.seckill_list ul').animate({'marginLeft':(s*-1020)},500);
+          $('.seckill_list ul').stop().animate({'marginLeft':(s*-1020)},500);
           pd(s)
         })
         $('.seckill_list_wrap .pre').on('click',function(){
           s--;
-          $('.seckill_list ul').animate({'marginLeft':(s*-1020)},500);
+          $('.seckill_list ul').stop().animate({'marginLeft':(s*-1020)},500);
           pd(s);
         })
         // 控制按钮的出现和消失函数
