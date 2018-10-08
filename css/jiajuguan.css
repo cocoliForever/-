@@ -1,0 +1,233 @@
+*{margin: 0;padding: 0;}
+/*清浮动*/
+.clearfix:before,.clearfix:after{
+    display: table;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom:0;
+}
+.hd_top{
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 30px;
+
+        
+}
+.contrion{
+    width: 1228px;
+    margin:0 auto;
+}
+.ho_page{
+    float: left;
+    padding:0 10px;
+    border-left: 1 solid #f4f4f4;
+    border-right: 1 solid #f4f4f4;
+    color:#666;
+    font-size: 12px;
+    line-height: 30px
+
+}
+.ho_page i{
+    color:#f40;
+    font-size: 12px;
+}
+
+.address{
+    float: left;
+    padding: 0 10px;
+    border-left: 1 solid #f4f4f4;
+    border-right: 1 solid #f4f4f4;
+    color:#666;
+    font-size: 12px;
+    line-height: 30px
+
+}
+.address i{color:#f40;}
+.hd_toper_right{
+    float: right;
+    list-style: none;
+
+}
+.hd_toper_right li{
+    padding: 0 10px;
+    color:#666;
+    float: left;
+    font-size: 12px;
+}
+.hd_toper_right li a { 
+    margin-left: 3px
+}
+.image{float: left;}
+.image img{
+    width:205px;
+}
+.search{
+    padding: 32px 14px 0 35px;
+    width: 974px;
+    float: right;
+}
+.search_left{
+    padding: 2px;
+    background-color: red;
+    width:754px;
+    float: left;
+}
+.search_left input{
+    width: 685px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 36px;
+    float: left;
+    height: 36px
+}
+.search_btn{
+    width: 50px;
+    height: 36px;
+    border: none;
+    outline: none;
+    background-color: red;
+}
+.search_btn i{
+    font-size: 24px;
+    color: #fff;
+}
+.go_shop{
+    float: right;
+    width: 130px;
+    border: 1px solid #d7d7d7;
+    padding:  9px 0 9px;
+    text-align: center;
+    font-size: 16px;
+    color: #666
+}
+.go_shop i{
+    margin-right: 12px;
+    font-size: 20px
+}
+.outer{
+    background-image: url(https://img14.360buyimg.com/cms/jfs/t17131/254/662038473/271335/ec6e2f83/5a9f532fNbd9ca4b0.jpg);
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.content{
+    width: 990px;
+    margin: 0 auto;
+}
+.shops div{
+    background:url(https://img11.360buyimg.com/cms/jfs/t12472/354/2465767342/102280/7a3be85/5a4221e0N7fc40ed8.jpg) no-repeat center center;height: 321px;
+}
+.shops{
+    margin-bottom: 10px;
+}
+.goods div{
+    background:url(https://img14.360buyimg.com/cms/jfs/t14320/56/1005044423/57984/29ffe12c/5a41e09fN6699f6c9.jpg) no-repeat center center;
+    height: 293px;
+}
+.goods{
+    margin-bottom: 10px;
+}
+.banner_brand{
+    overflow: hidden;
+    padding: 5px 0;
+    height: 90px;
+}
+.banner_brand .brand_name {
+    overflow: hidden;
+    list-style: none;
+}
+.banner_brand .brand_name li{
+    float: left;
+    margin-left: 10px;
+    padding: 5px
+}
+.brand_name li div{
+    width: 150px;
+    height:80px;
+}
+
+.brand_name li div img{
+    width: 100%;
+    height: 100%
+}
+.brand_name li div .imgs{
+    display: none;
+}
+.nav{
+    margin-bottom: 10px;
+    
+}
+.nav ul{
+    list-style: none;
+    background: url(https://img30.360buyimg.com/cms/g5/M00/00/00/rBEIDE-2FD0IAAAAAAAIWvz1wxwAAAARgK8OH8AAAhy074.gif);
+}
+.nav ul li{
+    float: left;
+    line-height: 50px;
+    padding: 0 20px ;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    border-right: 1px solid #0783bb;
+    border-left: 1px solid #29a4df;
+}
+.nav ul .floow{
+    border-right:none;
+}
+/*餐具水具*/
+.ware_set{
+    margin-bottom: 10px;
+}
+.set_left{
+    float: left;
+}
+.set_left div{
+    height: 375px;
+    width: 190px;
+    background: url(https://img13.360buyimg.com/cms/jfs/t10150/336/1631996732/50463/2d1c8db6/59e45448N8e6fef37.jpg) no-repeat ;
+    /*float: left;*/
+}
+.set_right{
+    width: 790px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+}
+.set_right .anynav span{
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+.anynav{
+    border-bottom: 2px solid #AAAAAA;
+}
+.sub{
+    width: 25%;
+    border-bottom: 2px solid #E4393c;
+    position: absolute;
+    left: 0 ;
+    top: 19px;
+}
+.sub span{
+    display: block;
+    width:0;
+    height:0;
+    overflow:hidden;
+    border:7px solid transparent;
+    border-bottom-color:#E4393c;
+    margin: 0 auto;
+}
