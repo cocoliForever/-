@@ -793,10 +793,51 @@ em {
 
 
 
+/* 返回顶部 */
+.index-rbar {
+    position: fixed;
+    /* display: none; */
+    left: 50%;
+    top: 110%;
+    margin-left: 625px;
+    width: 50px;
+    /* -webkit-transition: top .3s ease;
+    -moz-transition: top .3s ease;
+    -o-transition: top .3s ease;
+    transition: top .3s ease; */
+    z-index: 9999;
+}
+.index-rbar li.goTop {
+    line-height: 48px;
+}
+.index-rbar li {
+    width: 100%;
+    height: 100%;
+    color: #999;
+}
+.index-rbar li {
+    width: 48px;
+    height: 48px;
+    border-bottom: 1px solid #EEE;
+    background-color: #FFF;
+    text-align: center;
+    border: 1px solid #EEE;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.index-rbar li.goTop .up {
+    display: inline-block;
+    width: 14px;
+    height: 8px;
+    background: url(http://img.yihaodianimg.com/tuangou/groupon/tuanimages/icon.png?40b8e14) no-repeat;
+    background-position: -42px -32px;
+}
 
 
-
-
+/* 加入购物车  让其背景变色 */
+.grouplist .brand_buy .buyperson .per_btn:hover {
+    background-color: #fb3a29;
+}
 
 
 
