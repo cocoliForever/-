@@ -29,9 +29,9 @@ $(function(){
 //  实现左右无缝轮播切换
 $(function(){
     $('.brand_name li').on('mouseover',function(){
-        var index=$('.brand_name li').index()
+        var index=$(this).index()
         $('.imgs').eq(index).addClass('abl').siblings().removeClass('abl')
-        $('.img').eq(index).addClass('imgs').siblings().removeClass('imgs')
+        $('.img').eq(index).addClass('nas').siblings().removeClass('nas')
         console.log(index)
     })
 })

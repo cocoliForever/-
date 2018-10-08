@@ -181,6 +181,9 @@
 .banner_brand .brand_name li .abl{
  display: block;
 }
+.banner_brand .brand_name li .nas{
+    display: none;
+}
 .brand_name li div{
     width: 150px;
     height:80px;
