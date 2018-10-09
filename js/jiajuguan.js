@@ -28,33 +28,70 @@ $(function(){
 })
 //  实现左右无缝轮播切换
 $(function(){
-    $('.brand_name li').on('mouseover',function(){
-        var index=$(this).index()
-        $('.img').eq(index).addClass('nas')
-        $('.imgs').eq(index).addClass('abl')   
-        var i=index
-        $('.brand_name li').on('mouseout',function(){
-            $('.nas').eq(i).removeClass('nas')
-            $('.abl').eq(i).removeClass('abl')
-            
-        })
-    })
     
-    function ele(){
-        $('.brand_name li').eq(0).appendTo('.brand_name li')
-        j++
-       if( $('.brand_name').css('left')==-150){
-        $('.brand_name li').eq(0).remove()
+var timer
+    function ele(){                                          
+        clearTimeout(timer)
+       if(j>1190){
+        j=0
+        $('.brand_name').css('left',0)
        }
+       
         $('.brand_name').animate({
-       left:-170*j
-   },function(){
-    setTimeout(ele,1000)
-   })
-    }
+       left:-j
+   },10)
+   timer= setTimeout(function(){ 
+    ele(j++)
+},10) 
+ 
+}
    var j=0
-   setTimeout(ele,1000)
+   var a=0
+    timer= setTimeout(function(){ 
+        ele(j++)
+    },10) 
+// 鼠标点中li，轮播停止，支开继续运动
+$('.brand_name li').on('mouseenter',function(){
+    clearTimeout(timer)
+    var index=$(this).index()
+    $('.img').eq(index).fadeOut(0)
+    $('.imgs').eq(index).fadeIn(0)
+     var i=index
+    $('.brand_name li').on('mouseleave',function(){
+        clearTimeout(timer)
+    $('.img').eq(index).fadeIn(0)
+    $('.imgs').eq(index).fadeOut(0)
+    timer= setTimeout(function(){ 
+        ele(j++)
+    },10) 
+    })      
 })
+    // clearTimeout(timer)
+    $('.left').on('click',function(){
+        clearTimeout(timer)
+        a++
+        if(a>7){
+            a=1
+            $('.brand_name').css('left',0)
+        }
+        $('.brand_name').stop().animate(
+            {left:-170*a}
+        )
+    })
+    $('.right').on('click',function(){
+        clearTimeout(timer)
+        a--
+        if(a<0){
+            a=6
+            $('.brand_name').css('left',1020)
+        }
+        $('.brand_name').stop().animate(
+            {left:-170*a}
+        )
+       
+    })
+})
+
 // 实现tab切换
 $(function(){
     $('.anynav').on('mouseenter', 'span' ,function(){

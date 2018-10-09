@@ -164,25 +164,31 @@
     margin-bottom: 10px;
 }
 .banner_brand{
-    /* overflow: hidden; */
+    overflow: hidden;
     padding: 5px 0;
     height: 90px;
     margin-bottom: 10px;
     position: relative;
 }
 .banner_brand .brand_name {
-    /* overflow: hidden; */
+    overflow: hidden;
     list-style: none;
     width: 3000px;
-    position: absolute;
+    position: absolute; 
     /* white-space: nowrap; */
     left: 0;
-    top: 5px;
+     top: 5px;
+    /* position: relative; */
 }
 .banner_brand .brand_name li{
     float: left;
     margin-left: 10px;
-    padding: 5px
+    padding: 5px;
+    /* position: relative; */
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    z-index: 5;
 }
 .banner_brand .brand_name li .abl{
  display: block;
@@ -193,6 +199,7 @@
 .brand_name li div{
     width: 150px;
     height:80px;
+    
 }
 
 .brand_name li div img{
@@ -203,6 +210,28 @@
     width: 156px;
     height: 86px;
     display: none;
+}
+.banner_brand .left_right span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color:rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 30px;
+}
+.banner_brand .left_right .left{
+    position: absolute;
+    float: left;
+    top: 35px;
+    left: 10px;
+    display:block;
+}
+.banner_brand .left_right .right{
+    position: absolute;
+    float:right;
+    top: 35px;
+    right: 10px;
+    display:block;
 }
 .nav{
     margin-bottom: 10px;
