@@ -480,3 +480,288 @@ color: #ff4040 ;
     border-color: #d3d4d5;
     background: #d3d4d5;
 }
+
+/* banner-left */
+.J_htmlContent {
+	position: relative;
+	width: 220.0px;
+    float: left;
+    margin-left: 10px;
+}
+.J_htmlContent img{height: 450px;display: block;}
+.d-userdefine-layout .madRush{
+	margin-bottom:10px; 
+}
+.bgImg{
+	height: 87px;
+    background: url(../img/madRush.jpg) center center no-repeat;
+    position: relative;
+}
+.d-userdefine-layout .madGoods{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.madGoods ul {
+    position: relative;
+    overflow: hidden;
+}
+.madGoods li {
+    float: left;
+	width: 242px;
+	height:361px;
+    overflow: hidden;
+    padding: 5px;
+    background: #fff;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+.madGoods li:nth-child(5n){
+	margin-right: 0;
+}
+.madGoods li .goods-img {
+    padding: 5px;
+    position: relative;
+}
+.madGoods .goods-img img{
+	width: 100%;
+	height:auto;
+	display: block;
+	
+}
+.madGoods li:hover{
+	margin-top:-3px;
+	transition: all .3s;
+	box-shadow: 5px 5px 20px #666;
+}
+
+.madGoods li .goods-detail {
+    color: #333333;
+    margin-top: 10px;
+}
+.madGoods li .brand-logo {
+    width: 180px;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.madGoods li .goods-info {
+    line-height: 1.1;
+    margin-bottom: 4px;
+    position: relative;
+    margin-top: 3px;
+}
+.madGoods li .goods-price .jd-price {
+    color: #E60041;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 0;
+}
+.goods-price .jd-price em {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.madGoods li .add-cart {
+    float: left;
+    width: 50%;
+    color: #E60041;
+    border-right: 0;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+.madGoods li .add-cart a {
+    display: block;
+    height: 35px;
+    color: #E60041;
+    border: 1px solid #E60041;
+    font-size: 14px;
+}
+.add-cart a:hover {
+	background: #ffe9eb;
+	transition: all .5s;
+	
+}
+.add-cart a i{font-size:12px; }
+
+.madGoods li .buy-now {
+    float: left;
+    width: 50%;
+    height: 37px;
+}
+.madGoods li .buy-now a {
+    display: block;
+    height: 37px;
+    font-weight: bold;
+    background: #E60041;
+    text-align: center;
+    color: #fff;
+    line-height: 37px;
+    font-size: 14px;
+}
+.madGoods li .tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #e60041;
+}
+.weekPush{
+	height: 87px;
+    background: url(../img/weekPush.jpg) center center no-repeat;
+    position: relative;
+}
+.d-userdefine-layout .j-module{
+	margin-bottom: 10px;
+}
+.j-module .example{
+    position: relative;
+    zoom: 1;
+    width: 1225px;
+    margin: 0 auto;
+}
+.j-module .example .ex-price {
+    position: absolute;
+    color: #a837c7;
+    font-size: 24px;
+    font-weight: bold;
+    height: 32px;
+}
+.newArrival{
+	height: 87px;
+    background: url(../img/newArrival.jpg) center center no-repeat;
+    position: relative;
+	
+}
+.j-module .lists li{
+	float: left;
+	width: 198px;
+	height:326px;
+	margin:0 10px 10px 0;
+}
+.j-module .lists li:nth-child(6n){
+	margin-right:0; 
+}
+
+
+
+/* 精品好店 */
+.goodShop{
+	height: 87px;
+    background: url(../img/goodShop.jpg) center center no-repeat;
+    position: relative;
+}
+
+.layoutImg{
+	width: 990px;
+	height: 340px;
+	float: left;
+}
+.layoutImg img{
+	margin:0 8px 10px 0;
+	float: left;
+	/* width:auto;  */
+}
+.layoutImg img:nth-child(2n){
+	margin-right: 0;
+}
+.layoutImg_right{
+	float: right;
+	width: 302px;
+}
+.layoutImg_right img{
+	height:325px;
+	width:100%; 
+}
+
+/* 手机通讯 */
+.mobileCom{
+	height: 87px;
+    background: url(../img/mobileCom.jpg) center center no-repeat;
+    position: relative;	
+}
+.madGoods .goodsList li{
+	float: right;
+    width: 180px;
+    height: 277px;
+    overflow: hidden;
+    padding: 5px;
+    background: #fff;
+    position: relative;
+    margin: 0 8px 10px 0;
+}
+.madGoods .lists li{
+	float: left;
+    width: 180px;
+    height: 277px;
+    overflow: hidden;
+    padding: 5px;
+    background: #fff;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+.madGoods .goodsList li .imgList{
+	position: absolute;
+    top: 0;
+	left: 0;
+	width: 45px;
+	height:45px;
+    z-index: 3;
+}
+.madGoods .goodsList li:nth-child(5){
+	width: 190px;
+	height: 300px;
+	padding: 0;
+}
+.madGoods .goodsList li:nth-child(5) img{
+	width: 100%;
+	height: 100%;
+}
+
+.madGoods .lists li:nth-child(5){
+	 width: 180px;
+    height: 277px;
+}
+.goodsList li .goods-img {
+    width: 168px;
+    height: 168px;
+    padding: 5px;
+    position: relative;
+}
+.goodsList li .goods-detail {
+    color: #333333;
+}
+.goodsList li .goods-name {
+    height: 27px;
+    overflow: hidden;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+.goodsList li .goods-info {
+    line-height: 1.1;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+/* d电脑办公 */
+.Co_office{
+	height: 87px;
+    background: url(../img/Co_office.jpg) center center no-repeat;
+    position: relative;
+}
+.digital{
+	height: 87px;
+    background: url(../img/digital.jpg) center center no-repeat;
+    position: relative;
+}
+.Household{
+	height: 87px;
+    background: url(../img/Household.jpg) center center no-repeat;
+    position: relative;
+}
