@@ -293,8 +293,13 @@
         $('.group_brand img').stop().animate({'right':18})
       })
       //一号闪购右边的菜单浮上去对应页面显示
+      var n = 0;
       $('.rank_tab ul li').hover(function(){
+        var n = $(this).index()
         $(this).addClass('curs').siblings().removeClass('curs')
+        $('.cur_item').stop().animate({'left':n*'82'},0)
+        $('.rank_content').eq(n).css('display','block').siblings('.rank_content').css('display','none');
+      
       })
     })
     
