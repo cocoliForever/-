@@ -88,6 +88,7 @@
           'transition': 'transform .2s linear,-webkit-transform .2s linear,-moz-transform .2s linear,-o-transform .2s linear',
           'cursor': 'pointer',
         })
+        $('.lala').addClass('activeBorder')
       },function(){
         $('.menus .iconfont').css({
           'display': 'inline-block',
@@ -100,6 +101,7 @@
           'transition': 'transform .2s linear,-webkit-transform .2s linear,-moz-transform .2s linear,-o-transform .2s linear',
           'cursor': 'pointer',
         })
+        $('.hd_has_child').removeClass('activeBorder')
       })
     }),
     // 浮上去出现二维码
@@ -271,6 +273,30 @@
             $('.pre').addClass('prev_clickable');
           }
         }
+    }),
+    //一号闪购左边第一张图片鼠标浮上去下面的白块透明度发生变化
+    $(function(){
+      $('.left_banner').hover(function(){
+        $('.brand_caption').css('background','rgba(255,255,255,0.9)');
+      },function(){
+        $('.brand_caption').css('background','rgba(255,255,255,0.8)');
+      })
+      //一号闪购左边图片鼠标浮上去图片发生偏移
+      $('.group_variety').hover(function(){
+        $('.group_variety img').stop().animate({'right':24})
+      },function(){
+        $('.group_variety img').stop().animate({'right':18})
+      })
+      $('.group_brand').hover(function(){
+        $('.group_brand img').stop().animate({'right':24})
+      },function(){
+        $('.group_brand img').stop().animate({'right':18})
+      })
+      //一号闪购右边的菜单浮上去对应页面显示
+      $('.rank_tab ul li').hover(function(){
+        $(this).addClass('curs').siblings().removeClass('curs')
+      })
     })
-  
+    
+    
 })()

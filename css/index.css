@@ -243,9 +243,9 @@
 .hd_menu_list {
   position: absolute;
   top: 30px;
-  left: 0px;
+  left: -1px;
   display: none;
-  width: 86px;
+  width: 88px;
   padding: 5px 0;
   border: 1px solid #dbdbdb;
   border-top: 0 none;
@@ -256,8 +256,17 @@
   padding: 0 0 0 10px;
   line-height: 26px;
 }
+.lala{
+  border-right: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+}
 .hd_has_child:hover .hd_menu_list{
   display: block;
+}
+.activeBorder{
+  background: #fff;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
 }
 .hd_topbar_right .hd_title {
   float: left;
@@ -985,19 +994,298 @@
 .mod_brand_sale{
   margin-top:20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.left_banner{
+  position: relative;
+  width: 267px;
+  height: 400px;
+  margin-right: 12px;
+  overflow: hidden;
+}
+.left_banner img{
+  width: 267px;
+  height: 400px;
+}
+.brand_caption{
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  margin-left: -100px;
+  width: 200px;
+  height: 100px;
+  background: rgba(255,255,255,0.8);
+  text-align: center;
+}
+.mod_brand_sale h4 {
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+.brand_caption h4{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  line-height: 24px;
+  height: 32px;
+  font-weight: normal;
+}
+.brand_caption .cut_line{
+  width: 30px;
+  height: 10px;
+  margin:2px auto 0;
+  border-top:1px solid #333;
+  overflow: hidden;
+}
+.brand_caption .cut_tit{
+  height: 16px;
+  font-size: 14px;
+  color: #333;
+  overflow: hidden;
+  line-height: 14px;
+}
+.mod_brand_sale .group_buy {
+  float: left;
+  width: 484px;
+  height: 400px;
+  background: #fff url('https://d8.yihaodianimg.com/N10/M02/92/0C/ChEi3FjCUa2ALuvGAAAG6sky0F026600.png') no-repeat center top;
+}
+.group_buy h4 a{
+  color: #fff;
+  cursor: pointer;
+}
+.mod_brand_sale h4 em{
+  display: inline-block;
+  width: 140px;
+  position: relative;
+  top: -3px;
+  margin-top: -3px;
+  font-size: 18px;
+  text-align: center;
+}
+.group_buy h4 a em{
+  background:#fb6233;
+}
+.mod_brand_sale h4 em i {
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.mod_brand_sale .group_buy h4 {
+  margin-bottom: 7px;
+  border-top: 1px solid #fb744b;
+}
+.mod_brand_sale h4 em .left_triangle {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #c84e4e;
+  border-left: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+.mod_brand_sale h4 em .right_triangle {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #c84e4e;
+  border-right: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+.group_today{
+  position: relative;
+  width: 250px;
+  border-right: 1px solid #f0f0f0;
+  float: left;
+  overflow: hidden;
+}
+.group_today img{
+  width: 250px;
+  height: 360px;
+}
+.group_variety{
+  position: relative;
+  width: 233px;
+  /* background:pink; */
+  margin-top: 18px;
+}
+.group_variety a{
+  padding: 0 18px 0 20px;
+  height: 180px;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+}
+.group_buy .group_title{
+  font-size: 18px;
+  color: #ec3639;
+  line-height: 18px;
+  margin-bottom: 10px;
+  height: 18px;
+  overflow: hidden;
+}
+.mod_brand_sale .group_buy .sub_tit {
+  position: relative;
+  z-index: 105;
+  width: 90px;
+  height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+}
+.mod_brand_sale .group_buy .group_variety img {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  transition: transform .4s ease;
+ }
+.group_brand{
+  /* background: #c84e4e; */
+  width: 232px;
+  position: relative;
+  float: left;
+}
+.mod_brand_sale .group_buy .group_brand img {
+  position: absolute;
+  right: 18px;
+  bottom: 15px;
+  transition: transform .4s ease;
+}
+.mod_brand_sale .group_buy .group_brand a {
+  display: block;
+  height: 161px;
+  padding: 0 18px 0 20px;
+}
+.mod_brand_sale .area_rank{
+  width: 453px;
+  height: 400px;
+  background: #fff url('https://d8.yihaodianimg.com/N10/M02/92/0C/ChEi3FjCUa2ALuvGAAAG6sky0F026600.png') no-repeat center top;
+}
+.mod_brand_sale .area_rank h4{
+  position: relative;
+  border-top: 1px solid #f22e31;
+}
+.mod_brand_sale .area_rank h4 a em{
+  background: #f22e31;
+  color: #fff;
+}
+.mod_brand_sale .area_rank h4 a em i{
+  color: #fff;
+  font-size: 20px;
+}
+.mod_brand_sale .area_rank a.more {
+  position: absolute;
+  top: 7px;
+  right: 14px;
+  font-family: "Tahoma";
+  color: #999;
+  line-height: 20px;
+  font-size: 12px;
+}
+.mod_brand_sale .area_rank a.more span {
+  margin-left: 5px;
+  font-family: "\5b8b\4f53";
+}
+.mod_brand_sale .area_rank a.more:hover{
+  color:#ff4040;
+}
+.area_rank_list {
+  margin-top: 5px;
+}
+.mod_brand_sale .rank_tab {
+  position: relative;
+  height: 35px;
+  overflow: hidden;
+  margin: 0 22px 0 21px;
+  line-height: 34px;
+}
+.mod_brand_sale .rank_tab ul {
+  border-bottom: 1px solid #eee;
+}
+.mod_brand_sale .rank_tab li {
+  float: left;
+  width: 82px;
+  text-align: center;
+}
+.mod_brand_sale .rank_tab li a {
+  display: block;
+  color: #666;
+}
+.mod_brand_sale .rank_tab li.curs a {
+  color: #f22e31;
+}
+.mod_brand_sale .rank_tab .cur_item {
+position: absolute;
+left: 0;
+top: 33px;
+width: 82px;
+border-top: 2px solid #f22e31;
+}
+.mod_brand_sale .rank_content {
+height: 316px;
+padding: 10px 2px 0 1px;
+}
+.mod_brand_sale .rank_content li {
+_display: inline;
+float: left;
+width: 100px;
+margin: 15px 25px;
+cursor: pointer;
+}
+.mod_brand_sale .rank_content li a {
+position: relative;
+display: block;
+text-align: center;
+}
+.mod_brand_sale .rank_content li img {
+width: 100px;
+height: 100px;
+}
+.mod_brand_sale .rank_content li .pro_name {
+  height: 18px;
+  overflow: hidden;
+  margin-top: 10px;
+  line-height: 18px;
+}
+.mod_brand_sale .rank_content li a .discount_info {
+  padding: 0px 6px;
+  background-color: #fb6233;
+  color: #fff;
+  position: absolute;
+  left: 0px;
+  bottom: 29px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.mod_brand_sale .rank_content li a .no_1 {
+  background: url('https://img.yihaodianimg.com/front-homepage/index/images/indexbody_sprite.png?801dc06') no-repeat -60px 0;
+}
+.mod_brand_sale .rank_content li a i {
+  position: absolute;
+  top: -6px;
+  left: -2px;
+  width: 19px;
+  height: 16px;
+  overflow: hidden;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  font-size: 11px;
+}
+.mod_brand_sale .rank_content li a .no_2 {
+  background: url('https://img.yihaodianimg.com/front-homepage/index/images/indexbody_sprite.png?801dc06') no-repeat -90px 0;
+}
+.mod_brand_sale .rank_content li a .no_3 {
+  background: url('https://img.yihaodianimg.com/front-homepage/index/images/indexbody_sprite.png?801dc06') no-repeat -120px 0;
+}
 
 
 
