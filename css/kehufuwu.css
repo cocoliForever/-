@@ -35,6 +35,11 @@
     border-top: 1px solid #d4d4d4;
     cursor: pointer;
 }
+.left_menu h3.on {
+    background: url(../img/kehufuwu_13.jpg) no-repeat;
+    color: #cc0000;
+    font-weight: bold;
+}
 .column a {
     background: url(../img/kehufuwu_12.png) no-repeat 0px 7px;
     height: 24px;
