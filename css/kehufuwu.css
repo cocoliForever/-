@@ -1,0 +1,105 @@
+#container{
+    width: 980px;
+    margin: 0 auto;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.clearfix {
+    zoom: 1;
+}
+.left_menu {
+    width: 205px;
+    float: left;
+}
+.left_menu .column {
+    border: 1px solid #d4d4d4;
+}
+.left_menu h2 {
+    background: url(../img/kehufuwu_10.png) repeat-x;
+    height: 30px;
+    line-height: 31px;
+    font-size: 14px;
+    padding-left: 18px;
+    color: #333;
+    cursor: pointer;
+}
+.left_menu h3 {
+    background: url(../img/kehufuwu_11.jpg) repeat-x;
+    height: 29px;
+    line-height: 29px;
+    font-size: 12px;
+    padding-left: 19px;
+    color: #333;
+    font-weight: normal;
+    border-top: 1px solid #d4d4d4;
+    cursor: pointer;
+}
+.column a {
+    background: url(../img/kehufuwu_12.png) no-repeat 0px 7px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.right_content {
+    width: 760px;
+    float: right;
+}
+.crumb {
+    background: url(../img/kehufuwu_1.gif) no-repeat 0px 5px;
+    height: 21px;
+    line-height: 21px;
+}
+.crumb a.home {
+    background: none;
+}
+.crumb a {
+    background: url(../img/kehufuwu_2.gif) no-repeat 5px 0px;
+    padding-left: 23px;
+    height: 21px;
+    display: inline-block;
+}
+.help_box {
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+}
+.help_box h3 {
+    background: url(../img/kehufuwu_3.png) repeat-x;
+    height: 35px;
+    padding-left: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 35px;
+}
+.help_detail {
+    padding: 6px 22px;
+}
+.help_detail dl {
+    line-height: 20px;
+}
+.help_detail dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.help_detail dd {
+    margin-bottom: 10px;
+}
+.txt_indent {
+    text-indent: 2em;
+}
+a.blue_link {
+    color: #06c;
+}
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+.txt_indent {
+    text-indent: 2em;
+}
