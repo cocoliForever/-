@@ -30,10 +30,30 @@ $(function(){
 $(function(){
     $('.brand_name li').on('mouseover',function(){
         var index=$(this).index()
-        $('.imgs').eq(index).addClass('abl').siblings().removeClass('abl')
-        $('.img').eq(index).addClass('nas').siblings().removeClass('nas')
-        console.log(index)
+        $('.img').eq(index).addClass('nas')
+        $('.imgs').eq(index).addClass('abl')   
+        var i=index
+        $('.brand_name li').on('mouseout',function(){
+            $('.nas').eq(i).removeClass('nas')
+            $('.abl').eq(i).removeClass('abl')
+            
+        })
     })
+    
+    function ele(){
+        $('.brand_name li').eq(0).appendTo('.brand_name li')
+        j++
+       if( $('.brand_name').css('left')==-150){
+        $('.brand_name li').eq(0).remove()
+       }
+        $('.brand_name').animate({
+       left:-170*j
+   },function(){
+    setTimeout(ele,1000)
+   })
+    }
+   var j=0
+   setTimeout(ele,1000)
 })
 // 实现tab切换
 $(function(){
