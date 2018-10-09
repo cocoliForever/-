@@ -1,0 +1,135 @@
+@charset "UTF-8";
+body, button, input, select, textarea {
+  font: 12px Arial,Helvetica,sans-serif;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+em {
+  font-style: normal;
+}
+.regist_header {
+  padding: 16px;
+  background: #FFF;
+  border: 1px solid #e1e1e1;
+}
+.regist_header .wrap {
+  width: 1200px;
+}
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+.regist_header .logo {
+  display: block;
+  float: left;
+  width: 54px;
+  height: 48px;
+}
+.regist_header_right {
+  float: right;
+  line-height: 18px;
+  font-family: "SimSun";
+  color: #999;
+}
+.regist_header_right .help_wrap {
+  background: #FFF;
+}
+.regist_header_right .help_wrap {
+  position: relative;
+  z-index: 1010;
+  float: right;
+  padding: 0 6px;
+  margin-left: 25px;
+  _display: inline;
+}
+.regist_header_right .help_wrap a.hd_menu {
+  padding-right: 18px;
+  background: url(https://passport.yhd.com/front-passport/passport/images/regist.png?f8e2054) no-repeat right -30px;
+  color: #333;
+}
+.regist_header_right .help_wrap a.hd_menu .help_ico {
+  width: 16px;
+  height: 18px;
+  display: inline-block;
+  /* margin-right: 6px; */
+  background: url(https://passport.yhd.com/front-passport/passport/images/regist.png?f8e2054) no-repeat -344px 0;
+  vertical-align: middle;
+}
+.regist_header_right .help_wrap .hd_menu_list {
+  display: none;
+}
+.regist_header_right .help_wrap .hd_menu_list {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0;
+  width: 98px;
+  padding-top: 21px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.regist_header_right .help_wrap a.hd_menu:hover {
+  color: #e60012;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+a.blue_link {
+  color: #06c;
+}
+a.blue_link:hover {
+  color: #f60;
+}
+/* 帮助中心 */
+.hd_menu_list ul li{
+  border: 1px solid rgba(204, 204, 204,0.4);
+  border-left: 0px;
+  border-right: 0;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部 */
+#simplefooter {
+  width: 980px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+#simplefooter a {
+  margin: 0 8px;
+  color: #333;
+}
+#simplefooter p {
+  margin-top: 10px;
+  color: #333;
+}
+#simplefooter a:hover {
+  color: #c00;
+}
+a.y_agreement_btn:hover {
+  background-color: #d72226;
+}

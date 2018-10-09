@@ -1,0 +1,10 @@
+(function($){
+  $(function(){
+    $('.help_wrap').on('mouseover',function(){
+      $('.hd_menu_list').css('display','block')
+    })
+    $('.hd_menu_list').on('mouseleave',function(){
+      $(this).css('display','none')
+    })
+  })
+})(jQuery)
