@@ -1,0 +1,61 @@
+
+/* 中间部分内容 */
+.layoutcontainer{
+    margin: 0 auto;
+    background: #231c16;
+}
+.layoutcontainer .d-layout-area{
+    width:100%;
+}
+.d-layout-area .d-layout-auto{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.d-layout-auto  .d-content{
+    height: 600px;
+    background: url(../img/yihaodianhuawei.jpg) center center no-repeat;
+    position: relative;
+}
+/* 内容 */
+.d-layout-area .d-layout{
+    margin-top: 10px;
+    overflow: hidden;
+    clear: both;
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 爆款推荐 */
+.dd-content .title{
+    margin-bottom: 10px;
+}
+.dd-content .title .j-module{
+    position: relative;
+}
+.dd-content .j-module .recommend{
+    background: url(../img/baokuantuijian.jpg) center center no-repeat;
+}
+/* 华为手机*/
+.dd-content .content{
+    margin-bottom: 10px;
+}
+.dd-content .content .j-module img{
+    border: 0 none;
+    vertical-align: top;
+}
+.dd-content .content .j-modules img{
+    position: relative;
+    zoom: 1;
+    width: 990px;
+    margin: 0 auto;
+    border: 0 none;
+    vertical-align: top;
+}
+/* 智能手机 */
+.dd-content .j-module .phone{
+    background: url(../img/zhinengshouji.jpg) center center no-repeat;
+}
+
+
+
