@@ -167,8 +167,7 @@ $(function(){
     setInterval(move,3000)  
 })
 //  实现左右无缝轮播切换
-$(function(){
-    
+$(function(){  
 var timer
     function ele(){                                          
         clearTimeout(timer)
@@ -234,21 +233,6 @@ $('.brand_name li').on('mouseenter',function(){
 
 // 实现tab切换
 $(function(){
-    // $('.anynav').on('mouseenter', 'span' ,function(){
-    //     var index= $(this).index()
-    //     $('.sub').stop().animate({left:(index*198)})
-    //     $('.table').eq(index).addClass('active').siblings().removeClass('active')
-    // })
-
-// $('.content ').on('mouseenter', '.anynav' ,function(){
-//     console.log($(this))
-//     $('.anynav').eq($(this).index()).on('mouseenter', 'span' ,function(){
-//         var index= $(this).index()
-//         console.log(index)
-//         $('.sub').stop().animate({left:(index*198)})
-//         $('.table').eq(index).addClass('active').siblings().removeClass('active')
-//     })
-// })
 var as
 $('.content .ware_set').on('mouseenter','.anynav span',function(){
     var index=$(this).index()
@@ -265,4 +249,8 @@ $('.content .ware_set').on('mouseenter','.anynav span',function(){
     $(this).parent().parent().find('.sub').stop().animate({left:(index*as)})
     $(this).parent().parent().find('.table').eq(index).css("display",'block').siblings('.table').css('display','none')
 })
+})
+
+$('document').on('scroll',function(){
+    console.log(1)
 })
