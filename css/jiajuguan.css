@@ -10,107 +10,8 @@
 .clearfix{
     *zoom:0;
 }
-.hd_top{
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #e5e5e5;
-    line-height: 30px;
-
-        
-}
-.contrion{
-    width: 1228px;
-    margin:0 auto;
-}
-.ho_page{
-    float: left;
-    padding:0 10px;
-    border-left: 1 solid #f4f4f4;
-    border-right: 1 solid #f4f4f4;
-    color:#666;
-    font-size: 12px;
-    line-height: 30px
-
-}
-.ho_page i{
-    color:#f40;
-    font-size: 12px;
-}
-
-.address{
-    float: left;
-    padding: 0 10px;
-    border-left: 1 solid #f4f4f4;
-    border-right: 1 solid #f4f4f4;
-    color:#666;
-    font-size: 12px;
-    line-height: 30px
-
-}
-.address i{color:#f40;}
-.hd_toper_right{
-    float: right;
-    list-style: none;
-
-}
-.hd_toper_right li{
-    padding: 0 10px;
-    color:#666;
-    float: left;
-    font-size: 12px;
-}
-.hd_toper_right li a { 
-    margin-left: 3px
-}
-.image{float: left;}
-.image img{
-    width:205px;
-}
-.search{
-    padding: 32px 14px 0 35px;
-    width: 974px;
-    float: right;
-}
-.search_left{
-    padding: 2px;
-    background-color: red;
-    width:754px;
-    float: left;
-}
-.search_left input{
-    width: 685px;
-    padding-left: 15px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    line-height: 36px;
-    float: left;
-    height: 36px
-}
-.search_btn{
-    width: 50px;
-    height: 36px;
-    border: none;
-    outline: none;
-    background-color: red;
-}
-.search_btn i{
-    font-size: 24px;
-    color: #fff;
-}
-.go_shop{
-    float: right;
-    width: 130px;
-    border: 1px solid #d7d7d7;
-    padding:  9px 0 9px;
-    text-align: center;
-    font-size: 16px;
-    color: #666
-}
-.go_shop i{
-    margin-right: 12px;
-    font-size: 20px
-}
 .outer{
+    padding-bottom: 10px;
     background-image: url(https://img14.360buyimg.com/cms/jfs/t17131/254/662038473/271335/ec6e2f83/5a9f532fNbd9ca4b0.jpg);
 }
 .banner{
@@ -257,6 +158,7 @@
 /*餐具水具*/
 .ware_set{
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .set_left{
     float: left;
@@ -264,9 +166,12 @@
 .set_left div{
     height: 375px;
     width: 190px;
-    background: url(https://img13.360buyimg.com/cms/jfs/t10150/336/1631996732/50463/2d1c8db6/59e45448N8e6fef37.jpg) no-repeat ;
-    /*float: left;*/
 }
+.set_left div img{
+    width: 190px;
+    height: 375px;
+}
+
 .set_right{
     width: 790px;
     margin-left: 10px;
@@ -283,6 +188,12 @@
     font-size: 14px;
     color: #666;
     font-weight: bold;
+}
+.set_right .sp_width span{
+    width:20%;
+}
+.set_right .min_width span{
+    width:33%;
 }
 .anynav{
     border-bottom: 2px solid #AAAAAA;
@@ -305,6 +216,7 @@
 }
 .table{
     display: none;
+    height: 344px;
 }
 .table li{
     width: 20%;
