@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/resete.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_858329_s3vaer0bdj8.css">
+  <link rel="stylesheet" href="css/goShopping.css">
+</head>
+
+<body>
+  <!-- 表头============================ -->
+  <div class="hd_top_bar">
+    <div class="wrap cle arfix">
+      <a href="javascript:;" class="hd_topbar_home">
+        <i class="iconfont icon-home"></i>
+        <span>1号店首页</span>
+      </a>
+      <!-- <div class="hd_indxProvce">
+        <a class="hd_topbar_city" id="currProvince" href="javascript:;">
+          <i class="iconfont  icon-weizhi"></i>
+          <span>送货地址：</span><em>上海</em>
+        </a>
+      </div> -->
+      <div class="hd_topbar_right fr">
+        <ul class="fl">
+          <li id="global_unlogin">
+            <div class="hd_unlogin">
+              <span class="hd_hi">Hi,请</span>
+              <a href="https://passport.yhd.com/passport/login_input.do" class="hd_login_link">登录&nbsp;</a>
+              <a href="https://passport.yhd.com/passport/register_input.do" class="hd_regist_link">&nbsp;注册</a>
+            </div>
+          </li>
+          <li>
+            <div class="hd_menu fl">
+              <a href="javascript:;" target="_blank" rel="nofollow">
+                <i class="iconfont icon-dingdan"></i>我的订单</a>
+            </div>
+          </li>
+          <li class="hd_has_child hd_cur">
+            <div class="hd_menu">
+              <a href="javascript:;" target="_blank">客户服务</a>
+              <i class="iconfont icon-down"></i>
+            </div>
+            <div class="hd_menu_list">
+              <a href="javascript:;" target="_blank" title="包裹跟踪">包裹跟踪</a>
+              <a href="javascript:;" target="_blank" title="在线退换货">在线退换货</a>
+            </div>
+          </li>
+          <li class="hd_has_child">
+            <div class="hd_title">
+              <a href="javascript:;"><i class="iconfont icon-shouji"></i>APP下载</a>
+            </div>
+            <div class="hd_qrcode_bg">
+              <div class="triangle"></div>
+              <p>扫描二维码</p>
+              <p>下载1号店APP</p>
+              <a href="javascript:;" target="_blank">
+                <img src="http://img.yihaodianimg.com/front-homepage/index/images/qryhd.png">
+              </a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--内容部分开始================================= -->
+  <div class="yhd_cart_content">
+    <div class="cart_header wrap clearfix">
+      <!-- logo部分================ -->
+      <h1>
+        <a href="www.yhd.com" class="logo">
+          <img src="https://img.yihaodianimg.com/cart/shopping/pc/images/logo.png" alt="">
+        </a>
+        <a href="javascript:;" class="logo_txt">
+          <img src="https://img.yihaodianimg.com/cart/shopping/pc/images/logo_txt.png" alt="">
+        </a>
+      </h1>
+      <!-- 三级地址选择 strat-->
+      <div class="area_wrapper">
+        <span class="area_txt">配送至：</span>
+        <div class="mod_area_select">
+          <div class="address">
+            <span class="val_text" id="detail_area_name">北京<i>|</i>昌平区<i>|</i>城区以外</span>
+            <i class="iconfont icon-down"></i>
+          </div>
+          <div class="tab_box none" style="display: none;">
+            <a href="javascript:;" class="close"></a>
+            <div class="tabs clearfix">
+              <span class="" data-val="北京"><em>北京</em></span>
+              <span value="" class="" data-val="昌平区"><em>昌平区</em></span>
+              <span value="" class="on" data-val="城区以外"><em>城区以外</em></span>
+            </div>
+            <div class="area_box">
+              <div class="item first_area" style="display: block;">
+                <dl class="clearfix">
+                  <dt>华北：</dt>
+                  <dd value="1" name="cart_province" data-val="北京" class="on">北京</dd>
+                  <dd value="3" name="cart_province" data-val="天津">天津</dd>
+                  <dd value="5" name="cart_province" data-val="河北">河北</dd>
+                  <dd value="6" name="cart_province" data-val="山西">山西</dd>
+                  <dd value="11" name="cart_province" data-val="内蒙古" class="">内蒙古</dd>
+                </dl>
+                <dl class="clearfix">
+                  <dt>华东：</dt>
+                  <dd value="2" name="cart_province" data-val="上海" class="">上海</dd>
+                  <dd value="12" name="cart_province" data-val="江苏">江苏</dd>
+                  <dd value="15" name="cart_province" data-val="浙江">浙江</dd>
+                  <dd value="14" name="cart_province" data-val="安徽">安徽</dd>
+                  <dd value="16" name="cart_province" data-val="福建">福建</dd>
+                  <dd value="13" name="cart_province" data-val="山东">山东</dd>
+                </dl>
+                <dl class="clearfix">
+                  <dt>华南：</dt>
+                  <dd value="19" name="cart_province" data-val="广东">广东</dd>
+                  <dd value="20" name="cart_province" data-val="广西">广西</dd>
+                  <dd value="23" name="cart_province" data-val="海南">海南</dd>
+                </dl>
+                <dl class="clearfix">
+                  <dt>华中：</dt>
+                  <dd value="21" name="cart_province" data-val="江西">江西</dd>
+                  <dd value="7" name="cart_province" data-val="河南" class="">河南</dd>
+                  <dd value="17" name="cart_province" data-val="湖北">湖北</dd>
+                  <dd value="18" name="cart_province" data-val="湖南">湖南</dd>
+                </dl>
+                <dl class="clearfix">
+                  <dt>西南：</dt>
+                  <dd value="4" name="cart_province" data-val="重庆">重庆</dd>
+                  <dd value="22" name="cart_province" data-val="四川">四川</dd>
+                  <dd value="24" name="cart_province" data-val="贵州">贵州</dd>
+                  <dd value="25" name="cart_province" data-val="云南">云南</dd>
+                  <dd value="26" name="cart_province" data-val="西藏">西藏</dd>
+                </dl>
+                <dl class="clearfix">
+                  <dt>西北：</dt>
+                  <dd value="27" name="cart_province" data-val="陕西">陕西</dd>
+                  <dd value="28" name="cart_province" data-val="甘肃">甘肃</dd>
+                  <dd value="29" name="cart_province" data-val="青海">青海</dd>
+                  <dd value="30" name="cart_province" data-val="宁夏">宁夏</dd>
+                  <dd value="31" name="cart_province" data-val="新疆">新疆</dd>
+                </dl>
+                <dl class="clearfix">
+                  <dt>东北：</dt>
+                  <dd value="8" name="cart_province" data-val="辽宁">辽宁</dd>
+                  <dd value="9" name="cart_province" data-val="吉林">吉林</dd>
+                  <dd value="10" name="cart_province" data-val="黑龙江">黑龙江</dd>
+                </dl>
+              </div>
+              <div class="item second_area hide" style="display: block;">
+                <dl class="clearfix" id="cart_city_area">
+                  <dd value="2816" data-val="密云区" name="cart_city">密云区</dd>
+                  <dd value="72" data-val="朝阳区" name="cart_city">朝阳区</dd>
+                  <dd value="2901" class="on" data-val="昌平区" name="cart_city">昌平区</dd>
+                  <dd value="2953" data-val="平谷区" name="cart_city">平谷区</dd>
+                  <dd value="2800" data-val="海淀区" name="cart_city">海淀区</dd>
+                  <dd value="2801" data-val="西城区" name="cart_city">西城区</dd>
+                  <dd value="2802" data-val="东城区" name="cart_city">东城区</dd>
+                  <dd value="2803" data-val="崇文区" name="cart_city">崇文区</dd>
+                  <dd value="2804" data-val="宣武区" name="cart_city">宣武区</dd>
+                  <dd value="2805" data-val="丰台区" name="cart_city">丰台区</dd>
+                  <dd value="2806" data-val="石景山区" name="cart_city">石景山区</dd>
+                  <dd value="2807" data-val="门头沟" name="cart_city">门头沟</dd>
+                  <dd value="2808" data-val="房山区" name="cart_city">房山区</dd>
+                  <dd value="2809" data-val="通州区" name="cart_city">通州区</dd>
+                  <dd value="3065" data-val="延庆县" name="cart_city">延庆县</dd>
+                  <dd value="2810" data-val="大兴区" name="cart_city">大兴区</dd>
+                  <dd value="2812" data-val="顺义区" name="cart_city">顺义区</dd>
+                  <dd value="2814" data-val="怀柔区" name="cart_city">怀柔区</dd>
+                </dl>
+              </div>
+              <div class="item third_area hide" id="cart_county_area" style="display: block;">
+                <dd value="4135" data-val="六环以内" name="cart_county">六环以内</dd>
+                <dd value="4136" data-val="城区" name="cart_county">城区</dd>
+                <dd value="2906" class="on" data-val="城区以外" name="cart_county">城区以外</dd>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 搜索框 -->
+      <div class="search">
+        <input id="keyword" type="text" placeholder="请输入关键词">
+        <a id="search" href="javascript:void(0);" class="icon-sou-suo iconfont search_btn"></a>
+      </div>
+    </div>
+    <div class="cart_main_body" data-tpa="CART_BODY">
+      <div class="wrap" data-tpa="CART_ITEM_LIST">
+        <div class="cart_list_header cart_wrap cart_tit">
+          <span class="checkbox"><a href="javascript:;" class="check check_all " data-check-type="0"><i class="iconfont"></i>
+            </a>全选</span>
+          <span class="tit">商品信息</span>
+          <span class="price">单价（元）</span>
+          <span class="num">数量</span>
+          <span class="total">小计（元）</span>
+          <span class="act">操作</span>
+        </div>
+        <!-- 列表=================== -->
+        <div class="cart_list">
+          <div class="cart_tit clearfix">
+            <span class="checkbox">
+              <a href="javascript:;" class="check check_list "><i class="iconfont"></i></a>
+            </span>
+            <a target="_blank" href="www.yhd.com" class="label">自营</a>
+            <div class="order_makeup">
+              <div class="makeup_tip">
+                运费￥18.00，再买￥46.10免邮
+                <a href="javascript:;" class="help"> <i class="iconfont">？</i>
+                  <div class="help_dialog freight_info">
+                    <div class="t_arrow t_arrow_top"> <span></span> <i></i> </div>
+                    <div class="freight_content">
+                      <h5>运费规则说明</h5>
+                      <div class="headline">普通商品（非生鲜）</div>
+                      <ul>
+                        <li class="clearfix">
+                          <div class="tit">当前运费：</div>
+                          <div class="con">￥18.00（基础运费￥18.00+续重运费￥0.00）</div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="tit">当前重量：</div>
+                          <div class="con">1.50kg（超重0kg）</div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="tit">免邮条件：</div>
+                          <div class="con">满￥86.00</div>
+                        </li>
+                      </ul>
+                      <div class="hint">受具体配送地址影响，运费请以结算页为准</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <a href="javascript:;" id="merchant_8888" class="order_makeup_btn tip_trigger">立即凑单<i class="iconfont"></i></a>
+            </div>
+          </div>
+          <div class="cart_list_wrap zy">
+            <ul class="cart_item activity">
+              <li class="cart_activity">
+                <div class="cart_prod">
+                  <a href="javascript:;" class="check check_activity checked"><i class="iconfont"></i></a>
+                  <div id="activity236548783" class="activity_wrap  satisfy"> <em class="line_ver"></em> <span class="tag">换购</span>
+                    <span class="tit">指定商品每满100元减10元</span> <em class="cut"></em> <span class="state"> <i class="iconfont"
+                        style=" font-size:12px;">恭喜：</i>
+                      已购满<em class="has">3500.00</em>元 ，已减<em>350.00</em>元 </span> <span class="price"><em>优惠价：</em>3248.00</span>
+                    <a class="go_activ" href="http://search.yhd.com/p/pt236548783-pl1" target="_blank">查看活动&nbsp;&gt;</a>
+                  </div>
+                </div>
+              </li>
+              <li id="964416" data-identifier="964416" class="item item_line main_item clearfix">
+                <div class="cart_prod clearfix"> <em class="line_ver"></em>
+                  <a href="javascript:;" class="check check_item  nofresh normal_item">
+                    <i class="iconfont"></i>
+                  </a>
+                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
+                    <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
+                      max-width="75" max-height="75" src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
+                  </a>
+                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
+                    鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
+                  <!-- 单价及价格标签 -->
+                  <div class="item_price">
+                    <p> 105.90 </p>
+                    <!-- 降价提醒-->
+                  </div>
+                  <!-- 数量 -->
+                  <div class="item_num" data-sku-id="964416">
+                    <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
+                      <input type="text" class="input" value="1">
+                      <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
+                    </div>
+                    <span class="stock partial limit"></span>
+                    <span class="stock"></span>
+                  </div>
+                  <div class="item_amount">
+                    <div class="item_a_money"> 105.90 </div>
+                    <div class="item_a_weight">3.78kg</div>
+                  </div>
+                  <div class="item_act">
+                    <!--单品-->
+                    <!-- 套装-->
+                    <!-- 满减 -->
+                    <!-- 满赠 --> <a href="javascript:;" class="collect_btn collect_btn_964416" title="收藏"
+                      data-product-id="964416"><i class="iconfont">收藏</i></a> <a href="javascript:;" class="del_btn"
+                      data-delete-id="promotion_964416_13_235282305" clstag="pageclick|keycount|cart_201709267|16"><i
+                        class="iconfont">删除</i></a> </div>
+                  <div class="prop_edit prop_edit_preview">
+                    <div class="prop_txt tip_trigger serial_product" data-sku-id="964416"> <i class="iconfont">修改</i>
+                      <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="attributeName">花生油4L</span>
+                      <span class="attributeName"></span>
+                    </div>
+                    <div class="prop_dialog tip_dialog dialog top31"></div>
+                    <div class="prop_server prop_server_gray"> <i class="seven_icon"></i>
+                      <div class="server_tips">
+                        <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="t_txt">不支持7天无理由退货</span>
+                      </div>
+                    </div>
+                    <div class="canperview2"> <span>正在抢购</span> 距抢购结束还剩 <em class="countdown" data-time="46001"
+                        data-ellapsed="false">12:43:06</em>
+                    </div>
+                  </div>
+                </div> <!-- 组合子品 start-->
+                <!-- 组合子品 end-->
+                <!-- 单品赠品 start-->
+                <!-- 单品赠品 end-->
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/goShopping.js"></script>
+</body>
+
+</html>
