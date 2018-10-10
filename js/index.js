@@ -299,9 +299,6 @@
         $(this).addClass('curs').siblings().removeClass('curs')
         $('.cur_item').stop().animate({'left':n*'82'},0)
         $('.rank_content').eq(n).css('display','block').siblings('.rank_content').css('display','none');
-      
       })
-    })
-    
-    
+    })    
 })()
