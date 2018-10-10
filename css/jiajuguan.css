@@ -274,6 +274,7 @@
     right: 0;
     top: 50%;
     margin-top: -124px;
+    display:none;
 }
 .user ul li{
     width: 100px;

@@ -250,7 +250,13 @@ $('.content .ware_set').on('mouseenter','.anynav span',function(){
     $(this).parent().parent().find('.table').eq(index).css("display",'block').siblings('.table').css('display','none')
 })
 })
-
-$('document').on('scroll',function(){
-    console.log(1)
+$(window).scroll(function(){
+//    console.log( $('.go_shops').offset().top)
+   console.log($(document).scrollTop())
+   if( $('.go_shops').offset().top<$(document).scrollTop()){
+       $('.user').css('display','block')
+   }
+   if($('.go_shops').offset().top>$(document).scrollTop()){
+    $('.user').css('display','none')
+   }
 })
