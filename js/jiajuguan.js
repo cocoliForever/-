@@ -168,27 +168,35 @@ $(function(){
 })
 //  实现左右无缝轮播切换
 $(function(){  
+  $('.brand_name').append(' <li><div><img src="https://img13.360buyimg.com/cms/jfs/t9661/248/2423655147/5879/498f1b84/59f6c6baN94d44166.jpg" alt="" class="img "><img src="https://img11.360buyimg.com/cms/jfs/t14728/347/1075861071/21937/47b0715d/5a430b1fN91cfb632.jpg" alt="" class="imgs "></div></li>')
 var timer
     function ele(){                                          
         clearTimeout(timer)
-       if(j>1190){
-        j=0
+       if(j>7){
+        j=1
         $('.brand_name').css('left',0)
        }
+       if(j<0){
+            j=6
+            $('.brand_name').css('left',-j*170)
+            j--
+       }
        
-        $('.brand_name').animate({
-       left:-j
-   },10)
-   timer= setTimeout(function(){ 
-    ele(j++)
-},10) 
+        $('.brand_name').stop().animate({
+       left:-j*170
+   },1000,function(){
+    clearTimeout(timer)
+    timer= setTimeout(function(){
+      ele(j++)
+  },2000) 
+   })
+   
  
 }
    var j=0
-   var a=0
-    timer= setTimeout(function(){ 
+    timer= setTimeout(function(){
         ele(j++)
-    },10) 
+    },2000) 
 // 鼠标点中li，轮播停止，支开继续运动
 $('.brand_name li').on('mouseenter',function(){
     clearTimeout(timer)
@@ -206,28 +214,35 @@ $('.brand_name li').on('mouseenter',function(){
     })      
 })
     // clearTimeout(timer)
+    $('.left').on('mouseenter',function(){
+        clearTimeout(timer)
+    })
+    $('.right').on('mouseenter',function(){
+        clearTimeout(timer)
+    })
     $('.left').on('click',function(){
         clearTimeout(timer)
-        a++
+       /*  a++
         if(a>7){
             a=1
             $('.brand_name').css('left',0)
         }
         $('.brand_name').stop().animate(
             {left:-170*a}
-        )
+        ) */
+        ele(j++)
     })
     $('.right').on('click',function(){
         clearTimeout(timer)
-        a--
-        if(a<0){
-            a=6
-            $('.brand_name').css('left',1020)
-        }
-        $('.brand_name').stop().animate(
-            {left:-170*a}
-        )
-       
+        // a--
+        // if(a<0){
+        //     a=6
+        //     $('.brand_name').css('left',1020)
+        // }
+        // $('.brand_name').stop().animate(
+        //     {left:-170*a}
+        // )
+       ele(j--)
     })
 })
 
