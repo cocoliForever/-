@@ -1,5 +1,10 @@
-.fm_detail_one .l {
-    float: left;
+.fm_detail_one {
+    border: 0;
+    margin-bottom: 20px;
+}
+.l{
+    width: 400px;
+    margin-right: 25px;
 }
 .mod_detail_preview {
     position: relative;
@@ -24,7 +29,7 @@
     top: 0;
     left: 0;
     width: 180px;
-    height: 150px;
+    height: 180px;
     background-color: #000;
     opacity: .3;
     filter: alpha(opacity=30);
@@ -35,7 +40,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 360px;
     background-color: #fff;
     opacity: 0;
     filter: alpha(opacity=00);
