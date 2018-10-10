@@ -300,25 +300,25 @@
     left: 46px;
   }
   .hd_header {
-    height: 150px;
+    height: 110px;
     background-repeat: no-repeat;
   }
   .hd_logo_area{
     width: 205px;
-    height: 150px;
+    height: 110px;
   }
   .hd_header .hd_logo_area .hd_logo {
     position: relative;
     display: block;
     width: 205px;
-    height: 150px;
+    height: 110px;
   }
   .hd_header .hd_logo_area .hd_logo img {
     position: absolute;
     top: 0;
     left: -28px;
-    width: 261px;
-    height: 150px;
+    width: 205px;
+    height: 110px;
   }
   .hd_header .hd_header_right {
     float: right;
@@ -484,16 +484,100 @@
     color: #666;
     font-size: 16px;
   }
-  .hd_header_nav {
-    height: 40px;
-    overflow: hidden;
-    line-height: 40px;
-  }
-  .hd_header_nav li{
-    float: left;
-    margin-right: 30px;
-    font-size: 16px;
-  }
+  
+/* 所有商品分类 */
+.wrappwer{
+  border-bottom: 2px solid #ff4040;
+}
+.hd_header_nav {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+.hd_header_nav ul{
+  float: left;
+  padding-left:20px;
+}
+.hd_header_nav li{
+  float: left;
+  margin-right: 30px;
+  font-size: 16px;
+}
+.hd_cm_allsort{
+  float: left;
+  
+}
+.hd_cm_allsort>a{
+  display: block;
+  width: 210px;
+  height: 40px;
+  background-color: #ff4040;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.hd_cm_allsort .iconfont{
+  display: inline-block;
+  width: 15px;
+  height: 40px;
+  margin-left: 3px;
+  font-size: 1px;
+}
+.hd_cm_allsort .hd_cm_menu{
+  width: 210px;
+  background-color: rgba(48,48,48,0.9);
+  position:absolute;
+  height: 400px;
+  left: 0;
+  z-index: 600;
+  display:none;
+}
+.aa1:hover +.hd_cm_menu{
+  display: block;
+}
+.hd_cm_menu .hd_allsort{
+  padding-left: 0px;
+  padding-top: 0;
+}
+.hd_cm_menu .hd_allsort li{
+  margin-bottom: 1px;
+}
+.hd_allsort li h3{
+  height: 32px;
+  overflow: hidden;
+  padding: 0 10px 0 0;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+}
+.hd_allsort li .iconfont{
+  display: inline-block;
+  width: 20px;
+  margin: 0 14px;
+  text-align: right;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: "iconfont";
+  font-size: 20px;
+  font-style: normal;
+}
+.hd_cm_menu .hd_allsort li .hd_gray_bg a{
+  display: inline-block;
+  font-weight: normal;
+
+  font-size: 12px;
+  color: #fff;
+  white-space: nowrap;
+  font-family: 'microsoft yahei';
+}
+
+
+
+
+
   /* 导航头部css结束 */
 
 
