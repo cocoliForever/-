@@ -159,7 +159,6 @@ li.hd_has_child:hover .hd_qrcode_bg{
 
 /* logo */
 .yhd_cart_content {
-  height: 2000px;
     background: url(https://img.yihaodianimg.com/cart/shopping/pc/images/bg1200.png) no-repeat top center fixed;
 }
 .cart_header {
@@ -171,6 +170,18 @@ li.hd_has_child:hover .hd_qrcode_bg{
 }
 .cart_header h1 {
     float: left;
+}
+.cart_header{
+    position: relative;
+}
+.cart_header #nowTime{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    font-size:30px; 
+    font-style: unset;
+    color: #ff5e5e;
+    transform: rotateX(-50%) rotateY(-50%);
 }
 .cart_header .logo {
     float: left;
@@ -659,6 +670,9 @@ li.cart_activity {
     background-color: #e2dddd;
     overflow: hidden;
 }
+.main_item .l2 {
+    top: 56px;
+}
 .cart_activity .activity_wrap {
     height: 24px;
     padding: 3px 0;
@@ -681,6 +695,31 @@ li.cart_activity {
     margin-right: 5px;
     color: #6ca71e;
     vertical-align: middle;
+}
+/* 免邮 */
+.cart_list .cart_tit .free_pos {
+    position: relative;
+    float: right;
+    color: #666;
+    display: none;
+}
+.cart_list .cart_tit .free_pos .help i {
+    margin-right: 0;
+    color: #fda55b;
+}
+.help_dialog p {
+    width: auto;
+    height: 26px;
+    color: #666;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+.cart_list .cart_tit .free_pos i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #6ca71e;
+    margin-right: 5px;
 }
 .cart_activity .activity_wrap.satisfy .state i {
     display: inline-block;
@@ -801,7 +840,7 @@ li.cart_activity {
     float: left;
     width: 80px;
     padding-top: 2px;
-    line-height: 24px;
+    line-height: 40px;
     text-align: center;
 }
 .cart_item li .item_act a i{
@@ -897,4 +936,136 @@ li.cart_activity {
     border-color: #ccc;
 }
 
+/* 七天退货和 倒计时部分 */
+.tip_dialog {
+    position: absolute;
+    padding: 15px 20px;
+    border: 1px solid #ff5e5e;
+    border-radius: 2px;
+    background-color: #fff;
+    z-index: 11;
+}
+.prop_dialog {
+    top: 26px;
+    left: -1px;
+    max-height: 0;
+    padding: 0;
+    z-index: 11;
+    border: 0;
+    box-shadow: none;
+    overflow: hidden;
+    transition: all .5s;
+}
+.prop_server {
+    position: relative;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 3px 3px 0 0;
+    border-radius: 4px;
+    background-color: #fda55b;
 
+}
+.prop_server_orange {
+    background-color: #fda55b;
+}
+.cart_prod .prop_edit.prop_edit_preview .prop_server {
+    margin: 2px 8px 0 0px;
+}
+.prop_server .seven_icon {
+    display: block;
+    width: 6px;
+    height: 10px;
+    margin: 3px auto;
+    background: url(https://img.yihaodianimg.com/cart/shopping/pc/images/sprite.png);
+    _background: url(https://img.yihaodianimg.com/cart/shopping/pc/images/sprite.png);
+    background-position: 0 -75px;
+}
+/* 七天下面的隐藏块 */
+.prop_server .server_tips {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -6px;
+    min-width: 120px;
+    padding: 5px 8px;
+    background-color: #fff7d1;
+    border: 1px #e5debc solid;
+    border-radius: 2px;
+    color: #666;
+    font: 12px/20px 'SimSun';
+    text-align: left;
+    z-index: 11;
+}
+.prop_server .server_tips span.t_txt {
+    color: #666;
+    line-height: 20px;
+}
+.t_arrow_top {
+    top: -8px;
+}
+.prop_server .server_tips .t_arrow_top {
+    left: 10px;
+}
+.prop_server .server_tips .t_arrow_top span {
+    border-bottom-color: #e5debc;
+}
+.prop_server .server_tips .t_arrow_top i {
+    border-bottom-color: #fff7d1;
+}
+.prop_server:hover .server_tips {
+    display: block;
+}   
+.canperview2{
+    border: 1px solid rgb(255, 219, 219);
+    background: #fff;
+    height: 18px;
+    font-size: 12px;
+    color: rgb(255, 94, 94);
+    border-radius:13px;
+    line-height: 18px; 
+    text-align: center;
+    padding-right:8px;
+    width: auto;
+    float: left; 
+}
+.canperview2 span {
+    display: inline-block;
+    background-image: -moz-linear-gradient( 180deg,rgb(255,94,94) 0%,rgb(255,143,143) 100%);
+    background-image: -webkit-linear-gradient( 180deg,#ff5e5e 0%,#ff8f8f 100%);
+    background-image: -ms-linear-gradient( 180deg,rgb(255,94,94) 0%,rgb(255,143,143) 100%);
+    width: 64px;
+    color: #fff;
+    border-radius: 11px;
+    margin-right: 5px;
+    text-align: center;
+    float: left;
+    line-height: 20px;
+    margin-top: -1px;
+}
+
+.cart_list .cart_tit .service {
+    float: left;
+    margin: 5px 0 4px 3px;
+    width: 16px;
+    height: 16px;
+    background: url(https://img.yihaodianimg.com/cart/shopping/pc/images/sprite.png) 0 -25px;
+    _background: url(https://img.yihaodianimg.com/cart/shopping/pc/images/sprite.png) 0 -25px;
+    vertical-align: middle;
+}
+.fixde_shop{
+    position: fixed;
+    top: 60%;
+    right: 30px;
+    background: #3333;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+.active{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
