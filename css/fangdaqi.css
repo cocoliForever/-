@@ -242,10 +242,17 @@
 
 .mod_detail_preview .proCrumb .cBtn {
     margin-top: 22px;
-    position: relative;
+    position:relative;
     z-index: 2;
     color: #999;
     width: 14px;
+    text-decoration: none;
+}
+.mod_detail_preview .proCrumb .cBtn:hover{
+    color:#c00;
+}
+.mod_detail_preview .proCrumb .next {
+    float: right;
 }
 .mod_detail_preview .proCrumb .hideBox {
     position: absolute;

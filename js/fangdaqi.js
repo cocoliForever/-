@@ -9,8 +9,6 @@
 
         }) 
         $('.mask').on('mousemove',function(eve){
-            // console.log($(this).offset().left)
-
             var x1=eve.clientX-$(this).offset().left
             var y1=eve.clientY-$(this).offset().top
             var x=x1-90;
@@ -50,6 +48,18 @@
 
         })
 
+
+        $('.cBtn').eq(1).on('click',function(){
+            $('.mBox').stop().animate({
+                'left':-204
+            })
+        })
+
+        $('.cBtn').eq(0).on('click',function(){
+            $('.mBox').stop().animate({
+                'left':0
+            })
+        })
 
     })
 }(jQuery))
