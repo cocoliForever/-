@@ -1286,18 +1286,252 @@ height: 100px;
 .mod_brand_sale .rank_content li a .no_3 {
   background: url('https://img.yihaodianimg.com/front-homepage/index/images/indexbody_sprite.png?801dc06') no-repeat -120px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.mod_on_new{
+  margin-top: 20px;
+}
+.mod_on_mew .left_banner{
+  width: 267px;
+  height: 400px;
+  margin-right: 12px;
+  overflow: hidden;
+}
+.mod_on_new .left_banner img{
+  width:267px;
+  height: 400px;
+}
+.mod_on_new .brand_buy{
+  width: 484px;
+  height: 400px;
+  background: #fff url('https://d8.yihaodianimg.com/N10/M02/92/0C/ChEi3FjCUa2ALuvGAAAG6sky0F026600.png') no-repeat center top;
+}
+.mod_on_new h4 a {
+  color: #fff;
+}
+.mod_on_new h4 {
+  height: 32px;
+  margin-bottom: 7px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+.mod_on_new .brand_buy h4 em {
+  background: #dfa747;
+}
+.mod_on_new .brand_buy h4 {
+  border-top: 1px solid #dfa747;
+}
+.mod_on_new h4 em {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  height: 32px;
+  width: 140px;
+  margin-top: -3px;
+  font-size: 18px;
+}
+.mod_on_new h4 em .left_triangle {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #a67724;
+  border-left: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+.mod_on_new h4 em .right_triangle {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #a67724;
+  border-right: 4px solid transparent;
+  font-size: 0;
+  line-height: 0;
+}
+.mod_on_new h4 em i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+.mod_on_new .brand_buy .band_banner{
+  float: left;
+  display: block;
+  width: 250px;
+  height: 360px;
+  border-right: 1px solid #f0f0f0;
+  overflow: hidden;
+}
+.mod_on_new .brand_buy .band_banner img{
+  width: 250px;
+  height: 360px;
+}
+.mod_on_new .brand_right {
+  float: right;
+  height: 342px;
+  overflow: hidden;
+  margin-top: 1px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.mod_on_new .brand_buy .brand_right {
+  width: 200px;
+}
+.mod_on_new .brand_right li {
+  position: relative;
+  height: 90px;
+  margin-bottom: 10px;
+  padding: 10px 5px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.mod_on_new .brand_right li a {
+  height: 90px;
+  display: block;
+}
+.mod_on_new .brand_right .pro_tit {
+  width: 95px;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  z-index: 105;
+  color: #333;
+  line-height: 24px;
+}
+.mod_on_new .brand_right .pro_sub_tit {
+  position: relative;
+  z-index: 105;
+  height: 24px;
+  overflow: hidden;
+  color: #999;
+}
+.mod_on_new .brand_right li img {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  transition: transform .4s ease;
+}
+.mod_on_new .life_pie{
+  width: 453px;
+  height: 400px;
+  background: #fff url('https://d8.yihaodianimg.com/N10/M02/92/0C/ChEi3FjCUa2ALuvGAAAG6sky0F026600.png') no-repeat center top;
+}
+.mod_on_new .life_pie h4 em {
+  background: #f39156;
+}
+.mod_on_new .life_pie h4 {
+  position: relative;
+  margin-bottom: 20px;
+  border-top: 1px solid #f39156;
+}
+.mod_on_new .life_pie a.brand_banner {
+  position: relative;
+  float: left;
+  display: block;
+  width: 205px;
+  height: 210px;
+  overflow: hidden;
+  margin-left: 20px;
+  padding-top: 8px;
+  border-right: 1px solid #f0f0f0;
+}
+.mod_on_new .life_pie a.brand_banner img {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  width: 210px;
+  height: 210px;
+  transition: transform .4s ease;
+}
+.mod_on_new .life_pie a.brand_banner .pro_tit {
+  position: relative;
+  z-index: 105;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333;
+}
+.mod_on_new .life_pie a.brand_banner .pro_sub_tit {
+  position: relative;
+  z-index: 105;
+  width: 85px;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 5px;
+  line-height: 20px;
+  color: #999;
+  font-size: 14px;
+}
+.mod_on_new .life_pie .brand_right {
+  position: relative;
+  width: 190px;
+  height: 218px;
+}
+.mod_on_new .brand_right {
+  float: right;
+  height: 342px;
+  overflow: hidden;
+  margin-top: 1px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.mod_on_new .brand_right li {
+  position: relative;
+  height: 90px;
+  margin-bottom: 10px;
+  padding: 10px 5px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.mod_on_new .brand_right li a {
+  height: 90px;
+  display: block;
+}
+.mod_on_new .life_pie .life_pic {
+  padding: 10px 0 0 14px;
+}
+.mod_on_new .life_pie  a:hover img {
+  transform: translate3d(-5px,0,0);
+}
+.mod_on_new .life_pie .life_pic img {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  widows: 205px;
+  height: 105px;
+  transition: transform .4s ease;
+}
+.mod_on_new .life_pie .life_pic p {
+  position: relative;
+  z-index: 105;
+  font-size: 14px;
+  color: #fb6233;
+}
+.mod_on_new .life_pie .life_pic .go {
+  font-size: 12px;
+}
+.mod_on_new .life_pie .life_pic p {
+  position: relative;
+  z-index: 105;
+  font-size: 14px;
+  color: #fb6233;
+}
+.mod_on_new .life_pie .life_pic a {
+  position: relative;
+  float: left;
+  display: block;
+  width: 188px;
+  height: 95px;
+  overflow: hidden;
+  margin: 0 6px;
+  padding: 10px 0 0 12px;
+}
+.mod_on_new .life_pie .life_pic a .go .iconfont{
+  vertical-align: -2px!important;
+}
 
 
 

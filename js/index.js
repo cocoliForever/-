@@ -300,5 +300,10 @@
         $('.cur_item').stop().animate({'left':n*'82'},0)
         $('.rank_content').eq(n).css('display','block').siblings('.rank_content').css('display','none');
       })
+      $('.brand_right ul li').hover(function(){
+        $(this).find('img').stop().animate({'right':10});
+      },function(){
+        $(this).find('img').stop().animate({'right':5});
+      })
     })    
 })()
