@@ -301,4 +301,22 @@
         $('.rank_content').eq(n).css('display','block').siblings('.rank_content').css('display','none');
       })
     })    
+    //屏幕滚动条滚动到一定的位置出现fixed搜索框
+    $(function(){
+      $(document).on('scroll',function(){
+        var h = $(document).scrollTop();
+        if(h >= 600){
+          $('.hd_search_from').addClass('hd_search_fixed').unbind("click");
+        }else if(h <=600 ){
+          $('.hd_search_from').removeClass('hd_search_fixed').click(function(){
+            $('.hd_search_tips_result').css("display","block");      
+          }).on('mouseleave',function(){
+            $('.hd_search_tips_result').css("display","none");
+          }).on('mouseleave',function(){
+            $('.hd_search_tips_result').css("display","none");
+          });
+        }
+
+      })
+    })
 })()
