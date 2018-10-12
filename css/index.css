@@ -79,7 +79,7 @@
   border: 1px solid #ccc;
 }
 .hd_city_select input{
-  display: block;
+  display: inline-block;
   height: 26px;
   width: 135px;
   border: none;
