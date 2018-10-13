@@ -1572,6 +1572,107 @@ height: 100px;
 .mod_on_new .life_pie .life_pic a .go .iconfont{
   vertical-align: -2px!important;
 }
+.mod_adv_pic{
+  margin-top: 20px;
+}
+.mod_adv_pic a{
+  display: block;
+  height: 100px;
+  background-image: url('http://img11.360buyimg.com/img/jfs/t25768/229/1954288890/33680/a122a96c/5bc03becN6d29b60e.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+}
+.mod_global_imported{
+  margin-top: 20px;
+  height: 490px;
+}
+.mod_global_imported h4{
+  padding: 12px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.mod_global_imported h4 a{
+  color: #645144;
+}
+.global_food{
+  width: 930px;
+  height: 450px;
+}
+.mod_global_imported .left_banner{
+  width: 316px;
+  height: 450px;
+  position: relative;
+  margin: 0;
+}
+.mod_global_imported .left_banner .banner_pic{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 316px;
+  height: 450px;
+}
+.mod_global_imported .left_banner .banner_link{
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+.mod_global_imported .left_banner .banner_link ul li{
+  float: left;
+}
+.mod_global_imported .left_banner li a {
+  display: block;
+  width: 83px;
+  height: 28px;
+  margin: 0 10px 10px 0;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+}
+.global_food .center_con{
+  padding: 5px 5px 5px 0;
+  float: left;
+  width: 609px;
+}
+.mod_global_imported .center_con a {
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  -o-transition: -o-transform .4s ease;
+  -moz-transition: transform .4s ease,-moz-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
+}
+.mod_global_imported .global_pic {
+  position: relative;
+  display: block;
+  width: 405px;
+  height: 220px;
+  margin-bottom: 1px;
+  background-color: #fff;
+}
+.mod_global_imported .global_pic img {
+  width: 405px;
+  height: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
