@@ -1,5 +1,5 @@
 // 电梯导航
-;(function(){
+;(function($){
 
 
     $(function(){
@@ -12,7 +12,8 @@
         // console.log($sss)
         // console.log($sss1)
         // console.log($sss2)
-        
+
+        // 当滑动到一定的距离时导航板块出现
         $ttt=$('.contt').offset().top
         $(window).scroll(function() {
         if($(document).scrollTop()>=$ttt || $('body,html').scrollTop()>=$ttt){
@@ -21,6 +22,7 @@
             		$('#fly').fadeOut()
             		}
         })
+
 
     //     var fly=document.getElementById("fly");//获得每个边栏控制按钮的父集用于委托控制使用
     //     var t = getOffsetPosition(fly).top;    
@@ -52,18 +54,18 @@
     //             th[0].className+=" active";
     //         }
     //     }
+
         //使用委托
         //当点击每个按钮的时候对应板块的位置变化
-        .onclick=function(eve){
-            var e=eve || window.event;
-            var target=e.target || e.srcElement;
-            if(target.getAttribute("index")){
-                var i = target.getAttribute("index");
-                document.documentElement.scrollTop=getBoundingClientRect(td[i]).top; 
-            }
-              
-        }
+        $('#ths').on('click','.th',function(){
+            $i=$(this).index()
+            $tdTop$i = $('.td').eq($i).offset().top
+            console.log($tdTop$i)
+            // $(document).scrollTop($tdTop$i)
+            // console.log($('.td').eq($i).offset().top)
+            $('.td').eq($i).animate({ scrollTop: '$tdTop$i' }, 2000);
+            
     })
 
-
+    })
 }(jQuery))
