@@ -36,9 +36,15 @@ $(function(){
           var e = 0 ;
           $('.hd_city_initial a').on('click',function(){
             e = $(this).index();
+            var nNext = $('.hd_city_list ul li').eq(e).position().top;
+            var top = $('.hd_city_list ul').scrollTop();
+            var s = top + nNext;
+            console.log(nNext)
             console.log(e)
-            $('.hd_city_list li').eq(e)
-            console.log($('.hd_city_list li').eq(0))
+            // 页面滚屏操作。
+            $('.hd_city_list ul').animate({
+                scrollTop: s
+            },300);
           })
         })
         //导航头右边的客户服务一栏分栏下单栏目鼠标浮上去字体颜色变化
