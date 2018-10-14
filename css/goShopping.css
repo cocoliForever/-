@@ -1305,9 +1305,10 @@ html,body{
     width: 100%;
     min-width: 1200px;
     padding-top: 20px;
+    padding-bottom:50px;
     background-color: #f8f8fa;
 }
-.w980 .bottom_wrap {
+.bottom_wrap {
     min-width: 980px;
 }
 .sale_prod_list {
@@ -1377,7 +1378,7 @@ html,body{
     font-size: 24px;
     margin-left: -6px;
 }
-.w980 .cheap_prod .sale_scroll_box {
+ .cheap_prod .sale_scroll_box {
     width: 820px;
 }
 .sale_prod_cont .control_btn.unable i {
@@ -1387,14 +1388,19 @@ html,body{
 .cheap_prod .sale_scroll_box {
     position: relative;
     width: 1040px;
-    overflow: hidden;
+
 }
 .sale_prod_cont .sale_scroll_box ul li {
     float: left;
+    width: 1040px;
+     overflow: hidden;
 }
 .cheap_prod .sale_scroll_box ul li {
     width: 150px;
     margin-right: 72px;
+}
+.cheap_prod .sale_scroll_box ul li:nth-child(5n){
+    margin-right: 0;
 }
 .hot_sale_list .sale_scroll_box .sale_item {
     margin-bottom: 25px;
@@ -1501,7 +1507,134 @@ img {
     height: 100px;
     position: absolute;
     background-repeat: no-repeat;
-    
+
     background-size: 50% 50%;
     background-position: center center;
 }
+
+/* 底部版权 */
+/* 底部css */
+/* service begin */
+.ft_footer_service {
+  padding: 30px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.ft_footer_service a{
+  float: left;
+  display: block;
+  _display: inline;
+  width: 205px;
+  overflow: hidden;
+  margin: 0 51px;
+}
+.ft_footer_service a img {
+  float: left;
+  display: block;
+  width: 66px;
+  height: 66px;
+  margin-right: 15px;
+}
+.ft_footer_service a b {
+  display: block;
+  margin-top: 10px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  color: #333;
+}
+.ft_footer_service a span {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #999;
+  line-height: 26px;
+}
+/* sercice end */
+
+/* 服务列表开始*/
+.ft_service_link {
+  padding: 20px 0 20px;
+  overflow: hidden;
+}
+.ft_service_link .ft_help_list{
+  padding-left:15px;
+}
+.ft_service_link .ft_help_list dl{
+  float: left;
+  width:195px;
+  display: block;
+}
+.ft_service_link dl dt {
+  height: 32px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #666;
+  line-height: 32px;
+  overflow: hidden;
+  font-family: "Microsoft YaHei";
+  color: #666;
+  font-weight: bold;
+}
+.ft_service_link dl dt {
+  height: 32px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #666;
+  line-height: 32px;
+  overflow: hidden;
+  font-family: "Microsoft YaHei";
+  color: #666;
+  font-weight: bold;
+}
+.ft_service_link dl dd {
+  height: 24px;
+  padding: 0 8px;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 12px;
+}
+/* 服务列表结束 */
+/* footer 二维码 begin */
+.ft_code_wrap{
+  width:280px;
+  float: left;
+  overflow: hidder;
+  margin-right: -50px;
+}
+.ft_code_wrap .ft_mobile_code {
+  float: left;
+  margin-right: 50px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+.ft_mobile_code img {
+  width: 90px;
+  height: 90px;
+}
+#footer p{
+  color: #666;
+  text-align: center;
+  text-indent: 0;
+  line-height: 100%;
+  margin: 15px 0;
+  padding: 0
+}
+.ft_footer_link a {
+  color: #666;
+  margin: 0px 10px;
+}
+.ft_footer_link a:hover{
+  color: red;
+}
+.ft_pic_link {
+  display: block;
+  padding: 10px 0 20px;
+  text-align: center;
+  font-size: 0;
+}
+.ft_pic_link a {
+  display: inline-block;
+  margin: 0 4px;
+}
+/*footer end*/
