@@ -114,16 +114,146 @@
       $('.sec_level' + $(this).attr('tag-index')).css('display','block').siblings().css('display','none')
     })
 
+    // 商品介绍中  加入购物车  让当前商品的img显示出来
+    $('.des_buy').on('mouseenter',function(){
+      $(this).addClass('hover')
+      $('.tab_buy_info').css('display','block')
+    })
+    // 移走消失
+    $('.des_buy').on('mouseleave',function(){
+      $(this).removeClass('hover')
+      $('.tab_buy_info').css('display','none')
+    })
     
+    // 点击商品介绍的时候   规格及包装div none
+    $('#spjs_fixed').on('click',function(){
+      $('#detail_desc_prop').css('display','none')
+      $('#prodDetailCotentDiv').css('display','block')
+      $('body,html').stop().animate({
+        'scrollTop':jDesTop
+      })
+    })
+    $('#spjs').on('click',function(){
+      $('#detail_desc_prop').css('display','none')
+      $('#prodDetailCotentDiv').css('display','block')
+    })
+
+    // 点击规格及包装的时候  商品介绍div  none
+    $('#ggbz_fixed').on('click',function(){
+      $('#prodDetailCotentDiv').css('display','none')
+      $('#detail_desc_prop').css('display','block')
+      // console.log(1)
+      $('body,html').stop().animate({
+        'scrollTop':jDesTop
+      })
+    })
+    $('#ggbz').on('click',function(){
+      $('#prodDetailCotentDiv').css('display','none')
+      $('#detail_desc_prop').css('display','block')
+    })
+
+    // 点击售后服务的时候   商品介绍和规格及包装  div  none
+    $('#shfw_fixed').on('click',function(){
+      $('#detail_desc_prop').css('display','none')
+      $('#prodDetailCotentDiv').css('display','none')
+      $('body,html').stop().animate({
+        'scrollTop':jDesTop
+      })
+    })
+    $('#shfw').on('click',function(){
+      $('#detail_desc_prop').css('display','none')
+      $('#prodDetailCotentDiv').css('display','none')
+    })
+
+    // 顶部导航   滚动鼠标
+    var hdHeaderNavTop = $('.hd_header_nav').offset().top
+    var jDesTop = $('#J_des').offset().top
+    console.log(jDesTop)
+    $(document).on('scroll',function(){
+      var _top = $(this).scrollTop()
+      if(_top >= hdHeaderNavTop){
+        $('.hd_header_nav').addClass('hd_cm_fixed')
+        $('.hd_header_nav .clearfix').css('display','none')
+      }else{
+        $('.hd_header_nav').removeClass('hd_cm_fixed')
+        $('.hd_header_nav .clearfix').css('display','block')
+      }
+
+      if(_top >= jDesTop){
+        $('.des_fixed').css('display','block')
+      }else{
+        $('.des_fixed').css('display','none')
+      }
+    })
 
 
+    // <!-- 放大镜JS -->
+    $(".mBox").on("mouseenter","b",function(){
+      $(this).addClass("cur").siblings().removeClass('cur')
+      var imgssss = $(this).children(".detail_main_pic_class").attr("src")
+      $("#J_prodImg").attr("src",imgssss)
+      $("#J_zoom").children("img").attr("src",imgssss)
+      $("#J_zoom").css({display:"none"})
+    })
+    $('.mask').on('mousemove',function(eve){
+      var x1=eve.clientX-$(this).offset().left
+      var y1=eve.clientY-$(this).offset().top
+      var x=x1-90;
+      var y=y1-90;
+      if(x<0) { x=0 } if(x>=180){
+        x=180
+      }
+      if(y<0) { y=0 } if(y>=180){
+        y=180
+      }
+      $(".zoomCursor").css({
+        'display':'block',
+        'left':x,
+        'top':y
+      })
 
+      $("#J_zoom").css({
+        'display':'block'
+      }).children('img').css({
+        'top':-2*y,
+        'left':-2*x,
+      })
+    })
 
+    $('.mask').on('mouseleave',function(){
+      $(".zoomCursor").css({
+      'display':'none'
+      })
+      $("#J_zoom").css({
+      'display':'none'
+      })
+    })
 
+    $('.cBtn').eq(1).on('click',function(){
+      $('.mBox').stop().animate({
+        'left':-204
+      })
+    })
 
+    $('.cBtn').eq(0).on('click',function(){
+      $('.mBox').stop().animate({
+        'left':0
+      })
+    })
 
-
-
+    // 换一批
+    var i=0;
+    var chaMLength = $('.cha_m').length;
+    $(".cha_m").css("display","none")
+    $(".cha_m").eq(0).css("display","block")
+    $("#r_cha_t").on('click',function(){
+      if(i<chaMLength-1) { 
+        i++; 
+      }else{
+        i=0 
+      }
+      $(".cha_m").eq(i).css("display",'block').siblings('.cha_m').css("display",'none') 
+    }) 
 
 
 
