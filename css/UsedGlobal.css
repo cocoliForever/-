@@ -16,6 +16,10 @@
 	color: #666;
 }
 
+
+.c_global_toolbar.active{
+	right: 300px;
+}
 .hd_topbar_home i,
 .hd_topbar_city i {
 	color: #ff4040

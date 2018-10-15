@@ -579,7 +579,7 @@
             </span>
 
           </div>
-          <div class="pay_tools_r clearfix"> <a class="checkout_btn" href="javascript:void(0);" clstag="pageclick|keycount|cart_201709267|4">去结算</a>
+          <div class="pay_tools_r clearfix"> <a class="checkout_btn" href="javascript:void(0);" c>去结算</a>
             <div class="r_price_total r_control_tip"> 合计：<span class="rpt_count">¥<b>53.80</b></span> <i class="iconfont icon-down"></i>
             </div>
             <div class="r_prod_view r_control_tip"> <span class="rpv_count">已选商品<b>2</b>件</span> <a href="javascript:;"
@@ -608,7 +608,7 @@
         <p>实时推荐最适合您的商品</p>
       </div>
       <div class="sale_prod_cont cheap_prod hot_sale_list">
-        <a class="control_btn left_arrow unable" href="javascript:;"><i class="iconfont icon-left"></i></a>
+        <a class="control_btn left_arrow " href="javascript:;"><i class="iconfont icon-left"></i></a>
         <a class="control_btn right_arrow" href="javascript:;"><i class="iconfont icon-right"></i></a>
         <div class="sale_scroll_box">
           <ul class="sale_scroll_ul clearfix">
@@ -1343,9 +1343,133 @@
             </li>
           </ul>
         </div>
+        <div class="view_dot">
+          <span class="cur"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </div>
       </div>
     </div>
   </div>
+  <!-- 这里写 删除组合商品小弹窗 -->
+  <div class="c_global_toolbar c_toolbar_open">
+    <div class="c_toolbar_wrap">
+      <div class="tbar_wrap_tabs">
+        <div class="t_warp_slide_tabs">
+          <div data-value="list" class="t_control_btn_a t_btn_selected" data-tpa="CART_BOUGHT_ITEM">
+            <a href="javascript:;"><i class="iconfont icon-gouwuche"></i><em class="t_same">常购清单</em></a>
+          </div>
+          <div data-value="favor" class="t_control_btn_a">
+            <a href="javascript:;" class="collect" id="collect"><i class="iconfont icon-dingdan"></i><em class="t_same">我的收藏</em><b
+                class="c_lit_tip">4</b>
+              <div class="add_tip">商品已移入收藏<span></span></div>
+            </a>
+          </div>
+          <div data-value="recycler" class="t_control_btn_a">
+            <a href="javascript:;" class="trash" id="trash"><i class="iconfont icon-lajixiang"></i><em class="t_same">最近删除</em><b
+                class="c_lit_tip">0</b>
+              <div class="add_tip">商品已移入回收站<span></span></div>
+            </a>
+          </div>
+        </div>
+        <div class="t_warp_link_tabs">
+          <div class="t_control_btn_a">
+            <a href="#"><i class="iconfont icon-yinger"></i><em class="t_same">返回顶部</em></a>
+          </div>
+        </div>
+      </div>
+      <div class="tbar_wrap_panels t_wrap_panels_shadow">
+        <div data-value="list" class="t_panel_content t_panel_cont_list t_panel_content_show toolbar-animate-in">
+          <h4>常购清单</h4>
+          <div class="t_panel_wrap">
+            <div class="t_prod_listbox">
+              <ul> </ul>
+            </div>
+            <div class="tp_empty"> <img src="http://img.yihaodianimg.com/cart/shopping/pc/images/empty_purchase.png"
+                alt="" width="155" height="161">
+              <p>清单空空，剁手匆匆<br>马上下一单吧</p>
+            </div>
+          </div>
+        </div>
+        <div data-value="favor" class="t_panel_content t_panel_cont_favor toolbar-animate-out">
+          <h4>我的收藏</h4>
+          <div class="t_panel_wrap">
+            <div class="t_prod_listbox">
+              <ul>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/28295641524.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t20086/27/852912407/216418/6a201b15/5b0ce730N1a3bebd4.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/28295641524.html"
+                        target="_blank" style="word-wrap: break-word;">亨泰丰源铁棍怀山药鲜香脆片薯片薄片锅巴【四件7.5折... </a> </div>
+                    <p class="tp_price">¥<b>12.80</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="28295641524"></a>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/1788122.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t15712/170/2610760588/173537/58321504/5ab8572aN91cfe226.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/1788122.html"
+                        target="_blank" style="word-wrap: break-word;">日本进口 白色恋人 北海道 白巧克力夹心饼干12枚 休闲... </a> </div>
+                    <p class="tp_price">¥<b>89.00</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="1788122"></a>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/5233751.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t19312/211/374140508/602490/ba66331f/5a6ee0e8N5e4e0d8b.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/5233751.html"
+                        target="_blank" style="word-wrap: break-word;">华硕（ASUS）PRIME Z370-A 主板（Intel Z370/LGA 11... </a>
+                    </div>
+                    <p class="tp_price">¥<b>1799.00</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="5233751"></a>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/967962.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t11278/30/392755639/112423/3313880b/59eefa1fNa84f0726.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/967962.html"
+                        target="_blank" style="word-wrap: break-word;">统一 阿萨姆奶茶 原味奶茶 500ml*15瓶 整箱 精选喜马... </a> </div>
+                    <p class="tp_price">¥<b>49.90</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="967962"></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="tp_see_more"><a href="//home.yhd.com/follow/getFollowProductList.do" target="_blank">查看更多收藏商品</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div data-value="recycler" class="t_panel_content t_panel_cont_recycler toolbar-animate-out">
+          <h4>最近删除</h4>
+          <p class="delete_all" style="display: none;"><a href="javascript:;">清空</a></p>
+          <div class="t_panel_wrap">
+            <p class="null_delte_prod_tit"> 没有最近删除的商品</p>
+          </div>
+          <div class="tbar_mask_layout none"></div>
+          <div class="del_list_dialog none">
+            <p class="d_list_header">清空商品</p>
+            <p class="d_list_cont">确定要清空最近删除商品吗？</p>
+            <div class="d_control_btns">
+              <a class="cancel_btn close_btn" href="javascript:;">取消</a>
+              <a class="sure_btn" href="javascript:;">确认清空</a>
+            </div>
+            <a class="tbar_same_close close_list_dialog close_btn" href="javascript:;"></a>
+          </div>
+        </div>
+
+      </div>
+      <a class="tbar_same_close tbar_slide_close" href="javascript:;"></a>
+
+    </div>
+  </div>
+
+
+
   <div class="ft_wrap">
     <div class="wrap ft_footer_service clearfix">
       <a href="javascript:;">
