@@ -29,7 +29,7 @@
 .guide_box{
     border-bottom: 1px dotted #e5e5e5;
     border-top: none;
-    height: 80px;
+    height: auto;
     margin-top: -1px;
     position: relative;
 }
@@ -402,15 +402,59 @@ border-radius: 2px;
 }
 .guide_ax li .son_m{
     width: 350px;
-    height: 200px;
+    height: 191px;
     position: absolute;
     z-index: 5;
-    top: 30px;
+    top: 32px;
+    padding: 5px;
     background: #fff;
     display: none;
     left: -1px;
+    line-height: 0;
     border: 1px solid #e1e1e1;
     /* background: red; */
+}
+.guide_ax li .hid_m{
+    position: absolute;
+    top: 35px;
+    left: -9px;
+}
+.guide_ax li .hid_b{
+    position: absolute;
+    top: 35px;
+    left: -216px;
+}
+.guide_ax li .hid_n{
+    position: absolute;
+    top: 35px;
+    left: -119px;
+}
+.guide_ax li .son_m .multiple_choice a{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 18px;
+}
+.guide_ax li .son_m a{
+    width: 75px;
+    /* font-size: 0; */
+    padding: 0 14px 0 16px;
+    margin: 5px 0 12px 0;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 16px;
+    height: 16px;
+}
+.guide_ax li .son_m a .sub{
+    background: url(https://img.yihaodianimg.com/yhdsearch_pc/search3/images/searchSprite_png24.png?1200);
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 3px 4px 0 0;
+    background-position: -64px -70px;
+    font-size: 0;
 }
 .guide_ax li:hover .son_m{
     display: block;
