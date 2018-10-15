@@ -134,7 +134,7 @@
 .guide_switch{
     padding-right: 70px;
     height: 42px;
-    display: none;
+    /* display: none; */
     line-height: 42px;
     padding: 0 20px 0 10px;
 }
@@ -212,6 +212,7 @@ border-radius: 2px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     float: left;
+    overflow: hidden;
 
 }
 .guide_ul li a{
@@ -236,10 +237,11 @@ border-radius: 2px;
 }
 .guide_ul li .sl{
     display: none;
-    height: 40px;
-    width: 102px;
+    height: 38px;
+    width: 100px;
     position: absolute;
     left: 0;
+    overflow: hidden;
     top:0;
     line-height: 40px;
     padding: 5px 0;
@@ -259,8 +261,8 @@ border-radius: 2px;
     width: 14px ;
     height: 14px;
     position: absolute;
-    right: -3px;
-    bottom: -4px;
+    right: 0;
+    bottom: -1px;
     display:none;
 }
 .guide_ul li:hover .cl{
@@ -285,7 +287,7 @@ border-radius: 2px;
 }
 .guide_selected{
     padding: 6px 0 6px 13px;
-    display: none;
+    /* displays: none; */
 }
 .sel_title{
     float: left;
@@ -295,7 +297,7 @@ border-radius: 2px;
 }
 .guide_btn{
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 .guide_btn a{
     color: #999;
@@ -329,10 +331,11 @@ border-radius: 2px;
     
 }
 .search_guide .guide_main .guide_con li{
-    margin-right: 30px;
+    /* margin-right: 30px; */
     float: left;
     height: 18px;
     line-height: 18px;
+
     margin: 0 10px 8px 0
 
 }
@@ -343,8 +346,9 @@ border-radius: 2px;
     border: 1px solid #fff;
     margin-left: 0;
 }
-.search_guide .guide_box .guide_con li a span{
-    width: auto;
+.search_guide .guide_box .guide_con li a .sp_wid{
+    width: 0;
+    display: block;
     margin-left: 0;
 }
 .search_guide .guide_box .guide_con li a:focus .ali{
@@ -358,7 +362,7 @@ border-radius: 2px;
     margin: 3px 4px 0 0;
     background-position: -64px -70px;
     font-size: 0;
-    display: none;
+    /* display: none; */
 }
 .search_add_border .any_one{
     margin-right: 58px;

@@ -1669,603 +1669,797 @@ var area={
             {
                 "name": "移动通信"
             }
-        ], 
+        ],       
         "1": [
-        {
-            "press": "新东方（XDF.CN）"
-        }, 
-        {
-            "press": "中信出版"
-        }, 
-        {
-            "press": "中华书局"
-        }, 
-        {
-            "press": "读客"
-        }, 
-        {
-            "press": "大星"
-        }, 
-        {
-            "press": "新经典"
-        }, 
-        {
-            "press": "科幻世界"
-        }, 
-        {
-            "press": "理想国（imaginist）"
-        }, 
-        {
-            "press": "机工出版"
-        }, 
-        {
-            "press": "PANTONE"
-        }, 
-        {
-            "press": "日知图书"
-        }, 
-        {
-            "press": "后浪"
-        }, 
-        {
-            "press": "外研社"
-        }, 
-        {
-            "press": "商务印书馆（The Commercial Press）"
-        }, 
-        {
-            "press": "驰亨"
-        }, 
-        {
-            "press": "读品联合（TASTEFUL READING）"
-        }, 
-        {
-            "press": "逻辑狗"
-        }, 
-        {
-            "press": "卓创"
-        }, 
-        {
-            "press": "博集天卷"
-        }, 
-        {
-            "press": "智络（zhiluo）"
-        }, 
-        {
-            "press": "企鹅萌萌"
-        }, 
-        {
-            "press": "豫安宁"
-        }, 
-        {
-            "press": "托马斯和朋友（THOMAS&FRIENDS）"
-        }, 
-        {
-            "press": "KAPLAN"
-        }, 
-        {
-            "press": "望海楼"
-        }, 
-        {
-            "press": "湛庐文化（Cheers Publishing）"
-        }, 
-        {
-            "press": "果麦"
-        }, 
-        {
-            "press": "江波"
-        }, 
-        {
-            "press": "中公教育"
-        }, 
-        {
-            "press": "磨铁图书（Xiron）"
-        }, 
-        {
-            "press": "异步图书"
-        }, 
-        {
-            "press": "汪汪队立大功（PAW PATROL）"
-        }, 
-        {
-            "press": "读库"
-        }, 
-        {
-            "press": "创美工厂"
-        }, 
-        {
-            "press": "沪教（HUJIAO）"
-        }, 
-        {
-            "press": "声典蛙（Soundic frog）"
-        }, 
-        {
-            "press": "北斗地图"
-        }, 
-        {
-            "press": "必刷题"
-        }, 
-        {
-            "press": "城市绿洲"
-        }, 
-        {
-            "press": "海润阳光"
-        }, 
-        {
-            "press": "华夏万卷"
-        }, 
-        {
-            "press": "国际大奖小说"
-        }, 
-        {
-            "press": "译林（YILIN）"
-        }, 
-        {
-            "press": "清华大学"
-        }, 
-        {
-            "press": "皮波人物（PEOPLE）"
-        }, 
-        {
-            "press": "智慧熊（ZHIHUIXIONG）"
-        }, 
-        {
-            "press": "曲一线"
-        }, 
-        {
-            "press": "世纪文景"
-        }, 
-        {
-            "press": "中国青年出版社（CHINA YOUTH PRESS）"
-        }, 
-        {
-            "press": "未来教育（Future）"
-        }, 
-        {
-            "press": "三联书店"
-        }, 
-        {
-            "press": "博文视点"
-        }, 
-        {
-            "press": "袋鼠妈妈"
-        }, 
-        {
-            "press": "星火"
-        }, 
-        {
-            "press": "丽声"
-        }, 
-        {
-            "press": "葫芦弟弟"
-        }, 
-        {
-            "press": "ZITO"
-        }, 
-        {
-            "press": "邦臣小红花"
-        }, 
-        {
-            "press": "阳光博客（sunnbook）"
-        }, 
-        {
-            "press": "爱阅读品"
-        }, 
-        {
-            "press": "中国画报"
-        }, 
-        {
-            "press": "爱心树"
-        }, 
-        {
-            "press": "BOOKUU"
-        }, 
-        {
-            "press": "昂秀"
-        }, 
-        {
-            "press": "智趣屋（ZHIQUWU）"
-        }, 
-        {
-            "press": "童立方"
-        }, 
-        {
-            "press": "埃孚欧法商（FO）"
-        }, 
-        {
-            "press": "斯坦威（STANDWAY）"
-        }, 
-        {
-            "press": "三毛（SANMAO）"
-        }, 
-        {
-            "press": "华图教育（HUATU EDUCATION）"
-        }, 
-        {
-            "press": "兰可可"
-        }, 
-        {
-            "press": "金童星"
-        }, 
-        {
-            "press": "甲骨文"
-        }, 
-        {
-            "press": "博瑞森"
-        }, 
-        {
-            "press": "小风车"
-        }, 
-        {
-            "press": "博目（BOOM）"
-        }, 
-        {
-            "press": "国馆"
-        }, 
-        {
-            "press": "乐乐趣（LELEQU）"
-        }, 
-        {
-            "press": "青葫芦"
-        }, 
-        {
-            "press": "新民说"
-        }, 
-        {
-            "press": "华研外语"
-        }, 
-        {
-            "press": "文通天下"
-        }, 
-        {
-            "press": "开心"
-        }, 
-        {
-            "press": "迪士尼（Disney）"
-        }, 
-        {
-            "press": "悦读纪"
-        }, 
-        {
-            "press": "Broadview"
-        }, 
-        {
-            "press": "疯狂英语（CRAZY ENGLISH）"
-        }, 
-        {
-            "press": "华章（HuaZhang）"
-        }, 
-        {
-            "press": "作文之星"
-        }, 
-        {
-            "press": "奥华元（aohuayuan）"
-        }, 
-        {
-            "press": "华阳文化"
-        }, 
-        {
-            "press": "人民音乐出版社（PEOPLE’S MUSIC PIBLISHING HOUSE）"
-        }, 
-        {
-            "press": "派力（Pilot）"
-        }, 
-        {
-            "press": "梦想成真"
-        }, 
-        {
-            "press": "天地出版社（无）"
-        }, 
-        {
-            "press": "阳光宝贝"
-        }, 
-        {
-            "press": "振宇英语（zhenglish）"
-        }, 
-        {
-            "press": "快读"
-        }, 
-        {
-            "press": "文物出版社（Cultural Relics Press）"
-        }, 
-        {
-            "press": "华南理工大学出版社"
-        }, 
-        {
-            "press": "墨点"
-        }, 
-        {
-            "press": "一本"
-        }, 
-        {
-            "press": "中南天使"
-        }, 
-        {
-            "press": "生本（shengben）"
-        }, 
-        {
-            "press": "酷哥"
-        }, 
-        {
-            "press": "悟空心灵花园"
-        }, 
-        {
-            "press": "弘景文化"
-        }, 
-        {
-            "press": "战驴"
-        }, 
-        {
-            "press": "Holybird"
-        }, 
-        {
-            "press": "亲近母语"
-        }, 
-        {
-            "press": "理想树"
-        }, 
-        {
-            "press": "白夜（White Nights）"
-        }, 
-        {
-            "press": "安徽教育出版社"
-        }, 
-        {
-            "press": "半月谈"
-        }, 
-        {
-            "press": "68所"
-        }, 
-        {
-            "press": "亲子树童书"
-        }, 
-        {
-            "press": "小熊图书"
-        }, 
-        {
-            "press": "数艺社"
-        }, 
-        {
-            "press": "六品堂"
-        }, 
-        {
-            "press": "永生"
-        }, 
-        {
-            "press": "晨风童书"
-        }, 
-        {
-            "press": "动漫者（dongmanzhe）"
-        }, 
-        {
-            "press": "森林鱼（Jungle fish）"
-        }, 
-        {
-            "press": "圣才教育（shengcai education）"
-        }, 
-        {
-            "press": "晨通（CHENTONG）"
-        }, 
-        {
-            "press": "奇想国童书（Everafter Books）"
-        }, 
-        {
-            "press": "振宇锐智"
-        }, 
-        {
-            "press": "文都教育"
-        }, 
-        {
-            "press": "艾帛利（Abooly）"
-        }, 
-        {
-            "press": "碳墨轩（tamoxu）"
-        }, 
-        {
-            "press": "杏林（xinglin）"
-        }, 
-        {
-            "press": "六月童书"
-        }, 
-        {
-            "press": "群博士"
-        }, 
-        {
-            "press": "小马宝莉（my little pony）"
-        }, 
-        {
-            "press": "芝宝贝（ZHIBABY）"
-        }, 
-        {
-            "press": "尚雅悦知"
-        }, 
-        {
-            "press": "阳光树"
-        }, 
-        {
-            "press": "天星教育（TIANXING EDUCATION）"
-        }, 
-        {
-            "press": "东奥会计在线"
-        }, 
-        {
-            "press": "辉柏嘉（Faber-castell）"
-        }, 
-        {
-            "press": "时代光华"
-        }, 
-        {
-            "press": "未来屋"
-        }, 
-        {
-            "press": "钟书金牌"
-        }, 
-        {
-            "press": "尤斯伯恩（USBORNE）"
-        }, 
-        {
-            "press": "爱卡乐（ICOLOUR）"
-        }, 
-        {
-            "press": "倍速学习法"
-        }, 
-        {
-            "press": "大夏"
-        }, 
-        {
-            "press": "服饰与美容（VOGUE）"
-        }, 
-        {
-            "press": "博尔"
-        }, 
-        {
-            "press": "HEMAWENHUA"
-        }, 
-        {
-            "press": "爱读经"
-        }, 
-        {
-            "press": "一课一练"
-        }, 
-        {
-            "press": "童客（TONGKE）"
-        }, 
-        {
-            "press": "冯式早教（FENGSZAOJIAO）"
-        }, 
-        {
-            "press": "千书万卷"
-        }, 
-        {
-            "press": "悦典阁"
-        }, 
-        {
-            "press": "党建读物出版社"
-        }, 
-        {
-            "press": "凯楚"
-        }, 
-        {
-            "press": "宝宝蛋（baobaodan）"
-        }, 
-        {
-            "press": "邺水朱华"
-        }, 
-        {
-            "press": "书写天下"
-        }, 
-        {
-            "press": "红宝"
-        }, 
-        {
-            "press": "中国国家地理（CNG）"
-        }, 
-        {
-            "press": "纸贵满堂"
-        }, 
-        {
-            "press": "瑞丽（Ruili）"
-        }, 
-        {
-            "press": "时度"
-        }, 
-        {
-            "press": "张鑫友"
-        }, 
-        {
-            "press": "六环"
-        }, 
-        {
-            "press": "万向思维"
-        }, 
-        {
-            "press": "中国妇女出版社"
-        }, 
-        {
-            "press": "小笨熊"
-        }, 
-        {
-            "press": "大悦读"
-        }, 
-        {
-            "press": "通学城典"
-        }, 
-        {
-            "press": "APGTIME"
-        }, 
-        {
-            "press": "小婴孩"
-        }, 
-        {
-            "press": "尚左志远图书"
-        }, 
-        {
-            "press": "華夏萬卷（huaxiawanjuan）"
-        }, 
-        {
-            "press": "学而思"
-        }, 
-        {
-            "press": "最美母语"
-        }, 
-        {
-            "press": "木头马"
-        }, 
-        {
-            "press": "大象出版社"
-        }, 
-        {
-            "press": "赢在微点（Catchpoint）"
-        }, 
-        {
-            "press": "山西人民出版社（SHANXI PEOPLE'S PLBLISHING HOUSE）"
-        }, 
-        {
-            "press": "陌陌童年"
-        }, 
-        {
-            "press": "童艺少儿（tongyishaoer）"
-        }, 
-        {
-            "press": "基础知识手册"
-        }, 
-        {
-            "press": "乐双"
-        }, 
-        {
-            "press": "天利38套"
-        }, 
-        {
-            "press": "教材全练"
-        }, 
-        {
-            "press": "魅丽文化"
-        }, 
-        {
-            "press": "时代云图"
-        }, 
-        {
-            "press": "三新文化（SUNSHINE CULTURE）"
-        }, 
-        {
-            "press": "方洲新概念"
-        }, 
-        {
-            "press": "司马彦（simayan）"
-        }, 
-        {
-            "press": "易人外语"
-        }, 
-        {
-            "press": "教育科学出版社（ESPH）"
-        }, 
-        {
-            "press": "金铁图书（JINTIE BOOK）"
-        }, 
-        {
-            "press": "PASS"
-        }
-    ], 
+                {
+                    "press":"新东方（XDF.CN）",
+                    "zm":"X"
+                },
+                {
+                    "press":"中信出版",
+                    "zm":"Z"
+                },
+                {
+                    "press":"中华书局",
+                    "zm":"Z"
+                },
+                {
+                    "press":"读客",
+                    "zm":"D"
+                },
+                {
+                    "press":"大星",
+                    "zm":"D"
+                },
+                {
+                    "press":"新经典",
+                    "zm":"X"
+                },
+                {
+                    "press":"科幻世界",
+                    "zm":"K"
+                },
+                {
+                    "press":"理想国（imaginist）",
+                    "zm":"L"
+                },
+                {
+                    "press":"机工出版",
+                    "zm":"J"
+                },
+                {
+                    "press":"PANTONE",
+                    "zm":"P"
+                },
+                {
+                    "press":"日知图书",
+                    "zm":"R"
+                },
+                {
+                    "press":"后浪",
+                    "zm":"H"
+                },
+                {
+                    "press":"外研社",
+                    "zm":"W"
+                },
+                {
+                    "press":"商务印书馆（The Commercial Press）",
+                    "zm":"S"
+                },
+                {
+                    "press":"驰亨",
+                    "zm":"C"
+                },
+                {
+                    "press":"读品联合（TASTEFUL READING）",
+                    "zm":"D"
+                },
+                {
+                    "press":"逻辑狗",
+                    "zm":"L"
+                },
+                {
+                    "press":"卓创",
+                    "zm":"Z"
+                },
+                {
+                    "press":"博集天卷",
+                    "zm":"B"
+                },
+                {
+                    "press":"智络（zhiluo）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"企鹅萌萌",
+                    "zm":"Q"
+                },
+                {
+                    "press":"豫安宁",
+                    "zm":"Y"
+                },
+                {
+                    "press":"托马斯和朋友（THOMAS&FRIENDS）",
+                    "zm":"T"
+                },
+                {
+                    "press":"KAPLAN",
+                    "zm":"K"
+                },
+                {
+                    "press":"望海楼",
+                    "zm":"W"
+                },
+                {
+                    "press":"湛庐文化（Cheers Publishing）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"果麦",
+                    "zm":"G"
+                },
+                {
+                    "press":"江波",
+                    "zm":"J"
+                },
+                {
+                    "press":"中公教育",
+                    "zm":"Z"
+                },
+                {
+                    "press":"磨铁图书（Xiron）",
+                    "zm":"M"
+                },
+                {
+                    "press":"异步图书",
+                    "zm":"Y"
+                },
+                {
+                    "press":"汪汪队立大功（PAW PATROL）",
+                    "zm":"W"
+                },
+                {
+                    "press":"读库",
+                    "zm":"D"
+                },
+                {
+                    "press":"创美工厂",
+                    "zm":"C"
+                },
+                {
+                    "press":"沪教（HUJIAO）",
+                    "zm":"H"
+                },
+                {
+                    "press":"声典蛙（Soundic frog）",
+                    "zm":"S"
+                },
+                {
+                    "press":"北斗地图",
+                    "zm":"B"
+                },
+                {
+                    "press":"必刷题",
+                    "zm":"B"
+                },
+                {
+                    "press":"城市绿洲",
+                    "zm":"C"
+                },
+                {
+                    "press":"海润阳光",
+                    "zm":"H"
+                },
+                {
+                    "press":"华夏万卷",
+                    "zm":"H"
+                },
+                {
+                    "press":"国际大奖小说",
+                    "zm":"G"
+                },
+                {
+                    "press":"译林（YILIN）",
+                    "zm":"Y"
+                },
+                {
+                    "press":"清华大学",
+                    "zm":"Q"
+                },
+                {
+                    "press":"皮波人物（PEOPLE）",
+                    "zm":"P"
+                },
+                {
+                    "press":"智慧熊（ZHIHUIXIONG）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"曲一线",
+                    "zm":"Q"
+                },
+                {
+                    "press":"世纪文景",
+                    "zm":"S"
+                },
+                {
+                    "press":"中国青年出版社（CHINA YOUTH PRESS）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"未来教育（Future）",
+                    "zm":"W"
+                },
+                {
+                    "press":"三联书店",
+                    "zm":"S"
+                },
+                {
+                    "press":"袋鼠妈妈",
+                    "zm":"D"
+                },
+                {
+                    "press":"星火",
+                    "zm":"X"
+                },
+                {
+                    "press":"丽声",
+                    "zm":"L"
+                },
+                {
+                    "press":"葫芦弟弟",
+                    "zm":"H"
+                },
+                {
+                    "press":"ZITO",
+                    "zm":"Z"
+                },
+                {
+                    "press":"邦臣小红花",
+                    "zm":"B"
+                },
+                {
+                    "press":"阳光博客（sunnbook）",
+                    "zm":"Y"
+                },
+                {
+                    "press":"爱阅读品",
+                    "zm":"A"
+                },
+                {
+                    "press":"博文视点",
+                    "zm":"B"
+                },
+                {
+                    "press":"中国画报",
+                    "zm":"Z"
+                },
+                {
+                    "press":"爱心树",
+                    "zm":"A"
+                },
+                {
+                    "press":"BOOKUU",
+                    "zm":"B"
+                },
+                {
+                    "press":"昂秀",
+                    "zm":"A"
+                },
+                {
+                    "press":"智趣屋（ZHIQUWU）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"童立方",
+                    "zm":"T"
+                },
+                {
+                    "press":"埃孚欧法商（FO）",
+                    "zm":"A"
+                },
+                {
+                    "press":"斯坦威（STANDWAY）",
+                    "zm":"S"
+                },
+                {
+                    "press":"三毛（SANMAO）",
+                    "zm":"S"
+                },
+                {
+                    "press":"华图教育（HUATU EDUCATION）",
+                    "zm":"H"
+                },
+                {
+                    "press":"兰可可",
+                    "zm":"L"
+                },
+                {
+                    "press":"金童星",
+                    "zm":"J"
+                },
+                {
+                    "press":"甲骨文",
+                    "zm":"J"
+                },
+                {
+                    "press":"博瑞森",
+                    "zm":"B"
+                },
+                {
+                    "press":"小风车",
+                    "zm":"X"
+                },
+                {
+                    "press":"博目（BOOM）",
+                    "zm":"B"
+                },
+                {
+                    "press":"国馆",
+                    "zm":"G"
+                },
+                {
+                    "press":"乐乐趣（LELEQU）",
+                    "zm":"L"
+                },
+                {
+                    "press":"青葫芦",
+                    "zm":"Q"
+                },
+                {
+                    "press":"新民说",
+                    "zm":"X"
+                },
+                {
+                    "press":"华研外语",
+                    "zm":"H"
+                },
+                {
+                    "press":"文通天下",
+                    "zm":"W"
+                },
+                {
+                    "press":"开心",
+                    "zm":"K"
+                },
+                {
+                    "press":"迪士尼（Disney）",
+                    "zm":"D"
+                },
+                {
+                    "press":"悦读纪",
+                    "zm":"Y"
+                },
+                {
+                    "press":"Broadview",
+                    "zm":"B"
+                },
+                {
+                    "press":"疯狂英语（CRAZY ENGLISH）",
+                    "zm":"F"
+                },
+                {
+                    "press":"华章（HuaZhang）",
+                    "zm":"H"
+                },
+                {
+                    "press":"作文之星",
+                    "zm":"Z"
+                },
+                {
+                    "press":"奥华元（aohuayuan）",
+                    "zm":"A"
+                },
+                {
+                    "press":"华阳文化",
+                    "zm":"H"
+                },
+                {
+                    "press":"人民音乐出版社（PEOPLE’S MUSIC PIBLISHING HOUSE）",
+                    "zm":"R"
+                },
+                {
+                    "press":"派力（Pilot）",
+                    "zm":"P"
+                },
+                {
+                    "press":"梦想成真",
+                    "zm":"M"
+                },
+                {
+                    "press":"天地出版社（无）",
+                    "zm":"T"
+                },
+                {
+                    "press":"阳光宝贝",
+                    "zm":"Y"
+                },
+                {
+                    "press":"振宇英语（zhenglish）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"快读",
+                    "zm":"K"
+                },
+                {
+                    "press":"文物出版社（Cultural Relics Press）",
+                    "zm":"W"
+                },
+                {
+                    "press":"华南理工大学出版社",
+                    "zm":"H"
+                },
+                {
+                    "press":"墨点",
+                    "zm":"M"
+                },
+                {
+                    "press":"一本",
+                    "zm":"Y"
+                },
+                {
+                    "press":"中南天使",
+                    "zm":"Z"
+                },
+                {
+                    "press":"生本（shengben）",
+                    "zm":"S"
+                },
+                {
+                    "press":"酷哥",
+                    "zm":"K"
+                },
+                {
+                    "press":"悟空心灵花园",
+                    "zm":"W"
+                },
+                {
+                    "press":"弘景文化",
+                    "zm":"H"
+                },
+                {
+                    "press":"战驴",
+                    "zm":"Z"
+                },
+                {
+                    "press":"Holybird",
+                    "zm":"H"
+                },
+                {
+                    "press":"亲近母语",
+                    "zm":"Q"
+                },
+                {
+                    "press":"理想树",
+                    "zm":"L"
+                },
+                {
+                    "press":"白夜（White Nights）",
+                    "zm":"B"
+                },
+                {
+                    "press":"安徽教育出版社",
+                    "zm":"A"
+                },
+                {
+                    "press":"半月谈",
+                    "zm":"B"
+                },
+                {
+                    "press":"68所",
+                    "zm":"other"
+                },
+                {
+                    "press":"小熊图书",
+                    "zm":"X"
+                },
+                {
+                    "press":"数艺社",
+                    "zm":"S"
+                },
+                {
+                    "press":"六品堂",
+                    "zm":"L"
+                },
+                {
+                    "press":"永生",
+                    "zm":"Y"
+                },
+                {
+                    "press":"晨风童书",
+                    "zm":"C"
+                },
+                {
+                    "press":"动漫者（dongmanzhe）",
+                    "zm":"D"
+                },
+                {
+                    "press":"森林鱼（Jungle fish）",
+                    "zm":"S"
+                },
+                {
+                    "press":"圣才教育（shengcai education）",
+                    "zm":"S"
+                },
+                {
+                    "press":"晨通（CHENTONG）",
+                    "zm":"C"
+                },
+                {
+                    "press":"奇想国童书（Everafter Books）",
+                    "zm":"Q"
+                },
+                {
+                    "press":"振宇锐智",
+                    "zm":"Z"
+                },
+                {
+                    "press":"文都教育",
+                    "zm":"W"
+                },
+                {
+                    "press":"艾帛利（Abooly）",
+                    "zm":"A"
+                },
+                {
+                    "press":"碳墨轩（tamoxu）",
+                    "zm":"T"
+                },
+                {
+                    "press":"杏林（xinglin）",
+                    "zm":"X"
+                },
+                {
+                    "press":"六月童书",
+                    "zm":"L"
+                },
+                {
+                    "press":"群博士",
+                    "zm":"Q"
+                },
+                {
+                    "press":"小马宝莉（my little pony）",
+                    "zm":"X"
+                },
+                {
+                    "press":"芝宝贝（ZHIBABY）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"尚雅悦知",
+                    "zm":"S"
+                },
+                {
+                    "press":"阳光树",
+                    "zm":"Y"
+                },
+                {
+                    "press":"天星教育（TIANXING EDUCATION）",
+                    "zm":"T"
+                },
+                {
+                    "press":"东奥会计在线",
+                    "zm":"D"
+                },
+                {
+                    "press":"辉柏嘉（Faber-castell）",
+                    "zm":"H"
+                },
+                {
+                    "press":"时代光华",
+                    "zm":"S"
+                },
+                {
+                    "press":"未来屋",
+                    "zm":"W"
+                },
+                {
+                    "press":"钟书金牌",
+                    "zm":"Z"
+                },
+                {
+                    "press":"尤斯伯恩（USBORNE）",
+                    "zm":"Y"
+                },
+                {
+                    "press":"爱卡乐（ICOLOUR）",
+                    "zm":"A"
+                },
+                {
+                    "press":"倍速学习法",
+                    "zm":"B"
+                },
+                {
+                    "press":"大夏",
+                    "zm":"D"
+                },
+                {
+                    "press":"服饰与美容（VOGUE）",
+                    "zm":"F"
+                },
+                {
+                    "press":"博尔",
+                    "zm":"B"
+                },
+                {
+                    "press":"HEMAWENHUA",
+                    "zm":"H"
+                },
+                {
+                    "press":"爱读经",
+                    "zm":"A"
+                },
+                {
+                    "press":"一课一练",
+                    "zm":"Y"
+                },
+                {
+                    "press":"童客（TONGKE）",
+                    "zm":"T"
+                },
+                {
+                    "press":"冯式早教（FENGSZAOJIAO）",
+                    "zm":"F"
+                },
+                {
+                    "press":"千书万卷",
+                    "zm":"Q"
+                },
+                {
+                    "press":"悦典阁",
+                    "zm":"Y"
+                },
+                {
+                    "press":"党建读物出版社",
+                    "zm":"D"
+                },
+                {
+                    "press":"凯楚",
+                    "zm":"K"
+                },
+                {
+                    "press":"宝宝蛋（baobaodan）",
+                    "zm":"B"
+                },
+                {
+                    "press":"邺水朱华",
+                    "zm":"Y"
+                },
+                {
+                    "press":"书写天下",
+                    "zm":"S"
+                },
+                {
+                    "press":"红宝",
+                    "zm":"H"
+                },
+                {
+                    "press":"中国国家地理（CNG）",
+                    "zm":"Z"
+                },
+                {
+                    "press":"纸贵满堂",
+                    "zm":"Z"
+                },
+                {
+                    "press":"瑞丽（Ruili）",
+                    "zm":"R"
+                },
+                {
+                    "press":"时度",
+                    "zm":"S"
+                },
+                {
+                    "press":"张鑫友",
+                    "zm":"Z"
+                },
+                {
+                    "press":"六环",
+                    "zm":"L"
+                },
+                {
+                    "press":"万向思维",
+                    "zm":"W"
+                },
+                {
+                    "press":"中国妇女出版社",
+                    "zm":"Z"
+                },
+                {
+                    "press":"小笨熊",
+                    "zm":"X"
+                },
+                {
+                    "press":"大悦读",
+                    "zm":"D"
+                },
+                {
+                    "press":"通学城典",
+                    "zm":"T"
+                },
+                {
+                    "press":"APGTIME",
+                    "zm":"A"
+                },
+                {
+                    "press":"小婴孩",
+                    "zm":"X"
+                },
+                {
+                    "press":"尚左志远图书",
+                    "zm":"S"
+                },
+                {
+                    "press":"華夏萬卷（huaxiawanjuan）",
+                    "zm":"H"
+                },
+                {
+                    "press":"学而思",
+                    "zm":"X"
+                },
+                {
+                    "press":"最美母语",
+                    "zm":"Z"
+                },
+                {
+                    "press":"木头马",
+                    "zm":"M"
+                },
+                {
+                    "press":"大象出版社",
+                    "zm":"D"
+                },
+                {
+                    "press":"赢在微点（Catchpoint）",
+                    "zm":"Y"
+                },
+                {
+                    "press":"山西人民出版社（SHANXI PEOPLE'S PLBLISHING HOUSE）",
+                    "zm":"S"
+                },
+                {
+                    "press":"陌陌童年",
+                    "zm":"M"
+                },
+                {
+                    "press":"童艺少儿（tongyishaoer）",
+                    "zm":"T"
+                },
+                {
+                    "press":"基础知识手册",
+                    "zm":"J"
+                },
+                {
+                    "press":"乐双",
+                    "zm":"L"
+                },
+                {
+                    "press":"天利38套",
+                    "zm":"T"
+                },
+                {
+                    "press":"教材全练",
+                    "zm":"J"
+                },
+                {
+                    "press":"魅丽文化",
+                    "zm":"M"
+                },
+                {
+                    "press":"时代云图",
+                    "zm":"S"
+                },
+                {
+                    "press":"三新文化（SUNSHINE CULTURE）",
+                    "zm":"S"
+                },
+                {
+                    "press":"方洲新概念",
+                    "zm":"F"
+                },
+                {
+                    "press":"司马彦（simayan）",
+                    "zm":"S"
+                },
+                {
+                    "press":"易人外语",
+                    "zm":"Y"
+                },
+                {
+                    "press":"教育科学出版社（ESPH）",
+                    "zm":"J"
+                },
+                {
+                    "press":"金铁图书（JINTIE BOOK）",
+                    "zm":"J"
+                },
+                {
+                    "press":"PASS",
+                    "zm":"P"
+                }
+            ],
         "2": [
             {
                 "name": "杨红樱"
