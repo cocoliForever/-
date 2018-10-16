@@ -117,10 +117,6 @@ img {
     border: 0 none;
     vertical-align: top;
 }
-
-
-
-
 .cart_activity .activity_wrap {
     height: 24px;
     padding: 3px 0;
@@ -129,7 +125,6 @@ img {
 .cart_activity .line_ver {
     top: 50%;
     left: 7px;
-   
 }
 .cart_activity .activity_wrap.satisfy .tag {
     background-color: #fda55b;
@@ -221,6 +216,30 @@ img {
     background-color: #fff;
     overflow: hidden;
 }
+.cart_prod .item_num .num_act a.unable {
+    color: #dfdfdf;
+    cursor: default;
+}
+.cart_prod .item_num .num_act a {
+    float: left;
+    width: 20px;
+    text-align: center;
+    color: #666;
+    font-family: 'Tahoma';
+    font-size: 14px;
+    overflow: hidden;
+}
+.cart_prod .item_num .num_act input {
+    float: left;
+    width: 38px;
+    height: 18px;
+    border: none;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    text-align: center;
+    line-height: 18px;
+    outline: none;
+}
 /* .cart_prod .item_num .stock {
     position: absolute;
     top: 32px;
@@ -296,8 +315,7 @@ img {
 }
 /* hover背景颜色改变 */
 .main_item:hover{
-    background-color:#fbdde5;
-
+    background-color:#fff4f4;
 }
 .main_item:hover .prop_txt{
     border: 1px dashed #cccccc;
@@ -384,6 +402,96 @@ img {
     background-color: #fcfcfc;
     color: #666;
 }
-
-
-
+/* 右边导航收藏和删除 */
+body{
+    position: relative;
+}
+.c_toolbar_wrap{
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+}
+.tbar_wrap_tabs {
+    position: absolute;
+    top: 70%;
+    left: -34px;
+    width: 34px;
+}
+.tbar_wrap_tabs .t_control_btn {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 2px;
+}
+.tbar_wrap_tabs .t_control_btn a {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+.tbar_wrap_tabs .t_control_btn i.t_same {
+    font-size: 20px;
+}
+.tbar_wrap_tabs .t_control_btn .t_same {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 34px;
+    border-radius: 2px 0 0 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+}
+.tbar_wrap_tabs .t_control_btn i {
+    z-index: 2;
+    width: 34px;
+    background-color: #918a8a;
+    text-align: center;
+    color: #fff;
+}
+.tbar_wrap_tabs .t_control_btn .t_same {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 34px;
+    border-radius: 2px 0 0 2px;
+   
+}
+.tbar_wrap_tabs .t_control_btn em {
+    z-index: -2;
+    width: 0px;
+    padding: 0 2px 0 10px;
+    background-color: #918a8a;
+    color: #fff;
+    transition:all .2s ease-in-out;
+}
+.tbar_wrap_tabs .t_control_btn:hover .t_same{
+    background: #ff6c6c;
+}
+.tbar_wrap_tabs .t_control_btn:hover em{
+    left:-60px;
+    width: 50px;
+    background: #ff6c6c;
+}
+.tbar_wrap_tabs .t_warp_link_tabs {
+    margin-top: 0px;
+}
+.tbar_wrap_tabs .t_control_btn b {
+    position: absolute;
+    right: 0px;
+    top: -2px;
+    z-index: 2;
+    display: inline-block;
+    height: 14px;
+    padding: 0 4px;
+    background-color: #ff5e5e;
+    line-height: 13px;
+    border-radius: 10px;
+ 
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Tahoma';
+    font-weight: normal;
+    transform: scale(0.9);
+   
+}
