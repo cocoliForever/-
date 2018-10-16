@@ -80,31 +80,20 @@
     })
 
     // 点击送货至哪一个地方的时候   让所选城市显示出来
-    $("#area_name").on('click',function(){
-      $('.pop_win_mask').css({
-        'display':'block',
-        'opacity':'0',
-        'z-index':'19'
-      })
+    $("#area_name").on('click',function(e){
+      e.stopPropagation();
       $(this).next().css('display','block')
     })
 
     // 点击关闭的时候  让所选城市消失
-    $('.selectclose').on('click',function(){
+    $(document).on('click',function(){
       $('.selectlist').css('display','none')
-      $('.pop_win_mask').css({
-        'display':'none',
-        'opacity':'0',
-        'z-index':'19'
-      })
     })
-    
-    $('.pop_win_mask').on('click',function(){
-      $(this).css({
-        'display':'none',
-        'opacity':'0.4',
-        'z-index':'8888'
-      })
+    $('.selectlist').on('click',function(e){
+      e.stopPropagation();
+    })
+    $('.selectclose').on('click',function(e){
+      e.stopPropagation();
       $('.selectlist').css('display','none')
     })
 
