@@ -423,6 +423,7 @@ li.hd_has_child:hover .hd_qrcode_bg{
 .check.checked i, .free_check.checked i {
     display: block;
 }
+
 .cart_item li .check {
     position: absolute;
     left: 30px;
@@ -1675,10 +1676,7 @@ img {
     -webkit-box-shadow: 4px 0px 30px #8b8484;
     border-left: 1px solid #eee ;
 }
-.tbar_wrap_panels .t_panel_content_show {
-    z-index: 3;
-    visibility: visible;
-}
+
 .tbar_wrap_panels .t_panel_content h4 {
     height: 30px;
     padding: 10px 0px 14px;
@@ -1689,14 +1687,35 @@ img {
     color: #333;
     font-weight: normal;
 }
+.tbar_wrap_panels .t_panel_content {
+    position: absolute;
+    left: 286px;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 286px;
+    height: 100%;
+    visibility: hidden;
+    background-color: #fff;
+    -webkit-transition: all .2s ease-out 0s;
+    -moz-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s;
+}
 .tbar_wrap_panels .t_panel_content .t_panel_wrap {
     position: absolute;
     left: 0px;
     top: 54px;
     bottom: 0;
     width: 286px;
+    background: #fff;
     overflow-y: auto;
 }
+.tbar_wrap_panels .t_panel_content .t_panel_wrap .null_delte_prod_tit {
+    line-height: 120px;
+    text-align: center;
+    color: #aaa;
+}
+
 .tbar_wrap_panels .t_panel_wrap .t_prod_listbox {
     width: 248px;
     margin: 0 auto;
@@ -1719,6 +1738,15 @@ img {
     position: relative;
     padding: 14px 0;
     border-bottom: 1px dotted #dfdfdf;
+}
+.toolbar-animate-in {
+    -webkit-animation: toolbar-scaleIn .35s ease-in-out;
+    -moz-animation: toolbar-scaleIn .35s ease-in-out;
+    animation: toolbar-scaleIn .35s ease-in-out;
+}
+.tbar_wrap_panels .t_panel_content_show {
+    background: #fff;
+    visibility: visible;
 }
 .tbar_wrap_panels .t_panel_wrap .t_prod_listbox .t_prodimg {
     float: left;
@@ -1802,7 +1830,9 @@ img {
     border-radius: 50%;
     -webkit-border-radius: 50%;
 }
-.t_control_btn_a.t_btn_selected{
+
+
+.t_warp_slide_tabs .t_btn_selected a i{
     background: #fff;
     color: red;
 }
@@ -1828,7 +1858,7 @@ img {
     top: 60%;
     right: 30px;
     background: #3333;
-    width: 50px;
+    width:50px;
     height: 50px;
     line-height: 50px;
     text-align: center;

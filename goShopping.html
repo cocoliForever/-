@@ -19,54 +19,50 @@
         <i class="iconfont icon-home"></i>
         <span>1号店首页</span>
       </a>
-      <!-- <div class="hd_indxProvce">
-        <a class="hd_topbar_city" id="currProvince" href="javascript:;">
-          <i class="iconfont  icon-weizhi"></i>
-          <span>送货地址：</span><em>上海</em>
-        </a>
-      </div> -->
-      <div class="hd_topbar_right fr">
-        <ul class="fl">
-          <li id="global_unlogin">
-            <div class="hd_unlogin">
-              <span class="hd_hi">Hi,请</span>
-              <a href="https://passport.yhd.com/passport/login_input.do" class="hd_login_link">登录&nbsp;</a>
-              <a href="https://passport.yhd.com/passport/register_input.do" class="hd_regist_link">&nbsp;注册</a>
-            </div>
-          </li>
-          <li>
-            <div class="hd_menu fl">
-              <a href="javascript:;" target="_blank" rel="nofollow">
-                <i class="iconfont icon-dingdan"></i>我的订单</a>
-            </div>
-          </li>
-          <li class="hd_has_child hd_cur">
-            <div class="hd_menu">
-              <a href="javascript:;" target="_blank">客户服务</a>
-              <i class="iconfont icon-down"></i>
-            </div>
-            <div class="hd_menu_list">
-              <a href="javascript:;" target="_blank" title="包裹跟踪">包裹跟踪</a>
-              <a href="javascript:;" target="_blank" title="在线退换货">在线退换货</a>
-            </div>
-          </li>
-          <li class="hd_has_child">
-            <div class="hd_title">
-              <a href="javascript:;"><i class="iconfont icon-shouji"></i>APP下载</a>
-            </div>
-            <div class="hd_qrcode_bg">
-              <div class="triangle"></div>
-              <p>扫描二维码</p>
-              <p>下载1号店APP</p>
-              <a href="javascript:;" target="_blank">
-                <img src="http://img.yihaodianimg.com/front-homepage/index/images/qryhd.png">
-              </a>
-            </div>
-          </li>
 
-        </ul>
-      </div>
+    </div> -->
+    <div class="hd_topbar_right fr">
+      <ul class="fl">
+        <li id="global_unlogin">
+          <div class="hd_unlogin">
+            <span class="hd_hi">Hi,请</span>
+            <a href="https://passport.yhd.com/passport/login_input.do" class="hd_login_link">登录&nbsp;</a>
+            <a href="https://passport.yhd.com/passport/register_input.do" class="hd_regist_link">&nbsp;注册</a>
+          </div>
+        </li>
+        <li>
+          <div class="hd_menu fl">
+            <a href="javascript:;" target="_blank" rel="nofollow">
+              <i class="iconfont icon-dingdan"></i>我的订单</a>
+          </div>
+        </li>
+        <li class="hd_has_child hd_cur">
+          <div class="hd_menu">
+            <a href="javascript:;" target="_blank">客户服务</a>
+            <i class="iconfont icon-down"></i>
+          </div>
+          <div class="hd_menu_list">
+            <a href="javascript:;" target="_blank" title="包裹跟踪">包裹跟踪</a>
+            <a href="javascript:;" target="_blank" title="在线退换货">在线退换货</a>
+          </div>
+        </li>
+        <li class="hd_has_child">
+          <div class="hd_title">
+            <a href="javascript:;"><i class="iconfont icon-shouji"></i>APP下载</a>
+          </div>
+          <div class="hd_qrcode_bg">
+            <div class="triangle"></div>
+            <p>扫描二维码</p>
+            <p>下载1号店APP</p>
+            <a href="javascript:;" target="_blank">
+              <img src="http://img.yihaodianimg.com/front-homepage/index/images/qryhd.png">
+            </a>
+          </div>
+        </li>
+
+      </ul>
     </div>
+  </div>
   </div>
   <!--内容部分开始================================= -->
   <div class="yhd_cart_content">
@@ -85,7 +81,9 @@
         <span class="area_txt">配送至：</span>
         <div class="mod_area_select">
           <div class="address">
-            <span class="val_text" id="detail_area_name">北京<i>|</i>昌平区<i>|</i>城区以外</span>
+            <span class="val_text" id="detail_area_name"> <span id="cmbProvince"> 北京</span> <i>|</i><span id="cmbCity">昌平区</span><i>|</i><span
+                id="cmbArea">城区以外</span>
+            </span>
             <i class="iconfont icon-down"></i>
           </div>
           <div class="tab_box none" style="display: none;">
@@ -271,7 +269,7 @@
                   </a>
                   <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
                     <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
-                      max-width="75" max-height="75" src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
+                      src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
                   </a>
                   <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
                     鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
@@ -328,7 +326,7 @@
                   </a>
                   <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
                     <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
-                      max-width="75" max-height="75" src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
+                      src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
                   </a>
                   <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
                     鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
@@ -1357,7 +1355,7 @@
     <div class="c_toolbar_wrap">
       <div class="tbar_wrap_tabs">
         <div class="t_warp_slide_tabs">
-          <div data-value="list" class="t_control_btn_a t_btn_selected" data-tpa="CART_BOUGHT_ITEM">
+          <div data-value="list" class="t_control_btn_a " data-tpa="CART_BOUGHT_ITEM">
             <a href="javascript:;"><i class="iconfont icon-gouwuche"></i><em class="t_same">常购清单</em></a>
           </div>
           <div data-value="favor" class="t_control_btn_a">
@@ -1375,7 +1373,7 @@
         </div>
         <div class="t_warp_link_tabs">
           <div class="t_control_btn_a">
-            <a href="#"><i class="iconfont icon-yinger"></i><em class="t_same">返回顶部</em></a>
+            <a href="javascript:;"><i class="iconfont icon-yinger"></i><em class="t_same">返回顶部</em></a>
           </div>
         </div>
       </div>
@@ -1448,6 +1446,51 @@
           <h4>最近删除</h4>
           <p class="delete_all" style="display: none;"><a href="javascript:;">清空</a></p>
           <div class="t_panel_wrap">
+            <div class="t_prod_listbox">
+              <ul>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/28295641524.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t20086/27/852912407/216418/6a201b15/5b0ce730N1a3bebd4.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/28295641524.html"
+                        target="_blank" style="word-wrap: break-word;">亨泰丰源铁棍怀山药鲜香脆片薯片薄片锅巴【四件7.5折... </a> </div>
+                    <p class="tp_price">¥<b>12.80</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="28295641524"></a>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/1788122.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t15712/170/2610760588/173537/58321504/5ab8572aN91cfe226.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/1788122.html"
+                        target="_blank" style="word-wrap: break-word;">日本进口 白色恋人 北海道 白巧克力夹心饼干12枚 休闲... </a> </div>
+                    <p class="tp_price">¥<b>89.00</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="1788122"></a>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/5233751.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t19312/211/374140508/602490/ba66331f/5a6ee0e8N5e4e0d8b.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/5233751.html"
+                        target="_blank" style="word-wrap: break-word;">华硕（ASUS）PRIME Z370-A 主板（Intel Z370/LGA 11... </a>
+                    </div>
+                    <p class="tp_price">¥<b>1799.00</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="5233751"></a>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="t_prodimg"> <a href="//item.yhd.com/967962.html" target="_blank"><img src="http://img10.360buyimg.com/cms/s75x75_jfs/t11278/30/392755639/112423/3313880b/59eefa1fNa84f0726.jpg"
+                        width="80" height="80"></a> </div>
+                  <div class="t_prodinfo">
+                    <div class="tp_title clearfix"> <a class="ti_name is-truncated" href="//item.yhd.com/967962.html"
+                        target="_blank" style="word-wrap: break-word;">统一 阿萨姆奶茶 原味奶茶 500ml*15瓶 整箱 精选喜马... </a> </div>
+                    <p class="tp_price">¥<b>49.90</b></p> <a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"
+                      data-product-id="967962"></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <p class="null_delte_prod_tit"> 没有最近删除的商品</p>
           </div>
           <div class="tbar_mask_layout none"></div>
@@ -1612,7 +1655,9 @@
   <!-- end footer -->
   <div class="fixde_shop">购物车</div>
   <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/Address.js"></script>
   <script src="js/goShopping.js"></script>
+
 </body>
 
 </html>

@@ -73,8 +73,8 @@
         var $url = $a.find('.mainCart').attr('src')
         setTimeout(function () {
           $a.empty().appendTo('.fixde_shop').addClass('active').css({
-            'left': -wl, 'top': -hl, width: '100%', height: '100%', transform: '',
-            transition: '', 'border-radius': '50%', 'background-image': 'url(' + $url + ')',
+            'left': -wl, 'top': -hl, width: '50px', height: '50px', transform: '',
+            transition: '', 'background-image': 'url(' + $url + ')',
           }).animate({
             left: -wl + 200,
             top: -hl - 100
@@ -126,7 +126,9 @@
       index--
       changePage(index)
     })
-    $('.right_arrow').on('click', function () {
+    $('.right_arrow').on('click', function (e) {
+      //在这里阻止浏览器冒泡目的是为了下面的  213行的document的点击事件！！！
+      e.stopPropagation();
       if (index === LI_LENGTH - 1) {
         index = 0
         $ul.css('left', 0)
@@ -146,14 +148,6 @@
       $('.right_arrow').click()
     }, 3000)
 
-    // $('sale_prod_cont').on('mouseenter', function () {
-    //   clearTimeout(timer)
-    // })
-    // $('sale_prod_cont').on('mouseleave', function () {
-    //   timer = setTimeout(function () {
-    //     $('.right_arrow').click()
-    //   }, 1000)
-    // })
     function changePage(i) {
       clearInterval(timer)
       changeProgress(i)
@@ -176,18 +170,56 @@
 
   // 侧边的收藏特效
 
-  $('.t_control_btn_a').on('click', function () {
-    $('.c_global_toolbar').animate({
-      right: '286px'
-    })
-    $(this).addClass('t_btn_selected').siblings().removeClass('t_btn_selected')
+
+  $('.t_control_btn_a').on('click', function (e) {
+    var e = e || window.event;
+    e.stopPropagation();
+    $('.tbar_wrap_panels>div').eq($(this).index()).addClass('t_panel_content_show').siblings().removeClass('t_panel_content_show')
+    $('.tbar_wrap_panels>div').eq($(this).index()).addClass('toolbar-animate-in').siblings().removeClass('toolbar-animate-in')
+    $('.tbar_wrap_panels>div').eq($(this).index()).removeClass('toolbar-animate-out').siblings().addClass('toolbar-animate-out')
+    var $this = $(this).index()
+    if (!$(this).hasClass('t_btn_selected')) {
+      $('.c_global_toolbar').stop().animate({
+        right: '286px'
+      })
+      $('.t_panel_content').eq($this).stop().animate({
+        left: 0
+      }).siblings().css({
+        left: '286px'
+      })
+      $(this).addClass('t_btn_selected').siblings().removeClass('t_btn_selected')
+    } else {
+      $('.c_global_toolbar').stop().animate({
+        right: 0
+
+      }, function () {
+        $('.t_btn_selected').removeClass('t_btn_selected')
+      })
+
+
+
+    }
+    // console.log($(this).attr('class'))
+
   })
-  $('.t_btn_selected').on('click', function () {
+  $(document).on('click', function () {
     $('.c_global_toolbar').animate({
       right: 0
     })
-    $(this).addClass('t_btn_selected').siblings().removeClass('t_btn_selected')
+    $('.t_btn_selected').removeClass('t_btn_selected')
+
+  })
+  //解绑回顶部的盒子的点击事件
+  $('.t_control_btn_a').eq(3).off('click')
+  $('i.icon-yinger').on('click', function () {
+    $('html,body').animate({
+      scrollTop: 0
+    })
   })
 
 
+
+
+  // 顶部的三级联动
+  addressInit('cmbProvince', 'cmbCity', 'cmbArea', '陕西', '宝鸡市', '金台区');
 }(jQuery))
