@@ -1657,7 +1657,14 @@ height: 100px;
   width: 405px;
   height: 220px;
 }
-
+.mod_global_imported .pro_shoppe {
+  padding-bottom: 1px;
+}
+.mod_global_imported .pro_item_wrap .pro_shoppe {
+  float: left;
+  width: 202px;
+  margin-right: 1px;
+}
 
 
 
