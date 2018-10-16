@@ -1,9 +1,5 @@
 ;(function($){
-    var tabs = [
-        'A', 'B', 'C', 'D','E','F', 'G', 'H', 'J','K', 'L', 'M', 'N', 'P','Q', 'R', 'S', 'T', 'W','X', 'Y', 'Z'
-      ]
-
-// 封装函数得到相关分类
+// 封装函数得到相关分类////////////////////////////
 var relatedPanel=function(related){
     // 创建classWrap
     var $classWrap=$('<div class="classWrap about_filter"></div>')
@@ -14,6 +10,7 @@ var relatedPanel=function(related){
     // 创建guide_main
     // 创建multiple_choice
     var $multiple_choice=$('<div class="multiple_choice"><a href="#">更多<i class="iconfont icon-xiangxia amine"></i></a></div>')
+    
     var $guide_main=$('<div class="guide_main"></div>')
     //创建guide_con
     var $guide_con=$('<ul class="guide_con  clearfix"><ul>')
@@ -29,8 +26,8 @@ var relatedPanel=function(related){
     return $classWrap
 }
 
-// 封装函数得到品牌
-var brandPanel=function(brand){
+// 封装函数得到品牌///////////////////////
+var brandPanel=function(brands){
     // 创建brandWrap
    var $brandWrap=$('<div class="brandWrap wrap_h clearfix"></div>')
     // 创建导航品牌
@@ -49,10 +46,20 @@ var brandPanel=function(brand){
     var $guide_selected=$('<div class="clearfix guide_selected"><div class="sel_title">已选:</div></div>')
     // 创建guide_btn
     var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
-    
+     // 创建multiple_choice
+     var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a><a href="#">更多<i class="iconfont icon-xiangxia amine"></i></a></div>')
+//     <div class="multiple_choice over_mush">
+//     <a href="javascript:;" class="over_any">
+//                 多选
+//             </a>
+//     <a href="#">
+//         更多 <i class=" iconfont icon-xiangxia amine"></i>
+//     </a>
+  
+// </div>
 
     // 循环遍历brand
-    $.each(brand,function(index,brad){
+    $.each(brands,function(index,brad){
         var $content=$('<li data-type="'+brad.zm+'"><a href="javascript:;"><span class="sr" >'+brad.press+'</span><span class="sl">'+brad.press+'</span><span class="cl"></span></a></li>')
         
         $jspContainer.append($guide_ul.append($content))
@@ -63,16 +70,23 @@ var brandPanel=function(brand){
     
     $guide_selected.appendTo($guide_main)
     $guide_btn.appendTo($guide_main)
+    $multiple_choice.appendTo($brandWrap)
     $guide_title.appendTo($brandWrap)
     $guide_main.appendTo($brandWrap)
    
     return $brandWrap
 
 }
-var hotWriterPanel=function(hotwriter){
+// 封装函数得到热门作家///////////////////////
+var searchPanel=function(search){
+
+
+var $search_guide=$('<div class="search_guide clearfix search_add_border"></div>')
+
+    var hotWriterPanel=function(hotwriters){
         // 创建guide_box
         var $guide_box=$('<div class="guide_box guide_no_margin"></div>')
-         // 创建导航品牌
+         // 创建导航热门作家
         var $guide_title=$('<div class="guide_title"><span>热门作家</span></div>')
         // 创建guide_main
         var $guide_main=$('<div class="guide_main add_padding"></div>')
@@ -80,7 +94,7 @@ var hotWriterPanel=function(hotwriter){
         var $guide_con=$('<ul class="guide_con clearfix"><ul>')
         // 创建guide_btn
         var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
-        $.each(hotwriter,function(index,writer){
+        $.each(hotwriters,function(index,writer){
             var $hot_wr=$('<li><a href="javascript:;"><i class="ali"></i><span class="sp_wid">'+writer.name+'</span></a></li>')
             $guide_con.append($hot_wr)
         })
@@ -90,34 +104,130 @@ var hotWriterPanel=function(hotwriter){
         $guide_main.appendTo($guide_box)
         return $guide_box
         
+    }
+
+    var seriesPanel=function(seriess){
+         // 创建guide_box
+         var $guide_box=$('<div class="guide_box guide_no_margin"></div>')
+           // 创建导航国家及地区
+        var $guide_title=$('<div class="guide_title"><span>国家及地区</span></div>')
+        // 创建guide_main
+        var $guide_main=$('<div class="guide_main"></div>')
+         // 创建guide_con
+         var $guide_con=$('<ul class="guide_con clearfix"><ul>')
+          // 创建guide_btn
+        var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
+        // 循环遍历li
+        $.each(seriess,function(index,series){
+            var $hot_wr=$('<li><a href="javascript:;"><i class="ali"></i><span class="sp_wid">'+series.name+'</span></a></li>')
+            $guide_con.append($hot_wr)
+
+        })
+        $guide_con.appendTo($guide_main)
+        $guide_btn.appendTo($guide_main)
+        $guide_title.appendTo($guide_box)
+        $guide_main.appendTo($guide_box)
+        return $guide_box
+    }
+
+    var agePanel=function(ages){
+         // 创建guide_box
+         var $guide_box=$('<div class="guide_box guide_no_margin"></div>')
+           // 创建导航年龄
+        var $guide_title=$('<div class="guide_title"><span>年龄</span></div>')
+        // 创建guide_main
+        var $guide_main=$('<div class="guide_main"></div>')
+         // 创建guide_con
+         var $guide_con=$('<ul class="guide_con clearfix"><ul>')
+          // 创建guide_btn
+        var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
+        $.each(ages,function(index,age){
+            var $hot_wr=$('<li><a href="javascript:;"><i class="ali"></i><span class="sp_wid">'+age.name+'</span></a></li>')
+            $guide_con.append($hot_wr)
+
+        })
+        $guide_con.appendTo($guide_main)
+        $guide_btn.appendTo($guide_main)
+        $guide_title.appendTo($guide_box)
+        $guide_main.appendTo($guide_box)
+        return $guide_box
+    }
+
+var litYpePanel=function(litYpes){
+    // 创建guide_box
+    var $guide_box=$('<div class="guide_box guide_no_margin"></div>')
+      // 创建导航年龄
+   var $guide_title=$('<div class="guide_title"><span>文学类型</span></div>')
+   // 创建guide_main
+   var $guide_main=$('<div class="guide_main"></div>')
+    // 创建guide_con
+    var $guide_con=$('<ul class="guide_con clearfix"><ul>')
+     // 创建guide_btn
+   var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
+   $.each(litYpes,function(index,litYpe){
+       var $hot_wr=$('<li><a href="javascript:;"><i class="ali"></i><span class="sp_wid">'+litYpe.name+'</span></a></li>')
+       $guide_con.append($hot_wr)
+
+   })
+   $guide_con.appendTo($guide_main)
+   $guide_btn.appendTo($guide_main)
+   $guide_title.appendTo($guide_box)
+   $guide_main.appendTo($guide_box)
+   return $guide_box
 }
 
 
 
+    $search_guide.append(hotWriterPanel(area[2])).append(seriesPanel(area[3])).append(agePanel(area[4])).append(litYpePanel(area[5]))
+    return $search_guide
+}
 
 
 
+var about=function(letter){
+    var arr = area.ant[letter]
+    // var arr=area.ant[by]        
+    var $son_m=$('<div class="son_m"></div>')
+    var $over_any=$('<a href="javascript:;" class="over_any any_one"> 多选</a>') 
+     // 创建guide_btn
+    var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
+    // 循环遍历a
+    $.each(arr,function(index,let){
+        var $scany=$('<a href="'+let.url+'"><i class="sub"></i><span>'+let.mac+'</span></a>')
+        $son_m.append($scany)  
+    })
+    return $son_m
+}
+var propertyPanel=function(propertys){
+    
+    var citiesArr = area[6]
+     // 创建select_property
+    var $select_property=$('<div class="select_property clearfix"></div>')
+     // 创建导航更多筛选项
+   var $guide_title=$('<div class="guide_title"><span>更多筛选项</span></div>')
+   // 创建guide_main
+   var $guide_main=$('<div class="guide_main clearfix"></div>')
+    // 创建guide_ax
+    var $guide_con=$('<ul class="guide_ax clearfix"><ul>')
+    // 循环遍历li
+    $.each(citiesArr,function(index,property){ 
+       
+        var $hot_wr=$('<li><span>'+property.cy+'</span><i class=" iconfont icon-xiangxia"></i></li>')
+            var sj = about(index);
+            $hot_wr.append(sj)
+            $guide_con.append($hot_wr)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    })
+    $guide_con.appendTo($guide_main)
+    $guide_title.appendTo($select_property)
+    $guide_main.appendTo($select_property)
+    return $select_property
+}
+ 
 $.fn.area = function () {
 
     return this.each(function () {
-        $(this).append(relatedPanel(area[0])).append(brandPanel(area[1])).append(hotWriterPanel(area[2]))
+        $(this).append(relatedPanel(area[0])).append(brandPanel(area[1])).append(searchPanel(area[2],area[3],area[4],area[5])).append(propertyPanel(area))
     })
 }
 }(jQuery))

@@ -2647,6 +2647,450 @@ var area={
             {
                 "name": "神话传说"
             }
-        ]
-    
+        ],
+        "6": [{
+                "cy": "奖项"
+            }, {
+                "cy": "文化类型"
+            }, {
+                "cy": "时代"
+            }, {
+                "cy": "绘本馆"
+            }, {
+                "cy": "系列"
+            }, {
+                "cy": "分类"
+            }, {
+                "cy": "绘本系列"
+            }, {
+                "cy": "启蒙类型"
+            }, {
+                "cy": "版本"
+            }, {
+                "cy": "大师绘本"
+            }, {
+                "cy": "励志大师"
+            }, {
+                "cy": "名家"
+            }, {
+                "cy": "手工/游戏类型"
+            }, {
+                "cy": "篇幅"
+            }, {
+                "cy": "科目"
+        }],
+        "ant": {
+            "0": [
+                {
+                    "mac": "文津图书奖",
+                    "url": "https://search.yhd.com/c1713-0-0"
+                }, {
+                    "mac": "诺贝尔文学奖",
+                    "url": "https://search.yhd.com/c1713-0-0"
+                }, {
+                    "mac": "凯迪克金奖",
+                    "url": "https://search.yhd.com/c1713-0-0"
+                }
+            ],
+            "1": [
+                {
+                    "mac": "成语/谚语",
+                    "url": "https://search.yhd.com/c1713-0-0"
+                }, {
+                    "mac": "百家姓",
+                    "url": "https://search.yhd.com/c1713-0-0"
+                }, {
+                    "mac": "三字经",
+                    "url": "https://search.yhd.com/c1713-0-0"
+                }
+            ],
+		"2": [
+			{
+				"mac": "明清",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "秦汉及以前",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "宋元",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "近现代",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "隋唐",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "三国至南北朝",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"3": [
+			{
+				"mac": "蒲蒲兰",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "信谊",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "启发",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "海豚绘本花园",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "暖房子",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "凯迪克",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "麦克米伦",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "麦田",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"4": [
+			{
+				"mac": "田英章字帖",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "阿衰",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "53天天练",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "期末冲刺100分",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "轻松过关",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "墨点字帖",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "黄冈小状元",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "知中",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "牛津",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "司马彦字帖",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "蒙台梭利育儿",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "梦想成真",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "小学教材全解",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "朗文",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "新民说",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "剑桥英语",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "孤独星球(Lonely Planet)",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "尖子生题库",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"5": [
+			{
+				"mac": "词汇",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "试卷",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "专项训练",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "阅读/写作",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "辅导用书",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "听力",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"6": [
+			{
+				"mac": "彼得兔",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "聪明豆",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "卡梅拉",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"7": [
+			{
+				"mac": "好奇认知",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "拼音读物",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "数学算术",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "识字说话",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "儿歌童谣",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "挂图/卡片",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "描红字帖",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "迷宫/谜语",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"8": [
+			{
+				"mac": "人教版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "其他",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "中英对照",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "人教A版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "英文版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "苏教版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "北师版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "人教PEP版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "外研版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "语文S版",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "英汉/汉英",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"9": [
+			{
+				"mac": "宫西达也",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "谢尔·希尔弗斯坦",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "五味太郎",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "李欧·李奥尼",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "朵琳·克罗宁",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "山姆·麦克布雷尼",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "维吉尼亚·李·伯顿",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "岩村和朗",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "莫·威廉斯",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "玛格丽特·怀兹·布朗",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"10": [
+			{
+				"mac": "戴尔·卡耐基",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "拿破仑·希尔",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"11": [
+			{
+				"mac": "天蚕土豆",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "金庸",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "张嘉佳",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "乐小米",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "井上雄彦",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "东野圭吾",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "胡雪岩",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "曾国藩",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "狄更斯",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "托尔斯泰",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "郭敬明",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "小仲马",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "简·奥斯汀",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "莫泊桑",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "莫言",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "柯南道尔",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "巴尔扎克",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "欧·亨利",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"12": [
+			{
+				"mac": "立体/拼图",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "剪纸/折纸",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "数独/填字",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "贴纸/贴图",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "手工书",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"13": [
+			{
+				"mac": "长篇",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "短篇",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "中篇",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		],
+		"14": [
+			{
+				"mac": "化学",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "物理",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "数学",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "语文",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "英语",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "计算机",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "理科综合",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "线性代数",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "政治",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "历史",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "医药卫生",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "理科",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "高数",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "生物",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "地理",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "法律",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "医疗卫生",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}, {
+				"mac": "艺术",
+				"url": "https://search.yhd.com/c1713-0-0"
+			}
+		]
+    }
+
 }
