@@ -130,11 +130,8 @@ $(function(){
               $('.hd_search_tips_result').css("display","none");
             })
           }),
-
-
-
     //  tab切换
-    $('li.item').on('mouseenter',function(){
+    $('li.lb').on('mouseenter',function(){
         $(this).addClass('active').siblings('.active').removeClass('active')
         $('.panel_con').eq($(this).index()).show().siblings().hide()
     })

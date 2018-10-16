@@ -550,9 +550,22 @@
     background: url(../img/import_arrow_sprite.png) no-repeat 0 -9px;
 }
 /* 内容栏 */
-.category_tab .active{
-    background-color:red;
+.category_tab .active .category_title{
+    color:#333;
 }
+.category_tab .active{
+  background-color:#ffff;
+  border-left: 4px solid #a67f47;
+}
+
+
+.category_tab .active a{
+  border: 0;
+}
+.category_tab .active a .iconfont{
+  color:#47403c;
+}
+
 .category_con .active{
     display:none;
 }

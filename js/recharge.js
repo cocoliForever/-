@@ -124,5 +124,18 @@
               $('.hd_search_tips_result').css("display","none");
             })
           })
+          // 所有商品分类的下拉菜单
+          $(function(){
+            $('.aa1').mouseover(function(){
+                $('.hd_cm_menu').css("display","block");
+            })
+            $('.hd_cm_allsort').on('mouseleave',function(){
+              $('.hd_cm_menu').css("display","none");
+            })
+
+
+
+
+          })
           
 }(jQuery))
