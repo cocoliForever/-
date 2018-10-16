@@ -321,7 +321,36 @@
             $('.hd_search_tips_result').css("display","none");
           });
         }
-
+      })
+    })
+    //鼠标浮上去图片的大小和阴影发生变化
+    $(function(){
+     $('.mod_global_imported .center_con').on('mouseenter','a',function(){
+        var width = parseInt($(this).css('width')),
+        height = parseInt($(this).css('height'));
+        $(this).css({
+          'z-index':105,
+          'box-shadow': '0 0 5px #bdbcbc',
+        }).animate({
+          top:-5,
+          left:-5,
+          width: width+10,
+          height: height+10
+        },0)
+      }).on('mouseleave','a',function(){
+        var width = parseInt($(this).css('width')),
+        height = parseInt($(this).css('height'));
+        $(this).animate({
+          top:0,
+          left:0,
+          width: width-10,
+          height: height-10
+        },0,function(){
+          $(this).css({
+            'z-index':'',
+            'box-shadow': '',
+          })
+        })
       })
     })
 })()
