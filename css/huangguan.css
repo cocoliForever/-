@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+.jShopHeader{
+    height: 30px;
+    width: 100%;
+    background: #fafafa;
+    position: relative;
+    z-index: 5;
+    zoom: 1;
+    font-size: 12px;
+}
+.jShopHeaderArea{
+    width:990px;
+    height: 30px;
+    margin:  0 auto;
+    /* float: right; */
+    white-space: nowrap;
+}
+.jShopHeaderArea .j-shopHeader{
+    float: right;
+}
+.j-shopHeader .jLogo{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.jShopHeader .jLogo a {
+    color: #333333;
+    font-size: 12px;
+    text-decoration: none;
+}
