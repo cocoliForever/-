@@ -1,0 +1,346 @@
+.try_new_slide {
+  position: relative;
+  height: 450px;
+}
+.try_new_slide .slide_con {
+  position: relative;
+  height: 100%;
+}
+.try_new_slide .slide_con li {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.try_new_slide .slide_con li a {
+  display: block;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+.try_new_slide .slide_con li a img {
+  width: 1228px;
+  height: 450px;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+.try_new_slide .slide_num {
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  z-index: 2;
+  width: auto;
+}
+.try_new_slide .slide_num ol {
+  float: left;
+  position: relative;
+  left: -50%;
+  text-align: right;
+  white-space: nowrap;
+}
+.try_new_slide .slide_num ol li {
+  display: inline-block;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+  padding: 2px;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.try_new_slide .slide_num ol li.cur {
+  background-color: #ff4040;
+  opacity: 1;
+}
+.try_new_slide .slide_num ol li i {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: .7;
+}
+.try_new_slide a.show_next {
+  margin-left: 558px;
+}
+.try_new_slide a.show_next, .try_new_slide a.show_pre {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 178px;
+  left: 50%;
+  z-index: 4;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.4);
+  text-align: center;
+  line-height: 44px;
+}
+.try_new_slide a.show_next i, .try_new_slide a.show_pre i {
+  font-size: 16px;
+  opacity: .3;
+}
+.try_new_slide a.show_pre {
+  margin-left: -602px;
+}
+.try_new_new_arrival {
+  width: 100%;
+  height: 550px;
+  background: #fff url(https://img.yihaodianimg.com/front-channel/channel/likenew/images/new_arrival.png?3dfe709) no-repeat center center;
+}
+.try_new_new_category.try_new_new_arrival .new_category_center {
+  padding-top: 42px;
+}
+.try_new_new_category .new_category_center {
+  height: 76px;
+  text-align: center;
+}
+.try_new_new_category .new_category_center .new_category_hd {
+  display: inline-block;
+  height: 40px;
+}
+.new_category_hd .likenew_iconfont {
+  position: relative;
+  top: 9px;
+  margin-right: 9px;
+  color: #ed514c;
+  font-size: 22px;
+}
+.new_category_center .new_category_hd h2.new_category_tit {
+  color: #dd3737;
+  font: normal 26px/40px 'Microsoft YaHei';
+}
+.fl {
+  float: left;
+}
+.try_new_new_category .new_category_center .new_category_en_hd {
+  height: 36px;
+  color: #333;
+  font: normal 22px/36px 'Lucida Handwriting';
+}
+.new_arrival_banner_box {
+  margin-top: 48px;
+}
+.new_arrival_banner_list {
+  margin-right: -59px;
+}
+.new_arrival_banner_box .item {
+  float: left;
+  margin-right: 59px;
+  transition: transform .4s ease;
+}
+.new_arrival_banner_box .item .banner_link {
+  display: block;
+  position: relative;
+  width: 370px;
+  height: 270px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.new_arrival_banner_box .item .banner_link img {
+  width: 370px;
+  height: 270px;
+}
+.new_arrival_banner_box .item .item_mask, .new_arrival_banner_box .item .banner_tit {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 370px;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+}
+.new_arrival_banner_box .item .banner_tit {
+  z-index: 3;
+  color: #333;
+  font: bold 16px/60px simsun;
+  overflow: hidden;
+}
+.new_arrival_banner_box .item .item_mask {
+  background-color: #fff;
+  opacity: .9;
+}
+.try_new_bg {
+  background: #ededed url(htt://images/bodybg.png?3dfe709) no-repeat top center;
+}
+.try_new_new_category.try_new_new_selected .new_category_center {
+  padding-top: 70px;
+}
+.try_new_new_category .new_category_center {
+  height: 76px;
+  text-align: center;
+}
+.try_new_new_category .new_category_center .new_category_hd {
+  display: inline-block;
+  height: 40px;
+}
+.new_category_hd .likenew_iconfont {
+  position: relative;
+  top: 9px;
+  margin-right: 9px;
+  color: #ed514c;
+  font-size: 22px;
+}
+.new_category_center .new_category_hd h2.new_category_tit {
+  color: #dd3737;
+  font: normal 26px/40px 'Microsoft YaHei';
+}
+.try_new_new_category .new_category_center .new_category_en_hd {
+  height: 36px;
+  color: #333;
+  font: normal 22px/36px 'Lucida Handwriting';
+}
+.try_new_page_category {
+  position: relative;
+  margin-top: 30px;
+  background-color: #ededed;
+  overflow: hidden;
+}
+.try_new_page_category .product_list_box {
+  margin-right: -20px;
+}
+.try_new_page_category .page_category .product_list_box li.pro_items_box.two_pro_category {
+  width: 610px;
+  height: 300px;
+}
+
+.try_new_page_category .page_category .product_list_box li.pro_items_box {
+  position: relative;
+  float: left;
+  margin: 0 10px 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 0 60px #fff inset;
+  transition: box-shadow .2s linear 0s;
+}
+.product_list_box li.pro_items_box.two_pro_category .pro_items {
+  width: 610px;
+  height: 220px;
+  padding: 40px 0;
+}
+.product_list_box li.pro_items_box .pro_items {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product_list_box li.pro_items_box .pro_items .pro_link {
+  display: block;
+}
+.try_new_page_category .two_pro_category .pro_img_con {
+  float: left;
+  margin: 0 35px 0 40px;
+}
+.try_new_page_category .pro_img_con {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+.product_list_box li.pro_items_box .pro_items .pro_link img {
+  width: 220px;
+  height: 220px;
+  background: url(http://images/loading.gif?3dfe709) no-repeat center;
+}
+.try_new_page_category .product_list_box .pro_items_box .pro_img, .product_list_box .pro_items_box .pro_img_link {
+  display: block;
+}
+.try_new_page_category .product_list_box .two_pro_category .pro_items_detail {
+  position: relative;
+  width: 250px;
+  height: 220px;
+}
+.try_new_page_category .product_list_box .pro_items_box.two_pro_category .pro_tit {
+  height: 48px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+.try_new_page_category .product_list_box .pro_items_box .pro_tit {
+  width: 100%;
+  color: #333;
+  font: normal 12px/18px "Microsoft YaHei";
+  overflow: hidden;
+}
+.try_new_page_category .product_list_box .pro_items_box.two_pro_category .for_sale {
+  position: relative;
+  height: 24px;
+  margin-top: 20px;
+  padding-top: 20px;
+  overflow: hidden;
+  color: #999;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.try_new_page_category .product_list_box .pro_items_box.two_pro_category .for_sale em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #dbdbdb;
+  font-size: 0;
+}
+.try_new_page_category .product_list_box .pro_items_box.two_pro_category .for_sale span {
+  position: relative;
+  float: left;
+  max-width: 220px;
+  padding: 0 10px;
+  margin-left: 6px;
+  background-color: #ff5a3e;
+  background: -webkit-linear-gradient(left,#ed5151 0%,#ed4dc8 100%);
+  background: linear-gradient(to right,#ed5151 0%,#ed4dc8 100%);
+  color: #fff;
+}
+.try_new_page_category .pro_items_box .cart-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  color: #ff4e48;
+}
+.try_new_page_category .product_list_box .pro_items_box.two_pro_category .price_box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+}
+.try_new_page_category .product_list_box .pro_items_box .price_box {
+  display: block;
+  margin-top: 10px;
+  color: #ed1b2f;
+  text-align: center;
+}
+.try_new_page_category .pro_items_box.two_pro_category .price_box .price {
+  height: 40px;
+}
+
+.try_new_page_category .pro_items_box .price_box .price {
+  height: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  font-family: 'Microsoft YaHei';
+}
+.try_new_page_category .pro_items_box.two_pro_category .price_box .price span {
+  font-size: 20px;
+  line-height: 40px;
+}
+.try_new_icon {
+  background: url(https://img.yihaodianimg.com/front-channel/channel/likenew/images/icons.png?3dfe709);
+  
+}
