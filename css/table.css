@@ -100,6 +100,7 @@
     right: 5px;
     top: 7px;
     position: absolute;
+    z-index: 5;
 }
 .multiple_choice a{
     margin-right:5px;
@@ -191,19 +192,26 @@ border-radius: 2px;
     overflow: hidden;
     width: 1292px;
     margin: 6px 0 6px 13px;
+    position: relative;
+}
+.guide_lists:hover .jspDrag{
+    display: block;
 }
 .jspContainer{
     height: auto;
     width: 1292px;
-    overflow: hidden;
+    height: 886px;
+    /* overflow: hidden; */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.jspPane{
-    width:98%;
-}
+
 .guide_ul{
     border-left: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
     padding-top: 1px;
+    position: relative;
     width: 1156px;
 }
 .guide_ulto{
@@ -213,7 +221,7 @@ border-radius: 2px;
 .guide_ul li{
     border-right: 1px solid #e5e5e5;
     border-top: 1px solid #e5e5e5;
-    /* border-bottom: 1px solid #e5e5e5; */
+    border-bottom: 1px solid #e5e5e5;
     float: left;
     margin-top: -1px;
     overflow: hidden;
@@ -270,13 +278,40 @@ border-radius: 2px;
     bottom: -1px;
     display:none;
 }
-.guide_ul li:hover .cl{
-    /* display: block; */
-}
+ /* .guide_ulto:hover .jspDrag{
+    display: block;
+} */
 .brandWrap .over_mush{
     position: absolute;
     top: 15px ;
     right: 5px;
+}
+.jspVerticalBar{
+    width: 8px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.jspVerticalBar:hover .jspDrag{
+    display: block;
+}
+.jspVerticalBar .jspTrack{
+    height:107px;
+    position: relative;
+   
+}
+ .jspDrag{
+    height: 48px;
+    width: 8px;
+    display:none;
+    background: #979797;
+    border-radius: 4px;
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 5px;
+    
 }
 .add_padding .over_any:focus .guide_switch{
     display: block;
@@ -294,6 +329,23 @@ border-radius: 2px;
     padding: 6px 0 6px 13px;
     display: none;
 }
+.ansery{
+    float: left;
+    margin-left: 8px;
+    font-size: 12px;
+    /* margin: 18px 0; */
+    line-height: 20px;
+    width: auto;
+    padding: 3px 2px;
+    border: 1px solid #ffdfd2;
+    color:#ff8556
+
+}
+.ansery span{
+    color:#ff8556;
+    margin-left: 6px;
+    cursor: pointer;
+}
 .sel_title{
     float: left;
     width: 40px;
@@ -303,6 +355,9 @@ border-radius: 2px;
 .guide_btn{
     text-align: center;
     display: none;
+}
+.btn_ok{
+    cursor: not-allowed;
 }
 .guide_btn a{
     color: #999;

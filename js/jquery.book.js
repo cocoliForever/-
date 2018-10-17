@@ -47,20 +47,15 @@ var brandPanel=function(brands){
     // 创建guide_btn
     var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
      // 创建multiple_choice
-     var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a><a href="#">更多<i class="iconfont icon-xiangxia amine"></i></a></div>')
-//     <div class="multiple_choice over_mush">
-//     <a href="javascript:;" class="over_any">
-//                 多选
-//             </a>
-//     <a href="#">
-//         更多 <i class=" iconfont icon-xiangxia amine"></i>
-//     </a>
-  
-// </div>
+     var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a><a href="#" class="many">更多<i class="iconfont icon-xiangxia amine"></i></a></div>')
+    // 添加滚动条jspVerticalBar
+    var $jspVerticalBar=$('<div class="jspVerticalBar"></div>')
+    var $jspTrack=$('<div class="jspTrack"></div>')
+    
 
     // 循环遍历brand
     $.each(brands,function(index,brad){
-        var $content=$('<li data-type="'+brad.zm+'"><a href="javascript:;"><span class="sr" >'+brad.press+'</span><span class="sl">'+brad.press+'</span><span class="cl"></span></a></li>')
+        var $content=$('<li data-type="'+brad.zm+'" data-index="'+brad.cold+'"><a href="javascript:;"><span class="sr" >'+brad.press+'</span><span class="sl">'+brad.press+'</span><span class="cl"></span></a></li>')
         
         $jspContainer.append($guide_ul.append($content))
     })
@@ -68,6 +63,8 @@ var brandPanel=function(brands){
     $guide_switch.appendTo($guide_main)
     $guide_lists.appendTo($guide_main)
     
+    $jspTrack.appendTo($jspVerticalBar)
+    $jspVerticalBar.appendTo($guide_lists)
     $guide_selected.appendTo($guide_main)
     $guide_btn.appendTo($guide_main)
     $multiple_choice.appendTo($brandWrap)
