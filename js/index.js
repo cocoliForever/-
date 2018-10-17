@@ -323,34 +323,41 @@
         }
       })
     })
-    //鼠标浮上去图片的大小和阴影发生变化
-    $(function(){
-     $('.mod_global_imported .center_con').on('mouseenter','a',function(){
-        var width = parseInt($(this).css('width')),
-        height = parseInt($(this).css('height'));
-        $(this).css({
-          'z-index':105,
-          'box-shadow': '0 0 5px #bdbcbc',
-        }).animate({
-          top:-5,
-          left:-5,
-          width: width+10,
-          height: height+10
-        },0)
-      }).on('mouseleave','a',function(){
-        var width = parseInt($(this).css('width')),
-        height = parseInt($(this).css('height'));
-        $(this).animate({
-          top:0,
-          left:0,
-          width: width-10,
-          height: height-10
-        },0,function(){
-          $(this).css({
-            'z-index':'',
-            'box-shadow': '',
-          })
-        })
-      })
-    })
+    //鼠标浮上去图片的大小和阴影发生变化效果不是很好已经弃用
+    // $(function(){
+    //   var width,height,width2,height2;
+    //  $('.mod_global_imported .center_con').on('mouseenter','a',function(){
+    //     width = parseInt($(this).css('width')),
+    //     height = parseInt($(this).css('height'));
+    //     width2 = $(this).find('img').css('width');
+    //     console.log($(this).find('img'))
+    //     height2 = $(this).find('img').css('height');
+    //     $(this).css({
+    //       'z-index':105,
+    //       'box-shadow': '0 0 5px #bdbcbc',
+    //     }).stop().animate({
+    //       top:-3.5,
+    //       left:-3.5,
+    //       width: width+7,
+    //       height: height+7
+    //     },200)
+    //     $(this).find('img').animate({
+    //       width: width2+7,
+    //       height: height2+7
+    //     },200)
+    //   }).on('mouseleave','a',function(){
+    //     $(this).css({
+    //       'z-index':'',
+    //       'box-shadow': '',
+    //       top:0,
+    //       left:0,
+    //       width: width,
+    //       height: height
+    //     },200,function(){
+    //       $(this).css({
+            
+    //       })
+    //     })
+    //   })
+    // })
 })()

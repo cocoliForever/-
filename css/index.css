@@ -1684,7 +1684,7 @@ height: 100px;
   width: 140px;
   height: 140px;
 }
-/* .mod_global_imported .center_con a:hover {
+.mod_global_imported .center_con a:hover {
   z-index: 105;
   -webkit-box-shadow: 0 0 5px #bdbcbc;
   -moz-box-shadow: 0 0 5px #bdbcbc;
@@ -1694,7 +1694,7 @@ height: 100px;
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
-} */
+}
 .mod_global_imported .pro_shoppe .pro_tit {
   width: 150px;
   height: 24px;
