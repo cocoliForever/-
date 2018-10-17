@@ -140,58 +140,63 @@ $(function(){
         $(this).find('li.active').removeClass('active')
         
     })
-    // 顶部的轮播
-          var $ul = $('#lb')//获取图片外的ul
-          var $li1 = $ul.children().eq(0)//找到第一张图片
-          var $li2 = $ul.children().eq(1)//找到第二张图片
-          var LI_WIDTH = $li1.width()//得到每一张图片li的宽度
-          var LI_LENGTH = $ul.children().length//得到ul下子元素的长度即为子元素的个数为5
-          var index = 0
-          $('.slides_right').on('click', function () {
-            index++ 
-            if (index == LI_LENGTH - 1) {//当index值加到为1的回到第2个图片的位置
-            $li1.fadeToggle()
-            $li2.fadeToggle()
-            $('#bl_li li').eq(index).addClass('cur').siblings('.cur').removeClass('cur')
-            index = 0
-            }
-            // changePage(index)
-          })
-          $('.slides_left').on('click', function () {
-            if (index == 0) {//当index值减到为0的时候再回到最后一个图片的位置
-              index = LI_LENGTH - 1//同时让index的值变为1
-              $li1.fadeToggle()
-              $li2.fadeToggle()
-            }
-            index--
-            // changePage(index)
-          })
-          $("#bl_li").on('click', 'li', function () {
-            var i = $(this).index()
-            index = i
-            // changePage(i)
-          })
-        //   timer = setTimeout(function () {
-        //     $('.next').click()
-        //   }, 3000)
-        //   function changePage (i) {
-        //     clearTimeout(timer)
-        //     changeProgress(i)
-        //     $ul.stop().animate({
-        //       left: -i * LI_WIDTH
-        //     }, function () {
-        //       timer = setTimeout(function () {
-        //         $('.next').click()
-        //       }, 3000)
-        //     })
-        //   }
-        //   function changeProgress (i) {
-        //     if (i === LI_LENGTH - 1) {
-        //       i = 0
-        //     }
-        //     $('i').removeClass('active').eq(i).addClass('active')
-        //   }
+   
+           var $ul = $('#lb')//获取图片外的ul
+           var $li1 = $ul.children().eq(0)//找到第一张图片
+            $ul.append($li1.clone())//对第一张图片克隆并添加到后面  append在某元素的最后一个子元素后添加
 
+            var LI_WIDTH = $li1.height()//得到每一张图片li的宽度
+            var LI_LENGTH = $ul.children().length//得到ul下子元素的长度即为子元素的个数为3
+            var index = 0
+            $('.slides_right').on('click', function () {
+              if (index === LI_LENGTH - 1) {//当index值加到为4的回到第一个图片的位置
+                index = 0
+                $ul.css('top', 0)
+              }
+              index++ 
+              changePage(index)
+            })
+            $('.slides_left').on('click', function () {
+              if (index === 0) {//当index值减到为0的时候再回到最后一个图片的位置
+                index = LI_LENGTH - 1//同时让index的值变为4
+                $ul.css('top', -index * LI_WIDTH)
+              }
+              index--
+              changePage(index)
+            })
+            $("#bl_li").on('click', 'li', function () {
+              var i = $(this).index()
+              index = i
+              changePage(i)
+            })
+            timer = setTimeout(function () {
+              $('.slides_right').click()
+            }, 3000)
+            function changePage (i) {
+              clearTimeout(timer)
+              changeProgress(i)
+              $ul.children().stop().animate({
+                opacity:0,
+              },300)  
+              $ul.children().eq(index).stop().animate({
+                opacity:1,
+              },300) 
+              $ul.stop().animate({
+                top: -i * LI_WIDTH,
+              },0, function () {
+                timer = setTimeout(function () {
+                  $('.slides_right').click()
+                }, 3000)
+              })
+            }
+            function changeProgress (i) {
+              if (i === LI_LENGTH - 1) {
+                i = 0
+              }
+              $('#bl_li li').removeClass('cur').eq(i).addClass('cur')
+            }
+        
+    
 
     // 全球精选轮播
     $(".slide_arrow .slide_left").mouseover(function(){
@@ -237,15 +242,6 @@ $(function(){
     $(".slide_arrow .slide_right1").mouseout(function(){
     $(this).css('backgroundColor','#fff')
     })
-
-   
-
-
-    
-
-
-
-
 
 
     
