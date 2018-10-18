@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+/* 皇冠（danisa）自营旗舰店 */
 .jShopHeader{
     height: 30px;
     width: 100%;
@@ -31,3 +32,58 @@
     font-size: 12px;
     text-decoration: none;
 }
+/* <!-- 店铺页面的内容 --> */
+.layout-container {
+    position: relative;
+}
+.d-layout-row{
+    width: 990px;
+    margin: 0 auto;
+}
+/* 左边的内容 */
+.d-layout-wrap .d-layout-row.d-mult-col .d-layout {
+    float: left;
+    margin-left: 10px;
+}
+.colorGoodsSort-922474 .mc {
+    padding: 15px 15px 0;
+    font-family: \5FAE\8F6F\96C5\9ED1,arial,\5b8b\4f53;
+    background-color: #fcfcfc;
+}
+.colorGoodsSort-922474 .jOneLevel {
+    overflow: hidden;
+    text-align: center;
+}
+.colorGoodsSort-922474 .jOneLevel .jClassi {
+    font-size: 12px;
+    color: #999;
+    font-family: arial,\5FAE\8F6F\96C5\9ED1,\5b8b\4f53;
+}
+.colorGoodsSort-922474 .jOneLevel .jHead {
+    position: relative;
+    font-size: 22px;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    padding: 0 20px 15px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.colorGoodsSort-922474 .jOneLevel .jHead .jDottedleft {
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 13px;
+    height: 4px;
+    width: 4px;
+    background: url(//img14.360buyimg.com/cms/jfs/t3448/126/18152604/1049/6f71a7fc/57fd94c0N39f3eb9c.png) no-repeat;
+}
+.colorGoodsSort-922474 .jOneLevel .jHead .jDottedRight {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 13px;
+    height: 4px;
+    width: 4px;
+    background: url(//img14.360buyimg.com/cms/jfs/t3448/126/18152604/1049/6f71a7fc/57fd94c0N39f3eb9c.png) no-repeat;
+}
+
