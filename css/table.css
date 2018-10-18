@@ -256,10 +256,11 @@ border-radius: 2px;
     left: 0;
     overflow: hidden;
     top:0;
+    color:#ff4040;
     line-height: 40px;
     padding: 5px 0;
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid #ff4040;
 }
 .guide_ul li:hover .sl{
     border-color:#ff4040;
@@ -268,7 +269,7 @@ border-radius: 2px;
 
 }
 .guide_ul li .cl{
-    display: block;
+    /* display: block; */
     background:url(https://img.yihaodianimg.com/yhdsearch_pc/search3/images/searchSprite_png24.png?1200);
     background-position:  -29px -472px;
     width: 14px ;
