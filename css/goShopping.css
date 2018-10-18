@@ -213,11 +213,10 @@ li.hd_has_child:hover .hd_qrcode_bg{
     float: left;
     top: 0;
     position: relative;
-    z-index: 1009;
+    z-index: 5;
 }
 .mod_area_select .address {
     position: absolute;
-    z-index: 1009;
     height: 22px;
     line-height: 22px;
     padding: 2px 38px 2px 11px;
@@ -465,12 +464,12 @@ li.hd_has_child:hover .hd_qrcode_bg{
     /* display: none; */
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1px;
     width: 13px;
     height: 13px;
     line-height: 14px;
     text-align: center;
-    color: #fff;
+    color: #ff4040;
 }
 .cart_tit .label {
     float: left;
@@ -518,7 +517,12 @@ li.hd_has_child:hover .hd_qrcode_bg{
     z-index: 2;
 
 }
-
+.check.checked i, .free_check.checked i {
+    display: none;
+}
+.icon-fangxingduihao{
+    display: none;
+}
 .t_arrow {
     position: absolute;
     left: 50%;
@@ -637,6 +641,9 @@ li.cart_activity {
     position: relative;
     padding: 0 0 0 35px;
     margin-top: 18px;
+}
+.cart_item li:last-child .l2{
+    display: none;
 }
 .cart_activity .cart_prod {
     position: static;
@@ -936,7 +943,12 @@ li.cart_activity {
 .cart_prod:hover .prop_edit .prop_txt {
     border-color: #ccc;
 }
-
+.cart_prod:hover .prop_edit .prop_txt .iconfont {
+    display: block;
+}
+.cart_prod:hover .prop_edit:hover .prop_txt .iconfont{
+    background: #ff5e5e;;
+}
 /* 七天退货和 倒计时部分 */
 .tip_dialog {
     position: absolute;
@@ -1008,10 +1020,10 @@ li.cart_activity {
 .prop_server .server_tips .t_arrow_top {
     left: 10px;
 }
-.prop_server .server_tips .t_arrow_top span {
+.t_arrow_top span {
     border-bottom-color: #e5debc;
 }
-.prop_server .server_tips .t_arrow_top i {
+.t_arrow_top i {
     border-bottom-color: #fff7d1;
 }
 .prop_server:hover .server_tips {
@@ -1140,6 +1152,75 @@ html,body{
     font-size: 12px;
     color: #999;
 }
+
+/* 删除遮罩部分 */
+.popup_mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    z-index: 1212;
+    background-color: rgba(0 ,0,0, .5);
+    
+    
+}
+.pop_dialog {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    padding: 25px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 2px;
+     font-size: 12px;
+}
+.tit {
+    font-weight: bold;
+    line-height: 34px;
+}
+.pop_dialog p {
+   
+    text-align: center;
+    line-height: 22px;
+}
+.pop_dialog .close_btn {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 13px;
+    height: 13px;
+    background: url(https://img.yihaodianimg.com/cart/shopping/pc/images/sprite.png) -66px -11px;
+    _background: url(https://img.yihaodianimg.com/cart/shopping/pc/images/sprite.png) -66px -11px;
+}
+.pop_dialog .btn_box {
+    padding-top: 15px;
+    text-align: center;
+    _width: 180px;
+}
+.pop_dialog .btn_box a {
+    display: inline-block;
+    width: 75px;
+    height: 26px;
+    margin: 0 5px;
+    border: 1px solid #ff5e5e;
+    border-radius: 2px;
+    background-color: #ff6c6c;
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+    _float: left;
+}
+.btn_box a.cancel {
+    border-color: #ddd;
+    background-color: #fcfcfc;
+    color: #666;
+}
+
 /* 右面 */
 .pay_tools_inner .pay_tools_r {
     float: right;
@@ -1195,6 +1276,12 @@ html,body{
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
+}
+.pay_tools_bar.tools_bar_bottom  i.icon-down{
+    transform: rotate(180deg)
+}
+.pay_tools_bar.tools_bar_top  i.icon-down{
+    transform: rotate(0deg)
 }
 .pay_tools_r .r_price_total:hover i.icon-down {
     -webkit-transform: rotate(180deg);
@@ -1275,7 +1362,7 @@ html,body{
 .pay_total_tips {
     top: 50px;
     left: 50%;
-    z-index: 223;
+    z-index: 10;
     width: 160px;
     margin-left: 288px;
     padding: 10px 14px 10px 2px;
@@ -1284,12 +1371,19 @@ html,body{
 .pay_total_tips .t_arrow {
     margin-left: -5px;
 }
-.t_arrow_top span {
+.pay_total_tips .t_arrow_top{
+    top:0px;
+}
+.pay_total_tips .t_arrow_bot {
+    top:93px;
+}
+.pay_total_tips .t_arrow_top span {
     border-style: dashed dashed solid dashed;
     border-color: transparent;
     border-bottom-color: #ff5e5e;
 }
-.t_arrow_bot span {
+ .pay_total_tips .t_arrow_bot span {
+
     border-style: solid dashed dashed dashed;
     border-color: transparent;
     border-top-color: #ff5e5e;
@@ -1535,7 +1629,7 @@ img {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1110;
+    z-index: 100;
     width: 0;
     height: 100%;
     _position: absolute;
@@ -1836,34 +1930,41 @@ img {
     background: #fff;
     color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fixde_shop{
+.tools_bar_bottom {
     position: fixed;
-    top: 60%;
-    right: 30px;
-    background: #3333;
-    width:50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 12px;
+    _position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1110;
+    min-width: 1200px;
+    box-shadow: 0px 0px 10px #ccc;
 }
+.tools_bar_top {
+    position: fixed;
+    _position: absolute;
+    margin-top:0px; 
+    top: 0;
+    left: 0;
+    z-index: 1110;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .active{
     width: 100px;
     height: 100px;

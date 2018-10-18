@@ -55,14 +55,14 @@
   })
   var wl, hl, s;
   $(function () {
-    var tiao = function (dom, le, to) {
+    var tiao = function (dom, parmas) {
       $(dom).on('click', function () {
         var $a = $(this).parents('.main_item.item_line');
         height = $a.offset().top
         left = $a.offset().left
         width = $a.width() / 2,
-          fleft = $('.fixde_shop').offset().left
-        ftop = $('.fixde_shop').offset().top
+          fleft = $(parmas).offset().left
+        ftop = $(parmas).offset().top
         wl = fleft - left - width
         hl = ftop - height
         $a.css({
@@ -72,7 +72,7 @@
         var $ts = $(this)
         var $url = $a.find('.mainCart').attr('src')
         setTimeout(function () {
-          $a.empty().appendTo('.fixde_shop').addClass('active').css({
+          $a.empty().appendTo(parmas).addClass('active').css({
             'left': -wl, 'top': -hl, width: '50px', height: '50px', transform: '',
             transition: '', 'background-image': 'url(' + $url + ')',
           }).animate({
@@ -80,8 +80,8 @@
             top: -hl - 100
           }, 500, function () {
             $(this).animate({
-              left: -le,
-              top: -to
+              left: -10,
+              top: -10
             }, 800)
 
             $(this).fadeOut(1000)
@@ -94,8 +94,8 @@
 
     }
     // 调用上面的函数
-    tiao('.del_btn', 0, 0)
-    tiao('.collect_btn', 0, 100)
+    tiao('.del_btn', '#trash')
+    tiao('.collect_btn', '#collect')
   })
 
 
@@ -113,8 +113,6 @@
     //获取对应的属性
     var LI_WIDTH = 360 + 5 * $li1.width();
     var LI_LENGTH = Math.ceil($ul.children().length / 5);
-    console.log(LI_WIDTH)
-    console.log(LI_LENGTH)
     var left = $ul.width(LI_WIDTH * LI_LENGTH)
     // //声明一个变量一会存索引值
     var index = 0;
@@ -172,11 +170,11 @@
 
 
   $('.t_control_btn_a').on('click', function (e) {
+    // 阻止冒泡。为防止冒泡到document点击事件上！！！在下面
     var e = e || window.event;
     e.stopPropagation();
     $('.tbar_wrap_panels>div').eq($(this).index()).addClass('t_panel_content_show').siblings().removeClass('t_panel_content_show')
     $('.tbar_wrap_panels>div').eq($(this).index()).addClass('toolbar-animate-in').siblings().removeClass('toolbar-animate-in')
-    $('.tbar_wrap_panels>div').eq($(this).index()).removeClass('toolbar-animate-out').siblings().addClass('toolbar-animate-out')
     var $this = $(this).index()
     if (!$(this).hasClass('t_btn_selected')) {
       $('.c_global_toolbar').stop().animate({
@@ -202,6 +200,8 @@
     // console.log($(this).attr('class'))
 
   })
+  //解绑回顶部的盒子的点击事件document事件
+  $('.t_control_btn_a').eq(3).off('click')
   $(document).on('click', function () {
     $('.c_global_toolbar').animate({
       right: 0
@@ -209,17 +209,113 @@
     $('.t_btn_selected').removeClass('t_btn_selected')
 
   })
-  //解绑回顶部的盒子的点击事件
-  $('.t_control_btn_a').eq(3).off('click')
+
   $('i.icon-yinger').on('click', function () {
     $('html,body').animate({
       scrollTop: 0
     })
   })
-
-
-
-
   // 顶部的三级联动
-  addressInit('cmbProvince', 'cmbCity', 'cmbArea', '陕西', '宝鸡市', '金台区');
+  // 遍历数据
+  // $.each(provinceList, function (index, data) {
+  //   console.log(data)
+  //   console.log(data.name)
+  //   console.log(data.cityList)
+
+
+  // })
+
+
+  var $top = $('.bottom_wrap').offset().top - $(window).height()
+  var $top1 = $('.bottom_wrap').offset().top - 60
+  // 总价条固定top和bottom
+  $(function () {
+    $(document).on('scroll', function () {
+      // console.log($(this).scrollTop())
+      var _top = $(this).scrollTop()
+      var banH = $('.bottom_wrap').offset().top - _top
+      var screen = $(window).height() / 2
+
+      if (_top < $top) {
+        $(".pay_tools_bar").addClass('tools_bar_bottom')
+        // 这里的条件是为了判断总价条是否到了屏幕中间，为了改变隐藏块的显示方向
+
+        // console.log()
+      } else if ($top1 < _top) {
+        $(".pay_tools_bar").addClass('tools_bar_top')
+      } else {
+        $('.pay_tools_bar').removeClass('tools_bar_bottom')
+        $(".pay_tools_bar").removeClass('tools_bar_top')
+
+      }
+      if (banH <= screen) {
+        $('.pay_total_tips t_arrow').addClass('t_arrow_top')
+        $('.pay_total_tips').css({
+          top: '50px'
+        })
+
+      } else {
+        $('.pay_total_tips t_arrow').addClass('t_arrow_bot')
+        $('.pay_total_tips').css({
+          top: '-86px'
+        })
+      }
+      $('.pay_total_tips .t_arrow').toggleClass('t_arrow_bot')
+
+    })
+  })
+
+
+
+  // 先实现批量删除按键的弹窗功能！！！
+  $(function () {
+    $('.lt_delete').on('click', function () {
+      $('html,body').css({
+        overflowY: 'hidden'
+      })
+      $('.popup_mask').css({
+        display: 'block'
+      })
+    })
+    // 取消
+    $('.cancel.pop_close').on('click', function () {
+      $('html,body').css({
+        overflowY: 'visible'
+      })
+      $(this).parents('.popup_mask').css({
+        display: 'none'
+      })
+    })
+  })
+
+  //实现选择框的关联
+  $(function () {
+    $('.cart_item').on('click', '.check', function () {
+
+      var s = $(this).parents('.cart_item').find('.check').length
+      var num = $(this).parents('.cart_item').find('.check').attr('xz')
+      console.log(num)
+      if (s === num) {
+        $(this).attr('xz', '1')
+        $(this).parents('.cart_list_wrap').siblings('.cart_tit').find('i').css('display', 'block')
+      } else {
+        $(this).removeAttr('xz')
+        $(this).parents('.cart_list_wrap').siblings('.cart_tit').find('i').css('display', 'none')
+      }
+      if ($(this).find('i').css('display') === 'none') {
+        $(this).find('i').css('display', 'block')
+
+      } else {
+        $(this).find('i').css('display', 'none')
+
+      }
+    })
+    $('.cart_tit').on('click', '.check_list', function () {
+      if ($(this).find('i').css('display') === 'none') {
+        $(this).find('i').css('display', 'block').parents('.cart_list').find('.check').find('i').css('display', 'block')
+      } else {
+        $(this).find('i').css('display', 'block').parents('.cart_list').find('.check').find('i').css('display', 'none')
+      }
+    })
+  })
 }(jQuery))
