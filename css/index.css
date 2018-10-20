@@ -1326,6 +1326,8 @@ height: 100px;
 .mod_brand_sale .rank_content li a .no_3 {
   background: url('https://img.yihaodianimg.com/front-homepage/index/images/indexbody_sprite.png?801dc06') no-repeat -120px 0;
 }
+/* 一号闪购样式结束 */
+/* 爱上新样式开始 */
 .mod_on_new{
   margin-top: 20px;
 }
@@ -1572,6 +1574,8 @@ height: 100px;
 .mod_on_new .life_pie .life_pic a .go .iconfont{
   vertical-align: -2px!important;
 }
+/* 爱上新样式结束 */
+/* 中间大图样式开始 */
 .mod_adv_pic{
   margin-top: 20px;
 }
@@ -1583,6 +1587,8 @@ height: 100px;
   background-position: center top;
   overflow: hidden;
 }
+/* 中间大图片样式结束 */
+/* 放全球进口这几个字以及其他内容的一个大盒子样式开始 */
 .mod_global_imported{
   margin-top: 20px;
   height: 490px;
@@ -1712,16 +1718,130 @@ height: 100px;
   width: 203px;
   height: 440px;
 }
-
-
-
-
-
-
-
-
-
-
+.global_category{
+  width: 298px;
+  float: right;
+}
+.global_category li{
+  float: left;
+}
+.global_category .jk_mh{
+  background:  #ffe6ee;
+}
+.global_category .pro_tit{
+  height: 26px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.global_category .jk_mh .pro_tit{
+  color: #f06291;
+}
+.global_category .pro_sub_tit{
+  position: relative;
+  z-index: 105;
+  height: 26px;
+  overflow: hidden;
+  color: #757575;
+  font-family: "Century Gothic";
+}
+.global_category .pro_color{
+  width: 20px;
+  height: 3px;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+.global_category .jk_mh .pro_color{
+  background: #f06291;
+}
+.global_category img{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: -5px;
+  bottom:0px;
+  transition: .4s ease 0s;
+}
+.global_category img:hover{
+  right: 0px;
+}
+.mod_global_imported .global_category a {
+  position: relative;
+  display: block;
+  width: 137px;
+  height: 138px;
+  overflow: hidden;
+  padding: 12px 0 0 12px;
+  line-height: 26px;
+}
+.mod_global_imported .global_category .jk_my .pro_tit {
+  color: #ee9832;
+}
+.mod_global_imported .global_category .jk_my .pro_color {
+  background-color: #ee9832;
+}
+.mod_global_imported .global_category .jk_my {
+  background-color: #fff3e4;
+}
+.mod_global_imported .global_category .jk_sx .pro_tit {
+  color: #54a472;
+}
+.mod_global_imported .global_category .jk_sx .pro_color {
+  background-color: #54a472;
+}
+.mod_global_imported .global_category .jk_jj {
+  background-color: #f9eee9;
+}
+.mod_global_imported .global_category .jk_jj .pro_tit {
+  color: #ad7d62;
+}
+.mod_global_imported .global_category .jk_jj .pro_color {
+  background-color: #ad7d62;
+}
+.mod_global_imported .global_category .jk_cw {
+  background-color: #f0f8ff;
+}
+.mod_global_imported .global_category .jk_cw .pro_tit {
+  color: #468bcb;
+}
+.mod_global_imported .global_category .jk_cw .pro_color {
+  background-color: #468bcb;
+}
+.mod_global_imported .global_category .jk_bj {
+  background-color: #e2f8f2;
+}
+.mod_global_imported .global_category .jk_bj .pro_tit {
+  color: #54a472;
+}
+.mod_global_imported .global_category .jk_bj .pro_color {
+  background-color: #54a472;
+}
+/* 放全球进口这几个字的盒子以及其内容结束 */
+/* 国产食品样式开始 */
+.mod_index_floor{
+  margin-top: 20px;
+  height: 430px;
+  background: #fff;
+}
+.china_food .left_con{
+  background: #f9ab57;
+  background: -moz-linear-gradient(30deg,#f9ab57 0%,#fab775 32%,#f78a4b 100%);
+  background: -webkit-linear-gradient(30deg,#f9ab57 0%,#fab775 32%,#f78a4b 100%);
+  background: -webkit-linear-gradient(60deg,#f9ab57 0%,#fab775 32%,#f78a4b 100%);
+  background: -moz-linear-gradient(60deg,#f9ab57 0%,#fab775 32%,#f78a4b 100%);
+  background: -o-linear-gradient(60deg,#f9ab57 0%,#fab775 32%,#f78a4b 100%);
+  background: linear-gradient(30deg,#f9ab57 0%,#fab775 32%,#f78a4b 100%);
+}
+.mod_index_floor .left_con{
+  position: relative;
+  padding-top: 20px;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  width: 236px;
+  height: 410px;
+}
+.mod_index_floor
 
 
 
