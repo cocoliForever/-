@@ -362,8 +362,9 @@
     //小轮播
     $(function(){
       var len = $('.floor_silder li').length;
-      var index = 0,timer;
+      var index = 0,timer,num=1;
       $('.turn_show').on('click','.next_btn',function(){
+        
         if(index === 3){
           index=0
         }
@@ -399,6 +400,11 @@
         timer = setTimeout(function () {
           $('.next_btn').click()
         }, 3000)
+        num++;
+        if(num === 4){
+          num=1;
+        }
+        $('.show_num span').text(num);
       })
       timer = setTimeout(function(){
         $('.next_btn').click()
