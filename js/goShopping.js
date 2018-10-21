@@ -57,6 +57,7 @@
   $( function () {
     var tiao = function ( dom, parmas ) {
       $( dom ).on( 'click', function () {
+
         var $a = $( this ).parents( '.main_item.item_line' );
         height = $a.offset().top
         left = $a.offset().left
@@ -99,76 +100,56 @@
   } )
 
 
-  // 这里是静态轮播(只有点击状态)
-
+  // 这里是静态轮播(只有点击状态)   轮播乱码。稍后检查！！！
 
   $( function () {
-    function moveImg () {
-      var $ul = $( '.sale_scroll_ul' );
-      var $li1 = $ul.children().eq( 0 );
-      //克隆前五个，利用for循环，为了无缝轮播
-      for ( var $i = 0; $i < 5; $i++ ) {
-        $ul.append( $ul.children().eq( $i ).clone() )
-      }
-      // $ul.append($li1.clone())
-      //获取对应的属性
-      var LI_WIDTH = 360 + 5 * $li1.width();
-      var LI_LENGTH = Math.ceil( $ul.children().length / 5 );
-      var left = $ul.width( LI_WIDTH * LI_LENGTH )
-      // //声明一个变量一会存索引值
-      var index = 0;
-      $( '.left_arrow' ).on( 'click', function () {
-        if ( index === 0 ) {
-          index = LI_LENGTH - 1
-          $ul.css( 'left', -index * LI_WIDTH )
-        }
-        index--
-        changePage( index )
+    var $ul = $( '.sale_scroll_ul.only_ul' );
+    var $li1 = $ul.children().eq( 0 );
+    //克隆前五个，利用for循环，为了无缝轮播
+    //获取对应的属性
+    var LI_WIDTH = 360 + 5 * $li1.width();
+    var LI_LENGTH = Math.ceil( $ul.children().length / 5 );
+    // //声明一个变量一会存索引值
+    var index = 0;
+    $( '.left_arrow_f' ).on( 'click', function () {
+      $( '.right_arrow_f' ).css( {
+        display: 'block'
       } )
-      $( '.right_arrow' ).on( 'click', function ( e ) {
-        //在这里阻止浏览器冒泡目的是为了下面的  213行的document的点击事件！！！
-        e.stopPropagation();
-        if ( index === LI_LENGTH - 1 ) {
-          $ul.css( 'left', 0 )
-          index = 0
-        }
-
-        index++
-        changePage( index )
-      } )
-
-      $( ".view_dot" ).on( 'click', 'span', function () {
-        var i = $( this ).index()
-        index = i
-        changePage( index )
-      } )
-
-      timer = setTimeout( function () {
-        $( '.right_arrow' ).click()
-      }, 3000 )
-
-      function changePage ( i ) {
-        clearInterval( timer )
-        changeProgress( i )
-        $ul.stop().animate( {
-          left: -i * LI_WIDTH
-        }, function () {
-          timer = setTimeout( function () {
-            $( '.right_arrow' ).click()
-          }, 3000 )
+      if ( index === 1 ) {
+        $( this ).css( {
+          display: 'none'
         } )
       }
-
-      function changeProgress ( i ) {
-        if ( i === LI_LENGTH - 1 ) {
-          i = 0
-        }
-        $( '.view_dot span' ).removeClass( 'cur' ).eq( i ).addClass( 'cur' )
+      index--
+      changePage( index )
+    } )
+    $( '.right_arrow_f' ).on( 'click', function () {
+      $( '.left_arrow_f' ).css( {
+        display: 'block'
+      } )
+      if ( index === 2 ) {
+        $( this ).css( {
+          display: 'none'
+        } )
       }
-    }
-    moveImg()
-  } )
+      index++
 
+      changePage( index )
+    } )
+
+    $( ".view_dot" ).on( 'click', 'span', function () {
+      var i = $( this ).index()
+      index = i
+      changePage( index )
+    } )
+
+    function changePage ( i ) {
+      $( '.view_dot span' ).removeClass( 'cur' ).eq( i ).addClass( 'cur' )
+      $ul.stop().animate( {
+        left: -i * LI_WIDTH
+      } )
+    }
+  } )
 
   // 侧边的收藏特效
 
@@ -358,4 +339,39 @@
       }
     } )
   } )
+  // 计算单行价格=================
+  function getSubtotal ( tr ) {
+    var price = tr.find( '.item_price p' ).text;
+    var counts = tr.find( '.num_act.clearfix input' ).val(); //单价
+    var subtotal = cells[ 4 ]; //小计td
+  }
+
+
+
+
+
+  //input筐的点击事件================、
+  var tr = $( '.item_line.main_item' )
+  console.log( tr )
+
+  tr.on( 'click', function ( e ) {
+
+    var e = e || window.event
+    var target = e.target || e.srcElement
+    var cls = target.className
+    var countInout = $( this ).find( 'input' )
+    var value = parseInt( countInout.val() )
+    if ( cls == 'add' ) {
+      countInout.val( value + 1 );
+    }
+    if ( cls == 'minus unable' ) {
+      countInout.val( value - 1 );
+      if ( countInout.val() < 1 ) {
+        countInout.val( 1 )
+      }
+    }
+  } )
+
+
+
 }( jQuery ) )

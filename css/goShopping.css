@@ -753,7 +753,7 @@ li.cart_activity {
     color: #ff5e5e;
     text-align: right;
     line-height: 22px;
-    z-index: 8;
+    z-index: 1;
 }
 .cart_activity .price em {
     color: #666;
@@ -1091,7 +1091,7 @@ html,body{
 .settling_column_bar {
     position: relative;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     height: 60px;
     margin-top: 20px;
 }
@@ -1470,23 +1470,23 @@ html,body{
     position: absolute;
     top: 50%;
     display: inline-block;
-		overflow: hidden;
-		text-align: center;
-    z-index: 8;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
 }
-.sale_prod_cont .left_arrow {
+.sale_prod_cont .left_arrow_f {
     left: 14px;
 }
-.sale_prod_cont .right_arrow {
+.sale_prod_cont .right_arrow_f {
     right: 14px;
 }
 .sale_prod_cont .control_btn i {
     font-size: 24px;
     margin-left: -6px;
 }
- /* .cheap_prod .sale_scroll_box {
+ .cheap_prod .sale_scroll_box {
     width: 820px;
-} */
+}
 
 .sale_prod_cont .control_btn.unable i {
     color: #e5e5e5;
@@ -1502,7 +1502,7 @@ html,body{
 .cheap_prod .sale_scroll_box ul{
     position: absolute;
     left: 0;
-    width: 4368px;
+    width: 4400px;
 
 }
 
