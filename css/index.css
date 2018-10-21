@@ -1841,12 +1841,188 @@ height: 100px;
   width: 236px;
   height: 410px;
 }
-.mod_index_floor
-
-
-
-
-
+.mod_index_floor .left_con h4 {
+  font-weight: normal;
+}
+.mod_index_floor .left_con h4 a{
+  display: inline-block;
+  padding: 0px 10px 10px 15px;
+  font-size: 20px;
+ color: #fff;
+  line-height: 20px;
+}
+.china_food h4 a{
+  border-bottom:solid 1px #feeadd;
+}
+.mod_index_floor .left_con h4 a i {
+  font-style: normal;
+  font-family: \5b8b\4f53;
+  font-weight: bold;
+}
+.mod_index_floor .left_con .en_tit {
+  font-family: "Century Gothic";
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.mod_index_floor .left_con .floor_silder {
+  position: relative;
+  margin-top: 35px;
+}
+.mod_index_floor .left_con .floor_silder ul{
+  width: 195px;
+  height: 225px;
+  position: relative;
+  margin: 0 auto;
+}
+.mod_index_floor .left_con .floor_silder li {
+  position: absolute;
+  width: 195px;
+  height: 225px;
+  margin: 0 auto;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.mod_index_floor .left_con .floor_silder .img_first{
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+.mod_index_floor .left_con .floor_silder li a{
+  display: inline-block;
+  height: 205px;
+  padding-top: 20px;
+}
+.mod_index_floor .left_con .floor_silder .caption {
+  height: 20px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+}
+.china_food .left_con .floor_silder .caption {
+  color: #f78b4b;
+}
+.mod_index_floor .left_con .floor_silder .sub_tit {
+  height: 30px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+}
+.mod_index_floor .left_con .floor_silder li img {
+  width: 130px;
+  height: 130px;
+  margin-top: 5px;
+}
+.mod_index_floor .left_con .floor_silder .color_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 225px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+} 
+.china_food .left_con .floor_silder .img_first .color_mask {
+  background-color: #f89d5d;
+  opacity: 0;
+}
+.mod_index_floor .left_con .floor_silder .img_second {
+  top: -10px;
+  left: 10px;
+  width: 175px;
+  z-index: 90;
+}
+.china_food .left_con .floor_silder .img_second .color_mask {
+  background-color: #f89d5d;
+  opacity: .5;
+}
+.mod_index_floor .left_con .floor_silder .img_third {
+  top: -18px;
+  left: 20px;
+  width: 155px;
+  z-index: 80;
+}
+.mod_index_floor .left_con .floor_silder .img_third {
+  top: -18px;
+  left: 20px;
+  width: 155px;
+  z-index: 80;
+}
+.china_food .left_con .floor_silder .img_third .color_mask {
+  background-color: #f89d5d;
+  opacity: .8;
+}
+.mod_index_floor .left_con .floor_silder .turn_show {
+  position: absolute;
+  top: 234px;
+  left: 67px;
+  height: 30px;
+  line-height: 30px;
+  color: #f8f6f7;
+}
+.mod_index_floor .left_con .floor_silder .prev_btn, .mod_index_floor .left_con .floor_silder .next_btn {
+  float: left;
+  widows: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.index_iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.mod_index_floor .left_con .floor_silder .show_num {
+  float: left;
+  padding: 0 20px;
+  font-family: "Tahoma";
+  font-size: 14px;
+}
+.mod_index_floor .left_con .comment{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 26px;
+  width: 100%;
+  line-height: 26px;
+  padding: 8px 0px;
+  overflow: hidden;
+  background: rgba(255,255,255,.2)
+}
+.mod_index_floor .left_con .comment .comment_left {
+  width: 42px;
+  height: 26px;
+  float: left;
+  color: #fff;
+}
+.china_food .left_con .comment .comment_left {
+  border-right: 1px solid #f7d9b7;
+}
+.china_food .left_con .comment .comment_left .iconfont{
+  font-size: 16px;
+  font-weight: bold;
+}
+.mod_index_floor .left_con .comment .comment_list {
+  width: 173px;
+  height: 26px;
+  overflow: hidden;
+  float: right;
+  padding: 0 10px;
+  text-align: left;
+}
+.mod_index_floor .left_con .comment .comment_list li{
+  color: #fff;
+}
+.mod_index_floor .left_con .comment .comment_list a{
+  color: #fff;
+}
 
 
 

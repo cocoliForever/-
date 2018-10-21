@@ -240,7 +240,6 @@
       $(function(){
         //鼠标浮上去图片改变位置
         var i = 0,s=0,num=0;
-        console.log(num)
         $('.pro_pic').eq(i).css('opacity','0.8')
         $('.prod').hover(function(){
           i = $(this).index();
@@ -360,4 +359,49 @@
     //     })
     //   })
     // })
+    //小轮播
+    $(function(){
+      var len = $('.floor_silder li').length;
+      var index = 0,timer;
+      $('.turn_show').on('click','.next_btn',function(){
+        if(index === 3){
+          index=0
+        }
+        console.log(index)
+        $('.floor_silder li').eq(index).stop().animate({
+          'z-index':80,
+          'width':155,
+          'left':20,
+          'top':-18
+        }).find('.color_mask').css('opacity','.8')
+          index++;
+          console.log(index)
+          if(index === 3){
+            index=0
+          }
+        $('.floor_silder li').eq(index).stop().animate({
+          'z-index':100,
+          'left':0,
+          'width':195,
+          'top':0
+        }).find('.color_mask').css('opacity','0')
+        index++;
+          if(index === 3){
+            index=0
+          }
+          console.log(index)
+        $('.floor_silder li').eq(index).stop().animate({
+          'z-index':90,
+          'width':175,
+          'left':10,
+          'top':-10
+        }).find('.color_mask').css('opacity','.5')
+        timer = setTimeout(function () {
+          $('.next_btn').click()
+        }, 3000)
+      })
+      timer = setTimeout(function(){
+        $('.next_btn').click()
+      },3000)
+    })
 })()
