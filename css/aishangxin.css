@@ -645,15 +645,15 @@ a {
   color: #333;
 }
 .new_arrival_banner_box .item .banner_link img {
-  width: 370px;
-  height: 270px;
+  width: 310px;
+  height: 230px;
 }
 .new_arrival_banner_box .item .item_mask, .new_arrival_banner_box .item .banner_tit {
   position: absolute;
   left: 0;
   bottom: 0;
   z-index: 2;
-  width: 370px;
+  width: 310px;
   height: 60px;
   color: #fff;
   text-align: center;
@@ -1150,3 +1150,14 @@ a {
   margin: 0 4px;
 }
 /*footer end*/
+
+
+
+
+/* img */
+.item a{
+  transition: all .3s;
+}
+.item a:hover{
+  transform: scale(1.2);
+}
