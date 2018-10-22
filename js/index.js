@@ -362,52 +362,78 @@
     //小轮播
     $(function(){
       var len = $('.floor_silder li').length;
-      var index = 0,timer,num=1;
+      var index = 0,timer,num=1,s=0;
       $('.turn_show').on('click','.next_btn',function(){
-        
+        clearTimeout(timer)
         if(index === 3){
           index=0
         }
-        console.log(index)
+        change1(index);
+          index++;
+          if(index === 3){
+            index=0
+          }
+       change2(index)
+        index++;
+          if(index === 3){
+            index=0
+          }
+        change3(index);
+        index--;
+        timer = setTimeout(function () {
+          $('.next_btn').click()
+        }, 3000)
+      })
+      $('.turn_show').on('click','.prev_btn',function(){
+        clearTimeout(timer);
+        if(index === -1){
+          index=2
+        }
+        change3(index);
+          index--;
+          if(index === -1){
+            index=2
+          }
+        change2(index);
+        console.log(index+1)
+        index--;
+          if(index === -1){
+            index=2
+          }
+        change1(index);
+        index++;
+        timer = setTimeout(function () {
+          $('.next_btn').click()
+        }, 3000)
+      })
+      function change1(index){       
         $('.floor_silder li').eq(index).stop().animate({
           'z-index':80,
           'width':155,
           'left':20,
           'top':-18
-        }).find('.color_mask').css('opacity','.8')
-          index++;
-          console.log(index)
-          if(index === 3){
-            index=0
-          }
+        },300).find('.color_mask').css('opacity','.8')
+      }
+      function change2(index){
+        $('.show_num span').text(index+1);
         $('.floor_silder li').eq(index).stop().animate({
           'z-index':100,
           'left':0,
           'width':195,
           'top':0
-        }).find('.color_mask').css('opacity','0')
-        index++;
-          if(index === 3){
-            index=0
-          }
-          console.log(index)
+        },300).find('.color_mask').css('opacity','0')
+      }
+      function change3(index){
         $('.floor_silder li').eq(index).stop().animate({
           'z-index':90,
           'width':175,
           'left':10,
           'top':-10
-        }).find('.color_mask').css('opacity','.5')
-        timer = setTimeout(function () {
-          $('.next_btn').click()
-        }, 3000)
-        num++;
-        if(num === 4){
-          num=1;
-        }
-        $('.show_num span').text(num);
-      })
+        },300).find('.color_mask').css('opacity','.5')
+      }
       timer = setTimeout(function(){
         $('.next_btn').click()
       },3000)
     })
+    
 })()

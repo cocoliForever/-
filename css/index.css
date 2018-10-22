@@ -2023,6 +2023,37 @@ height: 100px;
 .mod_index_floor .left_con .comment .comment_list a{
   color: #fff;
 }
+.mod_index_floor .left_con .comment .comment_list .ellipsis a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
