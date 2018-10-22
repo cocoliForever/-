@@ -41,9 +41,10 @@
     margin: 0 auto;
 }
 /* 左边的内容 */
-.d-layout-wrap .d-layout-row.d-mult-col .d-layout {
+ .d-layout-row.d-mult-col .d-layout {
     float: left;
     margin-left: 10px;
+    width: 190px;
 }
 .colorGoodsSort-922474 .mc {
     padding: 15px 15px 0;
@@ -85,5 +86,248 @@
     height: 4px;
     width: 4px;
     background: url(//img14.360buyimg.com/cms/jfs/t3448/126/18152604/1049/6f71a7fc/57fd94c0N39f3eb9c.png) no-repeat;
+}
+.colorGoodsSort-922474 .jTwoLevel {
+    font-size: 14px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    color: #e1e1e1;
+    clear: both;
+    text-align: center;
+    border-bottom: dashed 1px #e1e1e1;
+    position: relative;
+}
+.colorGoodsSort-922474 .jIconArrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    background: url(//img20.360buyimg.com/cms/jfs/t3442/274/61048783/1064/3b52ecb8/57fd94c0N66bbe258.png) no-repeat center;
+    top: 13px;
+}
+
+.colorGoodsSort-922474 .jTwoLevel a {
+    display: block;
+    color: #333;
+    overflow: hidden;
+}
+.colorGoodsSort-922474 .jThreeLevel li {
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+}
+.colorGoodsSort-922474 .jThreeLevel a {
+    display: block;
+    height: 24px;
+    margin-top: 5px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 12px;
+}
+.colorGoodsSort-922474 .jTwoLevel {
+    font-size: 14px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    color: #e1e1e1;
+    clear: both;
+    text-align: center;
+    border-bottom: dashed 1px #e1e1e1;
+    position: relative;
+}
+/* 右边的内容 */
+.d-layout-wrap .d-layout-row.d-mult-col .d-layout {
+    float: left;
+    margin-left: 10px;
+}
+.right {
+    width: 790px;
+}
+.JColorSearchList-905542 {
+    position: relative;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.JColorSearchList-905542 .filter {
+    position: relative;
+    z-index: 4;
+    margin-bottom: 20px;
+}
+.JColorSearchList-905542 .filter .f-line {
+    padding: 6px 10px;
+    background: #F8F8F8;
+    zoom: 1;
+}
+.JColorSearchList-905542 .filter .g-sort {
+    float: left;
+}
+.JColorSearchList-905542 .filter .g-sort a {
+    float: left;
+    position: relative;
+    padding: 0 10px;
+    height: 22px;
+    border: 1px solid #e1e1e1;
+    margin-right: -1px;
+    line-height: 22px;
+    background: #FFF;
+    color: #333;
+}
+.JColorSearchList-905542 .filter .g-pager {
+    float: right;
+}
+.JColorSearchList-905542 .filter .g-pager .fp-text {
+    line-height: 24px;
+    margin-right: 10px;
+    font-family: verdana;
+}
+.JColorSearchList-905542 .filter .g-pager .fp-next.disabled, .JColorSearchList-905542 .filter .g-pager .fp-prev.disabled {
+    padding: 0;
+    background-color: #FFF;
+    color: #c9c9c9;
+    cursor: default;
+    border: 1px solid #e1e1e1;
+}
+.JColorSearchList-905542 .filter .f-result-sum {
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    color: #999;
+}
+.JColorSearchList-905542 .clr {
+    visibility: hidden;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+.JColorSearchList-905542 .goods-list {
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.JColorSearchList-905542 .goods-list .gl-warp {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-right: -10px;
+}
+.JColorSearchList-905542 .goods-list .gl-item {
+    width: 190px;
+    height: 295px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin: 0 10px 20px 0;
+}
+.JColorSearchList-905542 .goods-list .gl-item .gl-i-wrap {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: #fff;
+}
+.JColorSearchList-905542 .goods-list .gl-item .jPic {
+    height: 188px;
+    width: 188px;
+    border: solid 1px #e1e1e1;
+    padding: 0;
+    margin-bottom: 5px;
+    position: relative;
+}
+.JColorSearchList-905542 .goods-list .gl-item .jPic a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.JColorSearchList-905542 .jScroll {
+    height: 29px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.JColorSearchList-905542 .jScrollBtn {
+    display: none;
+    float: left;
+    height: 29px;
+    text-indent: -9999px;
+    width: 16px;
+}
+.JColorSearchList-905542 .jScrollWrap {
+    float: left;
+    height: 29px;
+    overflow: hidden;
+    position: relative;
+    width: 156px;
+}
+.JColorSearchList-905542 .jScrollWrap ul {
+    position: absolute;
+    top: 0;
+}
+.JColorSearchList-905542 .jScrollWrap li {
+    width: 31px;
+    height: 31px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.JColorSearchList-905542 .jGoodsInfo {
+    overflow: hidden;
+    position: relative;
+    zoom: 1;
+}
+.JColorSearchList-905542 .jPrice {
+    overflow: hidden;
+    margin-bottom: 5px;
+    height: 15px;
+    line-height: 15px;
+}
+.JColorSearchList-905542 .jdPrice {
+    font-size: 14px;
+    font-weight: bold;
+    color: #E4393C;
+}
+.JColorSearchList-905542 .jDesc {
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.JColorSearchList-905542 .jDesc a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #666;
+}
+.JColorSearchList-905542 .jExtra {
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 2px 0;
+}
+.JColorSearchList-905542 .jExtra a {
+    color: #999;
+    float: left;
+    margin-top: 1px;
+}
+.JColorSearchList-905542 .jExtra a em {
+    color: #005AA0;
+}
+.JColorSearchList-905542 .clr {
+    visibility: hidden;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
 }
 
