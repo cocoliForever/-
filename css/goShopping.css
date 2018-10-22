@@ -496,7 +496,7 @@ li.hd_has_child:hover .hd_qrcode_bg{
     border: 1px solid #e5debc;
     border-radius: 2px;
     background-color: #fff7d1;
-    z-index: 1;
+    z-index: 5;
 }
 .freight_info.help_dialog {
     background: #fff;
@@ -514,7 +514,7 @@ li.hd_has_child:hover .hd_qrcode_bg{
 }
 .help:hover .help_dialog {
     display: block;
-    z-index: 2;
+    z-index: 5;
 
 }
 .check.checked i, .free_check.checked i {
@@ -753,7 +753,6 @@ li.cart_activity {
     color: #ff5e5e;
     text-align: right;
     line-height: 22px;
-    z-index: 1;
 }
 .cart_activity .price em {
     color: #666;
