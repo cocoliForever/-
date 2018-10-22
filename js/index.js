@@ -435,5 +435,21 @@
         $('.next_btn').click()
       },3000)
     })
-    
+    //小轮播下面的列表播放
+    $(function(){
+      var num = 0;
+      var $li = $('.comment_list ul').children('.ellipsis').eq(0);
+      $('.comment_list ul').append($li.clone());
+      var len = $('.comment_list ul').children('.ellipsis').length;
+      setInterval(function(){
+        num++;
+        if(num === len){
+          num = 1;
+          $('.comment_list ul').css('margin-top',0)
+        }
+        $('.comment_list ul').stop().animate({
+          'margin-top':-num*26
+        })
+      },4000)
+    })
 })()
