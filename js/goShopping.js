@@ -364,63 +364,63 @@
     })
   })
   // 计算单行价格=================
-  // function getSubtotal(tr) {
-  //   var price = tr.find('.item_price p').text();/* 单价 */
-  //   var counts = tr.find('.num_act.clearfix input').val(); //数量
-  //   var subtotal = tr.find('.item_a_money'); //小计total
-  //   text = (parseInt(counts) * parseFloat(price)).toFixed(2);
-  //   subtotal.html(text);
+  function getSubtotal(tr) {
+    var price = tr.find('.item_price p').text();/* 单价 */
+    var counts = tr.find('.num_act.clearfix input').val(); //数量
+    var subtotal = tr.find('.item_a_money'); //小计total
+    text = (parseInt(counts) * parseFloat(price)).toFixed(2);
+    subtotal.html(text);
 
-  // }
-
-
+  }
 
 
 
-  // //input筐的点击事件================、
-
-  // $('.item_line.main_item').on('click', function (e) {
-  //   var e = e || window.event
-  //   var target = e.target || e.srcElement
-  //   var cls = target.className
-  //   var countInout = $(this).find('input')
-  //   var value = parseInt(countInout.val())
-  //   var kg = $(this).find('.item_a_weight span')
-  //   if (cls == 'add') {
-  //     countInout.val(value + 1);
-  //   }
-  //   if (cls == 'minus unable') {
-  //     countInout.val(value - 1);
-  //     if (countInout.val() < 1) {
-  //       countInout.val(1)
-  //     }
-  //   }
-  //   getSubtotal($(this))
-  //   // 清除上一次的重量值，否则会叠加！！！
-  //   kg.html('3.78')
-  //   kgs = (parseFloat(kg.html()) * parseInt(countInout.val())).toFixed(2);
-  //   kg.html(kgs);
-  // })
 
 
-  // // input框 onkeyup事件 即直接输入数字所发生的改变！！！
-  // $('.item_line.main_item').on('keyup', 'input', function () {
-  //   console.log($(this).val())
-  //   var tr = $(this).parents('.item_line.main_item')
-  //   var jj = tr.find('.item_amount')
-  //   var kg = jj.find('.item_a_weight span')
-  //   // 此条件是为了防止input框删空之后，后面的值会变化(NAN)
-  //   if ($(this).val() == '') {
-  //     // 设置input为空时，要显示1
-  //     $(this).val('1')
-  //   }
-  //   // 清除上一次的重量值，否则会叠加！！！
-  //   kg.html('3.78')
-  //   // console.log(jj)
-  //   getSubtotal(tr)
-  //   kgs = (parseFloat(kg.html()) * parseInt($(this).val())).toFixed(2);
-  //   kg.html(kgs);
-  // })
-  // // 三级复选框的勾选，与价格变动
+  //input筐的点击事件================、
+
+  $('.item_line.main_item').on('click', function (e) {
+    var e = e || window.event
+    var target = e.target || e.srcElement
+    var cls = target.className
+    var countInout = $(this).find('input')
+    var value = parseInt(countInout.val())
+    var kg = $(this).find('.item_a_weight span')
+    if (cls == 'add') {
+      countInout.val(value + 1);
+    }
+    if (cls == 'minus unable') {
+      countInout.val(value - 1);
+      if (countInout.val() < 1) {
+        countInout.val(1)
+      }
+    }
+    getSubtotal($(this))
+    // 清除上一次的重量值，否则会叠加！！！
+    kg.html('3.78')
+    kgs = (parseFloat(kg.html()) * parseInt(countInout.val())).toFixed(2);
+    kg.html(kgs);
+  })
+
+
+  // input框 onkeyup事件 即直接输入数字所发生的改变！！！
+  $('.item_line.main_item').on('keyup', 'input', function () {
+    console.log($(this).val())
+    var tr = $(this).parents('.item_line.main_item')
+    var jj = tr.find('.item_amount')
+    var kg = jj.find('.item_a_weight span')
+    // 此条件是为了防止input框删空之后，后面的值会变化(NAN)
+    if ($(this).val() == '') {
+      // 设置input为空时，要显示1
+      $(this).val('1')
+    }
+    // 清除上一次的重量值，否则会叠加！！！
+    kg.html('3.78')
+    // console.log(jj)
+    getSubtotal(tr)
+    kgs = (parseFloat(kg.html()) * parseInt($(this).val())).toFixed(2);
+    kg.html(kgs);
+  })
+  // 三级复选框的勾选，与价格变动
 
 }(jQuery))
