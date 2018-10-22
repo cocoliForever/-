@@ -330,4 +330,44 @@
     line-height: 0;
     font-size: 0;
 }
+.JColorSearchList-905542 .jPage {
+    text-align: right;
+}
+.JColorSearchList-905542 .jPage .jPageDisable {
+    border-color: #e1e1e1;
+    color: #c9c9c9;
+}
+.JColorSearchList-905542 .jPage a, .JColorSearchList-905542 .jPage span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    min-width: 18px;
+    height: 34px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    line-height: 34px;
+    font-size: 12px;
+}
+
+.JColorSearchList-905542 .jPage .jPageCurrent {
+    background-color: #333;
+    color: #fff;
+}
+.JColorSearchList-905542 .jPage .jPageDisable {
+    border-color: #e1e1e1;
+    color: #c9c9c9;
+}
+
+
+
+
+
+
+
+
+
+
 
