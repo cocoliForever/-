@@ -145,6 +145,7 @@
 display:inline-block;
 width: 16px;
 height: 16px;
+text-align: center;
 line-height: 16px;
 margin-right: 5px;
 cursor: pointer;
@@ -262,12 +263,12 @@ border-radius: 2px;
     text-align: center;
     border: 2px solid #ff4040;
 }
-.guide_ul li:hover .sl{
+/* .guide_ul li:hover .sl{
     border-color:#ff4040;
     display:block
 
 
-}
+} */
 .guide_ul li .cl{
     /* display: block; */
     background:url(https://img.yihaodianimg.com/yhdsearch_pc/search3/images/searchSprite_png24.png?1200);
@@ -282,9 +283,9 @@ border-radius: 2px;
  /* .guide_ulto:hover .jspDrag{
     display: block;
 } */
-.brandWrap .over_mush{
+ .over_mush{
     position: absolute;
-    top: 15px ;
+    top: 7px ;
     right: 5px;
 }
 .jspVerticalBar{
@@ -320,6 +321,11 @@ border-radius: 2px;
  .over_mush .over_any{
     display: inline-block;
     line-height: 18px;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 30px;
+    text-align: center;
     background-color: #fdfdfd;
     border:1px solid #dcdcdc;
 }
@@ -403,7 +409,7 @@ border-radius: 2px;
 .search_guide .guide_box .guide_con li a{
     display: block;
     margin-left: 13px;
-    padding: 0 20px 0 2px;
+    padding: 0 18px 0 2px;
     border: 1px solid #fff;
     margin-left: 0;
 }
@@ -423,7 +429,7 @@ border-radius: 2px;
     margin: 3px 4px 0 0;
     background-position: -64px -70px;
     font-size: 0;
-    /* display: none; */
+    display: none;
 }
 .search_add_border .any_one{
     margin-right: 58px;

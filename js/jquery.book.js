@@ -89,6 +89,8 @@ var $search_guide=$('<div class="search_guide clearfix search_add_border"></div>
         var $guide_main=$('<div class="guide_main add_padding"></div>')
         // 创建guide_con
         var $guide_con=$('<ul class="guide_con clearfix"><ul>')
+         // 创建multiple_choice
+     var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a></div>')
         // 创建guide_btn
         var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
         $.each(hotwriters,function(index,writer){
@@ -97,6 +99,7 @@ var $search_guide=$('<div class="search_guide clearfix search_add_border"></div>
         })
         $guide_con.appendTo($guide_main)
         $guide_btn.appendTo($guide_main)
+        $multiple_choice.appendTo($guide_box)
         $guide_title.appendTo($guide_box)
         $guide_main.appendTo($guide_box)
         return $guide_box
@@ -112,6 +115,8 @@ var $search_guide=$('<div class="search_guide clearfix search_add_border"></div>
         var $guide_main=$('<div class="guide_main"></div>')
          // 创建guide_con
          var $guide_con=$('<ul class="guide_con clearfix"><ul>')
+          // 创建multiple_choice
+     var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a><a href="#" class="many">更多<i class="iconfont icon-xiangxia amine"></i></a></div>')
           // 创建guide_btn
         var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
         // 循环遍历li
@@ -122,6 +127,7 @@ var $search_guide=$('<div class="search_guide clearfix search_add_border"></div>
         })
         $guide_con.appendTo($guide_main)
         $guide_btn.appendTo($guide_main)
+        $multiple_choice.appendTo($guide_box)
         $guide_title.appendTo($guide_box)
         $guide_main.appendTo($guide_box)
         return $guide_box
@@ -136,6 +142,8 @@ var $search_guide=$('<div class="search_guide clearfix search_add_border"></div>
         var $guide_main=$('<div class="guide_main"></div>')
          // 创建guide_con
          var $guide_con=$('<ul class="guide_con clearfix"><ul>')
+           // 创建multiple_choice
+     var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a></div>')
           // 创建guide_btn
         var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
         $.each(ages,function(index,age){
@@ -145,6 +153,7 @@ var $search_guide=$('<div class="search_guide clearfix search_add_border"></div>
         })
         $guide_con.appendTo($guide_main)
         $guide_btn.appendTo($guide_main)
+        $multiple_choice.appendTo($guide_box)
         $guide_title.appendTo($guide_box)
         $guide_main.appendTo($guide_box)
         return $guide_box
@@ -161,6 +170,8 @@ var litYpePanel=function(litYpes){
     var $guide_con=$('<ul class="guide_con clearfix"><ul>')
      // 创建guide_btn
    var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
+    // 创建multiple_choice
+    var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a><a href="#" class="many">更多<i class="iconfont icon-xiangxia amine"></i></a></div>')
    $.each(litYpes,function(index,litYpe){
        var $hot_wr=$('<li><a href="javascript:;"><i class="ali"></i><span class="sp_wid">'+litYpe.name+'</span></a></li>')
        $guide_con.append($hot_wr)
@@ -168,6 +179,7 @@ var litYpePanel=function(litYpes){
    })
    $guide_con.appendTo($guide_main)
    $guide_btn.appendTo($guide_main)
+   $multiple_choice.appendTo($guide_box)
    $guide_title.appendTo($guide_box)
    $guide_main.appendTo($guide_box)
    return $guide_box

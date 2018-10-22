@@ -1,4 +1,4 @@
-$(function(){
+;$(function(){
 // 点击更多使相关分类中内容全部展示****************
     $('.classWrap .multiple_choice a').on('click',function(){
         var num = parseInt($('.guide_con_noLabel').css('height'))
@@ -11,10 +11,12 @@ $(function(){
         }
     })
     // 生成jspDrag
-    var $jspDrag=$('<div class="jspDrag"></div>')
+   
       
-
+})
+$(function(){
 // 品牌***************************************** 
+    var $jspDrag=$('<div class="jspDrag"></div>')
     $('.brandWrap .multiple_choice a').on('click',function(){
         var m=parseInt($('.guide_lists').css('height'))
         // 添加滚动条
@@ -67,21 +69,34 @@ $(function(){
             })
                 // 点击品牌li事件************************
             $('.jspContainer .guide_ul').on('click','li',function(){
-                console.log($(this).find('.sl'))
-               
-                // 点中li，border显示红色，再次点击颜色消失
-                if($(this).find('.sl').css('display')==='block'){
-                    $(this).find('.sl').css({'display':'block'})
-                    $(this).find('.sr').css({'display':'block','color':'#fff'})
-                    $(this).find('.cl').css('display','block')
-                }else{
-                    $(this).find('.sl').css({'display':'none'})
-                    $(this).find('.sr').css({'display':'block','color':'#333'})
-                    $(this).find('.cl').css('display','none')
-                }
+                // console.log($(this).find('.sl'))
                // 点击内容使内容呈现在已选之中 
-               var $span=$('<div class="ansery">'+$(this).find('.sl').text()+'<span class="close">×</span></div>')
-                $('.guide_selected').append($span)
+               var index=$(this).data('index')
+               console.log(index)
+               var $span=$('<div class="ansery" data-to="'+index+'"><span class="cont">'+$(this).find('.sl').text()+'</span><span class="close">×</span></div>')
+               $('.guide_selected').append($span)
+               $('.ansery').each(function(){
+                   console.log($(this).text())
+                //    console/log()
+                    if($(this).text() == $(this).prev().text()){
+                        $(this).remove();
+                    }
+                })
+                 // 点中li，border显示红色，再次点击颜色消失
+                 if($(this).find('.cl').css('display')==='none'){
+            
+                    $(this).find('.sl').show()
+                    $(this).find('.sr').hide()
+                    $(this).find('.cl').show()
+                }else{
+                    $(this).find('.sl').hide()
+                    $(this).find('.sr').show()
+                    $(this).find('.cl').hide()
+                    $('.ansery[data-to="'+index+'"]').remove()
+               
+                } 
+               
+
                 $('.close').on('click',function(){
                     $(this).parent().remove()
                     $('guide_ul .li').find('.sl').css('borderColor','#fff') 
@@ -103,6 +118,7 @@ $(function(){
                     'color':'#fff'
                 })
             })
+           
             // 点击取消事件
             $('.btn_cancel').on('click',function(){
                 $('.guide_switch').css('display','none')
@@ -135,11 +151,56 @@ $(function(){
                 })
             })
         }
+        
     })
- 
+    // 品牌实现tab切换
+    $('.guide_switch').on('click','span',function(){
+        $(this).addClass('cur').siblings('.cur').removeClass('cur')
+        var num = $(this).text();
+        console.log(num)
+        // $('.guide_ul li').not('li[data-type="'+num+'"]').hide()
+        $('.guide_ul li').fadeOut(0)
+        $('.guide_ul li[data-type="'+num+'"]').fadeIn(100)
+        if($(this).text()==="全部品牌"){
+            $('.guide_ul li').fadeIn(100)
+        }
+        if($(this).text()==='其他'){
+            $('.guide_ul li').fadeOut(0)
+            $('.guide_ul li[data-type="other"]').fadeIn(100)
+        }
+    })
         
     
+        $('.guide_ul li').on('mouseenter',function(){
+            $(this).find('.sl').fadeIn(0)
+            $(this).find('.sr').fadeOut(0)
+        })
+        $('.guide_ul li').on('mouseleave',function(){
+            $(this).find('.sl').fadeOut(0)
+            $(this).find('.sr').fadeIn(0)
+        })
+    })
+    $(function(){
+        $('.search_guide ').on('click','.over_mush .over_any',function(){ 
+            console.log($(this))
+            var $guide_main= $(this).parent().nextAll('.guide_main').find(".ali")
+            $(this).parents('.guide_box').css('height','auto')
+            $(this).parent().hide()
+            console.log($guide_main)
+            $(this).parent().nextAll('.guide_main').find('.guide_btn').css('display','block')
+            $guide_main.css('display','block') 
+        })
+        $('.search_guide ').on('click','.guide_main .guide_btn',function(){
+            $(this).hide()
+            $(this).parents('.guide_box').css('height',34)
+            $(this).parents('.guide_main').prevAll('.over_mush').show()
+            $(this).parent().find('.ali').css('display','none')
 
+         })
+         $('.search_guide ').on('click','.over_mush .many',function(){ 
+            $(this).parents('.guide_box').css('height','auto')
+         })
+    })
+       
     
     
-})
