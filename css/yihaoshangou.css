@@ -1,156 +1,168 @@
 @charset "UTF-8";
 /* 头部开始 */
 input{
-    outline: none;
+  outline: none;
 }
 .m_tuan_box .hd {
-   padding: 0 15px 15px;
+  padding: 0 15px 15px;
 }
 .hd_header_wrap {
-    background-color: #fff;
+  background-color: #fff;
 }
 .hd_top_bar {
-    height: 30px;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: #f4f4f4;
-    line-height: 30px;
+  height: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f4f4f4;
+  line-height: 30px;
 }
 .w980 .wrap {
-    width: 980px;
+  width: 980px;
 }
 .hd_top_bar a.hd_topbar_home {
-    float: left;
-    display: block;
-    height: 30px;
-    padding: 0 10px;
-    border-left: 1px solid #f4f4f4;
-    border-right: 1px solid #f4f4f4;
-    color: #666;
+  float: left;
+  display: block;
+  height: 30px;
+  padding: 0 10px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  color: #666;
 }
 .hd_top_bar a.hd_topbar_home:hover {
-    color: #ff4040;
+  color: #ff4040;
 }
 .hd_top_bar .hd_indxProvce {
-    position: relative;
-    z-index: 605;
-    float: left;
+  position: relative;
+  z-index: 605;
+  float: left;
 }
 .hd_top_bar a.hd_topbar_city {
-    float: left;
-    display: block;
-    height: 30px;
-    padding: 0 10px;
-    border-left: 1px solid #f4f4f4;
-    border-right: 1px solid #f4f4f4;
-    color: #666;
+  float: left;
+  display: block;
+  height: 30px;
+  padding: 0 10px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  color: #666;
 }
 .hd_top_bar a.hd_topbar_city:hover {
-    color: #ff4040;
+  color: #ff4040;
 }
 .hd_top_bar .hd_topbar_right {
-    float: right;
-    color: #666;
+  float: right;
+  color: #666;
 }
 .hd_top_bar .hd_topbar_right li {
-    position: relative;
-    z-index: 600;
-    float: left;
-    height: 30px;
+  position: relative;
+  z-index: 600;
+  float: left;
+  height: 30px;
 }
 .hd_top_bar .hd_topbar_right .hd_login {
-    position: relative;
-    z-index: 601;
-    float: left;
-    padding: 0 10px;
-    border-left: 1px solid #f4f4f4;
-    border-right: 1px solid #f4f4f4;
+  position: relative;
+  z-index: 601;
+  float: left;
+  padding: 0 10px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
 }
 .hd_top_bar .hd_topbar_right .hd_login a.hd_login_name {
-    float: left;
-    max-width: 156px;
-    height: 30px;
-    overflow: hidden;
-    color: #636363;
-    white-space: nowrap;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  float: left;
+  max-width: 156px;
+  height: 30px;
+  overflow: hidden;
+  color: #636363;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .hd_top_bar .hd_topbar_right .hd_menu {
-    float: left;
-    min-width: 66px;
-    _width: 66px;
-    height: 30px;
-    padding: 0 10px;
-    border-left: 1px solid #f4f4f4;
-    border-right: 1px solid #f4f4f4;
+  float: left;
+  min-width: 66px;
+  _width: 66px;
+  height: 30px;
+  padding: 0 10px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+}
+.hd_top_bar .hd_topbar_right .hd_menu_list {
+  position: absolute;
+  top: 29px;
+  left: 0px;
+  display: none;
+  width: 89px;
+  *width: 91px;
+  padding: 5px 0;
+  border: 1px solid #dbdbdb;
+  border-top: 0 none;
+  background-color: #fff;
 }
 .hd_top_bar .hd_topbar_right .hd_menu a, .hd_top_bar .hd_topbar_right .hd_title a {
-    color: #666;
+  color: #666;
 }
 .hd_top_bar .hd_topbar_right .hd_title {
-    float: left;
-    min-width: 66px;
-    _width: 66px;
-    height: 30px;
-    padding: 0 10px;
-    border-left: 1px solid #f4f4f4;
-    border-right: 1px solid #f4f4f4;
+  float: left;
+  min-width: 66px;
+  _width: 66px;
+  height: 30px;
+  padding: 0 10px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
 }
 .hd_top_bar .hd_topbar_right .hd_menu a:hover, .hd_top_bar .hd_topbar_right .hd_title a:hover {
-    color: #ff4040;
+  color: #ff4040;
 }
 .hd_top_bar .hd_topbar_right .hd_login a.hd_login_name:hover {
-    color: #ff4040;
+  color: #ff4040;
 }
 .fabBuy_header {
-    padding: 0;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    height: 60px;
+  padding: 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  height: 60px;
 }
 .hd_header {
-    /* height: 150px; */
-    background-repeat: no-repeat;
+  /* height: 150px; */
+  background-repeat: no-repeat;
 }
 .fabBuy_logo .icon_fab {
-    display: block;
-    float: left;
-    width: 80px;
-    height: 56px;
-    margin-top: 2px;
+  display: block;
+  float: left;
+width: 80px;
+  height: 56px;
+  margin-top: 2px;
 }
 .fabBuy_logo .icon_fab img {
-    width: 80px;
-    height: 56px;
+  width: 80px;
+  height: 56px;
 }
 .fabBuy_logo .icon_border {
-    float: left;
-    width: 20px;
-    height: 32px;
-    margin-right: 20px;
-    margin-top: 15px;
-    border-right: 1px solid #ddd;
+  float: left;
+  width: 20px;
+  height: 32px;
+  margin-right: 20px;
+  margin-top: 15px;
+  border-right: 1px solid #ddd;
 }
 .fabBuy_logo .icon_explain {
-    display: block;
-    float: left;
-    width: 120px;
-    height: 60px;
+  display: block;
+  float: left;
+  width: 120px;
+  height: 60px;
 }
 .fabBuy_logo .icon_explain img {
-    width: 120px;
-    height: 60px;
+  width: 120px;
+  height: 60px;
 }
 .fabBuy_header.hd_header .hd_mini_cart {
-    width: 130px;
-    background: #fff;
-    margin-top: 10px;
+  width: 130px;
+  background: #fff;
+  margin-top: 10px;
 }
 .hd_header .hd_mini_cart {
-    position: relative;
-    z-index: 501;
-    float: right;
+  position: relative;
+  z-index: 501;
+  float: right;
 }
 
 /* * 客户服务下拉菜单 */ */
@@ -198,7 +210,7 @@ input{
 
 
 .hover{
-    border-bottom:solid 2px red;
+  border-bottom:solid 2px red;
 }
 
 .fabBuy_header {
@@ -1073,4 +1085,12 @@ input{
   top: 0;
   width: 100%;
   z-index: 999;
+}
+/* 让所有的img  有一个放大的效果 */
+img{
+  transition: all .5s;
+  position: relative;
+}
+img:hover{
+  transform: scale(1.08)
 }
