@@ -185,7 +185,7 @@
 
       <!-- 搜索框 -->
       <div class="search">
-        <input id="keyword" type="text" placeholder="请输入关键词">
+        <input id="keyword" type="text" placeholder="请输入关键词" oninput="value=value.replace(/[^\d]/g,'')">
         <a id="search" href="javascript:void(0);" class="icon-sou-suo iconfont search_btn"></a>
       </div>
     </div>
@@ -282,7 +282,7 @@
                   <!-- 数量 -->
                   <div class="item_num" data-sku-id="964416">
                     <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1">
+                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
                       <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
                     </div>
                     <span class="stock partial limit"></span>
@@ -339,7 +339,7 @@
                   <!-- 数量 -->
                   <div class="item_num" data-sku-id="964416">
                     <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1">
+                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
                       <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
                     </div>
                     <span class="stock partial limit"></span>
@@ -396,7 +396,7 @@
                   <!-- 数量 -->
                   <div class="item_num" data-sku-id="964416">
                     <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1">
+                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
                       <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
                     </div>
                     <span class="stock partial limit"></span>
@@ -437,7 +437,7 @@
             </ul>
           </div>
           <div class="cart_amount">
-            <div class="amount">商品总价：<span><em>¥</em>3.9</span></div>
+            <div class="amount">商品总价：<span><em>¥</em><span>0.00</span></span></div>
           </div>
         </div>
         <div class="cart_list">
@@ -512,7 +512,7 @@
                   <!-- 数量 -->
                   <div class="item_num" data-sku-id="964416">
                     <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1">
+                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
                       <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
                     </div>
                     <span class="stock partial limit"></span>
@@ -571,7 +571,7 @@
                   <!-- 数量 -->
                   <div class="item_num" data-sku-id="964416">
                     <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1">
+                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
                       <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
                     </div>
                     <span class="stock partial limit"></span>
@@ -612,7 +612,7 @@
             </ul>
           </div>
           <div class="cart_amount">
-            <div class="amount">商品总价：<span><em>¥</em>3.9</span></div>
+            <div class="amount">商品总价：<span><em>¥</em><span>0.00</span></span></div>
           </div>
         </div>
 
@@ -627,7 +627,7 @@
               <a class="pay_checkbox check check_all checked" href="javascript:;">
                 <i class="iconfont icon-fangxingduihao"></i>
               </a>
-              <label class="all_checked_label">全选（共<b>2</b>件）</label>
+              <label class="all_checked_label">全选（共<b>0</b>件）</label>
               <span class="total_line">|</span>
               <a class="l_a_tool lt_delete" href="javascript:;">批量删除</a>
             </span>
@@ -648,10 +648,10 @@
               </div>
             </div>
           </div>
-          <div class="pay_tools_r clearfix"> <a class="checkout_btn" href="javascript:void(0);" c>去结算</a>
-            <div class="r_price_total r_control_tip"> 合计：<span class="rpt_count">¥<b>53.80</b></span> <i class="iconfont icon-down"></i>
+          <div class="pay_tools_r clearfix"> <a class="checkout_btn unable" href="javascript:void(0);" c>去结算</a>
+            <div class="r_price_total r_control_tip"> 合计：<span class="rpt_count">¥<b>0.00</b></span> <i class="iconfont icon-down"></i>
             </div>
-            <div class="r_prod_view r_control_tip"> <span class="rpv_count">已选商品<b>2</b>件</span> <a href="javascript:;"
+            <div class="r_prod_view r_control_tip"> <span class="rpv_count">已选商品<b>0</b>件</span> <a href="javascript:;"
                 class="pvw">预览</a>
               | <div class="add_tip">商品已加入购物车<span></span></div>
             </div>
@@ -667,7 +667,7 @@
       <!-- 图片浏览============================ -->
       <div class="pay_tips pay_allprod_tips" style="display: none; top: -112px;">
         <div class="t_arrow t_arrow_bot" style="margin-left: 262.641px; top: 120px;"><span></span><i></i></div> <input
-          id="checkoutGroups" type="hidden" value="1"> <!--  单类型商品结算 -->
+          id="checkoutGroups" type="hidden" value="1" oninput="value=value.replace(/[^\d]/g,'')"> <!--  单类型商品结算 -->
         <div class="pay_allprod_single">
           <div class="pvw_type_cont clearfix">
             <div class="sale_prod_cont pvw_sale_list single_sale_list"> <a class="control_btn left_arrow" href="javascript:;"

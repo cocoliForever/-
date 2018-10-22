@@ -346,24 +346,18 @@
     })
     //一级全选影响所有
     $('.check_all').on('click', function () {
-      $('.cart_tit').find('.check_list').click();
       if ($(this).find('i').css('display') === 'none') {
-        $(this).find('i').css('display', 'block')
-        $('.check_all').eq(1).find('i').css('display', 'block')
-      } else {
-        $(this).find('i').css('display', 'none')
-        $('.check_all').eq(1).find('i').css('display', 'none')
-      }
-      var l = $('.check_list ').length
-      var h = $('.ejxz').length
-      if (l === h) {
         $('.check_all').find('i').css('display', 'block')
+        $('.check_list').find('i').css('display', 'block');
+        $('.check_item').find('i').css('display', 'block');
       } else {
         $('.check_all').find('i').css('display', 'none')
+        $('.check_list').find('i').css('display', 'none');
+        $('.check_item').find('i').css('display', 'none');
       }
     })
   })
-  // 计算单行价格=================
+  // 计算单行价格 =================
   function getSubtotal(tr) {
     var price = tr.find('.item_price p').text();/* 单价 */
     var counts = tr.find('.num_act.clearfix input').val(); //数量
@@ -386,6 +380,10 @@
     var countInout = $(this).find('input')
     var value = parseInt(countInout.val())
     var kg = $(this).find('.item_a_weight span')
+    if (countInout.val() == '' || countInout.val() == 'NaN') {
+      // 设置input为空时，要显示1
+      countInout.val('1')
+    }
     if (cls == 'add') {
       countInout.val(value + 1);
     }
@@ -401,6 +399,18 @@
     kgs = (parseFloat(kg.html()) * parseInt(countInout.val())).toFixed(2);
     kg.html(kgs);
   })
+
+  // oninput = "value=value.replace(/[^\d]/g,'')"
+  // 上一行加在input元素中，可以实现只允许输入数字！！！！
+
+
+
+  // 当前店铺的总价！！！
+  function getTotal(total) {
+    var parents = total.parents('.cart_list')
+    var total = parents.find('.cart_amount span span')
+  }
+
 
 
   // input框 onkeyup事件 即直接输入数字所发生的改变！！！
@@ -422,5 +432,6 @@
     kg.html(kgs);
   })
   // 三级复选框的勾选，与价格变动
-
+  $('.cart_amount span span')
+  console.log(+($('.cart_amount span span').text).toFixed(2))
 }(jQuery))
