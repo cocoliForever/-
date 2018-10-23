@@ -115,57 +115,8 @@ input{
 .hd_top_bar .hd_topbar_right .hd_login a.hd_login_name:hover {
   color: #ff4040;
 }
-.fabBuy_header {
-  padding: 0;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  height: 60px;
-}
-.hd_header {
-  /* height: 150px; */
-  background-repeat: no-repeat;
-}
-.fabBuy_logo .icon_fab {
-  display: block;
-  float: left;
-width: 80px;
-  height: 56px;
-  margin-top: 2px;
-}
-.fabBuy_logo .icon_fab img {
-  width: 80px;
-  height: 56px;
-}
-.fabBuy_logo .icon_border {
-  float: left;
-  width: 20px;
-  height: 32px;
-  margin-right: 20px;
-  margin-top: 15px;
-  border-right: 1px solid #ddd;
-}
-.fabBuy_logo .icon_explain {
-  display: block;
-  float: left;
-  width: 120px;
-  height: 60px;
-}
-.fabBuy_logo .icon_explain img {
-  width: 120px;
-  height: 60px;
-}
-.fabBuy_header.hd_header .hd_mini_cart {
-  width: 130px;
-  background: #fff;
-  margin-top: 10px;
-}
-.hd_header .hd_mini_cart {
-  position: relative;
-  z-index: 501;
-  float: right;
-}
 
-/* * 客户服务下拉菜单 */ */
+/* 客户服务下拉菜单 */ 
 .hd_top_bar .hd_topbar_right .hd_menu_list {
     position: absolute;
     top: 29px;
@@ -314,6 +265,13 @@ width: 80px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+/* 头部小三角旋转 */
+.iconfont-hi{
+  transition: all .3s;
+}
+#global_login:hover .iconfont-hi{
+  transform: rotate(180deg);
 }
 /* 头部结束 */
 

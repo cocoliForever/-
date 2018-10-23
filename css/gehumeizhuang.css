@@ -529,7 +529,14 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
   margin-right: 30px;
   font-size: 16px;
 }
-
+/* 头部小三角旋转 */
+.iconfont-hi{
+  transition: all .3s;
+}
+#global_login:hover .iconfont-hi{
+  transform: rotate(180deg);
+}
+/* 头部结束 */
 
 .m, .mb, .mc, .mt, .p-detail, .p-img, .p-market, .p-name, .p-price, .sm, .smb, .smc, .smt {
   overflow: hidden;

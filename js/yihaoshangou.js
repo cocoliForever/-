@@ -10,6 +10,9 @@
       $(this).children('.hd_menu_list').css({
         'display':'block'
       })
+      $(this).children('.hd_qrcode_bg').css({
+        'display':'block'
+      })
     })
     $('.hd_has_child').on('mouseleave',function(){
       $(this).children('.hd_menu').css({
