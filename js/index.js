@@ -169,7 +169,7 @@
       $('.show_next').on('click',function(e){
         e.stopPropagation();
         li.eq(index).css('display','none').stop().animate({
-          'opacity':'0',
+          'opacity':'.3',
           'z-index':'0'
         })
         index++;
@@ -182,7 +182,7 @@
         e.stopPropagation();
 
         li.eq(index).css('display','none').stop().animate({
-          'opacity':'0',
+          'opacity':'.3',
           'z-index':'0'
         })
         index--;
@@ -218,9 +218,9 @@
         var i = $(this).index();
         index = i;
         li.not(li.eq(index)).css('display','none').stop().animate({
-          'opacity':'0',
+          'opacity':'.3',
           'z-index':'0'
-        },3000)//把其他的变为none，透明度变为0
+        })//把其他的变为none，透明度变为0
         changePage(index);//这里的点击要切换图片和改变类名两者要同步进行所以不能调用changeActive()函数要调用changePage()
       })
       //鼠标浮上去左右切换图标出现和消失
