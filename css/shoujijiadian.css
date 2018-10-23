@@ -29,7 +29,7 @@
     position: relative;
 }
 /* 定位到背景图上的链接 */
-.hot-link{
+.d-layout-3-1 .hot-link{
     background:url(../img/dingwei.png) no-repeat;
     height:30px;
 }
@@ -135,5 +135,20 @@
     float: left;
     margin-left: 10px;
 }
+/* 右边品牌logo板块 */
+/* 右边品牌logo背景图 */
+.d-layout-3-3 .d-content{
+    height: 450px;
+    background: url(../img/shoujilogo.jpg) center center no-repeat;
+    position: relative;
+}
+/* 定位到背景图上的链接 */
+.d-layout-3-3 .hot-link{
+    background:url(../img/shoujilog.png) no-repeat;
+    height:85px;
+    width: 70px;
+}
+.d-layout-3-3 .hot-link:nth-child(2){background-position: -23px -27px;left: 23px;top: 27px;}
+.d-layout-3-3 .hot-link:nth-child(3){background-position: -23px -27px;left: 23px;top: 27px;}
 
 
