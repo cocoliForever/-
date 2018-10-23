@@ -25,15 +25,15 @@ $(function(){
             $('.brandWrap .guide_ul').css( 'width',1270 )
             $('.jspTrack').css('height',213)
             $('.jspDrag').css('height',48)
-            $('.over_any').css('display','none')
+            $('.brandWrap .over_any').css('display','none')
             $('.guide_switch').css('display','block')
             $('.guide_selected').css('display','block')
             $('.brandWrap .guide_btn').css('display','block')
             $('.brandWrap .multiple_choice .many').html('收起 <i class=" iconfont icon-xiangshang amine"></i>')
         }else{
-            $('.brandWrap .guide_lists').css( 'height',107)
-            $('.over_any').css('display','inline')
-            $('.jspTrack').css('height',107)
+            $('.brandWrap .guide_lists').css( 'height','')
+            $('.brandWrap .over_any').css('display','inline')
+            $('.jspTrack').css('height','')
             $('.jspDrag').css('height',12)
             $('.guide_switch').css('display','none')
             $('.brandWrap .guide_ul').css( 'width',1156 )
@@ -41,14 +41,17 @@ $(function(){
             $('.brandWrap .guide_btn').css('display','none')
             $('.brandWrap .multiple_choice .many').html('更多 <i class=" iconfont icon-xiangxia amine"></i>')
         }
+    })
          // 向下滑动jspDrag，使内容跟着滑动
         $('.jspTrack').append($jspDrag)
                  // 品牌展开下的事件
         if( parseInt($('.jspTrack').css('height'))==213){
+            console.log(122)
             $('.jspDrag').on('mousedown',function(e) {　
                 var positionY = e.pageY - $(this).offset().top;
                 $(document).on('mousemove',function(e) {　　
             　　　　var divY = e.clientY - positionY;
+            console.log(123)
                     if(divY<=135){
                         divY=135;
                     }
@@ -67,69 +70,9 @@ $(function(){
                     $(document).off('mousemove');
                 })
             })
-                // 点击品牌li事件************************
-            $('.jspContainer .guide_ul').on('click','li',function(){
-                // console.log($(this).find('.sl'))
-               // 点击内容使内容呈现在已选之中 
-               var index=$(this).data('index')
-               console.log(index)
-               var $span=$('<div class="ansery" data-to="'+index+'"><span class="cont">'+$(this).find('.sl').text()+'</span><span class="close">×</span></div>')
-               $('.guide_selected').append($span)
-               $('.ansery').each(function(){
-                   console.log($(this).text())
-                //    console/log()
-                    if($(this).text() == $(this).prev().text()){
-                        $(this).remove();
-                    }
-                })
-                 // 点中li，border显示红色，再次点击颜色消失
-                 if($(this).find('.cl').css('display')==='none'){
-            
-                    $(this).find('.sl').show()
-                    $(this).find('.sr').hide()
-                    $(this).find('.cl').show()
-                }else{
-                    $(this).find('.sl').hide()
-                    $(this).find('.sr').show()
-                    $(this).find('.cl').hide()
-                    $('.ansery[data-to="'+index+'"]').remove()
-               
-                } 
-               
-
-                $('.close').on('click',function(){
-                    $(this).parent().remove()
-                    $('guide_ul .li').find('.sl').css('borderColor','#fff') 
-                    if($('.ansery').length===0){
-                        // 确定按钮变化
-                        $('.btn_ok').css({
-                            'cursor': 'not-allowed',
-                            'color': '#999',
-                            'borderColor':'#cfcfcf',
-                            'background':' #fbfbfb'
-                        })
-                    }
-                    // console.log($(document).text($(this).parent().text()))
-                 })
-                $('.btn_ok').css({
-                    'cursor':'auto',
-                    'backgroundColor':'#ff855c',
-                    'borderColor':'#f27e57',
-                    'color':'#fff'
-                })
-            })
-           
-            // 点击取消事件
-            $('.btn_cancel').on('click',function(){
-                $('.guide_switch').css('display','none')
-                $('.guide_selected').css('display','none')
-                $('.brandWrap .guide_ul').css( 'width',1156 )
-                $('.brandWrap .guide_btn').css('display','none')
-                $('.brandWrap .guide_lists').css('height',107)       
-            })
-        }
-        // 品牌未展开时
+        } // 品牌未展开时
         if( parseInt($('.jspTrack').css('height'))==107){
+            console.log(123)
             $('.jspDrag').on('mousedown',function(e) {　
                 var positionY = e.pageY - $(this).offset().top;
                 $(document).on('mousemove',function(e) {　　
@@ -151,8 +94,69 @@ $(function(){
                 })
             })
         }
+                // 点击品牌li事件************************
+            $('.jspContainer .guide_ul').on('click','li',function(){
+                // console.log($(this).find('.sl'))
+               // 点击内容使内容呈现在已选之中 
+               var index=$(this).data('index')
+               console.log(index)
+               var $span=$('<div class="ansery" data-to="'+index+'"><span class="cont">'+$(this).find('.sl').text()+'</span><span class="close">×</span></div>')
+               $('.guide_selected').append($span)
+               $('.ansery').each(function(){
+                    if($(this).text() == $(this).prev().text()){
+                        $(this).remove();
+                    }
+                })
+                 // 点中li，border显示红色，再次点击颜色消失
+                 if($(this).find('.cl').css('display')==='none'){
+            
+                    // moseenter()
+                    $(this).find('.cl').show()
+                }else{
+                //    mouseleave()
+                    $(this).find('.cl').hide()
+                    $('.ansery[data-to="'+index+'"]').remove()
+               
+                } 
+               if($('.ansery').length>=1){
+                   $('.btn_ok').css({
+                    'cursor':'auto',
+                    'backgroundColor':'#ff855c',
+                    'borderColor':'#f27e57',
+                    'color':'#fff'
+                   })
+               }
+               console.log($('.ansery'))
+            })
+            $('.guide_selected').on('click','.close',function(){
+                $(this).parents('.ansery').remove()
+                $('guide_ul .li').find('.sl').css('borderColor','#fff') 
+                if($('.ansery').length===0){
+                    // 确定按钮变化
+                    $('.btn_ok').css({
+                        'cursor': 'not-allowed',
+                        'color': '#999',
+                        'borderColor':'#cfcfcf',
+                        'background':' #fbfbfb'
+                    })
+                }
+                // console.log($(document).text($(this).parent().text()))
+                })
+               
+            
+           
+            // 点击取消事件
+            $('.btn_cancel').on('click',function(){
+                $('.guide_switch').css('display','none')
+                $('.guide_selected').css('display','none')
+                $('.brandWrap .guide_ul').css( 'width',1156 )
+                $('.brandWrap .guide_btn').css('display','none')
+                $('.brandWrap .guide_lists').css('height',107)       
+            })
         
-    })
+       
+        
+    
     // 品牌实现tab切换
     $('.guide_switch').on('click','span',function(){
         $(this).addClass('cur').siblings('.cur').removeClass('cur')
@@ -170,26 +174,32 @@ $(function(){
         }
     })
         
-    
+    var moseenter=function(){
         $('.guide_ul li').on('mouseenter',function(){
             $(this).find('.sl').fadeIn(0)
             $(this).find('.sr').fadeOut(0)
         })
-        $('.guide_ul li').on('mouseleave',function(){
+    }
+    var mouseleave=function(){
+         $('.guide_ul li').on('mouseleave',function(){
             $(this).find('.sl').fadeOut(0)
             $(this).find('.sr').fadeIn(0)
         })
+    }    
+       
     })
     $(function(){
+        // 点击多选事件
         $('.search_guide ').on('click','.over_mush .over_any',function(){ 
-            console.log($(this))
+            // console.log($(this))
             var $guide_main= $(this).parent().nextAll('.guide_main').find(".ali")
             $(this).parents('.guide_box').css('height','auto')
             $(this).parent().hide()
-            console.log($guide_main)
+            // console.log($guide_main)
             $(this).parent().nextAll('.guide_main').find('.guide_btn').css('display','block')
             $guide_main.css('display','block') 
         })
+        // 点击按钮事件
         $('.search_guide ').on('click','.guide_main .guide_btn',function(){
             $(this).hide()
             $(this).parents('.guide_box').css('height',34)
@@ -197,10 +207,114 @@ $(function(){
             $(this).parent().find('.ali').css('display','none')
 
          })
+        //  点击更多事件
          $('.search_guide ').on('click','.over_mush .many',function(){ 
-            $(this).parents('.guide_box').css('height','auto')
+           if( $(this).parents('.guide_box').css('height')==34+"px"){
+               $(this).parents('.guide_box').css('height','auto')
+               $(this).html('收起 <i class=" iconfont icon-xiangshang amine"></i>')
+              
+            }else{
+                $(this).parents('.guide_box').css('height',34)
+                $(this).html('更多 <i class=" iconfont icon-xiangxia amine"></i>')
+            } 
+         })
+        //  点击ul中li，精灵图变为对号
+         $('.search_guide ').on('click','.guide_main .guide_con li',function(){ 
+            // console.log($(this).children().find('i'))
+             $(this).children().find('i').css('backgroundPositionX',-75)
+             $(this).children().find('i').css('backgroundPositionY',-58)
+             $(this).children().find('span').css('color','#ff4040')
+            //  console.log($(this).parent().next('.guide_btn').children(0))
+            // btn_ok变化
+             $(this).parent().next('.guide_btn').children().first().css({
+                'cursor':'auto',
+                'backgroundColor':'#ff855c',
+                'borderColor':'#f27e57',
+                'color':'#fff'
+            })
+            // 点击btn_ok事件
+            $(this).parent().next('.guide_btn').children().first().on('click',function(){
+                window.location.reload()
+            })
+            // 点击btn_cancel事件
+            $(this).parent().next('.guide_btn').children().last().on('click',function(){
+                // console.log(1)
+                $(this).parent().prev().children().children().find('span').css('color','#333')
+                $(this).parent().prev().children().children().find('i').css({
+                    'backgroundPositionX':-64,
+                    'backgroundPositionY':-70,
+                })
+                $(this).prev('.btn_ok').css({
+                    'cursor': 'not-allowed',
+                    'color': '#999',
+                    'borderColor':'#cfcfcf',
+                    'background':' #fbfbfb'
+                })
+            })
          })
     })
-       
+     $(function(){
+        //更多筛选项 **********************************************
+        $('.select_property' ).on('mouseenter','.guide_ax li',function(){
+            // 去除横向滚动条
+            if($(this).offset().left>=1199){            
+                $(this).children().last().css('left',-50)
+            }
+            if($(this).offset().left>=1277){
+                $(this).children().last().css('left',-129)
+            } 
+        })
+        // 点击更多事件
+        $('.son_m' ).on('click','.over_mush',function(){ 
+            $(this).parents('.son_m').find('.sub').css('display','block')
+            $(this).parents('.son_m').find('.guide_btn').css('display','block')
+            $(this).hide()
+        })
+        $('.son_m').on('click','.som_an a',function(){
+            if($(this).find('.sub').css('backgroundPositionX')===-64+"px"){
+                $(this).find('.sub').css('backgroundPositionX',-75)
+                $(this).find('.sub').css('backgroundPositionY',-58)
+                $(this).find('span').css('color','#ff4040')
+                $(this).parent().next().children().first().css({
+                    'cursor':'auto',
+                    'backgroundColor':'#ff855c',
+                    'borderColor':'#f27e57',
+                    'color':'#fff'
+                })
+            }else{
+                $(this).find('.sub').css('backgroundPositionX',-64)
+                $(this).find('.sub').css('backgroundPositionY',-70)
+                $(this).find('span').css('color','#333')
+                $(this).parent().next().children().first().css({
+                    'cursor': 'not-allowed',
+                    'color': '#999',
+                    'borderColor':'#cfcfcf',
+                    'background':' #fbfbfb'
+                })
+            }  
+        })
+        $('.son_m').on('click','.btn_ok ',function(){
+            window.location.reload()
+        })
+        $('.son_m').on('click','.btn_cancel',function(){    
+            console.log($(this))  
+            $(this).parent().css('display','none')
+            $(this).parents('.son_m').find('.over_mush').css('display','block')
+            $(this).parents('.son_m').find('.som_an span').css('color','#333')
+            
+            $(this).parents('.son_m').find('.som_an i').css({
+                    'backgroundPositionX':-64,
+                    'backgroundPositionY':-70,
+                })                
+            $(this).parents('.son_m').find('.som_an i').css('display','none');
+            $(this).siblings('.btn_ok').css({
+                'cursor': 'not-allowed',
+                'color': '#999',
+                'borderColor':'#cfcfcf',
+                'background':' #fbfbfb'
+            })
+        })
+
+     })  
     
     

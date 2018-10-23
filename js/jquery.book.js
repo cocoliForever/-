@@ -197,14 +197,19 @@ var about=function(letter){
     var arr = area.ant[letter]
     // var arr=area.ant[by]        
     var $son_m=$('<div class="son_m"></div>')
-    var $over_any=$('<a href="javascript:;" class="over_any any_one"> 多选</a>') 
+    var $son_an=$('<div class="som_an"></div>')
+      // 创建multiple_choice
+      var $multiple_choice=$('<div class="multiple_choice  over_mush"><a href="javascript:;" class="over_any">多选</a></div>')
      // 创建guide_btn
     var $guide_btn=$('<div class="clearfix guide_btn"><a href="javascript:;" class="btn_ok un">确定</a><a href="javascript:;" class="btn_cancel">取消</a></div>')
     // 循环遍历a
     $.each(arr,function(index,let){
-        var $scany=$('<a href="'+let.url+'"><i class="sub"></i><span>'+let.mac+'</span></a>')
-        $son_m.append($scany)  
+        var $scany=$('<a href="javascript:;"><i class="sub"></i><span>'+let.mac+'</span></a>')
+        $son_an.append($scany)  
     })
+    $multiple_choice.appendTo($son_m)
+    $son_an.appendTo($son_m)
+    $guide_btn.appendTo($son_m)
     return $son_m
 }
 var propertyPanel=function(propertys){

@@ -263,12 +263,12 @@ border-radius: 2px;
     text-align: center;
     border: 2px solid #ff4040;
 }
-/* .guide_ul li:hover .sl{
+.guide_ul li:hover .sl{
     border-color:#ff4040;
     display:block
 
 
-} */
+}
 .guide_ul li .cl{
     /* display: block; */
     background:url(https://img.yihaodianimg.com/yhdsearch_pc/search3/images/searchSprite_png24.png?1200);
@@ -362,6 +362,7 @@ border-radius: 2px;
 .guide_btn{
     text-align: center;
     display: none;
+    cursor: pointer;
 }
 .btn_ok{
     cursor: not-allowed;
@@ -418,9 +419,9 @@ border-radius: 2px;
     display: block;
     margin-left: 0;
 }
-.search_guide .guide_box .guide_con li a:focus .ali{
+/* .search_guide .guide_box .guide_con li a:focus .ali{
     background-position: -75px -58px;
-}
+} */
 .search_guide .guide_box .guide_con li i{
     background: url(https://img.yihaodianimg.com/yhdsearch_pc/search3/images/searchSprite_png24.png?1200);
     float: left;
@@ -447,7 +448,7 @@ border-radius: 2px;
 }
 .guide_ax li{
     float: left;
-    margin: 0 7px 0 0;
+    margin: 0 16px 0 0;
     padding: 0 8px 0 12px;
     border: 1px solid #ffffff;
     line-height: 35px;
@@ -461,7 +462,7 @@ border-radius: 2px;
     font-size: 12px;
     display: inline-block;
 }
-.guide_ax li:hover i{
+.guide_ax li:hover .icon-xiangxia{
     transition:1s;
     transform:rotate(-180deg);
 }
@@ -473,7 +474,7 @@ border-radius: 2px;
 }
 .guide_ax li .son_m{
     width: 350px;
-    height: 191px;
+    height: auto;
     position: absolute;
     z-index: 5;
     top: 35px;
@@ -519,7 +520,16 @@ border-radius: 2px;
     line-height: 16px;
     height: 16px;
 }
+.guide_ax li .son_m .guide_btn a{
+    width: auto;
+}
+.guide_ax li .son_m .over_any{
+    margin:4px;
+    padding: 1px; 
+}
 .guide_ax li .son_m a .sub{
+    /* transition: none; */
+    /* transform: rotate(-180deg); */
     background: url(https://img.yihaodianimg.com/yhdsearch_pc/search3/images/searchSprite_png24.png?1200);
     float: left;
     width: 12px;
@@ -527,6 +537,7 @@ border-radius: 2px;
     margin: 3px 4px 0 0;
     background-position: -64px -70px;
     font-size: 0;
+    display: none;
 }
 .guide_ax li:hover .son_m{
     display: block;
