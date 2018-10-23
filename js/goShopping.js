@@ -302,9 +302,11 @@
   $(function () {
     $('.cart_item').on('click', '.check', function () {
       if ($(this).find('i').css('display') === 'none') {
+        funt($(this))
         $(this).addClass('xz').parents('.item_line.main_item').css({ backgroundColor: '#fff7f7' })
         $(this).find('i').css('display', 'block')
       } else {
+        funt($(this))
         $(this).find('i').css('display', 'none')
         $(this).removeClass('xz').parents('.item_line.main_item').css({ backgroundColor: '#fff' })
       }
@@ -312,7 +314,6 @@
       var num = $(this).parents('.cart_item').find('.xz').length;
       var t = $('.xz').length
       var m = $('.check_item').length
-      console.log(t, m)
       if (s === num) {
         $(this).parents('.cart_list_wrap').siblings('.cart_tit').find('i').css('display', 'block')
       } else {
@@ -323,15 +324,17 @@
       } else {
         $('.check_all').find('i').css('display', 'none')
       }
-
+      funt($(this))
     })
     //二级全选影响三级和二级
     $('.cart_tit').on('click', '.check_list', function () {
       if ($(this).find('i').css('display') === 'none') {
+        funt($(this))
         $(this).find('i').css('display', 'block').parents('.cart_list').find('.check_item').addClass('xz').parents('.item_line.main_item').css({ backgroundColor: '#fff7f7' })
         $(this).addClass('ejxz')
         $(this).find('i').css('display', 'block').parents('.cart_list').find('.check').find('i').css('display', 'block')
       } else {
+        funt($(this))
         $(this).removeClass('ejxz')
         $(this).find('i').css('display', 'block').parents('.cart_list').find('.check_item').removeClass('xz').parents('.item_line.main_item').css({ backgroundColor: '#fff' })
         $(this).find('i').css('display', 'block').parents('.cart_list').find('.check').find('i').css('display', 'none')
@@ -343,62 +346,109 @@
       } else {
         $('.check_all').find('i').css('display', 'none')
       }
+
     })
     //一级全选影响所有
     $('.check_all').on('click', function () {
+      // $('.check_list').click()
+
       if ($(this).find('i').css('display') === 'none') {
         $('.check_all').find('i').css('display', 'block')
         $('.check_list').find('i').css('display', 'block');
         $('.check_item').find('i').css('display', 'block');
+        funt($(this))
       } else {
         $('.check_all').find('i').css('display', 'none')
         $('.check_list').find('i').css('display', 'none');
         $('.check_item').find('i').css('display', 'none');
+        funt($(this))
       }
     })
+
   })
+
+
+
+
   // 计算单行价格 =================
-  function getSubtotal(tr) {
-    var price = tr.find('.item_price p').text();/* 单价 */
-    var counts = tr.find('.num_act.clearfix input').val(); //数量
-    var subtotal = tr.find('.item_a_money'); //小计total
-    text = (parseInt(counts) * parseFloat(price)).toFixed(2);
-    subtotal.html(text);
+  // function getSubtotal(tr) {
+  //   var parmas = tr.attr('class') == 'item item_line main_item clearfix' ? tr : tr.parents('.item_line.main_item');
+  //   var price = parmas.find('.item_price p').text();/* 单价 */
+  //   var counts = parmas.find('.num_act.clearfix input').val(); //数量
+  //   var subtotal = parmas.find('.item_a_money'); //小计total
+  //   text = (parseInt(counts) * parseFloat(price)).toFixed(2);
+  //   subtotal.html(text);
+  //   var check = parmas.find('.check_item').find('i');
+  //   var littleTotal = parmas.parents('.cart_list').find('.cart_amount').find('.littleTotal')
+  //   var len = check.parents('.check_item').hasClass('xz')
+  //   console.log(len)
+  //   if (!len) {
+  //     littleTotal.text(subtotal.html())
+  //   } else {
+  //     littleTotal.text(0.00)
+  //   }
+  // }
+  //封装一个函数通过判断三级选中的个数来影响总价格
+  function funt(hh) {
+    var Totalnumber = 0, Totalprice = 0;
+    var l = hh.parents('.cart_main_body').find('.xz').length;
+
+    //还是通过判断选中的三级按钮再次获得选中的数量，改变总共的数量和价格。
+    if (hh.parents('.cart_main_body').find('xz')) {
+      for (var k = 0; k < l; k++) {
+        Totalnumber += parseInt(hh.parents('.cart_main_body').find('.input').val());
+        Totalprice += parseInt((hh.parents('.main_item').find('.item_price').find('p').text()) * Totalnumber);
+      }
+    }
+    var a = $('.rpv_count b')
+    var c = $('.rpt_count b')
+    var d = hh.parents('.cart_main_body').find('.littleTotal');
+    if (l > 0) {
+      a.text(Totalnumber)//全部的数量
+      c.text(Totalprice.toFixed(2));//总价
+      d.text(Totalprice.toFixed(2));//总价
+    } else {
+      console.log("进去了")
+      a.text(0.00)//全部的数量
+      c.text((0.00).toFixed(2));//总价
+      d.text((0.00).toFixed(2));//总价
+    }
+    // }
+
 
   }
 
 
 
-
-
   //input筐的点击事件================、
 
-  $('.item_line.main_item').on('click', function (e) {
-    var e = e || window.event
-    var target = e.target || e.srcElement
-    var cls = target.className
-    var countInout = $(this).find('input')
-    var value = parseInt(countInout.val())
-    var kg = $(this).find('.item_a_weight span')
-    if (countInout.val() == '' || countInout.val() == 'NaN') {
-      // 设置input为空时，要显示1
-      countInout.val('1')
-    }
-    if (cls == 'add') {
-      countInout.val(value + 1);
-    }
-    if (cls == 'minus unable') {
-      countInout.val(value - 1);
-      if (countInout.val() < 1) {
-        countInout.val(1)
-      }
-    }
-    getSubtotal($(this))
-    // 清除上一次的重量值，否则会叠加！！！
-    kg.html('3.78')
-    kgs = (parseFloat(kg.html()) * parseInt(countInout.val())).toFixed(2);
-    kg.html(kgs);
-  })
+  // $('.item_line.main_item').on('click', '.add,.unable', function () {
+  //   // var e = e || window.event
+  //   // var target = e.target || e.srcElement
+  //   var cls = $(this).attr('class')
+  //   var countInout = $(this).find('input')
+  //   var value = parseInt(countInout.val())
+  //   var kg = $(this).find('.item_a_weight span')
+  //   if (countInout.val() == '') {
+  //     // 设置input为空时，要显示1
+  //     countInout.val('1')
+  //   }
+  //   if (cls == 'add') {
+  //     countInout.val(value + 1);
+  //   }
+  //   if (cls == 'unable') {
+  //     countInout.val(value - 1);
+  //     if (countInout.val() < 1) {
+  //       countInout.val(1)
+  //     }
+  //   }
+  //   getSubtotal($(this))
+  //   console.log(cls)
+  //   // 清除上一次的重量值，否则会叠加！！！
+  //   kg.html('3.78')
+  //   kgs = (parseFloat(kg.html()) * parseInt(countInout.val())).toFixed(2);
+  //   kg.html(kgs);
+  // })
 
   // oninput = "value=value.replace(/[^\d]/g,'')"
   // 上一行加在input元素中，可以实现只允许输入数字！！！！
@@ -406,32 +456,32 @@
 
 
   // 当前店铺的总价！！！
-  function getTotal(total) {
-    var parents = total.parents('.cart_list')
-    var total = parents.find('.cart_amount span span')
-  }
+  // function getTotal(total) {
+  //   var parents = total.parents('.cart_list')
+  //   var total = parents.find('.cart_amount span span')
+  // }
 
+  // function getKeyup(tot) {
+  //   var tr = tot.parents('.item_line.main_item')
+  //   var jj = tr.find('.item_amount')
+  //   var kg = jj.find('.item_a_weight span')
 
+  //   // 清除上一次的重量值，否则会叠加！！！
+  //   kg.html('3.78')
+  //   getSubtotal(tr)
+  //   kgs = (parseFloat(kg.html()) * parseInt(tot.val())).toFixed(2);
+  //   kg.html(kgs);
 
-  // input框 onkeyup事件 即直接输入数字所发生的改变！！！
-  $('.item_line.main_item').on('keyup', 'input', function () {
-    console.log($(this).val())
-    var tr = $(this).parents('.item_line.main_item')
-    var jj = tr.find('.item_amount')
-    var kg = jj.find('.item_a_weight span')
-    // 此条件是为了防止input框删空之后，后面的值会变化(NAN)
-    if ($(this).val() == '') {
-      // 设置input为空时，要显示1
-      $(this).val('1')
-    }
-    // 清除上一次的重量值，否则会叠加！！！
-    kg.html('3.78')
-    // console.log(jj)
-    getSubtotal(tr)
-    kgs = (parseFloat(kg.html()) * parseInt($(this).val())).toFixed(2);
-    kg.html(kgs);
-  })
-  // 三级复选框的勾选，与价格变动
-  $('.cart_amount span span')
-  console.log(+($('.cart_amount span span').text).toFixed(2))
+  // }
+
+  // // input框 onkeyup事件 即直接输入数字所发生的改变！！！
+  // $('.item_line.main_item').on('keyup', 'input', function () {
+  //   if ($(this).val() == '') {
+  //     // 设置input为空时，要显示1
+  //     $(this).val('1')
+  //   }
+  //   getKeyup($(this))
+  //   // 三级复选框的勾选，与价格变动
+
+  // })
 }(jQuery))
