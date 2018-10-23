@@ -1762,7 +1762,7 @@ height: 100px;
   bottom:0px;
   transition: .4s ease 0s;
 }
-.global_category img:hover{
+.mod_global_imported .global_category a:hover img{
   right: 0px;
 }
 .mod_global_imported .global_category a {
@@ -2062,7 +2062,7 @@ height: 100px;
   height: 194px;
   overflow: hidden;
   border-right: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
 }
 .mod_index_floor .center_con .pro_wrap a{
   display: block;
@@ -2081,16 +2081,73 @@ height: 100px;
   line-height: 24px;
   color: #333;
 }
-
-
-
-
-
-
-
-
-
-
+.china_food .center_con .pro_wrap .pro_sub_tit{
+  color: #f78b4b;
+}
+.mod_index_floor .center_con .pro_wrap .pro_sub_tit{
+  position: relative;
+  max-width: 115px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  z-index: 105;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.mod_index_floor .center_con .pro_wrap img{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 130px;
+  height: 130px;
+  z-index: 101;
+  transition: transform .4s ease 0s;
+}
+.mod_index_floor .center_con .pro_wrap a:hover img{
+  transform: translate3d(-5px,0,0)
+}
+.mod_index_floor .center_con .brand_wrap{
+  float: left;
+  position: relative;
+  width:247px;
+  height: 194px;
+  border-right: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+}
+.mod_index_floor .center_con .brand_wrap .brand_cover{
+  position: relative;
+  width: 204px;
+  height: 162px;
+  overflow: hidden;
+  border: 21px solid #fff;
+  border-top: 16px solid #fff;
+  border-bottom: 16px solid #fff;
+}
+.mod_index_floor .center_con .brand_wrap ul {
+  position: absolute;
+  top: -16px;
+  left: -21px;
+  width: 246px;
+}
+.mod_index_floor .center_con .brand_wrap li {
+  float: left;
+  border-top: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+}
+.mod_index_floor .center_con .brand_wrap a {
+  display: block;
+  width: 80px;
+  height: 32px;
+  padding: 16px 21px 16px 21px;
+}
+.mod_index_floor .center_con .brand_wrap img {
+  width: 80px;
+  height: 32px;
+}
+.mod_index_floor .hot_con{
+  float: left;
+  width: 248px;
+}
 
 
 
