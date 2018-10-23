@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 /* 皇冠（danisa）自营旗舰店 */
 .jShopHeader{
     height: 30px;
@@ -15,7 +13,6 @@
     width:990px;
     height: 30px;
     margin:  0 auto;
-    /* float: right; */
     white-space: nowrap;
 }
 .jShopHeaderArea .j-shopHeader{
@@ -41,7 +38,7 @@
     margin: 0 auto;
 }
 /* 左边的内容 */
- .d-layout-row.d-mult-col .d-layout {
+ .d-layout-row.d-mult-col .left {
     float: left;
     margin-left: 10px;
     width: 190px;
@@ -76,7 +73,7 @@
     top: 13px;
     height: 4px;
     width: 4px;
-    background: url(//img14.360buyimg.com/cms/jfs/t3448/126/18152604/1049/6f71a7fc/57fd94c0N39f3eb9c.png) no-repeat;
+    background: url(../img/xiaodian.png) no-repeat;
 }
 .colorGoodsSort-922474 .jOneLevel .jHead .jDottedRight {
     position: absolute;
@@ -85,7 +82,7 @@
     top: 13px;
     height: 4px;
     width: 4px;
-    background: url(//img14.360buyimg.com/cms/jfs/t3448/126/18152604/1049/6f71a7fc/57fd94c0N39f3eb9c.png) no-repeat;
+    background: url(../img/xiaodian.png) no-repeat;
 }
 .colorGoodsSort-922474 .jTwoLevel {
     font-size: 14px;
@@ -106,7 +103,7 @@
     cursor: pointer;
     position: absolute;
     right: 0;
-    background: url(//img20.360buyimg.com/cms/jfs/t3442/274/61048783/1064/3b52ecb8/57fd94c0N66bbe258.png) no-repeat center;
+    background: url(../img/xiabiao.png) no-repeat center;
     top: 13px;
 }
 
@@ -114,6 +111,7 @@
     display: block;
     color: #333;
     overflow: hidden;
+    height: 45px;
 }
 .colorGoodsSort-922474 .jThreeLevel li {
     height: 34px;
@@ -141,13 +139,14 @@
     border-bottom: dashed 1px #e1e1e1;
     position: relative;
 }
-/* 右边的内容 */
-.d-layout-wrap .d-layout-row.d-mult-col .d-layout {
-    float: left;
-    margin-left: 10px;
+/* 左边的动态的css */
+.transf{
+    transform:rotate(90deg);
 }
-.right {
-    width: 790px;
+/* 右边的内容 */
+ .d-layout-row.d-mult-col .right {
+    float: left;
+    width:790px;
 }
 .JColorSearchList-905542 {
     position: relative;
@@ -235,6 +234,19 @@
     left: 0;
     top: 0;
     background: #fff;
+}
+.JColorSearchList-905542 .jScrollWrap li.jCurrent a {
+    border: 1px solid #E4393C;
+    width:25px;
+    height:25px;
+    display: block;
+}
+
+
+
+.JColorSearchList-905542 .jScrollWrap li a img {
+    height: 25px;
+    height: 25px;
 }
 .JColorSearchList-905542 .goods-list .gl-item .jPic {
     height: 188px;
