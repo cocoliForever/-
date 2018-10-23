@@ -1,0 +1,139 @@
+/* 中心内容板块 */
+.layoutcontainer{
+    margin: 0 auto;
+    background: #f0f0f0;
+}
+/* 顶部导航以及轮播板块  */
+/* 版心内容 */
+.layoutcontainer .d-layout{
+    width:1370px;
+    margin:0 auto;  
+}
+/* 左边的菜单导航 */
+.d-layout-3-1{
+    width:250px;
+    float:left;
+}
+/* 通用 */
+.d-userdefine-layout{
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    position: relative;
+}
+/* 菜单导航内容 */
+/* 菜单的背景图 */
+.d-layout-3-1 .d-content{
+    height: 450px;
+    background: url(../img/caidan.jpg) center center no-repeat;
+    position: relative;
+}
+/* 定位到背景图上的链接 */
+.hot-link{
+    background:url(../img/dingwei.png) no-repeat;
+    height:30px;
+}
+.hot-link:nth-child(2){background-position: -23px -27px;left: 23px;top: 27px;width: 87px;}
+.hot-link:nth-child(3){background-position: -23px -27px;left: 23px;top: 27px;width: 87px;}
+.hot-link:nth-child(4){background-position: -186px -25px;left: 186px;top: 25px;width: 60px;}
+.hot-link:nth-child(5){background-position: -19px -57px;left: 19px;top: 57px;width: 60px;}
+.hot-link:nth-child(6){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(7){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(8){background-position: -182px -56px;left: 182px; top: 56px; width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(10){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(11){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(12){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(13){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(14){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(15){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(16){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(17){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(18){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(19){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(20){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(21){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(22){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(23){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+.hot-link:nth-child(9){background-position: -182px -56px;left: 182px;top: 56px;width: 60px;}
+/* 中间的轮播板块 */
+.d-layout-3-2{
+    width: 880.0px;
+    float: left;
+    margin-left: 10px;
+}
+.jBanner-150255 {
+    overflow: hidden;
+    position: relative;
+}
+.jBanner-150255 .j-module {
+    zoom: 1;
+}
+.j-module .jbannerImg{
+    width: 880px;
+    height: 450px;
+    margin: 0px auto;
+}
+/* 每张轮播板块样式 */
+.j-module .jbannerImg dl{
+    width: 880px;
+    height: 100%; 
+    float: left; 
+}
+.j-module .jbannerImg dl img{
+    width:880px;
+    height:450px; 
+}
+.jBanner-150255 .jbannerImg dd {
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+}
+/* 轮播板块上的点 */
+.jBanner-150255 .jbannerTab {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    overflow: hidden;
+}
+.jBanner-150255 .jbannerTab .jbannerThumbnail {
+    text-align: center;
+}
+.jBanner-150255 .jbannerTab em {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.jBanner-150255 .jbannerTab span {
+    margin: 0 5px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #919596;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+/* 当点添加类名时的变化 */
+.jBanner-150255 .jbannerTab span.show {
+    width: 24px;
+    border-color: #d3d4d5;
+    background: #d3d4d5;
+}
+.d-layout-3-3{
+    width: 220.0px;
+    float: left;
+    margin-left: 10px;
+}
+
+
