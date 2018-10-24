@@ -390,7 +390,7 @@ color: #ff4040 ;
     position: relative;
 }
 .j-module .j-module_1{
-  margin:20px 0; 
+  margin:20px 0;
   height:90px;
   background:url(http://img13.360buyimg.com/cms/jfs/t25249/42/2204004340/9589/ce5cf651/5bc6eacdNeea1d214.jpg) center center no-repeat;
   position:relative;
@@ -427,7 +427,7 @@ color: #ff4040 ;
 .example-20140513 .d-items li {
     float: left;
     margin-right: 10px;
-    margin-bottom:10px; 
+    margin-bottom:10px;
     width: 190px;
     height: 324px;
     position: relative;
@@ -460,6 +460,66 @@ color: #ff4040 ;
     position: relative;
     margin: 0 10px 10px 0;
 }
+.d-item .d-top {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+}
+.d-item .d-top img {
+    width: 190px;
+    height: 190px;
+}
+.d-item .d-wname {
+    display: block;
+    height: 37px;
+    margin: 10px;
+    font-size: 14px;
+    color: #000;
+    overflow: hidden;
+}
+.d-item .d-price {
+    margin: 10px;
+    color: #e74542;
+    height: 22px;
+}
+.d-item .d-price .d-text {
+    font-size: 14px;
+}
+.d-item .d-price .jdNum {
+    font-size: 24px;
+    font-weight: bold;
+}
+.d-item .d-bottom {
+    margin: 10px;
+    height: 35px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.d-item .d-bottom .d-add-cart {
+    float: left;
+    display: block;
+    border: 2px solid #e74542;
+    width: 91px;
+    height: 31px;
+    line-height: 35px;
+    color: #df3033;
+}
+.d-item .d-bottom .d-buy {
+    float: right;
+    display: block;
+    width: 72px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    background-color: #e74542;
+}
+
+
+
+
+
 
 
 /* 底部css */
@@ -467,7 +527,7 @@ color: #ff4040 ;
 .ft_footer_service {
   padding: 30px 0;
   border-bottom: 1px solid #ebebeb;
-} 
+}
 .ft_footer_service a{
   float: left;
   display: block;
@@ -475,14 +535,14 @@ color: #ff4040 ;
   width: 205px;
   overflow: hidden;
   margin: 0 51px;
-}  
+}
 .ft_footer_service a img {
   float: left;
   display: block;
   width: 66px;
   height: 66px;
   margin-right: 15px;
-} 
+}
 .ft_footer_service a b {
   display: block;
   margin-top: 10px;
@@ -587,4 +647,3 @@ color: #ff4040 ;
   margin: 0 4px;
 }
 /*footer end*/
-
