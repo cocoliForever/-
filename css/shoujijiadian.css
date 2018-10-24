@@ -82,6 +82,10 @@
     height: 450px;
     margin: 0px auto;
 }
+.j-module .jbannerImg .jImgNodeArea{
+    position: absolute;
+}
+
 /* 每张轮播板块样式 */
 .j-module .jbannerImg dl{
     width: 880px;
@@ -125,7 +129,7 @@
     border-radius: 8px;
 }
 /* 当点添加类名时的变化 */
-.jBanner-150255 .jbannerTab span.show {
+.jBanner-150255 .jbannerTab span.active{
     width: 24px;
     border-color: #d3d4d5;
     background: #d3d4d5;
@@ -135,6 +139,10 @@
     float: left;
     margin-left: 10px;
 }
+/* 轮播的动画曲线 */
+/* @keyframes annck{
+
+} */
 /* 右边品牌logo板块 */
 /* 右边品牌logo背景图 */
 .d-layout-3-3 .d-content{
@@ -150,5 +158,177 @@
 }
 .d-layout-3-3 .hot-link:nth-child(2){background-position: -23px -27px;left: 23px;top: 27px;}
 .d-layout-3-3 .hot-link:nth-child(3){background-position: -23px -27px;left: 23px;top: 27px;}
+/* <!-- 顶部导航以及轮播板块结束 -->
+<!-- 多个块开始 --> */
+/* 版心内容  */
+.d-layout-1-1{
+    width:1300.0px; 
+    float:left;
+}
+/* 疯抢板块标题标题 */
+.d-layout-1-1 .d-content {
+    position: relative;
+}
+.d-layout-1-1 .d-content div{
+    height: 87px;
+    background: url(../img/meirifengqiang.jpg) center center no-repeat;
+    position: relative;
+}
+.ls-11-goods-219453 ul {
+    position: relative;
+    overflow: hidden;
+}
+.ls-11-goods-219453  li {
+    float: left;
+    width: 242px;
+    overflow: hidden;
+    padding: 5px;
+    background: #fff;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+.ls-11-goods-219453 li .goods-img{
+    padding: 5px;
+    position: relative;
+} 
+.ls-11-goods-219453 .d-con .J_imgLazyload{
+    height:168px;
+    width:168px;
+    margin:0 auto;
+}
+.ls-11-goods-219453 li .goods-detail {
+    color: #333333;
+    margin-top: 10px;
+}
+.ls-11-goods-219453 li .brand-logo {
+    width: 180px;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.ls-11-goods-219453 li .goods-info {
+    line-height: 1.1;
+    margin-bottom: 4px;
+    position: relative;
+    margin-top: 3px;
+}
+.ls-11-goods-219453 li .jd-price {
+    color: #E60041;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 0;
+}
+.ls-11-goods-219453 li .jd-price em {
+    font-size: 12px;
+    font-weight: normal;
+}
+.ls-11-goods-219453 li .goods-bar {
+    overflow: hidden;
+}
+.ls-11-goods-219453 li .add-cart {
+    float: left;
+    width: 50%;
+    color: #E60041;
+    border-right: 0;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+.ls-11-goods-219453 li .add-cart a {
+    display: block;
+    height: 35px;
+    color: #E60041;
+    border: 1px solid #E60041;
+    font-size: 14px;
+}
+.ls-11-goods-219453 li .add-cart a em {
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    background: url(../img/gouwutubiao.png) no-repeat 0 -75px;
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+.ls-11-goods-219453 li .buy-now {
+    float: left;
+    width: 50%;
+    height: 37px;
+}
+.ls-11-goods-219453 li .buy-now a {
+    display: block;
+    height: 37px;
+    font-weight: bold;
+    background: #E60041;
+    text-align: center;
+    color: #fff;
+    line-height: 37px;
+    font-size: 14px;
+}
+.ls-11-goods-219453 li .buy-now a em {
+    display: inline-block;
+    width: 4px;
+    height: 6px;
+    background: url(../img/gouwutubiao.png) no-repeat 0 -66px;
+    vertical-align: 1px;
+    margin-left: 2px;
+}
+.ls-11-goods-219453  li .tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #e60041;
+}
+/* 本周主推商品样式 */
+.userdefined-153704 .j-module {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.example-20140513 {
+    position: relative;
+    zoom: 1;
+    width: 1225px;
+    margin: 0 auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+.example-20140513 .ex-price {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    height: 32px;
+}
+/* 定位上的链接 */
+map {
+    display: inline;
+}
+area {
+    display: inline;
+    cursor: pointer;
+}
+/* 新品上市商品开始 */
+/* 其他样式和上一个板块一致 */
+
+.mc .d-con1{
+    width: 1350px;
+}
+.mc .d-con1 li{
+    width: 206.6px;
+}
+
+
+
+
+
 
 
