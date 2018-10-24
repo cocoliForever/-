@@ -245,7 +245,9 @@ border-radius: 2px;
     top: 14px;
     left: 8px;
 }
-
+.guide_ul li .sy{
+    display: none;
+}
 .guide_ul li:hover .sr{
     display: none;
 }
@@ -263,11 +265,13 @@ border-radius: 2px;
     text-align: center;
     border: 2px solid #ff4040;
 }
+.guide_ul li .al{
+    display: block;
+    
+}
+
 .guide_ul li:hover .sl{
-    border-color:#ff4040;
     display:block
-
-
 }
 .guide_ul li .cl{
     /* display: block; */
@@ -280,6 +284,7 @@ border-radius: 2px;
     bottom: -1px;
     display:none;
 }
+
  /* .guide_ulto:hover .jspDrag{
     display: block;
 } */
@@ -311,7 +316,7 @@ border-radius: 2px;
     border-radius: 4px;
     position: absolute;
     cursor: pointer;
-    top: 0px;
+    top: 5px;
     right: 5px;
     
 }
@@ -541,4 +546,17 @@ border-radius: 2px;
 }
 .guide_ax li:hover .son_m{
     display: block;
+}
+
+
+
+
+
+/* 综合类 */
+.mod_search_select_container{  
+    width: 1441px;
+    margin: 0 auto;
+    margin-top: 6px;
+    background: red;
+    height: 20px;
 }
