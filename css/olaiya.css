@@ -1,0 +1,282 @@
+.layout-container {
+  position: relative;
+}
+.layout-auto {
+  width: 100%;
+}
+.d-layout-wrap {
+  margin: 0 auto;
+}
+.sh-brand-wrap-630128 {
+  font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+}
+.sh-brand-wrap-630128 .userDefinedArea {
+  margin: 0 auto;
+}
+.user_olaydz01 {
+  width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  color: #c5010d;
+  font-family: 宋体;
+  font-weight: normal;
+  text-align: center;
+}
+.sh-brand-wrap-630128 img {
+  vertical-align: middle;
+}
+.user_olaydz01 .ks-1 {
+  display: block;
+  position: absolute;
+  top: 186px;
+  left: 1095px;
+}
+.sh-head-menu-922476 {
+  width: 100%;
+}
+.sh-head-menu-922476 .sh-hd-wrap {
+  font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+  position: relative;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 14px;
+  color: #333;
+  width: 990px;
+}
+.sh-head-menu-922476 .menu-list {
+  width: 100%;
+  height: 40px;
+  list-style: none;
+}
+.sh-head-menu-922476 .menu-list .menu {
+  float: left;
+  line-height: 24px;
+  height: 24px;
+  padding: 8px 0;
+  border-radius: 12px;
+}
+.sh-head-menu-922476 .menu-list .menu .main-link {
+  position: relative;
+  z-index: 4;
+  display: block;
+  padding: 0 15px;
+  border-radius: 12px;
+}
+.sh-head-menu-922476 .s-form {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.sh-head-menu-922476 .s-form .s-inp {
+  padding: 0 0 0 10px;
+  width: 130px;
+  line-height: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  color: #c9c9c9;
+  vertical-align: top;
+  outline: none;
+  border: solid 1px #e1e1e1;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+.sh-head-menu-922476 .s-form .s-submit {
+  margin-left: -5px;
+  padding: 0 10px;
+  border: 0;
+  height: 24px;
+  width: 46px;
+  cursor: pointer;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  background: #333 url(http://img13.360buyimg.com/cms/jfs/t3121/284/4170076300/1201/43e1ad98/583543d4Nc7e0c1a4.png) no-repeat center;
+}
+area {
+  display: inline;
+  cursor: pointer;
+}
+.user_olay01 span.jdNum.ks-1 {
+  display: block;
+  position: absolute;
+  top: 822px;
+  left: 886px;
+  white-space: nowrap;
+  width: 150px;
+  height: 50px;
+  z-index: 3;
+  line-height: 50px;
+}
+.d-layout-wrap {
+  margin: 0 auto;
+}
+.d-w990 {
+  width: 990px;
+}
+.colorGoodsRec-922473 ul li {
+  width: 240px;
+  height: 340px;
+  float: left;
+  margin-bottom: 10px;
+}
+.colorGoodsRec-922473 .jItem {
+  background-color: #fff;
+}
+.colorGoodsRec-922473 .jPic a {
+  display: block;
+  height: 240px;
+  padding-top: 30px;
+  text-align: center;
+}
+.colorGoodsRec-922473 .jDesc {
+  font-size: 12px;
+  height: 30px;
+  line-height: 15px;
+  overflow: hidden;
+  width: 240px;
+  word-wrap: break-word;
+  margin: 12px 0 3px;
+}
+.colorGoodsRec-922473 .jBtnArea {
+  height: 25px;
+  line-height: 25px;
+  position: relative;
+  
+  background-color: #fff;
+}
+.colorGoodsRec-922473 .jBtnArea .jdPrice {
+  font-size: 18px;
+  color: #e4393c;
+  height: 100%;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+.jRmb {
+  font-family: verdana;
+}
+.colorGoodsRec-922473 .jBtnArea .goods-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+}
+.colorGoodsRec-922473 .jBtnArea .goods-btn a {
+  display: block;
+  color: #489f9f;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 0 10px 0 5px;
+  height: 100%;
+  position: relative;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+
+
+
+.colorGoodsRec-922473 ul {
+  font-size: 0;
+}
+
+.colorGoodsRec-922473 ul:after {
+  content: '';
+  clear: both;
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+
+.colorGoodsRec-922473 ul li {
+  width: 240px;
+  height: 340px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.colorGoodsRec-922473 .jItem {
+  background-color: #fff;
+}
+
+.colorGoodsRec-922473 .jPic a {
+  display: block;
+  height: 240px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.colorGoodsRec-922473 .jDesc {
+  font-size: 12px;
+  height: 30px;
+  line-height: 15px;
+  overflow: hidden;
+  width: 240px;
+  word-wrap: break-word;
+  margin: 12px 0 3px;
+}
+
+.colorGoodsRec-922473 .jBtnArea {
+  height: 25px;
+  line-height: 25px;
+  position: relative;
+  padding-left: 54px;
+  background-color: #fff;
+}
+
+.colorGoodsRec-922473 .jBtnArea .jdPrice {
+  font-size: 18px;
+  color: #e4393c;
+  height: 100%;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+
+.colorGoodsRec-922473 .jBtnArea .goods-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+}
+
+.colorGoodsRec-922473 .jBtnArea .goods-btn a {
+  display: block;
+  color: #489f9f;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 0 10px 0 5px;
+  height: 100%;
+  position: relative;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.colorGoodsRec-922473 .jBtnArea .goods-promtag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 25px;
+  line-height: 25px;
+  width: 50px;
+  background-color: #fff;
+  color: #489f9f;
+  font-size: 14px;
+  text-align: center;
+}
+
+.colorGoodsRec-922473 .jBtnArea .goods-promtag i {
+  position: absolute;
+  height: 0;
+  width: 0;
+  display: block;
+  border: 5px transparent solid;
+  border-right-width: 0;
+  border-left-color: #fff;
+  top: 8px;
+  right: -5px;
+}
+
+
