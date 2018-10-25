@@ -560,3 +560,140 @@ border-radius: 2px;
     background: red;
     height: 20px;
 }
+.mod_search_select{
+    color: #666;
+    background-color: #f5f5f5;
+    margin-bottom: 0;
+    
+   
+}
+.new_mod_search_select{
+    border: 1px solid #ddd;
+    background: #fafafa;
+    height: 40px;
+}
+.sort_b{
+    float: left;
+}
+.sort_b a{
+    display: inline-block;
+    height: 40px;
+    width: 60px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #f5f5f5;
+    margin-right: 3px;
+    
+}
+.sort_b a:nth-child(1){
+    border-left: none;
+    background: #fff;
+    margin-left: 1px;
+}
+.sort_b a i{
+    color: #ccc;
+    font-size: 12px;
+}
+.sort_b a:hover i{
+    color: #ff4040;
+    
+}
+.sort_b a:hover{
+    background: #fff;
+    border-right: 1px solid #ddd;
+}
+.sort_b a:focus i{ 
+    color: #ff4040;
+
+ }
+.sort_b a:focus span{ 
+    color: #ff4040;
+ }
+.sort_b a:focus a{ 
+    background: #fff;
+ }
+ .money:hover{
+     color:#333;
+ }
+ .money:hover .mone{
+    display: block;
+ }
+ .money{
+     position: relative;
+ }
+ .mone{
+     box-shadow: 2px 2px 0 1px #ddd;
+     border: 1px solid #ddd;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 84px;
+     height: 45px;
+     line-height: 20px;
+     padding: 5px 10px;
+     display: none;
+     background: #fff;
+ }
+ .money:hover .mone i{
+     color: #ddd
+ }
+ /* .mone span:hover i{
+     color: #ff4040
+ } */
+ i{
+     display: inline-block;
+ }
+ .iconfonts{
+     transform: rotate(180deg)
+ }
+ .between{
+     border-left: #f5f5f5 1px solid;
+     border-right: #f5f5f5 1px solid;
+     background: #f5f5f5;
+     width: auto;
+     height: auto;;
+     padding: 0 10px ;
+     float: left;
+ }
+ .between:hover{
+    border-left: #ddd 1px solid;
+    border-right: #ddd 1px solid;
+    background: #fff;
+ }
+ .between  input{
+     width: 35px;
+     padding: 4px 2px;
+     border: 1px solid #e1e1e1;
+     height: 9px;
+    margin: 10px 0;
+    margin-right: 3px;
+    outline: none;
+ }
+ .between .btn{
+     display: none;
+ }
+ .btn .btn_sure{
+     background: #ff4040;
+     color:#fff;
+ }
+ .btn a{
+     
+     width: 35px;
+     height: 18px;
+     line-height: 18px;
+     border-radius: 2px;
+     color: #999;
+     margin-right: 3px;
+ }
+ .between .mon {
+     display: none;
+ }
+ .between .mon span{
+    display: block;
+    color: #333;
+    padding: 2px ;
+ }
+.delivery_b{
+    float: left;
+
+}
