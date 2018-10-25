@@ -4,7 +4,7 @@
 	background-color: #f4f4f4;
 	line-height: 30px;
 }
-
+body{background: #fff7f7;}
 .hd_topbar_home,
 .hd_topbar_city {
 	float: left;
@@ -311,7 +311,9 @@ color: #ff4040 ;
 
 /* banner */
 
-
+.top1{
+	height: 400px;
+}
 .d-layout {
     margin-top: 10px;
     clear: both;
@@ -364,17 +366,19 @@ color: #ff4040 ;
 .jbannerTab .jbannerThumbnail span {
   margin: 0 5px;
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   background:  #fff;
   border: 1px solid #919596;
-	border-radius: 8px;
+	border-radius: 10px;
 	cursor: pointer;
+		transition: all .5s;
 }
 .jbannerTab .jbannerThumbnail span.show{
 	width: 24px;
   border-color: #d3d4d5;
-  background: #ff5e5e;
+	background: #ff5e5e;
+
 }
 .d-layout-area .slide_arrow {
     position: absolute;
@@ -424,9 +428,137 @@ color: #ff4040 ;
     cursor: pointer;
 }
 
+/* 四张图片 */
+.d-userdefine-layout {
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+		position: relative;
+		width: 240px;
+		float: left;
+		height: 240px;
+		margin-left: 10px;
+}
+.d-userdefine-layout:nth-child(1){
+	margin-left: 0;
+}
+.hot-link{
+		display: block;
+    width: 226px;
+    height: 222px;
+}
+.j-module{
+	margin: 10px 0;
+}
+ul.current{
+    position: relative;
+    overflow: hidden;
+    *padding-bottom: 10px;
+}
+ul.current li {
+    float: left;
+		width: 230px;
+		height: 306px;
+    overflow: hidden;
+    padding: 10px 0;
+    background: #fff;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+ul.current li .goods-img {
+    width: 168px;
+    padding: 0 31px;
+    position: relative;
+}
+ul.current li .goods-detail {
+    color: #333333;
+    padding: 10px 10px 0 10px;
+}
+ul.current li .goods-name {
+    height: 26px;
+    overflow: hidden;
+    line-height: 13px;
+    margin-bottom: 12px;
+}
+ul.current li .brand-logo {
+    width: 180px;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+}
+ul.current li .goods-info {
+    line-height: 1.1;
+    margin-bottom: 4px;
+    position: relative;
+}
+ul.current li .goods-name a {
+    color: #333333;
+}
+ul.current li .goods-price .jd-price {
+    color: #E60041;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 0;
+}
 
-
-
+ul.current li .goods-price .jd-price em {
+    font-size: 12px;
+    font-weight: normal;
+}
+  li .add-cart {
+    float: left;
+    width: 50%;
+    color: #E60041;
+    border-right: 0;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+ul.current li .add-cart a {
+    display: block;
+    border: 1px solid #E60041;
+    height: 35px;
+    color: #E60041;
+    font-size: 14px;
+}
+ul.current li .add-cart a em {
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    background: url(http://img10.360buyimg.com/cms/jfs/t3547/48/27466587/274/b39badf0/57fde9ceNe6245192.png) no-repeat 0 -75px;
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+ul.current li .buy-now {
+    float: left;
+    width: 50%;
+    height: 37px;
+}
+ ul.current li .buy-now a {
+    display: block;
+    height: 37px;
+    font-weight: bold;
+    background: #E60041;
+    text-align: center;
+    color: #fff;
+    line-height: 37px;
+		font-size: 14px;
+}
+ ul.current li .buy-now a em {
+    display: inline-block;
+    width: 4px;
+    height: 6px;
+    background: url(http://img10.360buyimg.com/cms/jfs/t3547/48/27466587/274/b39badf0/57fde9ceNe6245192.png) no-repeat 0 -66px;
+    vertical-align: 1px;
+    margin-left: 2px;
+}
+ul.current li .add-cart a{
+		transition: all .5s;
+	
+}
+ ul.current li .add-cart a:hover {
+    background: #ffe9eb;
+}
 
 
 

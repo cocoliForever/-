@@ -61,4 +61,16 @@
       $('.jbannerThumbnail span').eq(i).addClass('show').siblings().removeClass('show')
     }
   })
+
+
+
+  // 回顶部
+
+  $(function () {
+    $('.goTop').on('click', function () {
+      $('html,body').stop().animate({
+        scrollTop: '0'
+      })
+    })
+  })
 }(jQuery))
