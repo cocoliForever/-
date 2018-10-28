@@ -169,29 +169,31 @@
       $('.show_next').on('click',function(e){
         e.stopPropagation();
         li.eq(index).css('display','none').stop().animate({
-          'opacity':'.3',
+          'opacity':'.7',
           'z-index':'0'
         })
         index++;
         if(index === len){
           index = 0;
         }
+        clearTimeout(timer);
         changePage(index);
       }),
       $('.show_pre').on('click',function(e){
         e.stopPropagation();
-
         li.eq(index).css('display','none').stop().animate({
-          'opacity':'.3',
+          'opacity':'.7',
           'z-index':'0'
         })
         index--;
         if(index === -1){
           index = len-1;
         }
+        clearTimeout(timer);
         changePage(index);
       }),
       timer = setTimeout(function(){
+        clearTimeout(timer);
         $('.show_next').click();
       },3000)
       function changePage(num){
@@ -218,17 +220,23 @@
         var i = $(this).index();
         index = i;
         li.not(li.eq(index)).css('display','none').stop().animate({
-          'opacity':'.3',
+          'opacity':'.7',
           'z-index':'0'
         })//把其他的变为none，透明度变为0
         changePage(index);//这里的点击要切换图片和改变类名两者要同步进行所以不能调用changeActive()函数要调用changePage()
       })
       //鼠标浮上去左右切换图标出现和消失
-      $('.promo_wrapper li,.promonum_show,a.show_pre,a.show_next').on('mouseenter',function(){
+      $('.mod_promo_show').on('mouseenter',function(){
         $('a.show_pre,a.show_next').fadeIn(20);
+        console.log('进去了')
         clearTimeout(timer);
       })
-      $('.promo_wrapper li,.promonum_show,a.show_pre,a.show_next').on('mouseleave',function(){
+      $('a.show_pre,a.show_next').on('mouseenter',function(){
+        $(this).css('background','rgba(255,255,255,.8)');
+      }).on('mouseleave',function(){
+        $(this).css('background','rgba(255,255,255,.4)');
+      })
+      $('.mod_promo_show').on('mouseleave',function(){
         $('a.show_pre,a.show_next').fadeOut(20);
         timer = setTimeout(function(){
           $('.show_next').click()
@@ -437,11 +445,11 @@
     })
     //小轮播下面的列表播放
     $(function(){
-      var num = 0;
+      var num = 0,timer;
       var $li = $('.comment_list ul').children('.ellipsis').eq(0);
       $('.comment_list ul').append($li.clone());
       var len = $('.comment_list ul').children('.ellipsis').length;
-      setInterval(function(){
+      function move(){
         num++;
         if(num === len){
           num = 1;
@@ -450,6 +458,16 @@
         $('.comment_list ul').stop().animate({
           'margin-top':-num*26
         })
-      },4000)
+        clearTimeout(timer);
+        timer = setTimeout(move,4000);
+      }
+      timer = setTimeout(move,4000);
+      $('.comment_list ul').on('mouseenter',function(){
+        clearTimeout(timer);
+      })
+      $('.comment_list ul').on('mouseleave',function(){
+        timer = setTimeout(move,4000);
+      })
     })
+
 })()

@@ -819,6 +819,10 @@
   left: 0;
   top: 0;
   width: 100%;
+  opacity: .7;
+}
+.mod_promo_show .promo_wrapper li:nth-child(1){
+  opacity: 1;
 }
 .mod_promo_show .promo_wrapper li a{
   display: block;
@@ -2148,6 +2152,202 @@ height: 100px;
   float: left;
   width: 248px;
 }
+.mod_index_floor .hot_con .hot_tit{
+  margin-top: 15px;
+  text-align: center;
+  line-height: 20px;
+  color: #666;
+  font-weight: bold;
+  font-size: 14px;
+}
+.mod_index_floor .hot_con .rank_list{
+  padding: 0px 25px;
+}
+.mod_index_floor .hot_con .rank_list li{
+  padding-top: 15px;
+}
+.mod_index_floor .hot_con .pro_img{
+  display: block;
+  position: relative;
+} 
+.mod_index_floor .hot_con .pro_img img{
+  float: left;
+}
+.mod_index_floor .hot_con .pro_img i{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: #ff4040;
+  font-size: 11px;
+  color: #fff;
+  line-height: 12px;
+  text-align: center;
+  font-style: normal;
+  font-family: "Tahoma";
+}
+.mod_index_floor .hot_con .rank_detail{
+  float: right;
+  width: 125px;
+}
+.mod_index_floor .hot_con .rank_detail .pro_name{
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.mod_index_floor .hot_con .rank_detail .pro_price{
+  color: #ff4040;
+  margin-top: 5px;
+  font-family: "Microsoft YaHei";
+}
+.mod_index_floor .hot_con .pro_img .rank_second {
+  background-color: #ff8300;
+}
+.mod_index_floor .hot_con .pro_img .rank_third {
+  background-color: #f7c601;
+}
+.mod_index_floor .hot_con .rank_detail .pro_price em {
+  font-family: "Tahoma";
+}
+/* 国产食品样式结束 */
+/* 一号生鲜样式开始 */
+.mod_columns_wrap{
+  margin-top: 20px;
+}
+.mod_columns_wrap .mod_columns_floor{
+  width: 608px;
+  height: 430px;
+  background-color:#fff; 
+}
+.mod_columns_wrap .floor_tit{
+  height: 25px;
+  padding: 12px 10px 12px 18px;
+  color: #fff;
+  line-height: 25px;
+}
+.live_fresh .floor_tit{
+  background: #0bcd96;
+  background: -moz-linear-gradient(left,#0bcd96 0%,#05d7a8 100%);
+  background: -webkit-linear-gradient(left,#0bcd96 0%,#05d7a8 100%);
+  background: -webkit-gradient(linear,left top,right top,from(#0bcd96),to(#05d7a8));
+  background: -o-linear-gradient(left,#0bcd96 0%,#05d7a8 100%);
+  background: linear-gradient(to right,#0bcd96 0%,#05d7a8 100%);
+}
+.mod_columns_wrap .floor_tit h4{
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+}
+.mod_columns_wrap .floor_tit a{
+  color: #fff;
+}
+.mod_columns_wrap .floor_tit h4 em{
+  margin-left: 10px;
+  font-family: "\5b8b\4f53";
+  font-weight: bold;
+}
+.mod_columns_wrap .floor_tit .keywords{
+  float: right;
+  max-width: 430px;
+  height: 24px;
+  overflow: hidden;
+  text-align: right;
+  line-height: 24px;
+}
+.mod_columns_wrap .floor_tit .keywords ul{
+  margin-right: -5px;
+}
+.mod_columns_wrap .floor_tit .keywords li{
+  float: right;
+}
+.mod_columns_wrap .floor_tit a {
+  color: #fff;
+}
+.mod_columns_wrap .floor_tit .keywords a{
+  padding: 0 8px;
+}
+.mod_columns_wrap .left_slider{
+  position: relative;
+  float: left;
+  width: 236px;
+  height: 381px;
+  overflow: hidden;
+}
+.mod_columns_wrap .left_slider li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+.mod_columns_wrap .left_slider li.curss{
+  z-index: 102;
+}
+.mod_columns_wrap .left_slider li a{
+  display: block;
+  padding-top: 25px;
+  width: 236px;
+  height: 356px;
+}
+.mod_columns_wrap .left_slider .caption{
+  position: relative;
+  z-index: 105;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 18px;
+}
+.live_fresh .left_slider .caption{
+  color: #0bcd96;
+}
+.mod_columns_wrap .left_slider .sub_tit{
+  position: relative;
+  color: #999;
+  margin-left: 18px;
+  font-size: 14px;
+  z-index: 105;
+  line-height: 30px;
+}
+.mod_columns_wrap .left_slider li a img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 102;
+  width: 246px;
+  height: 381px;
+  transition: transform .4s ease;
+}
+.mod_columns_wrap .left_slider li a:hover img{
+  transform: translate3d(-10px,0,0);
+}
+.mod_columns_wrap .left_slider .slider_nav{
+  position: absolute;
+  left: 18px;
+  top: 87px;
+  z-index: 105;
+}
+.mod_columns_wrap .left_slider .slider_nav a{
+  float: left;
+  width: 22px;
+  height: 4px;
+  padding: 13px 0px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+.mod_columns_wrap .left_slider .slider_nav a em{
+  display: block;
+  height: 4px;
+  background-color: #ccc;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.live_fresh .left_slider .slider_nav .lcur em{
+  background-color: #0bcd96;
+}
+
+
+
+
 
 
 
