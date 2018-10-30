@@ -419,6 +419,9 @@ border-radius: 2px;
     border: 1px solid #fff;
     margin-left: 0;
 }
+.search_guide .guide_box .guide_con li a:hover span{
+    color:#ff4040;
+}
 .search_guide .guide_box .guide_con li a .sp_wid{
     width: auto;
     display: block;
@@ -525,6 +528,9 @@ border-radius: 2px;
     line-height: 16px;
     height: 16px;
 }
+.guide_ax li .son_an a:hover span{
+    color:#ff4040;
+}
 .guide_ax li .son_m .guide_btn a{
     width: auto;
 }
@@ -558,7 +564,7 @@ border-radius: 2px;
     margin: 0 auto;
     margin-top: 6px;
     background: red;
-    height: 20px;
+    height: auto;
 }
 .mod_search_select{
     color: #666;
@@ -594,29 +600,33 @@ border-radius: 2px;
     color: #ccc;
     font-size: 12px;
 }
-.sort_b a:hover i{
+.sort_b .option:hover i{
     color: #ff4040;
     
 }
-.sort_b a:hover{
+.sort_b .option:hover{
     background: #fff;
     border-right: 1px solid #ddd;
 }
-.sort_b a:focus i{ 
+.sort_b .option:focus i{ 
     color: #ff4040;
 
  }
-.sort_b a:focus span{ 
+.sort_b .option:focus span{ 
     color: #ff4040;
  }
-.sort_b a:focus a{ 
+.sort_b .option:focus a{ 
     background: #fff;
- }
- .money:hover{
-     color:#333;
  }
  .money:hover .mone{
     display: block;
+    color:#333;
+ }
+ .mone span:hover{
+    color: #ff4040;
+ }
+ .mone span:hover i{
+    color: #ff4040;
  }
  .money{
      position: relative;
@@ -634,12 +644,6 @@ border-radius: 2px;
      display: none;
      background: #fff;
  }
- .money:hover .mone i{
-     color: #ddd
- }
- /* .mone span:hover i{
-     color: #ff4040
- } */
  i{
      display: inline-block;
  }
@@ -695,5 +699,80 @@ border-radius: 2px;
  }
 .delivery_b{
     float: left;
+    background-color: #f5f5f5;
+    position: relative;
+    border-left: 1px solid #e1e1e1;
+}
+.delivery_b .psz{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 6px;
+}
+.site{
+    line-height: 40px;
+    display: inline-block;
+    border-right: 1px solid #e0e0e0;
+    position: relative;
+}
+.site span{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 6px;
+}
+.site i{
+    display:block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background:url(https://img.yihaodianimg.com/yhdsearch_pc/search3/images/arrow_down.png?1200) no-repeat 0 0;
+}
+.search_bar{
+    margin-right: 6px;
+    float: right;
+    position: relative;
+    height: 41px;
+}
+.search_bar input{
+    width: 150px;
+    height: 28px;
+    padding-left: 8px;
+    line-height: 28px;
+    border: 1px solid #e1e1e1;
+    border-radius: 1px;
+    outline: none;
+    margin: 6px 0;
+}
+.search_bar i{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
 
+
+.new_mod_search_select_bottom{
+    height: 40px;
+    border: 1px solid #ddd;
+   
+    background-color: #fff;
+    border-top: transparent;
+}
+
+
+.mod_product_list{
+    padding-top: 20px;
+    margin:0 auto;
+    width: 1441px;
+    position: relative;
+}
+.list_width{
+    margin-left: -12px;
+}
+.mod_search_pro{
+    height: 384px;
+    margin: 0 0 42px 14px;
+    width: 184px;
+    position: relative;
+    background: red;
 }

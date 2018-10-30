@@ -137,8 +137,12 @@ $(function(){
         }
     })
     $('.guide_selected').on('click','.close',function(){
-        $(this).parents('.ansery').remove()
+        var to=$(this).parents('.ansery').data('to')
         $('guide_ul .li').find('.sl').css('borderColor','#fff') 
+        $('.jspContainer .guide_ul li[data-index="'+to+'"]').find('.sr').removeClass('sy')
+        $('.jspContainer .guide_ul li[data-index="'+to+'"]').find('.sl').removeClass('al')
+        $('.jspContainer .guide_ul li[data-index="'+to+'"]').find('.cl').hide()
+       $(this).parents('.ansery').remove()
         if($('.ansery').length===0){
             // 确定按钮变化
             $('.btn_ok').css({
@@ -190,7 +194,7 @@ $(function(){
             $(this).hide()
             $(this).parents('.guide_box').css('height',34)
             $(this).parents('.guide_main').prevAll('.over_mush').show()
-            $(this).parent().find('.ali').css('display','none')
+            $(this).parent().find('.ali').css('display','')
 
          })
         //  点击更多事件
@@ -206,7 +210,8 @@ $(function(){
          })
         //  点击ul中li，精灵图变为对号
          $('.search_guide ').on('click','.guide_con li',function(){ 
-            //  if( $(this).find('.guide_box').css('height')==="auto"){
+            //  console.log($(this).parents('.guide_box'))
+             if( $(this).children().find('i').css('display')=="block"){
                 if($(this).children().find('i').css('backgroundPositionX')==-64+"px"){
                     $(this).children().find('i').css('backgroundPositionX',-75)
                     $(this).children().find('i').css('backgroundPositionY',-58)
@@ -220,7 +225,7 @@ $(function(){
                 }else{
                     $(this).children().find('i').css('backgroundPositionX',-64)
                     $(this).children().find('i').css('backgroundPositionY',-70)
-                    $(this).children().find('span').css('color','#333')
+                    $(this).children().find('span').css('color','')
                     $(this).parents('.guide_main').find('.btn_ok').css({
                         'cursor': 'not-allowed',
                         'color': '#999',
@@ -228,7 +233,7 @@ $(function(){
                         'background':' #fbfbfb'
                     })
                 }
-            // }  
+            }  
             // 点击btn_ok事件
             $(this).parent().next('.guide_btn').children().first().on('click',function(){
                 window.location.reload()
@@ -236,7 +241,7 @@ $(function(){
             // 点击取消btn_cancel事件
             $(this).parent().next('.guide_btn').children().last().on('click',function(){
                 // console.log(1)
-                $(this).parent().prev().children().children().find('span').css('color','#333')
+                $(this).parent().prev().children().children().find('span').css('color','')
                 $(this).parent().prev().children().children().find('i').css({
                     'backgroundPositionX':-64,
                     'backgroundPositionY':-70,
@@ -270,6 +275,9 @@ $(function(){
         // if( $(this).parents('.son_m').find('.guide_btn').css('display','block')){
 //  点击som_an中a，精灵图变为对号
         $('.son_m').on('click','.som_an a',function(){
+            if( $(this).parents('.son_m').find('.sub').css('display')=='block'){
+
+            
             if($(this).find('.sub').css('backgroundPositionX')===-64+"px"){
                 $(this).find('.sub').css('backgroundPositionX',-75)
                 $(this).find('.sub').css('backgroundPositionY',-58)
@@ -283,7 +291,7 @@ $(function(){
             }else{
                 $(this).find('.sub').css('backgroundPositionX',-64)
                 $(this).find('.sub').css('backgroundPositionY',-70)
-                $(this).find('span').css('color','#333')
+                $(this).find('span').css('color','')
                 $(this).parents('.son_m').find('.btn_ok').css({
                     'cursor': 'not-allowed',
                     'color': '#999',
@@ -291,7 +299,7 @@ $(function(){
                     'background':' #fbfbfb'
                 })
             } 
-        // } 
+        } 
         })
         // 点击确定刷新页面
         $('.son_m').on('click','.btn_ok ',function(){
@@ -301,13 +309,13 @@ $(function(){
         $('.son_m').on('click','.btn_cancel',function(){    
             $(this).parent().css('display','none')
             $(this).parents('.son_m').find('.over_mush').css('display','block')
-            $(this).parents('.son_m').find('.som_an span').css('color','#333')
+            $(this).parents('.son_m').find('.som_an span').css('color','')
             
             $(this).parents('.son_m').find('.som_an i').css({
                     'backgroundPositionX':-64,
                     'backgroundPositionY':-70,
                 })                
-            $(this).parents('.son_m').find('.som_an i').css('display','none');
+            $(this).parents('.son_m').find('.som_an i').css('display','');
             $(this).siblings('.btn_ok').css({
                 'cursor': 'not-allowed',
                 'color': '#999',
