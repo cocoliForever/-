@@ -178,152 +178,193 @@ $(function(){
         }
     })
     })
-    $(function(){
-        // 点击多选事件
-        $('.search_guide ').on('click','.over_mush .over_any',function(){ 
-            // console.log($(this))
-            var $guide_main= $(this).parent().nextAll('.guide_main').find(".ali")
-            $(this).parents('.guide_box').css('height','auto')
-            $(this).parent().hide()
-            // console.log($guide_main)
-            $(this).parent().nextAll('.guide_main').find('.guide_btn').css('display','block')
-            $guide_main.css('display','block') 
-        })
-        // 点击按钮事件
-        $('.search_guide ').on('click','.guide_main .guide_btn',function(){
-            $(this).hide()
-            $(this).parents('.guide_box').css('height',34)
-            $(this).parents('.guide_main').prevAll('.over_mush').show()
-            $(this).parent().find('.ali').css('display','')
-
-         })
-        //  点击更多事件
-         $('.search_guide ').on('click','.over_mush .many',function(){ 
-           if( $(this).parents('.guide_box').css('height')==34+"px"){
-               $(this).parents('.guide_box').css('height','auto')
-               $(this).html('收起 <i class=" iconfont icon-xiangshang amine"></i>')
-              
-            }else{
-                $(this).parents('.guide_box').css('height',34)
-                $(this).html('更多 <i class=" iconfont icon-xiangxia amine"></i>')
-            } 
-         })
-        //  点击ul中li，精灵图变为对号
-         $('.search_guide ').on('click','.guide_con li',function(){ 
-            //  console.log($(this).parents('.guide_box'))
-             if( $(this).children().find('i').css('display')=="block"){
-                if($(this).children().find('i').css('backgroundPositionX')==-64+"px"){
-                    $(this).children().find('i').css('backgroundPositionX',-75)
-                    $(this).children().find('i').css('backgroundPositionY',-58)
-                    $(this).children().find('span').css('color','#ff4040')
-                    $(this).parents('.guide_main').find('.btn_ok').css({
-                        'cursor':'auto',
-                        'backgroundColor':'#ff855c',
-                        'borderColor':'#f27e57',
-                        'color':'#fff'
-                    })
-                }else{
-                    $(this).children().find('i').css('backgroundPositionX',-64)
-                    $(this).children().find('i').css('backgroundPositionY',-70)
-                    $(this).children().find('span').css('color','')
-                    $(this).parents('.guide_main').find('.btn_ok').css({
-                        'cursor': 'not-allowed',
-                        'color': '#999',
-                        'borderColor':'#cfcfcf',
-                        'background':' #fbfbfb'
-                    })
-                }
-            }  
-            // 点击btn_ok事件
-            $(this).parent().next('.guide_btn').children().first().on('click',function(){
-                window.location.reload()
-            })
-            // 点击取消btn_cancel事件
-            $(this).parent().next('.guide_btn').children().last().on('click',function(){
-                // console.log(1)
-                $(this).parent().prev().children().children().find('span').css('color','')
-                $(this).parent().prev().children().children().find('i').css({
-                    'backgroundPositionX':-64,
-                    'backgroundPositionY':-70,
-                })
-                $(this).prev('.btn_ok').css({
-                    'cursor': 'not-allowed',
-                    'color': '#999',
-                    'borderColor':'#cfcfcf',
-                    'background':' #fbfbfb'
-                })
-            })
-         })
+$(function(){
+    // 点击多选事件
+    $('.search_guide ').on('click','.over_mush .over_any',function(){ 
+        // console.log($(this))
+        var $guide_main= $(this).parent().nextAll('.guide_main').find(".ali")
+        $(this).parents('.guide_box').css('height','auto')
+        $(this).parent().hide()
+        // console.log($guide_main)
+        $(this).parent().nextAll('.guide_main').find('.guide_btn').css('display','block')
+        $guide_main.css('display','block') 
     })
-     $(function(){
-        //更多筛选项 **********************************************
-        $('.select_property' ).on('mouseenter','.guide_ax li',function(){
-            // 去除横向滚动条
-            if($(this).offset().left>=1199){            
-                $(this).children().last().css('left',-50)
-            }
-            if($(this).offset().left>=1277){
-                $(this).children().last().css('left',-129)
-            } 
-        })
-        // 点击更多事件
-        $('.son_m' ).on('click','.over_mush',function(){ 
-            $(this).parents('.son_m').find('.sub').css('display','block')
-            $(this).parents('.son_m').find('.guide_btn').css('display','block')
-            $(this).hide()
-        })
-        // if( $(this).parents('.son_m').find('.guide_btn').css('display','block')){
-//  点击som_an中a，精灵图变为对号
-        $('.son_m').on('click','.som_an a',function(){
-            if( $(this).parents('.son_m').find('.sub').css('display')=='block'){
+    // 点击按钮事件
+    $('.search_guide ').on('click','.guide_main .guide_btn',function(){
+        $(this).hide()
+        $(this).parents('.guide_box').css('height',34)
+        $(this).parents('.guide_main').prevAll('.over_mush').show()
+        $(this).parent().find('.ali').css('display','')
 
+        })
+    //  点击更多事件
+        $('.search_guide ').on('click','.over_mush .many',function(){ 
+        if( $(this).parents('.guide_box').css('height')==34+"px"){
+            $(this).parents('.guide_box').css('height','auto')
+            $(this).html('收起 <i class=" iconfont icon-xiangshang amine"></i>')
             
-            if($(this).find('.sub').css('backgroundPositionX')===-64+"px"){
-                $(this).find('.sub').css('backgroundPositionX',-75)
-                $(this).find('.sub').css('backgroundPositionY',-58)
-                $(this).find('span').css('color','#ff4040')
-                $(this).parents('.son_m').find('.btn_ok').css({
+        }else{
+            $(this).parents('.guide_box').css('height',34)
+            $(this).html('更多 <i class=" iconfont icon-xiangxia amine"></i>')
+        } 
+        })
+    //  点击ul中li，精灵图变为对号
+        $('.search_guide ').on('click','.guide_con li',function(){ 
+        //  console.log($(this).parents('.guide_box'))
+            if( $(this).children().find('i').css('display')=="block"){
+            if($(this).children().find('i').css('backgroundPositionX')==-64+"px"){
+                $(this).children().find('i').css('backgroundPositionX',-75)
+                $(this).children().find('i').css('backgroundPositionY',-58)
+                $(this).children().find('span').css('color','#ff4040')
+                $(this).parents('.guide_main').find('.btn_ok').css({
                     'cursor':'auto',
                     'backgroundColor':'#ff855c',
                     'borderColor':'#f27e57',
                     'color':'#fff'
                 })
             }else{
-                $(this).find('.sub').css('backgroundPositionX',-64)
-                $(this).find('.sub').css('backgroundPositionY',-70)
-                $(this).find('span').css('color','')
-                $(this).parents('.son_m').find('.btn_ok').css({
+                $(this).children().find('i').css('backgroundPositionX',-64)
+                $(this).children().find('i').css('backgroundPositionY',-70)
+                $(this).children().find('span').css('color','')
+                $(this).parents('.guide_main').find('.btn_ok').css({
                     'cursor': 'not-allowed',
                     'color': '#999',
                     'borderColor':'#cfcfcf',
                     'background':' #fbfbfb'
                 })
-            } 
-        } 
-        })
-        // 点击确定刷新页面
-        $('.son_m').on('click','.btn_ok ',function(){
+            }
+        }  
+        // 点击btn_ok事件
+        $(this).parent().next('.guide_btn').children().first().on('click',function(){
             window.location.reload()
         })
-        // 点击取消事件
-        $('.son_m').on('click','.btn_cancel',function(){    
-            $(this).parent().css('display','none')
-            $(this).parents('.son_m').find('.over_mush').css('display','block')
-            $(this).parents('.son_m').find('.som_an span').css('color','')
-            
-            $(this).parents('.son_m').find('.som_an i').css({
-                    'backgroundPositionX':-64,
-                    'backgroundPositionY':-70,
-                })                
-            $(this).parents('.son_m').find('.som_an i').css('display','');
-            $(this).siblings('.btn_ok').css({
+        // 点击取消btn_cancel事件
+        $(this).parent().next('.guide_btn').children().last().on('click',function(){
+            // console.log(1)
+            $(this).parent().prev().children().children().find('span').css('color','')
+            $(this).parent().prev().children().children().find('i').css({
+                'backgroundPositionX':-64,
+                'backgroundPositionY':-70,
+            })
+            $(this).prev('.btn_ok').css({
                 'cursor': 'not-allowed',
                 'color': '#999',
                 'borderColor':'#cfcfcf',
                 'background':' #fbfbfb'
             })
         })
+        })
+})
 
-     })  
+$(function(){
+//更多筛选项 **********************************************
+$('.select_property' ).on('mouseenter','.guide_ax li',function(){
+    // 去除横向滚动条
+    if($(this).offset().left>=1199){            
+        $(this).children().last().css('left',-50)
+    }
+    if($(this).offset().left>=1277){
+        $(this).children().last().css('left',-129)
+    } 
+})
+// 点击更多事件
+$('.son_m' ).on('click','.over_mush',function(){ 
+    $(this).parents('.son_m').find('.sub').css('display','block')
+    $(this).parents('.son_m').find('.guide_btn').css('display','block')
+    $(this).hide()
+})
+// if( $(this).parents('.son_m').find('.guide_btn').css('display','block')){
+//  点击som_an中a，精灵图变为对号
+$('.son_m').on('click','.som_an a',function(){
+    if( $(this).parents('.son_m').find('.sub').css('display')=='block'){
+
     
+    if($(this).find('.sub').css('backgroundPositionX')===-64+"px"){
+        $(this).find('.sub').css('backgroundPositionX',-75)
+        $(this).find('.sub').css('backgroundPositionY',-58)
+        $(this).find('span').css('color','#ff4040')
+        $(this).parents('.son_m').find('.btn_ok').css({
+            'cursor':'auto',
+            'backgroundColor':'#ff855c',
+            'borderColor':'#f27e57',
+            'color':'#fff'
+        })
+    }else{
+        $(this).find('.sub').css('backgroundPositionX',-64)
+        $(this).find('.sub').css('backgroundPositionY',-70)
+        $(this).find('span').css('color','')
+        $(this).parents('.son_m').find('.btn_ok').css({
+            'cursor': 'not-allowed',
+            'color': '#999',
+            'borderColor':'#cfcfcf',
+            'background':' #fbfbfb'
+        })
+    } 
+} 
+})
+// 点击确定刷新页面
+$('.son_m').on('click','.btn_ok ',function(){
+    window.location.reload()
+})
+// 点击取消事件
+$('.son_m').on('click','.btn_cancel',function(){    
+    $(this).parent().css('display','none')
+    $(this).parents('.son_m').find('.over_mush').css('display','block')
+    $(this).parents('.son_m').find('.som_an span').css('color','')
     
+    $(this).parents('.son_m').find('.som_an i').css({
+            'backgroundPositionX':-64,
+            'backgroundPositionY':-70,
+        })                
+    $(this).parents('.son_m').find('.som_an i').css('display','');
+    $(this).siblings('.btn_ok').css({
+        'cursor': 'not-allowed',
+        'color': '#999',
+        'borderColor':'#cfcfcf',
+        'background':' #fbfbfb'
+    })
+})
+
+})  
+
+$(function(){
+    $('.between input').on('click',function(){
+        console.log(1)
+        $('.btn').fadeIn()
+        $('.mon').fadeIn()
+
+    })
+    // $('.mon').on('mouseenter',function(){
+        
+        
+    // })
+    $('.mon ').on('mouseenter','span',function(){
+        console.log($(this))
+        $(this).first().text()==$(this).find('input_a').html()
+    })
+})
+//  内容
+$(function(){
+    $('.simple_table_nonFashion').on('mouseover',function(){
+        $(this).find('.bg_border ').show()
+    })
+    $('.simple_table_nonFashion').on('mouseout',function(){
+        $(this).find('.bg_border ').hide()
+    })
+    $('.buy_btn').on('click',function(){
+        $(this).parents('.simple_table_nonFashion').find('.pro_toast').fadeIn().fadeOut(5000)
+    })
+    var i=1;
+    $('.add').on('click',function(){
+        i++;
+        $(this).parents('.shopping_num').find('input').val(i)
+    })
+    
+    $('.decrease').on('click',function(){
+        if($(this).parents('.shopping_num').find('input').val()>1){
+            i--;
+            $(this).parents('.shopping_num').find('input').val(i)
+        }
+        
+    })
+})
