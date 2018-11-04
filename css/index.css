@@ -1858,6 +1858,9 @@ height: 100px;
 .china_food h4 a{
   border-bottom:solid 1px #feeadd;
 }
+.beauty_makeup h4 a{
+  border-bottom: solid 1px #fff;
+}
 .mod_index_floor .left_con h4 a i {
   font-style: normal;
   font-family: \5b8b\4f53;
@@ -2005,6 +2008,7 @@ height: 100px;
   height: 26px;
   float: left;
   color: #fff;
+  overflow: hidden;
 }
 .china_food .left_con .comment .comment_left {
   border-right: 1px solid #f7d9b7;
@@ -2344,6 +2348,195 @@ height: 100px;
 .live_fresh .left_slider .slider_nav .lcur em{
   background-color: #0bcd96;
 }
+.mod_columns_wrap .right_slider .qua_show_con_right{
+  float: right;
+  width: 372px;
+}
+.mod_columns_wrap .right_slider .import_snacks{
+  width: 372px;
+  height: 190px;
+  position: relative;
+  float: left;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+}
+.mod_columns_wrap .right_slider .buy_btn{
+  border: 1px solid rgba(114,191,37,0.50)!important;
+  color: #72BF25!important;
+  border: 1px solid rgba(192,132,92,0.5);
+  width: 78px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  margin-top: 15px;
+  color: #c0845c;
+  cursor: pointer;
+  overflow: hidden;
+}
+.mod_columns_wrap .qua_show_con_right .import_snacks img{
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+}
+.mod_columns_wrap .qua_show_con_right img{
+  transition:.4s ease 0s;
+}
+.mod_columns_wrap .qua_show_con_right .import_snacks img:hover{
+  right: 40px;
+}
+.mod_columns_wrap .right_slider .import_snacks .import_tit{
+  margin-top: 40px;
+  color: #793a11;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: 150px;
+}
+.mod_columns_wrap .right_slider .import_snacks p{
+  margin-left:30px;
+  font-size: 14px;
+}
+.live_import_tit {
+  color: #3c8020 !important;
+}
+.live_voucher_tit{
+  color: #69b14b !important;
+}
+.mod_columns_wrap .right_slider .import_snacks .vouche_tit{
+  color: #b77347;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: 150px;
+}
+.mod_columns_wrap .right_slider .import_snacks div {
+  margin-left: 30px;
+  font-size: 14px;
+}
+.mod_columns_wrap .right_slider .show_bottom{
+  width: 372px;
+  overflow: hidden;
+}
+.mod_columns_wrap .right_slider .show_bottom .bursting{
+  width: 186px;
+  float: left;
+  position: relative;
+  height: 190px;
+  cursor: pointer;
+}
+.mod_columns_wrap .right_slider .show_bottom .bursting p{
+  margin-left: 25px;
+  font-size: 14px;
+  color: #666;
+  margin-top: -1px;
+  overflow: hidden;
+  height: 21px;
+  width: 102px;
+}
+.burting_font {
+  color: #666 !important;
+  width: 102px;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 25px !important;
+}
+.mod_columns_wrap .right_slider .show_bottom .bursting .eat_money {
+  font-weight: Bold;
+  font-size: 14px;
+  color: #2a2a2a;
+  margin-left: 23px !important;
+  font-family: Tahoma,"Microsoft YaHei";
+}
+.mod_columns_wrap .right_slider .show_bottom .bursting img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  transition: .4s ease;
+  cursor: pointer;
+}
+.mod_columns_wrap .right_slider .show_bottom .bursting img:hover{
+  right: 15px;
+}
+.drink_fresh .floor_tit{
+  background:  #f9ab57;
+  background: -moz-linear-gradient(left, #f9ab57 0%,#e1aa57 100%);
+  background: -webkit-linear-gradient(left, #f9ab57 0%,#e1aa57 100%);
+  background: -webkit-gradient(linear,left top,right top,from( #f9ab57),to(#e1aa57));
+  background: -o-linear-gradient(left, #f9ab57 0%,#e1aa57 100%);
+  background: linear-gradient(to right, #f9ab57 0%,#e1aa57 100%);
+}
+.drink_fresh .left_slider .slider_nav .lcur em{
+  background-color: #f9ab57;
+}
+.drink_fresh .left_slider .caption{
+  color: #f9ab57;
+}
+/* 一号生鲜样式结束 */
+/* 美妆护肤样式开始 */
+.beauty_makeup .beijing{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.beauty_makeup .left_con h4{
+  position: relative;
+  z-index: 15;
+}
+.beauty_makeup .left_con .en_tit{
+  position: relative;
+  z-index: 15;
+}
+.beauty_makeup .left_con .qua_left_font_con {
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  width: 176px;
+  height: 90px;
+  margin-left: 37px;
+  top: 78px;
+}
+.beauty_makeup .left_con .qua_left_font_con .qua_left_f_con_font {
+  background: rgba(255,255,255,0.1) !important;
+  border: 1px solid rgba(255,255,255,0.61) !important;
+  width: 74px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  cursor: pointer;
+  color: #fff;
+  overflow: hidden;
+}
+.beauty_makeup .keywords ul li a:hover{
+  color: #f466ba;
+}
+/* 美妆个护样式结束 */
+/* 科技质感样式开始 */
+.Intelligence .center_con .keywords ul li a:hover{
+  color: #6177CB;
+}
+  
+
+
+
+
+
+
 
 
 

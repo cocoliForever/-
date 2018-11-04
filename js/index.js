@@ -468,6 +468,31 @@
       $('.comment_list ul').on('mouseleave',function(){
         timer = setTimeout(move,4000);
       })
-    })
+    }) 
+    //一号生鲜轮播
+    $(function(){
+      var i = 0,timer1,flag = true;
+      var len = $('.mod_lift_floor .live_fresh .left_slider li').length;
+      function lunbo(){
+        flag = false;
+        $('.mod_lift_floor .live_fresh .left_slider li').eq(i).addClass('curss').css('display','block').siblings().removeClass('curss').css('display','none')
+        $('.mod_lift_floor .live_fresh .left_slider .slider_nav a').eq(i).addClass('lcur').siblings().removeClass('lcur')
+        flag = true;
+        i++;
+        if(i > len-1){
+          i = 0;
+        }
+        clearTimeout(timer1);
+        timer1 = setTimeout(lunbo,4000);
+      }
+      timer1 = setTimeout(lunbo,4000);
+      // $('.mod_lift_floor .live_fresh .left_slider .slider_nav').on('mouseenter', 'a', function(){
+      //   var s = $(this).index();
+      //   if(flag){
+      //     clearTimeout(timer1);
+      //     timer1 = setTimeout(lunbo(i),4000);
 
+      //   }
+      // })
+    })
 })()
