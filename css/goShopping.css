@@ -642,13 +642,17 @@ li.cart_activity {
     padding: 0 0 0 35px;
     margin-top: 18px;
 }
-.cart_item li:last-child .l2{
-    display: none;
-}
+
 .cart_activity .cart_prod {
     position: static;
     padding: 0;
     overflow: hidden;
+}
+.cart_item li:first-child .cart_prod em.l1{
+    display: none;
+}
+.cart_item li:last-child .cart_prod em.l2{
+    display: none;
 }
 .cart_activity .cart_prod a.checked{
   float: left;
@@ -1702,7 +1706,6 @@ img {
     top: -2px;
     z-index: 2;
     display: inline-block;
-    height: 14px;
     padding: 0 4px;
     background-color: #ff5e5e;
     line-height: 13px;

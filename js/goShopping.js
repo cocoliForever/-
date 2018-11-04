@@ -53,12 +53,61 @@
       $( '#nowTime' ).html( $now );
     }, 1000 )
   } )
+
+
+
+  // 这里是总价的固定部分
+
+  // var $top = $( '.bottom_wrap' ).offset().top - $( window ).height()
+  // var $top1 = $( '.bottom_wrap' ).offset().top - 60
+  // 总价条固定top和bottom
+  $( function () {
+    $( document ).on( 'scroll', function () {
+      // console.log($(this).scrollTop())
+      var _top = $( this ).scrollTop()
+      var banH = $( '.bottom_wrap' ).offset().top - _top
+      var screen = $( window ).height() / 2
+
+      if ( _top < $( '.bottom_wrap' ).offset().top - $( window ).height() ) {
+        $( ".pay_tools_bar" ).addClass( 'tools_bar_bottom' )
+        // 这里的条件是为了判断总价条是否到了屏幕中间，为了改变隐藏块的显示方向
+
+        // console.log()
+      } else if ( $( '.bottom_wrap' ).offset().top - 60 < _top ) {
+        $( ".pay_tools_bar" ).addClass( 'tools_bar_top' )
+      } else {
+        $( '.pay_tools_bar' ).removeClass( 'tools_bar_bottom' )
+        $( ".pay_tools_bar" ).removeClass( 'tools_bar_top' )
+
+      }
+      if ( banH <= screen ) {
+        $( '.pay_total_tips t_arrow' ).addClass( 't_arrow_top' )
+        $( '.pay_total_tips' ).css( {
+          top: '50px'
+        } )
+
+      } else {
+        $( '.pay_total_tips t_arrow' ).addClass( 't_arrow_bot' )
+        $( '.pay_total_tips' ).css( {
+          top: '-86px'
+        } )
+      }
+      $( '.pay_total_tips .t_arrow' ).toggleClass( 't_arrow_bot' )
+
+    } )
+  } )
+
+
+
+
+
   var wl, hl, s;
   $( function () {
     var tiao = function ( dom, parmas ) {
+      var num = 0
       $( dom ).on( 'click', function () {
-
         var $a = $( this ).parents( '.main_item.item_line' );
+        console.log( $a.parent().children().length )
         height = $a.offset().top
         left = $a.offset().left
         width = $a.width() / 2,
@@ -70,12 +119,12 @@
           transform: 'scale(0.2)',
           transition: 'all .8s'
         } )
-        var $ts = $( this )
+        var $th = $( this )
         var $url = $a.find( '.mainCart' ).attr( 'src' )
         setTimeout( function () {
           $a.empty().appendTo( parmas ).addClass( 'active' ).css( {
             'left': -wl, 'top': -hl, width: '50px', height: '50px', transform: '',
-            transition: '', 'background-image': 'url(' + $url + ')',
+            transition: '', 'background-image': 'url(' + $url + ')', 'backgroundColor': ''
           } ).animate( {
             left: -wl + 200,
             top: -hl - 100
@@ -83,14 +132,21 @@
             $( this ).animate( {
               left: -10,
               top: -10
-            }, 800 )
+            }, 200 )
 
             $( this ).fadeOut( 1000 )
-
-          } )
+            num++;
+            //写入右上角的商品个数
+            var count = $( this ).parent().find( '.c_lit_tip' )
+            count.text( num )
+          }
+          )
 
         }, 900 )
-
+        // 这里判断当删除或者收藏时，最后一个时，将本快内容全部删除
+        if ( $a.parent().children().length == 1 ) {
+          $( this ).parents( '.cart_list' ).fadeOut( 2100 )
+        }
       } )
 
     }
@@ -211,6 +267,8 @@
   } )
   //解绑回顶部的盒子的点击事件document事件
   $( '.t_control_btn_a' ).eq( 3 ).off( 'click' )
+
+
   $( document ).on( 'click', function () {
     $( '.c_global_toolbar' ).animate( {
       right: 0
@@ -234,45 +292,6 @@
 
   // })
 
-
-  var $top = $( '.bottom_wrap' ).offset().top - $( window ).height()
-  var $top1 = $( '.bottom_wrap' ).offset().top - 60
-  // 总价条固定top和bottom
-  $( function () {
-    $( document ).on( 'scroll', function () {
-      // console.log($(this).scrollTop())
-      var _top = $( this ).scrollTop()
-      var banH = $( '.bottom_wrap' ).offset().top - _top
-      var screen = $( window ).height() / 2
-
-      if ( _top < $top ) {
-        $( ".pay_tools_bar" ).addClass( 'tools_bar_bottom' )
-        // 这里的条件是为了判断总价条是否到了屏幕中间，为了改变隐藏块的显示方向
-
-        // console.log()
-      } else if ( $top1 < _top ) {
-        $( ".pay_tools_bar" ).addClass( 'tools_bar_top' )
-      } else {
-        $( '.pay_tools_bar' ).removeClass( 'tools_bar_bottom' )
-        $( ".pay_tools_bar" ).removeClass( 'tools_bar_top' )
-
-      }
-      if ( banH <= screen ) {
-        $( '.pay_total_tips t_arrow' ).addClass( 't_arrow_top' )
-        $( '.pay_total_tips' ).css( {
-          top: '50px'
-        } )
-
-      } else {
-        $( '.pay_total_tips t_arrow' ).addClass( 't_arrow_bot' )
-        $( '.pay_total_tips' ).css( {
-          top: '-86px'
-        } )
-      }
-      $( '.pay_total_tips .t_arrow' ).toggleClass( 't_arrow_bot' )
-
-    } )
-  } )
 
 
 
