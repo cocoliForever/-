@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/toubu.css">
-    <link rel="stylesheet" href="css/resete.css">
     <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/resete.css">
+    <link rel="stylesheet" href="./css/location.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_826668_mdil61zk9nm.css">
     
 </head>
@@ -2763,7 +2764,19 @@
             <div class="delivery_b">
                 <span class="t_b psz">配送至</span>
                 <div class="t_b site">
-                    <span>北京密云区城区</span>
+                        <div class="dd">
+
+                                <div id="store-selector">
+                    
+                                    <div class="text"><div></div><b></b></div>                   
+                    
+                                    <div onclick="$('#store-selector').removeClass('hover')" class="close">×</div>
+                    
+                                </div><!--store-selector end-->
+                    
+                                <div id="store-prompt"><strong></strong></div><!--store-prompt end--->
+                    
+                            </div>
                     <i></i>
                 </div>
             </div>
@@ -4024,6 +4037,7 @@
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/book.js"></script>
     <script src="./js/jquery.book.js"></script>
+    <script src="./js/location.js"></script>
     <script>
         $(function () {
           $('.mod_search_guide').area()
