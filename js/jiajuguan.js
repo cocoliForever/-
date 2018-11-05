@@ -177,7 +177,7 @@ var timer
         $('.brand_name').css('left',0)
        }
        if(j<0){
-            j=6
+            j=7
             $('.brand_name').css('left',-j*170)
             j--
        }
