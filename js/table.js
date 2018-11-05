@@ -514,3 +514,42 @@ $(function(){
       },300);
     })
   })
+
+      // 解决banner图列表旁边的展示列表中的a元素转为行内块元素产生的4px的间隙
+    $(function(){
+        $('.hd_good_category dd').contents().filter(function(){
+          return this.nodeType===3;
+          }).remove();
+      // banner图列表旁边的展示列表中的a元素鼠标浮上去字体变粗
+        $('.hd_good_category dd a').hover(function(){
+          $(this).css("fontWeight","bold");
+        },function(){
+          $(this).css('fontWeight','400');
+        })
+      }),
+      // banner图列表旁边的展示列表中的li标签浮上去展示详情列表以及背景色变化字体颜色变化
+      $(function(){
+        var nums = 0;
+        $('.mod_hd_allsort ul .frw').hover(function(){
+          $(this).css("background","#ffffff");
+          nums = $(this).index();
+          $('.hd_show_sort').eq(nums).css('display','block');
+          $('.mod_hd_allsort .iconfont').eq(nums).css("color","red");
+          $('.mod_hd_allsort .hd_allsort li h3').eq(nums).css("color","#666").find('a').css("color","#666");
+        },function(){
+          $(this).css("background","#444444");
+          $('.hd_show_sort').eq(nums).css('display','none');
+          $('.mod_hd_allsort .iconfont').eq(nums).css("color","#666");
+          $('.mod_hd_allsort .hd_allsort li h3').eq(nums).css("color","#fff").find('a').css("color","#fff");
+        })
+      }),
+      //把banner图旁边的详情列表的最后一号的底部边框去掉
+      $(function(){
+        for(var i=0;i<$('.hd_good_category').length;i++){
+          $('.hd_good_category').eq(i).find('dl').last().find('dd').css("borderBottom","0px");
+        }
+      })
+
+
+
+
