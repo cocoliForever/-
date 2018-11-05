@@ -1019,7 +1019,7 @@ border-radius: 2px;
   }
   .hd_cm_allsort_wrap{
     position: absolute;
-    top: 120;
+    top: -40px;
     font-size: 14px;
     left: 0;
     float: left;
@@ -1092,7 +1092,7 @@ border-radius: 2px;
     width: 210px;
     height: 400px;
     left: 0;
-    top: 40px;
+    top: 0;
     background-color: rgba(48,48,48,0.9);
     clear: left;
     *zoom: 1;
