@@ -2916,3 +2916,108 @@ height: 100px;
 .yhd_prism_nav a.prism_cart_tab:hover {
   background-color: #ff5c4d;
 }
+.yhd_prism_nav .prism_nav_btm {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 34px;
+  text-align: center;
+}
+.yhd_prism_nav .prism_icon_wrap {
+  display: block;
+  position: relative;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.prism_nav_btn .prisn_icon_tab .icon_zixun{
+  color: #fff;
+}
+.prism_icon_wrap .prism_yhd_code {
+  display: none;
+  left: -168px;
+  top: -122px;
+  width: 130px;
+  padding: 15px 10px;
+  line-height: 24px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+}
+.prism_yhd_code p {
+  height: 40px;
+  overflow: hidden;
+  line-height: 20px;
+}
+.prism_yhd_code img {
+  display: block;
+  width: 93px;
+  height: 93px;
+  margin: 10px auto 0;
+}
+.yhd_prism_nav .prism_icon_hover .prism_yhd_code {
+  display: block;
+}
+.prism_tips_wrap .tips_arrow {
+  position: absolute;
+  top: 30px;
+  right: -12px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-style: 0;
+  line-height: 0;
+  border-color: transparent transparent transparent #fff;
+  border-style: dashed dashed dashed solid;
+  border-width: 6px;
+}
+.prism_yhd_code .tips_arrow {
+  top: 130px;
+}
+.prism_tips_wrap {
+  position: absolute;
+  top: 0;
+  -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+}
+/* 右侧的黑色导航条样式结束 */
+/* 电梯导航样式开始 */
+#navigation {
+  width: 50px;
+  height: 449px;
+  float: left;
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+  background: #fff url('http://img.iblimg.com/respc-1/resources/v4.2/css/i/barnav3.jpg') no-repeat 0 0;
+  margin-bottom: -230px;
+  margin-right: 620px;
+}
+#navigation a {
+  width: 50px;
+  height: 49px;
+  display: block;
+}
+a:link, a:visited {
+  color: #666;
+  text-decoration: none;
+}
+#navigation a .box {
+  width: 30px;
+  height: 43px;
+  line-height: 16px;
+  font-family: 微软雅黑;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(102, 102, 102);
+  padding: 7px 10px 0px;
+  overflow: hidden;
+}
+#navigation a.select .box, #navigation a:hover .box {
+  background: #ff6f6f;
+  color: #fff;
+}
