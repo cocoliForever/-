@@ -121,7 +121,7 @@ $(function(){
                 $('.ansery[data-to="'+index+'"]').remove()
             } 
             if($('.ansery').length>=1){
-                $('.btn_ok').css({
+                $(this).parents('.guide_main ').find('.btn_ok').css({
                 'cursor':'auto',
                 'backgroundColor':'#ff855c',
                 'borderColor':'#f27e57',
@@ -131,7 +131,7 @@ $(function(){
         }
     })
     // 点击确定按钮刷新页面
-    $('.guide_btn').on('click','.btn_ok',function(){
+    $(' .guide_btn').on('click','.btn_ok',function(){
         if($('.btn_ok').css('backgroundColor')=='rgb(255, 133, 92)'){
             window.location.reload()
         }
@@ -143,7 +143,7 @@ $(function(){
         $('.jspContainer .guide_ul li[data-index="'+to+'"]').find('.sl').removeClass('al')
         $('.jspContainer .guide_ul li[data-index="'+to+'"]').find('.cl').hide()
        $(this).parents('.ansery').remove()
-        if($('.ansery').length===0){
+        if($('.ansery').length==0){
             // 确定按钮变化
             $('.btn_ok').css({
                 'cursor': 'not-allowed',

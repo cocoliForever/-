@@ -485,6 +485,7 @@ border-radius: 2px;
     height: auto;
     position: absolute;
     z-index: 5;
+    z-index: 9;
     top: 35px;
     padding: 5px;
     background: #fff;
@@ -498,6 +499,7 @@ border-radius: 2px;
     position: absolute;
     top: 35px;
     left: -9px;
+   
 }
 .guide_ax li .hid_b{
     position: absolute;
@@ -552,6 +554,7 @@ border-radius: 2px;
 }
 .guide_ax li:hover .son_m{
     display: block;
+   
 }
 
 
