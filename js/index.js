@@ -63,13 +63,13 @@
   }),
     // 点击出现提示内容和点击关闭提示内容
     $(function(){
+      $()
       $('.hd_city_suggest').on('click','a',function(){
-        console.log($(this).text())
         $('.hd_city_input input').val($(this).text());
       })
       $('.hd_city_search .hd_citys_close').on('click',function(){
         $('.hd_city_suggest').css('display','none');
-        $('.hd_city_input i').css('display','block')
+        $('.hd_city_input .icon-sousuo1').css('display','block')
         $('.hd_city_input input').val('');
         $('.hd_city_search .hd_citys_close').css('display','none')
       })
@@ -486,13 +486,11 @@
         timer1 = setTimeout(lunbo,4000);
       }
       timer1 = setTimeout(lunbo,4000);
-      // $('.mod_lift_floor .live_fresh .left_slider .slider_nav').on('mouseenter', 'a', function(){
-      //   var s = $(this).index();
-      //   if(flag){
-      //     clearTimeout(timer1);
-      //     timer1 = setTimeout(lunbo(i),4000);
-
-      //   }
-      // })
+    })
+    //右边的黑色导航条鼠标浮上去让其出现
+    $('.prism_nav_tab').on('mouseenter',function(){
+      $(this).addClass('prism_icon_hover')
+    }).on('mouseleave',function(){
+      $(this).removeClass('prism_icon_hover')
     })
 })()

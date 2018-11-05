@@ -64,7 +64,7 @@
 }
 .hd_city_search .iconfont{
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 35px;
   height: 26px;
@@ -84,7 +84,7 @@
   width: 135px;
   border: none;
   padding: 0 8px 0 5px;
-  vertical-align : middle;
+  vertical-align : top;
   color: #333;
 }
 .hd_city_input .hd_citys_close{
@@ -1593,6 +1593,9 @@ height: 100px;
 }
 /* 中间大图片样式结束 */
 /* 放全球进口这几个字以及其他内容的一个大盒子样式开始 */
+#needlazyload{
+  margin-bottom: 20px;
+}
 .mod_global_imported{
   margin-top: 20px;
   height: 490px;
@@ -2530,30 +2533,155 @@ height: 100px;
 .Intelligence .center_con .keywords ul li a:hover{
   color: #6177CB;
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 科技质感样式结束 */
+/* 猜你喜欢样式开始 */
+.alsolike{
+  display: block;
+  background: #fff;
+}
+.alsolike .featured_tit {
+  margin: 8px 4px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  color: #333;
+  background: url('http://img.iblimg.com/respc-1/resources/v4.2/css/i/guess_bg.jpg') repeat-x 0 center;
+  font-family: '\5FAE\8F6F\96C5\9ED1';
+  font-weight: 400;
+}
+.alsolike .guess_love {
+  width: 255px;
+  padding-left: 65px;
+  height: 30px;
+  margin: 0 auto;
+  background: #fff url('http://img.iblimg.com/respc-1/resources/v4.2/css/i/guess_love.jpg') no-repeat 30px center;
+}
+.featured_tit span {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #999;
+}
+.alsolike .featured_log {
+  text-align: right;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-family: '微软雅黑';
+  color: #999;
+  padding-right: 5px;
+}
+.featured_log a {
+  color: #ff6f6f;
+}
+.alsolike .like_class {
+  height: 340px;
+  margin-bottom: 10px;
+}
+.alsolike .pro_show {
+  height: 338px;
+  width: 228px;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  transition: all 1s;
+}
+.like_class li {
+  float: left;
+  height: 340px;
+  margin: 0 7.8px;
+  position: relative;
+  width: 230px;
+  background: #fff;
+}
+.like_class a:link, a:visited {
+  color: #666;
+  text-decoration: none;
+}
+.alsolike .pro_show:hover {
+  box-shadow: 1px 0 4px #e4e4e4, 0 1px 4px #e4e4e4, -1px 0 4px #e4e4e4, 0 -1px 4px #e4e4e4;
+}
+.alsolike .pro-name {
+  padding: 0 11px;
+  margin-top: 5px;
+  color: #333;
+  line-height: 21px;
+  height: 42px;
+  overflow: hidden;
+}
+.alsolike .pro-name a {
+  color: #666;
+  font-size: 14px;
+}
+.alsolike .pro-name a:hover {
+  text-decoration: underline;
+}
+.alsolike .pro-money {
+  padding: 0 11px;
+  height: 26px;
+  margin-top: 3px;
+  position: relative;
+}
+.alsolike .money-fl {
+  color: #ff6f6f;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 12px;
+  line-height: 26px;
+  margin-top: 15px;
+}
+.alsolike .money-fl .houlai{
+  float: right;
+  height: auto;
+  width: 130px;
+  position: relative;
+}
+.alsolike .money-fl a.geta {
+  position: absolute;
+  left: 22px;
+  top: 0px;
+  padding: 0 10px 0 25px;
+  height: 20px;
+  margin-top: 3px;
+  *margin-top: -22px;
+  margin-right: 15px;
+  line-height: 18px;
+  *line-height: 20px;
+  background: url('http://img.iblimg.com/respc-1/resources/v4.2/css/i/guess_ic1.jpg') no-repeat 7px 4px;
+  border: 1px solid #eee;
+  color: #999;
+  border-radius: 11px;
+}
+.alsolike .money-fl a.geta:hover {
+  color: #ff6f6f;
+  background-position: 7px -27px;
+}
+.alsolike .pro_img {
+  height: 220px;
+  width: 220px;
+  padding: 4px;
+  background: url('http://img.iblimg.com/respc-1/resources/v4.2/css/i/loading77x77.gif') no-repeat center center;
+}
+.alsolike .money-fl a.add_shoping{
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  margin-top: -10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #ff4040;
+}
+.alsolike .money-fl a.add_shoping .iconfont{
+  color: #fff;
+  font-size: 13px;
+}
+.alsolike .money-fl a.add_shoping:hover{
+  background: #f22020;
+}
+/* 猜你喜欢样式结束 */
 /* 底部css */
 /* service begin */
 .ft_footer_service {
@@ -2679,3 +2807,112 @@ height: 100px;
   margin: 0 4px;
 }
 /* footer  end */
+/* 右侧的黑色导航条样式 */
+.yhd_prism_wrap {
+  _display: none;
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  right: -260px;
+  z-index: 100000;
+  height: 100%;
+  width: 294px;
+  -webkit-transition: right .5s ease;
+  -o-transition: right .5s ease;
+  -moz-transition: right .5s ease;
+  transition: right .5s ease;
+  _display: none;
+}
+.yhd_prism_nav {
+  position: absolute;
+  z-index: 910;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+  background-color: #303030;
+}
+.yhd_prism_nav .prism_nav_center {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  width: 34px;
+  text-align: center;
+}
+.yhd_prism_nav .prism_icon_wrap {
+  display: block;
+  position: relative;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.yhd_prism_nav .prism_icon_tab {
+  position: relative;
+  z-index: 10;
+  display: block;
+  height: 32px;
+  background-color: #303030;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+}
+.yhd_prism_nav .prism_icon_tab .iconfont{
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+}
+.yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_tab {
+  background-color: #ff5c4d;
+}
+.yhd_prism_nav .prism_icon_text {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  right: -60px;
+  height: 32px;
+  padding: 0 6px;
+  background-color: #3f3c3c;
+  line-height: 32px;
+  color: #fff;
+  white-space: nowrap;
+  -moz-transition: right .3s ease-in-out .1s;
+  -webkit-transition: right .3s ease-in-out .1s;
+  -o-transition: right .3s ease-in-out .1s;
+  transition: right .3s ease-in-out .1s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.yhd_prism_nav .prism_icon_hover .prism_icon_text {
+    right: 34px;
+    background-color: #ff5c4d;
+}
+.yhd_prism_nav a.prism_cart_tab .prism_cart_text {
+  padding: 8px 8px 0;
+  color: #fff;
+  text-align: center;
+}
+.yhd_prism_nav a.prism_cart_tab {
+  display: block;
+  padding: 12px 0;
+  background: #454545;
+  text-align: center;
+}
+.yhd_prism_nav a.prism_cart_tab .prism_cart_num {
+  margin-top: 8px;
+}
+.yhd_prism_nav a.prism_cart_tab .prism_cart_num u {
+  display: inline-block;
+  min-width: 14px;
+  height: 20px;
+  padding: 0 3px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #ff3c3c;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.yhd_prism_nav a.prism_cart_tab:hover {
+  background-color: #ff5c4d;
+}
