@@ -2968,8 +2968,9 @@ img {
 .hd_cm_fixed {
   position: fixed;
   top: 0;
-  left: 50%;
-  margin-left: -614px;
+  left: 0;
+  padding-left: 192px;
+  /* margin-left: -614px; */
   /* width: 1228px; */
   z-index: 950;
   width: 100%;

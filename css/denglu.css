@@ -328,7 +328,7 @@ body {
 }
 
 .mod_login_wrap .form_item_wrap .form_item .gay_text {
-	color: #ccc
+	color: #333;
 }
 
 .mod_login_wrap .form_item_wrap .form_item a.forget_pswd:hover {
