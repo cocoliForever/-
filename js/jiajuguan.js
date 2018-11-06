@@ -168,46 +168,43 @@ $(function(){
 })
 //  实现左右无缝轮播切换
 $(function(){  
-  $('.brand_name').append(' <li><div><img src="https://img13.360buyimg.com/cms/jfs/t9661/248/2423655147/5879/498f1b84/59f6c6baN94d44166.jpg" alt="" class="img "><img src="https://img11.360buyimg.com/cms/jfs/t14728/347/1075861071/21937/47b0715d/5a430b1fN91cfb632.jpg" alt="" class="imgs "></div></li>')
 var timer
-    function ele(){                                          
-        clearTimeout(timer)
-       if(j>7){
-        j=1
-        $('.brand_name').css('left',0)
-       }
-       if(j<0){
-            j=7
-            $('.brand_name').css('left',-j*170)
-            j--
-       }
-       
-        $('.brand_name').stop().animate({
-       left:-j*170
-   },1000,function(){
+  function ele(){                                          
     clearTimeout(timer)
-    timer= setTimeout(function(){
-      ele(j++)
-  },2000) 
-   })
-   
- 
-}
+    if(j>7){
+    j=1
+    $('.brand_name').css('left',0)
+    }
+    if(j<0){
+        j=7
+        $('.brand_name').css('left',-j*170)
+        j--
+    }
+    $('.brand_name').stop().animate({
+      left:-j*170
+      },1000,function(){
+      clearTimeout(timer)
+      timer= setTimeout(function(){
+        ele(j++)
+      },2000) 
+    })
+  }
    var j=0
     timer= setTimeout(function(){
         ele(j++)
     },2000) 
 // 鼠标点中li，轮播停止，支开继续运动
-$('.brand_name ').on('mouseenter','li',function(){
+$('.brand_name ').stop().on('mousemove','li',function(){
     clearTimeout(timer)
     var index=$(this).index()
     $('.img').eq(index).fadeOut(0)
     $('.imgs').eq(index).fadeIn(0)
      var i=index
-    $('.brand_name ').on('mouseleave','li',function(){
+    $('.brand_name ').stop().on('mouseout','li',function(){
         clearTimeout(timer)
     $('.img').eq(index).fadeIn(0)
     $('.imgs').eq(index).fadeOut(0)
+
     timer= setTimeout(function(){ 
         ele(j++)
     },10) 
@@ -231,7 +228,6 @@ $('.brand_name ').on('mouseenter','li',function(){
        ele(j--)
     })
 })
-
 // 实现tab切换
 $(function(){
 var as
