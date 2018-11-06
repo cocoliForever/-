@@ -350,14 +350,13 @@ li.hd_has_child:hover .hd_qrcode_bg{
     outline: none;
 }
 .cart_header .search .search_btn {
-    display: inline-block;
-    _float: right;
+    float: right;
     width: 30px;
     height: 20px;
     text-align: center;
     color: #aaa;
     _overflow: hidden;
-    line-height: 20px;
+    margin-top: -15px;
 }
 
 /* 版心 */
@@ -1565,7 +1564,6 @@ img {
     border: 0 none;
     vertical-align: top;
 }
-
 .cheap_prod .sale_scroll_box .prod_img .add_shopcart {
     position: absolute;
     right: 10px;
@@ -1970,7 +1968,7 @@ img {
 
 
 
-.active{
+.fly{
     width: 100px;
     height: 100px;
     position: absolute;

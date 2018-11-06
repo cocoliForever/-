@@ -8,6 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/resete.css">
   <link rel="stylesheet" href="http://at.alicdn.com/t/font_858329_6yud0r85uox.css">
+  <link href="css/city-picker.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="css/goShopping.css">
 </head>
 
@@ -77,108 +79,22 @@
         </a>
       </h1>
       <!-- 三级地址选择 strat-->
-      <div class="area_wrapper">
-        <span class="area_txt">配送至：</span>
-        <div class="mod_area_select">
-          <div class="address">
-            <span class="val_text" id="detail_area_name"> <span id="cmbProvince"> 北京</span> <i>|</i><span id="cmbCity">昌平区</span><i>|</i><span
-                id="cmbArea">城区以外</span>
-            </span>
-            <i class="iconfont icon-down"></i>
-          </div>
-          <div class="tab_box none" style="display: none;">
-            <a href="javascript:;" class="close"></a>
-            <div class="tabs clearfix">
-              <span class="" data-val="北京"><em>北京</em></span>
-              <span value="" class="" data-val="昌平区"><em>昌平区</em></span>
-              <span value="" class="on" data-val="城区以外"><em>城区以外</em></span>
-            </div>
-            <div class="area_box">
-              <div class="item first_area" style="display: block;">
-                <dl class="clearfix">
-                  <dt>华北：</dt>
-                  <dd value="1" name="cart_province" data-val="北京" class="on">北京</dd>
-                  <dd value="3" name="cart_province" data-val="天津">天津</dd>
-                  <dd value="5" name="cart_province" data-val="河北">河北</dd>
-                  <dd value="6" name="cart_province" data-val="山西">山西</dd>
-                  <dd value="11" name="cart_province" data-val="内蒙古" class="">内蒙古</dd>
-                </dl>
-                <dl class="clearfix">
-                  <dt>华东：</dt>
-                  <dd value="2" name="cart_province" data-val="上海" class="">上海</dd>
-                  <dd value="12" name="cart_province" data-val="江苏">江苏</dd>
-                  <dd value="15" name="cart_province" data-val="浙江">浙江</dd>
-                  <dd value="14" name="cart_province" data-val="安徽">安徽</dd>
-                  <dd value="16" name="cart_province" data-val="福建">福建</dd>
-                  <dd value="13" name="cart_province" data-val="山东">山东</dd>
-                </dl>
-                <dl class="clearfix">
-                  <dt>华南：</dt>
-                  <dd value="19" name="cart_province" data-val="广东">广东</dd>
-                  <dd value="20" name="cart_province" data-val="广西">广西</dd>
-                  <dd value="23" name="cart_province" data-val="海南">海南</dd>
-                </dl>
-                <dl class="clearfix">
-                  <dt>华中：</dt>
-                  <dd value="21" name="cart_province" data-val="江西">江西</dd>
-                  <dd value="7" name="cart_province" data-val="河南" class="">河南</dd>
-                  <dd value="17" name="cart_province" data-val="湖北">湖北</dd>
-                  <dd value="18" name="cart_province" data-val="湖南">湖南</dd>
-                </dl>
-                <dl class="clearfix">
-                  <dt>西南：</dt>
-                  <dd value="4" name="cart_province" data-val="重庆">重庆</dd>
-                  <dd value="22" name="cart_province" data-val="四川">四川</dd>
-                  <dd value="24" name="cart_province" data-val="贵州">贵州</dd>
-                  <dd value="25" name="cart_province" data-val="云南">云南</dd>
-                  <dd value="26" name="cart_province" data-val="西藏">西藏</dd>
-                </dl>
-                <dl class="clearfix">
-                  <dt>西北：</dt>
-                  <dd value="27" name="cart_province" data-val="陕西">陕西</dd>
-                  <dd value="28" name="cart_province" data-val="甘肃">甘肃</dd>
-                  <dd value="29" name="cart_province" data-val="青海">青海</dd>
-                  <dd value="30" name="cart_province" data-val="宁夏">宁夏</dd>
-                  <dd value="31" name="cart_province" data-val="新疆">新疆</dd>
-                </dl>
-                <dl class="clearfix">
-                  <dt>东北：</dt>
-                  <dd value="8" name="cart_province" data-val="辽宁">辽宁</dd>
-                  <dd value="9" name="cart_province" data-val="吉林">吉林</dd>
-                  <dd value="10" name="cart_province" data-val="黑龙江">黑龙江</dd>
-                </dl>
-              </div>
-              <div class="item second_area hide" style="display: block;">
-                <dl class="clearfix" id="cart_city_area">
-                  <dd value="2816" data-val="密云区" name="cart_city">密云区</dd>
-                  <dd value="72" data-val="朝阳区" name="cart_city">朝阳区</dd>
-                  <dd value="2901" class="on" data-val="昌平区" name="cart_city">昌平区</dd>
-                  <dd value="2953" data-val="平谷区" name="cart_city">平谷区</dd>
-                  <dd value="2800" data-val="海淀区" name="cart_city">海淀区</dd>
-                  <dd value="2801" data-val="西城区" name="cart_city">西城区</dd>
-                  <dd value="2802" data-val="东城区" name="cart_city">东城区</dd>
-                  <dd value="2803" data-val="崇文区" name="cart_city">崇文区</dd>
-                  <dd value="2804" data-val="宣武区" name="cart_city">宣武区</dd>
-                  <dd value="2805" data-val="丰台区" name="cart_city">丰台区</dd>
-                  <dd value="2806" data-val="石景山区" name="cart_city">石景山区</dd>
-                  <dd value="2807" data-val="门头沟" name="cart_city">门头沟</dd>
-                  <dd value="2808" data-val="房山区" name="cart_city">房山区</dd>
-                  <dd value="2809" data-val="通州区" name="cart_city">通州区</dd>
-                  <dd value="3065" data-val="延庆县" name="cart_city">延庆县</dd>
-                  <dd value="2810" data-val="大兴区" name="cart_city">大兴区</dd>
-                  <dd value="2812" data-val="顺义区" name="cart_city">顺义区</dd>
-                  <dd value="2814" data-val="怀柔区" name="cart_city">怀柔区</dd>
-                </dl>
-              </div>
-              <div class="item third_area hide" id="cart_county_area" style="display: block;">
-                <dd value="4135" data-val="六环以内" name="cart_county">六环以内</dd>
-                <dd value="4136" data-val="城区" name="cart_county">城区</dd>
-                <dd value="2906" class="on" data-val="城区以外" name="cart_county">城区以外</dd>
+      <div class="area_wrapper container ">
+        <div class="docs-methods">
+          <form class="form-inline">
+            <div id="distpicker">
+              <div class="form-group">
+                <div style="position: relative;">
+                  <input id="city-picker3" class="form-control" readonly type="text" value="江苏省/常州市/溧阳市" data-toggle="city-picker">
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
+
+
+
 
       <!-- 当前时间================ -->
       <span id="nowTime"></span>
@@ -192,7 +108,8 @@
     <div class="cart_main_body" data-tpa="CART_BODY">
       <div class="wrap" data-tpa="CART_ITEM_LIST">
         <div class="cart_list_header cart_wrap cart_tit">
-          <span class="checkbox"><a href="javascript:;" class="check check_all " data-check-type="0"><i class="iconfont icon-fangxingduihao"></i>
+          <span class="checkbox"><a href="javascript:;" class="pay_checkbox check check_all " data-check-type="0"><i
+                class="iconfont icon-fangxingduihao"></i>
             </a>全选</span>
           <span class="tit">商品信息</span>
           <span class="price">单价（元）</span>
@@ -208,9 +125,10 @@
             </span>
             <a target="_blank" href="www.yhd.com" class="label">自营</a>
             <!-- 已免邮=      ================== -->
-            <div class="free_pos"> <i class="iconfont" style="font-size:12px;
-            ">恭喜：</i>已免邮 <a href="javascript:;"
-                class="help">
+            <div class="free_pos">
+              <i class="iconfont" style="font-size:12px;
+            ">恭喜：</i>已免邮
+              <a href="javascript:;" class="help">
                 <i class="iconfont">?</i>
                 <div class="help_dialog">
                   <div class="t_arrow t_arrow_top"> <span></span> <i></i> </div>
@@ -1677,7 +1595,12 @@
   <!-- end footer -->
   <script src="js/jquery-1.12.4.js"></script>
   <script src="js/Address.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/city-picker.data.js"></script>
+  <script src="js/city-picker.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/goShopping.js"></script>
+
 
 </body>
 
