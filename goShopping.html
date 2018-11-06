@@ -105,503 +105,301 @@
         <a id="search" href="javascript:void(0);" class="icon-sou-suo iconfont search_btn"></a>
       </div>
     </div>
+
+
+
+
     <div class="cart_main_body" data-tpa="CART_BODY">
-      <div class="wrap" data-tpa="CART_ITEM_LIST">
-        <div class="cart_list_header cart_wrap cart_tit">
-          <span class="checkbox"><a href="javascript:;" class="pay_checkbox check check_all " data-check-type="0"><i
-                class="iconfont icon-fangxingduihao"></i>
-            </a>全选</span>
-          <span class="tit">商品信息</span>
-          <span class="price">单价（元）</span>
-          <span class="num">数量</span>
-          <span class="total">小计（元）</span>
-          <span class="act">操作</span>
+      <div class="wrap cartMain" data-tpa="CART_ITEM_LIST">
+        <div class="cartMain_hd">
+          <ul class="order_lists cartTop">
+            <li class="list_chk">
+              <!--所有商品全选-->
+              <input type="checkbox" id="all" class="whole_check">
+              <label for="all"></label>
+              全选
+            </li>
+            <li class="list_con">商品信息</li>
+            <li class="list_info">商品参数</li>
+            <li class="list_price">单价</li>
+            <li class="list_amount">数量</li>
+            <li class="list_sum">金额</li>
+            <li class="list_op">操作</li>
+          </ul>
         </div>
         <!-- 列表=================== -->
-        <div class="cart_list">
-          <div class="cart_tit clearfix">
-            <span class="checkbox">
-              <a href="javascript:;" class="check check_list "><i class="iconfont icon-fangxingduihao"></i></a>
-            </span>
-            <a target="_blank" href="www.yhd.com" class="label">自营</a>
-            <!-- 已免邮=      ================== -->
-            <div class="free_pos">
-              <i class="iconfont" style="font-size:12px;
-            ">恭喜：</i>已免邮
-              <a href="javascript:;" class="help">
-                <i class="iconfont">?</i>
-                <div class="help_dialog">
-                  <div class="t_arrow t_arrow_top"> <span></span> <i></i> </div>
-                  <p>受具体配送地址影响，精确结算运费以结算页为准</p>
+        <div class="cartBox">
+          <div class="shop_info">
+            <div class="all_check">
+              <!--店铺全选-->
+              <input type="checkbox" id="shop_a" class="shopChoice">
+              <label for="shop_a" class="shop"></label>
+            </div>
+            <div class="shop_name">
+              店铺：<a href="javascript:;">搜猎人艺术生活</a>
+            </div>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_2" class="son_check">
+                <label for="checkbox_2"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/1.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：16*16*3(cm)</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
                 </div>
-              </a>
-            </div>
-            <div class="order_makeup">
-              <div class="makeup_tip">
-                运费￥18.00，再买￥46.10免邮
-                <a href="javascript:;" class="help"> <i class="iconfont icon-weizhi"></i>
-                  <div class=" help_dialog freight_info">
-                    <div class="t_arrow t_arrow_top"> <span></span> <i></i> </div>
-                    <div class="freight_content">
-                      <h5>运费规则说明</h5>
-                      <div class="headline">普通商品（非生鲜）</div>
-                      <ul>
-                        <li class="clearfix">
-                          <div class="tit">当前运费：</div>
-                          <div class="con">￥18.00（基础运费￥18.00+续重运费￥0.00）</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="tit">当前重量：</div>
-                          <div class="con">1.50kg（超重0kg）</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="tit">免邮条件：</div>
-                          <div class="con">满￥86.00</div>
-                        </li>
-                      </ul>
-                      <div class="hint">受具体配送地址影响，运费请以结算页为准</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <a href="javascript:;" id="merchant_8888" class="order_makeup_btn tip_trigger">立即凑单<i class="iconfont"></i></a>
-            </div>
-          </div>
-          <div class="cart_list_wrap zy">
-            <ul class="cart_item activity">
-
-              <li id="964416" data-identifier="964416" class="item item_line main_item clearfix">
-                <div class="cart_prod clearfix"> <em class="line_ver l2"></em>
-                  <a href="javascript:;" class="check check_item  nofresh normal_item">
-                    <i class="iconfont icon-fangxingduihao"></i>
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
-                    <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
-                      src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
-                    鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
-                  <!-- 单价及价格标签 -->
-                  <div class="item_price">
-                    <p> 105.90 </p>
-                    <!-- 降价提醒-->
-                  </div>
-                  <!-- 数量 -->
-                  <div class="item_num" data-sku-id="964416">
-                    <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
-                      <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
-                    </div>
-                    <span class="stock partial limit"></span>
-                    <span class="stock"></span>
-                  </div>
-                  <div class="item_amount">
-                    <div class="item_a_money">105.90</div>
-                    <div class="item_a_weight"><span>3.78</span>kg</div>
-                  </div>
-                  <div class="item_act">
-                    <!--单品-->
-                    <!-- 套装-->
-                    <!-- 满减 -->
-                    <!-- 满赠 --> <a href="javascript:;" class="collect_btn collect_btn_964416" title="收藏"
-                      data-product-id="964416"><i class="iconfont">收藏</i></a> <a href="javascript:;" class="del_btn"
-                      data-delete-id="promotion_964416_13_235282305" clstag="pageclick|keycount|cart_201709267|16"><i
-                        class="iconfont">删除</i></a> </div>
-                  <div class="prop_edit prop_edit_preview">
-                    <div class="prop_txt tip_trigger serial_product" data-sku-id="964416"> <i class="iconfont icon-maomi"></i>
-                      <div class="t_arrow t_arrow_top"><span style="display:none"></span><i></i></div> <span class="attributeName">花生油4L</span>
-                      <span class="attributeName"></span>
-                    </div>
-                    <div class="prop_dialog tip_dialog dialog top31"></div>
-                    <div class="prop_server prop_server_gray"> <i class="seven_icon"></i>
-                      <div class="server_tips">
-                        <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="t_txt">不支持7天无理由退货</span>
-                      </div>
-                    </div>
-                    <div class="canperview2"> <span>正在抢购</span> 距抢购结束还剩 <em class="countlast" data-time="46001"
-                        data-ellapsed="false">12:43:06</em>
-                    </div>
-                  </div>
-                </div> <!-- 组合子品 start-->
-                <!-- 组合子品 end-->
-                <!-- 单品赠品 start-->
-                <!-- 单品赠品 end-->
               </li>
-              <li id="964416" data-identifier="964416" class="item item_line main_item clearfix">
-                <div class="cart_prod clearfix"> <em class="line_ver l1"></em><em class="line_ver l2"></em>
-                  <a href="javascript:;" class="check check_item  nofresh normal_item">
-                    <i class="iconfont icon-fangxingduihao"></i>
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
-                    <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
-                      src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
-                    鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
-                  <!-- 单价及价格标签 -->
-                  <div class="item_price">
-                    <p> 105.90 </p>
-                    <!-- 降价提醒-->
-                  </div>
-                  <!-- 数量 -->
-                  <div class="item_num" data-sku-id="964416">
-                    <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
-                      <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
-                    </div>
-                    <span class="stock partial limit"></span>
-                    <span class="stock"></span>
-                  </div>
-                  <div class="item_amount">
-                    <div class="item_a_money"> 105.90 </div>
-                    <div class="item_a_weight"><span>3.78</span>kg</div>
-                  </div>
-                  <div class="item_act">
-                    <!--单品-->
-                    <!-- 套装-->
-                    <!-- 满减 -->
-                    <!-- 满赠 --> <a href="javascript:;" class="collect_btn collect_btn_964416" title="收藏"
-                      data-product-id="964416"><i class="iconfont">收藏</i></a> <a href="javascript:;" class="del_btn"
-                      data-delete-id="promotion_964416_13_235282305" clstag="pageclick|keycount|cart_201709267|16"><i
-                        class="iconfont">删除</i></a> </div>
-                  <div class="prop_edit prop_edit_preview">
-                    <div class="prop_txt tip_trigger serial_product" data-sku-id="964416"> <i class="iconfont icon-maomi"></i>
-                      <div class="t_arrow t_arrow_top"><span style="display:none"></span><i></i></div> <span class="attributeName">花生油4L</span>
-                      <span class="attributeName"></span>
-                    </div>
-                    <div class="prop_dialog tip_dialog dialog top31"></div>
-                    <div class="prop_server prop_server_gray"> <i class="seven_icon"></i>
-                      <div class="server_tips">
-                        <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="t_txt">不支持7天无理由退货</span>
-                      </div>
-                    </div>
-                    <div class="canperview2"> <span>正在抢购</span> 距抢购结束还剩 <em class="countdown" data-time="46001"
-                        data-ellapsed="false">12:43:06</em>
-                    </div>
-                  </div>
-                </div> <!-- 组合子品 start-->
-                <!-- 组合子品 end-->
-                <!-- 单品赠品 start-->
-                <!-- 单品赠品 end-->
+              <li class="list_sum">
+                <p class="sum_price">￥980</p>
               </li>
-              <li id="964416" data-identifier="964416" class="item item_line main_item clearfix">
-                <div class="cart_prod clearfix"> <em class="line_ver l1"></em><em class="line_ver l2"></em>
-                  <a href="javascript:;" class="check check_item  nofresh normal_item">
-                    <i class="iconfont icon-fangxingduihao"></i>
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
-                    <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
-                      src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
-                    鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
-                  <!-- 单价及价格标签 -->
-                  <div class="item_price">
-                    <p> 105.90 </p>
-                    <!-- 降价提醒-->
-                  </div>
-                  <!-- 数量 -->
-                  <div class="item_num" data-sku-id="964416">
-                    <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
-                      <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
-                    </div>
-                    <span class="stock partial limit"></span>
-                    <span class="stock"></span>
-                  </div>
-                  <div class="item_amount">
-                    <div class="item_a_money"> 105.90 </div>
-                    <div class="item_a_weight"><span>3.78</span>kg</div>
-                  </div>
-                  <div class="item_act">
-                    <!--单品-->
-                    <!-- 套装-->
-                    <!-- 满减 -->
-                    <!-- 满赠 --> <a href="javascript:;" class="collect_btn collect_btn_964416" title="收藏"
-                      data-product-id="964416"><i class="iconfont">收藏</i></a> <a href="javascript:;" class="del_btn"
-                      data-delete-id="promotion_964416_13_235282305" clstag="pageclick|keycount|cart_201709267|16"><i
-                        class="iconfont">删除</i></a> </div>
-                  <div class="prop_edit prop_edit_preview">
-                    <div class="prop_txt tip_trigger serial_product" data-sku-id="964416"> <i class="iconfont icon-maomi"></i>
-                      <div class="t_arrow t_arrow_top"><span style="display:none"></span><i></i></div> <span class="attributeName">花生油4L</span>
-                      <span class="attributeName"></span>
-                    </div>
-                    <div class="prop_dialog tip_dialog dialog top31"></div>
-                    <div class="prop_server prop_server_gray"> <i class="seven_icon"></i>
-                      <div class="server_tips">
-                        <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="t_txt">不支持7天无理由退货</span>
-                      </div>
-                    </div>
-                    <div class="canperview2"> <span>正在抢购</span> 距抢购结束还剩 <em class="countlast" data-time="46001"
-                        data-ellapsed="false">12:43:06</em>
-                    </div>
-                  </div>
-                </div> <!-- 组合子品 start-->
-                <!-- 组合子品 end-->
-                <!-- 单品赠品 start-->
-                <!-- 单品赠品 end-->
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_3" class="son_check">
+                <label for="checkbox_3"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/2.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：16*16*3(cm)</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥780</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥780</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_6" class="son_check">
+                <label for="checkbox_6"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/3.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：16*16*3(cm)</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥180</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥180</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
               </li>
             </ul>
           </div>
-          <div class="cart_amount">
-            <div class="amount">商品总价：<span><em>¥</em><span class="littleTotal">0.00</span></span></div>
-          </div>
         </div>
-        <div class="cart_list">
-          <div class="cart_tit clearfix">
-            <span class="checkbox">
-              <a href="javascript:;" class="check check_list "><i class="iconfont icon-fangxingduihao"></i></a>
-            </span>
-            <a target="_blank" href="www.yhd.com" class="label">恒源祥裤袜旗舰店</a>
-            <a id="102598" target="_blank" href="http://chat.jd.com/chat/index.action?venderId=102598&amp;pid=&amp;customerAppId=yhd.customer&amp;entry=jd_web_yhd_item&amp;loginToken=YmFiMzE5OGIxMTRjMmVmZDE2MmY4ODg4MWVkYjM2MzdmYWRjZTc5ZGE2YWQxM2YxZTIxZTY1NjAwOGNjYzdjNDdhYzBmZDZmMTY5MTI2ODRlY2NmY2EyOGRhNzRiOWUwNDI0YmE0Mjg1ZGM4YjgzMDEzNmI3OGVhOTg0NThmYzEyNjNhMzY5NjRkYjYwODM2MWVkNzZjYzUwMjcyMTFhZmZhOWI5NWMyNzE1NmQ2ZGJkNjM3YmQzZDBhZjU2ZjM2&amp;fp=fe9759153563cf72cac7824915a4328422da19f6&amp;aspid=110.102.0000001.01"
-              class="service btn-im"></a>
-            <div class="order_makeup">
-              <div class="makeup_tip">
-                运费￥18.00，再买￥46.10免邮
-                <a href="javascript:;" class="help"> <i class="iconfont icon-weizhi"></i>
-                  <div class="help_dialog freight_info">
-                    <div class="t_arrow t_arrow_top"> <span></span> <i></i> </div>
-                    <div class="freight_content">
-                      <h5>运费规则说明</h5>
-                      <div class="headline">普通商品（非生鲜）</div>
-                      <ul>
-                        <li class="clearfix">
-                          <div class="tit">当前运费：</div>
-                          <div class="con">￥18.00（基础运费￥18.00+续重运费￥0.00）</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="tit">当前重量：</div>
-                          <div class="con">1.50kg（超重0kg）</div>
-                        </li>
-                        <li class="clearfix">
-                          <div class="tit">免邮条件：</div>
-                          <div class="con">满￥86.00</div>
-                        </li>
-                      </ul>
-                      <div class="hint">受具体配送地址影响，运费请以结算页为准</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <a href="javascript:;" id="merchant_8888" class="order_makeup_btn tip_trigger">立即凑单<i class="iconfont icon-fangxingduihao"></i></a>
+
+        <div class="cartBox">
+          <div class="shop_info">
+            <div class="all_check">
+              <!--店铺全选-->
+              <input type="checkbox" id="shop_b" class="shopChoice">
+              <label for="shop_b" class="shop"></label>
+            </div>
+            <div class="shop_name">
+              店铺：<a href="javascript:;">卷卷旗舰店</a>
             </div>
           </div>
-          <div class="cart_list_wrap zy">
-            <ul class="cart_item activity">
-
-              <li id="964416" data-identifier="964416" class="item item_line main_item clearfix">
-                <div class="cart_prod clearfix"> <em class="line_ver l2"></em>
-                  <a href="javascript:;" class="check check_item  nofresh normal_item">
-                    <i class="iconfont icon-fangxingduihao"></i>
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
-                    <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
-                      max-width="75" max-height="75" src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
-                    鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
-                  <!-- 单价及价格标签 -->
-                  <div class="item_price">
-                    <p> 105.90 </p>
-                    <!-- 降价提醒-->
-                  </div>
-                  <!-- 数量 -->
-                  <div class="item_num" data-sku-id="964416">
-                    <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
-                      <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
-                    </div>
-                    <span class="stock partial limit"></span>
-                    <span class="stock"></span>
-                  </div>
-                  <div class="item_amount">
-                    <div class="item_a_money"> 105.90 </div>
-                    <div class="item_a_weight">
-                      <span>3.78</span>kg
-                    </div>
-                  </div>
-                  <div class="item_act">
-                    <!--单品-->
-                    <!-- 套装-->
-                    <!-- 满减 -->
-                    <!-- 满赠 --> <a href="javascript:;" class="collect_btn collect_btn_964416" title="收藏"
-                      data-product-id="964416"><i class="iconfont">收藏</i></a> <a href="javascript:;" class="del_btn"
-                      data-delete-id="promotion_964416_13_235282305" clstag="pageclick|keycount|cart_201709267|16"><i
-                        class="iconfont">删除</i></a> </div>
-                  <div class="prop_edit prop_edit_preview">
-                    <div class="prop_txt tip_trigger serial_product" data-sku-id="964416"> <i class="iconfont icon-maomi"></i>
-                      <div class="t_arrow t_arrow_top"><span style="display:none"></span><i></i></div> <span class="attributeName">花生油4L</span>
-                      <span class="attributeName"></span>
-                    </div>
-                    <div class="prop_dialog tip_dialog dialog top31"></div>
-                    <div class="prop_server prop_server_gray"> <i class="seven_icon"></i>
-                      <div class="server_tips">
-                        <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="t_txt">不支持7天无理由退货</span>
-                      </div>
-                    </div>
-                    <div class="canperview2"> <span>正在抢购</span> 距抢购结束还剩 <em class="countdown" data-time="46001"
-                        data-ellapsed="false">12:43:06</em>
-                    </div>
-                  </div>
-                </div> <!-- 组合子品 start-->
-                <!-- 组合子品 end-->
-                <!-- 单品赠品 start-->
-                <!-- 单品赠品 end-->
+          <div class="order_content">
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_4" class="son_check">
+                <label for="checkbox_4"></label>
               </li>
-              <li id="964416" data-identifier="964416" class="item item_line main_item clearfix">
-                <div class="cart_prod clearfix"> <em class="line_ver l1"></em><em class="line_ver l2"></em>
-                  <a href="javascript:;" class="check check_item  nofresh normal_item">
-                    <i class="iconfont icon-fangxingduihao"></i>
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_pic">
-                    <img class="mainCart scrollLoading" data-url="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg"
-                      max-width="75" max-height="75" src="https://img12.360buyimg.com/cms/s75x75_jfs/t16915/185/2028960439/242896/7b99353/5ae17780N19d696ae.jpg">
-                  </a>
-                  <a href="http://item.yhd.com/964416.html" target="_blank" class="item_tit item_tit_oneline">
-                    鲁花 食用油 5S 物理压榨 压榨一级 花生油4L （新老包装随机发放） </a>
-                  <!-- 单价及价格标签 -->
-                  <div class="item_price">
-                    <p> 105.90 </p>
-                    <!-- 降价提醒-->
-                  </div>
-                  <!-- 数量 -->
-                  <div class="item_num" data-sku-id="964416">
-                    <div class="num_act clearfix"> <a href="javascript:;" class="minus unable">−</a>
-                      <input type="text" class="input" value="1" oninput="value=value.replace(/[^\d]/g,'')">
-                      <a href="javascript:;" class="add" data-num="1" clstag="pageclick|keycount|cart_201709267|14">+</a>
-                    </div>
-                    <span class="stock partial limit"></span>
-                    <span class="stock"></span>
-                  </div>
-                  <div class="item_amount">
-                    <div class="item_a_money"> 105.90 </div>
-                    <div class="item_a_weight"><span>3.78</span>kg</div>
-                  </div>
-                  <div class="item_act">
-                    <!--单品-->
-                    <!-- 套装-->
-                    <!-- 满减 -->
-                    <!-- 满赠 --> <a href="javascript:;" class="collect_btn collect_btn_964416" title="收藏"
-                      data-product-id="964416"><i class="iconfont">收藏</i></a> <a href="javascript:;" class="del_btn"
-                      data-delete-id="promotion_964416_13_235282305" clstag="pageclick|keycount|cart_201709267|16"><i
-                        class="iconfont">删除</i></a> </div>
-                  <div class="prop_edit prop_edit_preview">
-                    <div class="prop_txt tip_trigger serial_product" data-sku-id="964416"> <i class="iconfont icon-maomi"></i>
-                      <div class="t_arrow t_arrow_top"><span style="display:none"></span><i></i></div> <span class="attributeName">花生油4L</span>
-                      <span class="attributeName"></span>
-                    </div>
-                    <div class="prop_dialog tip_dialog dialog top31"></div>
-                    <div class="prop_server prop_server_gray"> <i class="seven_icon"></i>
-                      <div class="server_tips">
-                        <div class="t_arrow t_arrow_top"><span></span><i></i></div> <span class="t_txt">不支持7天无理由退货</span>
-                      </div>
-                    </div>
-                    <div class="canperview2"> <span>正在抢购</span> 距抢购结束还剩 <em class="countlast" data-time="46001"
-                        data-ellapsed="false">12:43:06</em>
-                    </div>
-                  </div>
-                </div> <!-- 组合子品 start-->
-                <!-- 组合子品 end-->
-                <!-- 单品赠品 start-->
-                <!-- 单品赠品 end-->
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/4.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：16*16*3(cm)</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥1980</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_5" class="son_check">
+                <label for="checkbox_5"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/5.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：16*16*3(cm)</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥480</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥480</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
               </li>
             </ul>
           </div>
-          <div class="cart_amount">
-            <div class="amount">商品总价：<span><em>¥</em><span class="littleTotal">0.00</span></span></div>
-          </div>
         </div>
 
+        <div class="cartBox">
+          <div class="shop_info">
+            <div class="all_check">
+              <!--店铺全选-->
+              <input type="checkbox" id="shop_c" class="shopChoice">
+              <label for="shop_c" class="shop"></label>
+            </div>
+            <div class="shop_name">
+              店铺：<a href="javascript:;">卷卷旗舰店</a>
+            </div>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_8" class="son_check">
+                <label for="checkbox_8"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/1.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：16*16*3(cm)</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥1980</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥1980</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_9" class="son_check">
+                <label for="checkbox_9"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/1.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：16*16*3(cm)</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥480</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥480</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar-right">
+            <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+            <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+            <div class="calBtn"><a href="javascript:;">结算</a></div>
+          </div>
+        </div>
+        <section class="model_bg"></section>
+        <section class="my_model">
+          <p class="title">删除宝贝<span class="closeModel">X</span></p>
+          <p>您确认要删除该宝贝吗？</p>
+          <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+        </section>
       </div>
+
     </div>
     <!-- 总价全选============================ -->
-    <div id="checkOutBar" class="settling_column_bar none" style="display:block">
-      <div class="pay_tools_bar">
-        <div class="pay_tools_inner clearfix">
-          <div class="pay_tools_l clearfix">
-            <span class="select_all checkbox clearfix">
-              <a class="pay_checkbox check check_all checked" href="javascript:;">
-                <i class="iconfont icon-fangxingduihao"></i>
-              </a>
-              <label class="all_checked_label">全选（共<b>0</b>件）</label>
-              <span class="total_line">|</span>
-              <a class="l_a_tool lt_delete" href="javascript:;">批量删除</a>
-            </span>
-            <span id="batchDelete" style="display: none;">
-              <a class="l_a_tool lt_disable" href="javascript:;">清除无效商品</a>
-              <span class="total_line">|</span>
-            </span>
-            <!-- 这里多加一个全屏删除遮罩 -->
-            <div class="popup_mask">
-              <div class="pop_dialog common" style="margin-left: -125px;  display: block;">
-                <p class="tit">批量删除商品</p>
-                <p class="txt">确定批量删除所选商品吗？</p>
-                <a href="javascript:;" class="pop_close close_btn"></a>
-                <div class="btn_box">
-                  <a href="javascript:;" class="cancel pop_close">取消</a>
-                  <a href="javascript:;" class="confirm pop_close">确定</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pay_tools_r clearfix"> <a class="checkout_btn unable" href="javascript:void(0);" c>去结算</a>
-            <div class="r_price_total r_control_tip"> 合计：<span class="rpt_count">¥<b>0.00</b></span> <i class="iconfont icon-down"></i>
-            </div>
-            <div class="r_prod_view r_control_tip"> <span class="rpv_count">已选商品<b>0</b>件</span> <a href="javascript:;"
-                class="pvw">预览</a>
-              | <div class="add_tip">商品已加入购物车<span></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pay_tips pay_total_tips" style="display:none">
-        <div class="t_arrow t_arrow_bot"><span></span><i></i></div>
-        <p>原价：<span>¥<b>63.80</b></span></p>
-        <p>优惠：<span>¥<b>10.00</b></span></p>
-        <p>运费：不含，以结算页为准</p>
-      </div>
-      <!-- 图片浏览============================ -->
-      <div class="pay_tips pay_allprod_tips" style="display: none; top: -112px;">
-        <div class="t_arrow t_arrow_bot" style="margin-left: 262.641px; top: 120px;"><span></span><i></i></div> <input
-          id="checkoutGroups" type="hidden" value="1" oninput="value=value.replace(/[^\d]/g,'')"> <!--  单类型商品结算 -->
-        <div class="pay_allprod_single">
-          <div class="pvw_type_cont clearfix">
-            <div class="sale_prod_cont pvw_sale_list single_sale_list"> <a class="control_btn left_arrow" href="javascript:;"
-                style="display: none;"><i class="iconfont"></i></a> <a class="control_btn right_arrow" href="javascript:;"
-                style="display: none;"><i class="iconfont"></i></a>
-              <div class="sale_scroll_box">
-                <ul class="sale_scroll_ul clearfix">
-                  <li class="sale_item">
-                    <div class="prod_img"> <a href="//item.yhd.com/14677822699.html" target="_blank"> <img width="75"
-                          height="75" src="https://img14.360buyimg.com/cms/s75x75_jfs/t27028/131/888494966/494118/23ad848b/5bbc0bb2N940e6da0.jpg">
-                      </a> </div>
-                    <div class="prod_info">
-                      <div class="opa_bg"></div>
-                      <div class="prod_txt"> <a href="//item.yhd.com/14677822699.html" target="_blank"> 万果山
-                          红枣夹核桃仁葡萄干500g*3袋
-                          新疆和田大红枣 抱抱果枣夹核桃 零食干果 枣夹核桃葡萄干500g*3袋 </a> </div>
-                      <p class="prod_num">x1</p>
-                    </div>
-                  </li>
-                  <li class="sale_item">
-                    <div class="prod_img"> <a href="//item.yhd.com/967962.html" target="_blank"> <img width="75" height="75"
-                          src="https://img14.360buyimg.com/cms/s75x75_jfs/t11278/30/392755639/112423/3313880b/59eefa1fNa84f0726.jpg">
-                      </a> </div>
-                    <div class="prod_info">
-                      <div class="opa_bg"></div>
-                      <div class="prod_txt"> <a href="//item.yhd.com/967962.html" target="_blank"> 统一 阿萨姆奶茶 原味奶茶
-                          500ml*15瓶 整箱
-                          精选喜马拉雅山麓红茶 </a> </div>
-                      <p class="prod_num">x1</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
   <div class="bottom_wrap">
     <div id="redemptions" class="sale_prod_list"></div>
@@ -1599,6 +1397,7 @@
   <script src="js/city-picker.data.js"></script>
   <script src="js/city-picker.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/carts.js"></script>
   <script src="js/goShopping.js"></script>
 
 

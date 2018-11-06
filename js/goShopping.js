@@ -394,8 +394,9 @@
   //   }
   // }
   //封装一个函数通过判断三级选中的个数来影响总价格
+  var num = 0, nus = 0, Totalprice = 0, Totalnumber = 0;
   function funt(hh) {
-    var num = 0, nus = 0, Totalprice = 0, Totalnumber = 0;
+   
     if (hh.hasClass('check_item') || hh.hasClass('check_list')) {
       l = hh.parents('.cart_list').find('.xz').length;
     } else {

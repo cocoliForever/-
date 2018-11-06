@@ -474,11 +474,12 @@ color: #ff4040 ;
     border: 1px solid #fff;
 	border-radius: 8px;
 	cursor: pointer;
+	transition: all .5s;
 }
 .jbannerTab .jbannerThumbnail span.show{
 	width: 24px;
     border-color: #d3d4d5;
-    background: #d3d4d5;
+	background: #d3d4d5;
 }
 
 /* banner-left */
