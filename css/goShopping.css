@@ -1,3 +1,6 @@
+html,body{
+width:100%;
+}
 .hd_top_bar {
 	height: 30px;
 	border-bottom: 1px solid #e5e5e5;
@@ -258,7 +261,7 @@ li.hd_has_child:hover .hd_qrcode_bg{
     border-radius: 5px;
     background: #fcfbfb;
 }
-.cart_header .search input {
+.cart_header .search #keyword {
     float: left;
     width: 230px;
     height: 20px;
@@ -332,6 +335,9 @@ a:hover{
     width: 80px;
     text-indent: 30px;
 }
+.cartMain_hd .cartTop .list_info{
+     width: 252px;
+}
 .cartMain_hd .cartTop .list_con{
     width: 312px;
 }
@@ -357,6 +363,7 @@ a:hover{
 }
 .cartBox .shop_info{
     position: relative;
+    display: inline-block;
     width: 100%;
     height: 38px;
     background-color: #fff;
@@ -447,17 +454,17 @@ a:hover{
     text-decoration: underline;
 }
 
-.order_lists .list_info{
+ .order_lists .list_info{
     width: 252px;
     box-sizing: border-box;
     padding: 20px 0;
 }
-.order_lists .list_info p{
+ .order_lists .list_info p{
     color: #9c9c9c;
     line-height: 18px;
     margin-left: 15px;
 }
-.order_lists .list_price{
+ .order_lists .list_price{
     width: 130px;
 }
 .order_lists .list_price .price{
@@ -542,7 +549,11 @@ a:hover{
 .order_lists .list_op{
     width: 164px;
 }
+.order_lists .list_op p{
+    display: inline-block;
+}
 .order_lists .list_op .del{
+    width: 60px;
     margin-top: 20px;
     line-height: 18px;
 }
@@ -685,7 +696,7 @@ a:hover{
 
 
 
-/* 
+/*
 .t_arrow {
     position: absolute;
     left: 50%;
