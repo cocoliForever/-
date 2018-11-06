@@ -168,7 +168,7 @@ $(function(){
 })
 //  实现左右无缝轮播切换
 $(function(){  
-var timer
+var timer,ture
   function ele(){                                          
     clearTimeout(timer)
     if(j>7){
@@ -184,30 +184,30 @@ var timer
       left:-j*170
       },1000,function(){
       clearTimeout(timer)
-      timer= setTimeout(function(){
-        ele(j++)
-      },2000) 
+        timer= setTimeout(function(){
+          ele(j++)
+        },1000) 
     })
   }
    var j=0
     timer= setTimeout(function(){
         ele(j++)
-    },2000) 
+    },1000) 
 // 鼠标点中li，轮播停止，支开继续运动
 $('.brand_name ').stop().on('mousemove','li',function(){
     clearTimeout(timer)
     var index=$(this).index()
+    
     $('.img').eq(index).fadeOut(0)
     $('.imgs').eq(index).fadeIn(0)
-     var i=index
     $('.brand_name ').stop().on('mouseout','li',function(){
         clearTimeout(timer)
     $('.img').eq(index).fadeIn(0)
     $('.imgs').eq(index).fadeOut(0)
-
+     
     timer= setTimeout(function(){ 
         ele(j++)
-    },10) 
+    },1000) 
     })      
 })
     // clearTimeout(timer)

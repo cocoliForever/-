@@ -85,6 +85,7 @@
     float: left;
     margin-left: 10px;
     padding: 5px;
+    
     /* position: relative; */
     /* position: absolute;
     left: 0;
@@ -151,6 +152,9 @@
     font-weight: bold;
     border-right: 1px solid #0783bb;
     border-left: 1px solid #29a4df;
+}
+.nav ul li:hover{
+    background: #f9f4ed url(https://img30.360buyimg.com/cms/g5/M00/00/00/rBEDik-2FFIIAAAAAAAIWopixrkAAAARgP_3ucAAAhy572.gif) repeat-x;
 }
 .nav ul .floow{
     border-right:none;
