@@ -6,6 +6,7 @@
   background:#f4f4f4;
   line-height: 30px;
 }
+
 .hd_indexprovce{
   position: relative;
   z-index: 600;
@@ -813,7 +814,7 @@
     float: left;
     background-color: #fff;
 }
-.screen_slide_list .item .pro_pic{
+.screen_slide_list .item .pro_pics{
     position: relative;
     top:0px;
     width: 180px;
@@ -995,12 +996,12 @@
     color: #ed1b2f;
     font-weight: bold;
 }
-.merge_item .item .pro_pic{
+.merge_item .item .pro_pics{
   width: 130px;
   height: 130px;
   margin: 15px auto 0;
 }
-.merge_item .pro_pic img{
+.merge_item .pro_pics img{
   width: 100%;
   height: 100%;
 }
@@ -1014,6 +1015,7 @@ img{
   width: 245px;
 }
 .pro_item .item{
+  position: relative;
   width: 205px;
   height: 190px;
   padding: 20px;
@@ -1036,15 +1038,21 @@ img{
   color: #ed1b2f;
   font-weight: bold;
 }
-.pro_item  .item .pro_pic{
+.pro_item  .item .pro_pics{
+position: absolute;
+right: 72px;
 width: 130px;
 height: 130px;
 margin: 15px auto 0;
 }
-.pro_item  .pro_pic img{
+.pro_item  .pro_pics img{
 width: 100%;
 height: 100%;
 }
+.pro_item  .pro_pic img{
+  width: 100%;
+  height: 100%;
+  }
 .cut_item{
   margin-top: -1px;
   float: left;
@@ -1060,7 +1068,6 @@ height: 100%;
   overflow: hidden;
   line-height: 18px;
   text-align: left;
-
 }
 .cut_item .other_item .pro_price{
   text-align: left;
@@ -1071,20 +1078,8 @@ height: 100%;
   bottom: 15px;
   width: 90px;
   height: 90px;
-  margin-top: 0;
+  margin-top: 52px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* 底部css */
 /* service begin */
 .ft_footer_service {

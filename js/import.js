@@ -223,6 +223,11 @@ $(function(){
     }).on('mouseout',function(){
         $(this).stop().animate({'top':'0'},500);
     })
+    $('.item .pro_pics').on('mouseover',function(){
+      $(this).stop().animate({'right':'45px'},500);  
+  }).on('mouseout',function(){
+      $(this).stop().animate({'right':'72px'},500);
+  })
     // 品牌直达轮播
     $(".slide_arrow .slide_left1").mouseover(function(){
         $(this).css('backgroundColor','#ccc')
