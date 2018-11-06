@@ -506,7 +506,7 @@
       float: left;
       margin-right: 30px;
       font-size: 16px;
-    }s
+    }
 
 /* 导航头部css结束 */
 
@@ -517,7 +517,7 @@
 /* 底部css */
 /* service begin */
 
-.ft_wrap{}
+
 .ft_footer_service {
     padding: 30px 0;
     border-bottom: 1px solid #ebebeb;
