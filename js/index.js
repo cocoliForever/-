@@ -42,6 +42,28 @@
       },300);
     })
   })
+  //点击对应的地址更换地址
+  $(function(){
+    $('.hd_city_list,.hd_hotcity_list').on('click','a',function(){
+      var s = $(this).text()
+      citySelect(s)
+      $('.hd_indexprovce a em').text(s)
+    })
+    function citySelect(ele){
+      // 设置localStorage
+        localStorage.setItem("name", ele);
+      // 页面加载后，获取对应的值
+      name = localStorage.getItem('name')
+      if (name) {
+        $('.hd_indexprovce a em').text(name)
+      }
+    }
+     // 页面加载后，获取对应的值
+     name = localStorage.getItem('name')
+     if (name) {
+       $('.hd_indexprovce a em').text(name)
+     }
+  })
   //导航头右边的客户服务一栏分栏下单栏目鼠标浮上去字体颜色变化
   $(function(){
     $('.hd_menu_list a').hover(function(){
@@ -495,13 +517,18 @@
       })
       //右边的黑色导航返回顶部
       $('.prism_icon_tab').eq(5).on('click',function(){
-        console.log($(document))
         $('html,body').animate({ scrollTop: 0 }, 500);//这里需要注意设置animate方法时使用的是jQuery封装的body对象而不是window对象，因为我们是要设置body的scrollTop属性
+      })
+      $('a.kechen .box').on('click',function(){
+        $('html,body').animate({ scrollTop: 0 }, 500);
       })
       //点击商品添加到购物车
       $('.alsolike').on('click','a.add_shoping',function(){
-        $('.prism_cart_num u').text(++bun)
-        localStorage.setItem("bun", $('.prism_cart_num u').text())
+        $('.prism_cart_num u').text(++bun);
+        localStorage.setItem("bun", $('.prism_cart_num u').text());
+        $('.single_gwc_info').eq(0).fadeIn('1500','swing',function(){
+          $(this).fadeOut(1500);
+        })
       })
       // 页面加载后，获取对应的值
       bun = localStorage.getItem('bun')
@@ -509,5 +536,105 @@
         $('.prism_cart_num u').text(bun)
       }
     })
-    
+    //实现电梯导航
+    $(function(){
+      var top1 = $('.mod_brand_sale').offset().top
+      var top2 = $('.mod_on_new').offset().top
+      var top3 = $('.mod_global_imported').offset().top
+      var top4 = $('.china_food').offset().top
+      var top5 = $('.yhsx').offset().top
+      var top6 = $('.beauty_makeup').offset().top
+      var top7 = $('.Intelligence').offset().top
+      var top8 = $('.alsolike').offset().top
+      $('#navigation').on('click','a',function(){
+        var mz = $(this).find('.box').text()
+        if(mz === '一号闪购'){
+          $('html,body').animate({ scrollTop: top1-125}, 300);
+        }
+        if(mz === '爱上新'){
+          $('html,body').animate({ scrollTop: top2-125}, 300);
+        }
+        if(mz === '全球选购'){
+          $('html,body').animate({ scrollTop: top3-125}, 300);
+        }
+        if(mz === '国产食品'){
+          $('html,body').animate({ scrollTop: top4-125}, 300);
+        }
+        if(mz === '一号生鲜'){
+          $('html,body').animate({ scrollTop: top5-125}, 300);
+        }
+        if(mz === '美妆个护'){
+          $('html,body').animate({ scrollTop: top6-125}, 300);
+        }
+        if(mz === '科技质感'){
+          $('html,body').animate({ scrollTop: top7-125}, 300);
+        }
+        if(mz === '猜你喜欢'){
+          $('html,body').animate({ scrollTop: top8-125}, 300);
+        }
+        if($(document).scrollTop() <= top1-110){
+          $('#navigation').fadeOut(100)
+        }
+      })
+      var ts = $(document).scrollTop();
+      if(ts >= top1-100){
+        $('#navigation').fadeIn(100)
+      }
+      if(ts>=top1-125 && ts<=top2-125){
+        $('#navigation a').eq(0).addClass('select').siblings('a').removeClass('select')
+      }
+      if(ts>=top2-125 && ts<=top3-125){
+        $('#navigation a').eq(1).addClass('select').siblings('a').removeClass('select')
+      }
+      if(ts>=top3-125 && ts<=top4-125){
+        $('#navigation a').eq(2).addClass('select').siblings('a').removeClass('select')
+      }
+      if(ts>=top4-125 && ts<=top5-125){
+        $('#navigation a').eq(3).addClass('select').siblings('a').removeClass('select')
+      }
+      if(ts>=top5-125 && ts<=top6-125){
+        $('#navigation a').eq(4).addClass('select').siblings('a').removeClass('select')
+      }
+      if(ts>=top6-125 && ts<=top7-125){
+        $('#navigation a').eq(5).addClass('select').siblings('a').removeClass('select')
+      }
+      if(ts>=top7-125 && ts<=top8-125){
+        $('#navigation a').eq(6).addClass('select').siblings('a').removeClass('select')
+      }
+      if(ts>=top8-125){
+        $('#navigation a').eq(7).addClass('select').siblings('a').removeClass('select')
+      }
+      $(document).on('scroll',function(){
+        ts = $(document).scrollTop()
+        if($(document).scrollTop() <= top1-100){
+          $('#navigation').fadeOut(1000)
+        }else if($(document).scrollTop() >= top1-100){
+          $('#navigation').fadeIn(100)
+        }
+        if(ts>=top1-125 && ts<=top2-125){
+          $('#navigation a').eq(0).addClass('select').siblings('a').removeClass('select')
+        }
+        if(ts>=top2-125 && ts<=top3-125){
+          $('#navigation a').eq(1).addClass('select').siblings('a').removeClass('select')
+        }
+        if(ts>=top3-125 && ts<=top4-125){
+          $('#navigation a').eq(2).addClass('select').siblings('a').removeClass('select')
+        }
+        if(ts>=top4-125 && ts<=top5-125){
+          $('#navigation a').eq(3).addClass('select').siblings('a').removeClass('select')
+        }
+        if(ts>=top5-125 && ts<=top6-125){
+          $('#navigation a').eq(4).addClass('select').siblings('a').removeClass('select')
+        }
+        if(ts>=top6-125 && ts<=top7-125){
+          $('#navigation a').eq(5).addClass('select').siblings('a').removeClass('select')
+        }
+        if(ts>=top7-125 && ts<=top8-125){
+          $('#navigation a').eq(6).addClass('select').siblings('a').removeClass('select')
+        }
+        if(ts>=top8-125){
+          $('#navigation a').eq(7).addClass('select').siblings('a').removeClass('select')
+        }
+      })
+    })
 })()

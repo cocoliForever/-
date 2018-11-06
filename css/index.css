@@ -2682,6 +2682,53 @@ height: 100px;
   background: #f22020;
 }
 /* 猜你喜欢样式结束 */
+/* 点击添加购物车成功和失败样式 */
+ .single_gwc_info {
+  width: 190px;
+  height: 70px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  line-height: 60px;
+  z-index: 1006;
+  margin-left: -95px;
+  margin-top: -35px;
+  display: none;
+}
+ .single_gwc_info .single_gwc_info_bg {
+  filter: Alpha(opacity=20);
+  opacity: .2;
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+ .single_gwc_info .single_gwc_info_con {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #fff;
+  width: 180px;
+  height: 60px;
+  z-index: 100;
+}
+ .single_gwc_info .icon-tijiao {
+  color: #69a519;
+}
+ .single_gwc_info i {
+  font-size: 22px;
+  position: relative;
+  top: 3px;
+}
+ .single_gwc_info span {
+  font-size: 14px;
+  color: #333;
+}
+.single_gwc_info .icon-gantanhao {
+  color: #ff875a;
+}
+/* 点击添加购物车成功和失败样式结束 */
 /* 底部css */
 /* service begin */
 .ft_footer_service {
