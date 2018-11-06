@@ -2278,4 +2278,7 @@ img {
   display: inline-block;
   margin: 0 4px;
 }
+a:hover{
+    text-decoration: none;
+}
 /*footer end*/
