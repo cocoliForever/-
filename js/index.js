@@ -486,25 +486,28 @@
       }
       timer1 = setTimeout(lunbo,4000);
     })
-    //右边的黑色导航条鼠标浮上去让其出现
-    $('.prism_nav_tab').on('mouseenter',function(){
-      $(this).addClass('prism_icon_hover')
-    }).on('mouseleave',function(){
-      $(this).removeClass('prism_icon_hover')
+    $(function(){
+      //右边的黑色导航条鼠标浮上去让其出现
+      $('.prism_nav_tab').on('mouseenter',function(){
+        $(this).addClass('prism_icon_hover')
+      }).on('mouseleave',function(){
+        $(this).removeClass('prism_icon_hover')
+      })
+      //右边的黑色导航返回顶部
+      $('.prism_icon_tab').eq(5).on('click',function(){
+        console.log($(document))
+        $('html,body').animate({ scrollTop: 0 }, 500);//这里需要注意设置animate方法时使用的是jQuery封装的body对象而不是window对象，因为我们是要设置body的scrollTop属性
+      })
+      //点击商品添加到购物车
+      $('.alsolike').on('click','a.add_shoping',function(){
+        $('.prism_cart_num u').text(++bun)
+        localStorage.setItem("bun", $('.prism_cart_num u').text())
+      })
+      // 页面加载后，获取对应的值
+      bun = localStorage.getItem('bun')
+      if (bun) {
+        $('.prism_cart_num u').text(bun)
+      }
     })
-    //右边的黑色导航返回顶部
-    $('.prism_icon_tab').eq(5).on('click',function(){
-      console.log($(document))
-      $('html,body').animate({ scrollTop: 0 }, 500);//这里需要注意设置animate方法时使用的是jQuery封装的body对象而不是window对象，因为我们是要设置body的scrollTop属性
-    })
-    //点击商品添加到购物车
-    $('.alsolike').on('click','a.add_shoping',function(){
-      $('.prism_cart_num u').text(++bun)
-      localStorage.setItem("bun", $('.prism_cart_num u').text())
-    })
-    // 页面加载后，获取对应的值
-    bun = localStorage.getItem('bun')
-    if (bun) {
-      $('.prism_cart_num u').text(bun)
-    }
+    
 })()
