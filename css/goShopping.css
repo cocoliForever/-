@@ -350,13 +350,14 @@ li.hd_has_child:hover .hd_qrcode_bg{
     outline: none;
 }
 .cart_header .search .search_btn {
-    float: right;
+    display: inline-block;
+    _float: right;
     width: 30px;
     height: 20px;
     text-align: center;
     color: #aaa;
     _overflow: hidden;
-    margin-top: -15px;
+    line-height: 20px;
 }
 
 /* 版心 */
