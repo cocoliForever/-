@@ -24,6 +24,7 @@
     }
     .hd_indexprovce i{
       color: red;
+      font-size: 12px;
     }
     .hd_city_select{
       position: absolute;

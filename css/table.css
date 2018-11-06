@@ -1057,9 +1057,9 @@ border-radius: 2px;
   }
   hr{
       height: 2px;
+      border:none;
       background-color: #ff4040;
       margin: 0;
-      color: #ff4040;
       padding: 0;
   }
   .mod_search_crumb{
@@ -1226,3 +1226,180 @@ border-radius: 2px;
     color:#666!important;
   } 
   /* banner 图左边的导航列表跟随的分页结束 */
+/* 右边栏导航 */
+  .yhd_prism_wrap {
+    _display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    right: -260px;
+    z-index: 100000;
+    height: 100%;
+    width: 294px;
+    -webkit-transition: right .5s ease;
+    -o-transition: right .5s ease;
+    -moz-transition: right .5s ease;
+    transition: right .5s ease;
+    _display: none;
+  }
+  .yhd_prism_nav {
+    position: absolute;
+    z-index: 910;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+    background-color: #303030;
+  }
+  .yhd_prism_nav .prism_nav_center {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    width: 34px;
+    text-align: center;
+  }
+  .yhd_prism_nav .prism_icon_wrap {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  .yhd_prism_nav .prism_icon_tab {
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 32px;
+    background-color: #303030;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+  }
+  .yhd_prism_nav .prism_icon_tab .iconfont{
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .yhd_prism_nav .prism_icon_wrap a:hover .prism_icon_tab {
+    background-color: #ff5c4d;
+  }
+  .yhd_prism_nav .prism_icon_text {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: -60px;
+    height: 32px;
+    padding: 0 6px;
+    background-color: #3f3c3c;
+    line-height: 32px;
+    color: #fff;
+    white-space: nowrap;
+    -moz-transition: right .3s ease-in-out .1s;
+    -webkit-transition: right .3s ease-in-out .1s;
+    -o-transition: right .3s ease-in-out .1s;
+    transition: right .3s ease-in-out .1s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .yhd_prism_nav .prism_icon_hover .prism_icon_text {
+      right: 34px;
+      background-color: #ff5c4d;
+  }
+  .yhd_prism_nav a.prism_cart_tab .prism_cart_text {
+    padding: 8px 8px 0;
+    color: #fff;
+    text-align: center;
+  }
+  .yhd_prism_nav a.prism_cart_tab {
+    display: block;
+    padding: 12px 0;
+    background: #454545;
+    text-align: center;
+  }
+  .yhd_prism_nav a.prism_cart_tab .prism_cart_num {
+    margin-top: 8px;
+  }
+  .yhd_prism_nav a.prism_cart_tab .prism_cart_num u {
+    display: inline-block;
+    min-width: 14px;
+    height: 20px;
+    padding: 0 3px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #ff3c3c;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+  .yhd_prism_nav a.prism_cart_tab:hover {
+    background-color: #ff5c4d;
+  }
+  .yhd_prism_nav .prism_nav_btm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    text-align: center;
+  }
+  .yhd_prism_nav .prism_icon_wrap {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  .prism_nav_btn .prisn_icon_tab .icon_zixun{
+    color: #fff;
+  }
+  .prism_icon_wrap .prism_yhd_code {
+    display: none;
+    left: -168px;
+    top: -122px;
+    width: 130px;
+    padding: 15px 10px;
+    line-height: 24px;
+    text-align: left;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+  }
+  .prism_yhd_code p {
+    height: 40px;
+    overflow: hidden;
+    line-height: 20px;
+  }
+  .prism_yhd_code img {
+    display: block;
+    width: 93px;
+    height: 93px;
+    margin: 10px auto 0;
+  }
+  .yhd_prism_nav .prism_icon_hover .prism_yhd_code {
+    display: block;
+  }
+  .prism_tips_wrap .tips_arrow {
+    position: absolute;
+    top: 30px;
+    right: -12px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-style: 0;
+    line-height: 0;
+    border-color: transparent transparent transparent #fff;
+    border-style: dashed dashed dashed solid;
+    border-width: 6px;
+  }
+  .prism_yhd_code .tips_arrow {
+    top: 130px;
+  }
+  .prism_tips_wrap {
+    position: absolute;
+    top: 0;
+    -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+  }
