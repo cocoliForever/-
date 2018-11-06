@@ -198,13 +198,13 @@ var timer
         ele(j++)
     },2000) 
 // 鼠标点中li，轮播停止，支开继续运动
-$('.brand_name li').on('mouseenter',function(){
+$('.brand_name ').on('mouseenter','li',function(){
     clearTimeout(timer)
     var index=$(this).index()
     $('.img').eq(index).fadeOut(0)
     $('.imgs').eq(index).fadeIn(0)
      var i=index
-    $('.brand_name li').on('mouseleave',function(){
+    $('.brand_name ').on('mouseleave','li',function(){
         clearTimeout(timer)
     $('.img').eq(index).fadeIn(0)
     $('.imgs').eq(index).fadeOut(0)
@@ -222,26 +222,12 @@ $('.brand_name li').on('mouseenter',function(){
     })
     $('.left').on('click',function(){
         clearTimeout(timer)
-       /*  a++
-        if(a>7){
-            a=1
-            $('.brand_name').css('left',0)
-        }
-        $('.brand_name').stop().animate(
-            {left:-170*a}
-        ) */
+    
         ele(j++)
     })
     $('.right').on('click',function(){
         clearTimeout(timer)
-        // a--
-        // if(a<0){
-        //     a=6
-        //     $('.brand_name').css('left',1020)
-        // }
-        // $('.brand_name').stop().animate(
-        //     {left:-170*a}
-        // )
+        
        ele(j--)
     })
 })
