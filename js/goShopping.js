@@ -59,10 +59,17 @@
 
   var wl, hl, s;
   $(function () {
-    var tiao = function (dom, parmas, ele) {
-      var num = 0
+    // 初始化 右边栏 红色背景的数字 begin ======
+    var leng = $('#toGo').children().length
+    var leng1 = $('#toOut').children().length
+    $('#collect').find('.c_lit_tip').text(leng)
+    $('#trash').find('.c_lit_tip').text(leng1)
+    // 初始化   ending===========
+    var tiao = function (dom, parmas, ele, num) {
       $(dom).on('click', function () {
         var $a = $(this).parents('.order_content .order_lists');
+        var $par = $a.parents('.cartBox').find('.shop_info .shop_name a').text()
+        console.log($par)
         height = $a.offset().top
         left = $a.offset().left
         width = $a.width() / 2
@@ -78,11 +85,10 @@
         var $url = $a.find('.list_con img').attr('src')
         var $content = $a.find('.list_con .list_text a').text()
         var $price = $a.find('.list_price.price_dan p').text().substring(1)
-        console.log($price)
         setTimeout(function () {
           $a.empty().appendTo(parmas).addClass('fly').css({
-            'left': -wl, 'top': -hl, width: '50px', height: '50px', transform: '',
-            transition: '', 'background-image': 'url(' + $url + ')', 'backgroundColor': ''
+            'left': -wl, 'top': -hl, 'width': '50px', 'height': '50px', 'transform': '',
+            'transition': '', 'background-image': 'url(' + $url + ')', 'backgroundColor': ''
           }).animate({
             // 这里是刚开始向上移动的动画
             left: -wl + 200,
@@ -99,18 +105,19 @@
 
               })
               // 记录收藏或 移除的数量
-              num++;
+              num += 1
               //找到写入右上角的商品的盒子
-              var count = $(this).parent().find('.c_lit_tip')
+              count = $(this).parent().find('.c_lit_tip')
 
               // 将 收藏 或者移除的商品数量添加至 右上角的盒子中
-              count.text(num)
               // 找到右边栏的最大父盒子，为其绑定添加或删除事件
-              console.log($(ele))
-              var $li = '<li class="clearfix"><div class="t_prodimg"><a href="javascript:;" target="_blank"><img src="' + $url + '" width = "80" height = "80"></a></div><div class="t_prodinfo"><div class="tp_title clearfix"><a class="ti_name is-truncated" href="javascript:;" target = "_blank" style = "word-wrap: break-word;" >' + $content + '</a ></div><p class="tp_price">¥<b>' + $price + '</b></p><a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"></a></div></li>'
+              // $par 找到的事
+              var $li = '<li class="clearfix" data-shopTag="' + $par + '"><div class="t_prodimg"><a href="javascript:;" target="_blank"><img src="' + $url + '" width = "80" height = "80"></a></div><div class="t_prodinfo"><div class="tp_title clearfix"><a class="ti_name is-truncated" href="javascript:;" target = "_blank" style = "word-wrap: break-word;" >' + $content + '</a ></div><p class="tp_price">¥<b>' + $price + '</b></p><a class="tp_add_cart iconfont icon-gouwuche" href="javascript:;"></a></div></li>'
 
               $(ele).append($li)
+              count.text(num)
             })
+
           })
         }, 900)
         // 这里判断当删除或者收藏时，最后一个时，将本快内容全部删除
@@ -121,9 +128,20 @@
 
     }
     // 调用上面的函数
-    tiao('.list_op .del', '#trash', '#toOut')
-    tiao('.list_op .cang', '#collect', '#toGo')
+    // 第三个参数是为了找到 右边栏的对应的ul 列表盒子
+    // 第四个参数是为了 将 初始化的 列表长度和新添加的商品数量
+    tiao('.list_op .del', '#trash', '#toOut', leng1)
+    tiao('.list_op .cang', '#collect', '#toGo', leng)
+
+
+    // 反向添加到购物车列表
+
+    $('.tp_add_cart').on('click', function () {
+      console.log($(this))
+
+    })
   })
+
 
 
   // 这里是静态轮播(只有点击状态)   轮播乱码。稍后检查！！！
@@ -177,7 +195,6 @@
           display: 'block'
         })
       }
-      console.log($(this).length)
       if (index == 3) {
         $('.right_arrow_f').css({
           display: 'none'
@@ -232,7 +249,6 @@
 
 
     }
-    // console.log($(this).attr('class'))
 
   })
   //解绑回顶部的盒子的点击事件document事件
@@ -276,211 +292,5 @@
     })
   })
 
-  //实现选择框的关联
-  //三级全选影响二级全选和一级全选
-  $(function () {
-    $('.cart_item').on('click', '.check', function () {
-      if ($(this).find('i').css('display') === 'none') {
-        $(this).addClass('xz').parents('.item_line.main_item').css({ backgroundColor: '#fff7f7' })
-        $(this).find('i').css('display', 'block')
-      } else {
-        $(this).find('i').css('display', 'none')
-        $(this).removeClass('xz').parents('.item_line.main_item').css({ backgroundColor: '#fff' })
-      }
-      var s = $(this).parents('.cart_item').find('.check').length
-      var num = $(this).parents('.cart_item').find('.xz').length;
-      var t = $('.xz').length
-      var m = $('.check_item').length
-      if (s === num) {
-        $(this).parents('.cart_list_wrap').siblings('.cart_tit').find('i').css('display', 'block')
-      } else {
-        $(this).parents('.cart_list_wrap').siblings('.cart_tit').find('i').css('display', 'none')
-      }
-      if (t === m) {
-        $('.check_all').find('i').css('display', 'block')
-      } else {
-        $('.check_all').find('i').css('display', 'none')
-      }
-      console.log($(this))
-      funt($(this))
-    })
-    //二级全选影响三级和二级
-    $('.cart_tit').on('click', '.check_list', function () {
-      if ($(this).find('i').css('display') === 'none') {
-        $(this).find('i').css('display', 'block').parents('.cart_list').find('.check_item').addClass('xz').parents('.item_line.main_item').css({ 'backgroundColor': '#fff7f7' })
-        $(this).addClass('ejxz')
-        $(this).find('i').css('display', 'block').parents('.cart_list').find('.check').find('i').css('display', 'block')
-      } else {
-        $(this).removeClass('ejxz')
-        $(this).find('i').css('display', 'block').parents('.cart_list').find('.check_item').removeClass('xz').parents('.item_line.main_item').css({ 'backgroundColor': '#fff' })
-        $(this).find('i').css('display', 'block').parents('.cart_list').find('.check').find('i').css('display', 'none')
-      }
-      var l = $('.check_list ').length
-      var h = $('.ejxz').length
-      if (l === h) {
-        $('.check_all').find('i').css('display', 'block')
-      } else {
-        $('.check_all').find('i').css('display', 'none')
-      }
-      funt($(this))
-    })
-    //一级全选影响所有
-    $('.check_all').on('click', function () {
-      // $( '.check_list' ).click()
 
-      if ($(this).find('i').css('display') === 'none') {
-        $('.check_all').find('i').css('display', 'block')
-        $('.check_list').find('i').css('display', 'block');
-        $('.check_item').addClass('xz').find('i').css('display', 'block');
-      } else {
-        $('.check_all').find('i').css('display', 'none')
-        $('.check_list').find('i').css('display', 'none');
-        $('.check_item').removeClass('xz').find('i').css('display', 'none');
-      }
-      funt($(this))
-    })
-
-  })
-
-
-
-
-  // 计算单行价格 =================
-  // function getSubtotal(tr) {
-  //   var parmas = tr.attr('class') == 'item item_line main_item clearfix' ? tr : tr.parents('.item_line.main_item');
-  //   var price = parmas.find('.item_price p').text();/* 单价 */
-  //   var counts = parmas.find('.num_act.clearfix input').val(); //数量
-  //   var subtotal = parmas.find('.item_a_money'); //小计total
-  //   text = (parseInt(counts) * parseFloat(price)).toFixed(2);
-  //   subtotal.html(text);
-  //   var check = parmas.find('.check_item').find('i');
-  //   var littleTotal = parmas.parents('.cart_list').find('.cart_amount').find('.littleTotal')
-  //   var len = check.parents('.check_item').hasClass('xz')
-  //   console.log(len)
-  //   if (!len) {
-  //     littleTotal.text(subtotal.html())
-  //   } else {
-  //     littleTotal.text(0.00)
-  //   }
-  // }
-  //封装一个函数通过判断三级选中的个数来影响总价格
-  var num = 0, nus = 0, Totalprice = 0, Totalnumber = 0;
-  function funt(hh) {
-
-    if (hh.hasClass('check_item') || hh.hasClass('check_list')) {
-      l = hh.parents('.cart_list').find('.xz').length;
-    } else {
-      l = hh.parents('.cart_main_body').find('.cart_list').find('.xz').length;
-    }
-    //还是通过判断选中的三级按钮再次获得选中的数量，改变总共的数量和价格。
-    if (hh.hasClass('check_item')) {
-      for (var k = 0; k < l; k++) {
-        // 这里数量不能 +=   ！！！
-        n = parseInt(hh.parents('.cart_list').find('.input').val());
-        Totalprice += parseInt((hh.parents('.main_item').find('.item_price').find('p').text()) * n);
-        Totalnumber += n
-      }
-    } else if (hh.hasClass('check_all')) {
-      num = $('.cart_amount').length;
-      nus = $('.cart_list .input').length;
-      for (var i = 0; i < nus; i++) {
-        Totalnumber += parseInt(hh.parents('.cart_main_body').find('.cart_list_wrap').find('.input').eq(i).val());
-
-      }
-
-
-    } else if (hh.hasClass('check_list')) {
-      for (var k = 1; k < l; k++) {
-        Totalnumber = parseInt(hh.parents('.cart_list').find('.input').eq(k).val());
-        Totalprice += parseInt((hh.parents('.cart_list').find('.item_price').find('p').eq(k).text() * Totalnumber));
-      }
-    }
-    var a = $('.rpv_count b')
-    var c = $('.rpt_count b')
-    var bb = $('.all_checked_label b')
-    var d = hh.parents('.cart_list').find('.littleTotal');
-
-    if (l > 0) {
-      a.text(Totalnumber)//全部的数量
-      bb.text(Totalnumber)
-      c.text(Totalprice.toFixed(2));//总价
-      d.text(Totalprice.toFixed(2));//总价
-    } else {
-      console.log("进去了")
-      a.text(0)//全部的数量
-      bb.text(0)
-      c.text((0.00).toFixed(2));//总价
-      d.text((0.00).toFixed(2));//总价
-    }
-    // }
-
-
-  }
-
-
-
-  //input筐的点击事件================、
-
-  // $('.item_line.main_item').on('click', '.add,.unable', function () {
-  //   // var e = e || window.event
-  //   // var target = e.target || e.srcElement
-  //   var cls = $(this).attr('class')
-  //   var countInout = $(this).find('input')
-  //   var value = parseInt(countInout.val())
-  //   var kg = $(this).find('.item_a_weight span')
-  //   if (countInout.val() == '') {
-  //     // 设置input为空时，要显示1
-  //     countInout.val('1')
-  //   }
-  //   if (cls == 'add') {
-  //     countInout.val(value + 1);
-  //   }
-  //   if (cls == 'unable') {
-  //     countInout.val(value - 1);
-  //     if (countInout.val() < 1) {
-  //       countInout.val(1)
-  //     }
-  //   }
-  //   getSubtotal($(this))
-  //   console.log(cls)
-  //   // 清除上一次的重量值，否则会叠加！！！
-  //   kg.html('3.78')
-  //   kgs = (parseFloat(kg.html()) * parseInt(countInout.val())).toFixed(2);
-  //   kg.html(kgs);
-  // })
-
-  // oninput = "value=value.replace(/[^\d]/g,'')"
-  // 上一行加在input元素中，可以实现只允许输入数字！！！！
-
-
-
-  // 当前店铺的总价！！！
-  // function getTotal(total) {
-  //   var parents = total.parents('.cart_list')
-  //   var total = parents.find('.cart_amount span span')
-  // }
-
-  // function getKeyup(tot) {
-  //   var tr = tot.parents('.item_line.main_item')
-  //   var jj = tr.find('.item_amount')
-  //   var kg = jj.find('.item_a_weight span')
-
-  //   // 清除上一次的重量值，否则会叠加！！！
-  //   kg.html('3.78')
-  //   getSubtotal(tr)
-  //   kgs = (parseFloat(kg.html()) * parseInt(tot.val())).toFixed(2);
-  //   kg.html(kgs);
-
-  // }
-
-  // // input框 onkeyup事件 即直接输入数字所发生的改变！！！
-  // $('.item_line.main_item').on('keyup', 'input', function () {
-  //   if ($(this).val() == '') {
-  //     // 设置input为空时，要显示1
-  //     $(this).val('1')
-  //   }
-  //   getKeyup($(this))
-  //   // 三级复选框的勾选，与价格变动
-
-  // })
 }(jQuery))
