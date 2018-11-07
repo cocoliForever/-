@@ -239,7 +239,7 @@ $( function () {
 
 							$( ele ).append( $li )
 							count.text( num )
-							delBtn()
+							delBtn( $a )
 						} )
 
 					} )
@@ -269,12 +269,32 @@ $( function () {
 
 
 
+	// 页面加载后，获取对应的值
 
-	function delBtn () {
-		$order_lists = $( this ).parents( '.order_lists' );
+	var i = $( '.order_lists' ).length, s = 0;
+	function delBtn ( ele ) {
+		$order_lists = ele
 		$order_content = $order_lists.parents( '.order_content' );
 		// $('.model_bg').fadeIn(300);
 		// $('.my_model').fadeIn(300);
+		var ele = ele.attr( 'id' )
+		// 设置localStorage
+		s++;
+		if ( s >= 8 ) {
+			i = 0
+		}
+		localStorage.setItem( "name" + s, ele );
+		// 页面加载后，获取对应的值
+		name = localStorage.getItem( 'name' + s )
+
+		for ( var hh = 0; hh <= i; hh++ ) {
+			name = localStorage.getItem( 'name' + hh )
+			$( '#' + name ).css( 'display', 'none' )
+
+		}
+
+
+
 		$order_lists.remove();
 		// if ( $order_content.html().trim() == null || $order_content.html().trim().length == 0 ) {
 		// 	$order_content.parents( '.cartBox' ).remove();
@@ -283,6 +303,12 @@ $( function () {
 		$sonCheckBox = $( '.son_check' );
 		totalMoney();
 	};
+	for ( var hh = 0; hh <= i; hh++ ) {
+		name = localStorage.getItem( 'name' + hh )
+		console.log( $( '#' + name ) )
+		$( '#' + name ).css( 'display', 'none' )
+
+	}
 
 	//关闭模态框
 	// $( '.closeModel' ).click( function () {
