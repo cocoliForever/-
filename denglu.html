@@ -206,6 +206,26 @@
             })
           },
           errorElement: 'span',
+          rules: {
+            email: {
+              required: true,
+              email: true,
+            },
+            password: {
+              required: true,
+              isPassword: true
+            }
+          },
+          messages: {
+            email: {
+              required: '请输入邮箱',
+              email: "请输入正确的邮箱格式",
+            },
+            password: {
+              required: '请输入密码',
+              isPassword: '密码格式输入错误'
+            }
+          }
         })
       })
     }(jQuery))

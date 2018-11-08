@@ -467,6 +467,7 @@ body {
 }
 
 .mod_login_wrap .form_item_wrap .login_btn {
+	outline: none;
 	width: 330px;
 	height: 52px;
 	border: 0 none;
@@ -1158,4 +1159,17 @@ body {
 
 i{
   font-style: normal;
+}
+
+/* 登录验证 */
+span.error {
+	position: absolute;
+	left: 100px;
+	top: 11px;
+	background: rgba(238, 22, 22, 0.6);
+	z-index: 1;
+	color: #fff;
+	font-size: 12px;
+	padding: 4px 10px;
+	border-radius: 3px;
 }
