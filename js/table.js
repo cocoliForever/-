@@ -246,7 +246,7 @@ $(function(){
     })
     // 点击btn_ok事件
     $('.btn_ok').on('click',function(){
-        if($('.btn_ok').css('backgroundColor')=='rgb(255, 133, 92)'){
+        if($(this).css('backgroundColor')=='rgb(255, 133, 92)'){
             window.location.reload()
         }
         
