@@ -243,26 +243,29 @@ $(function(){
                 })
             }
         }  
-        // 点击btn_ok事件
-        $(this).parent().next('.guide_btn').children().first().on('click',function(){
+    })
+    // 点击btn_ok事件
+    $('.btn_ok').on('click',function(){
+        if($('.btn_ok').css('backgroundColor')=='rgb(255, 133, 92)'){
             window.location.reload()
+        }
+        
+    })
+    // 点击取消btn_cancel事件
+    $('.btn_cancel').on('click',function(){
+        console.log(1)
+        $(this).parent().prev().children().children().find('span').css('color','')
+        $(this).parent().prev().children().children().find('i').css({
+            'backgroundPositionX':-64,
+            'backgroundPositionY':-70,
         })
-        // 点击取消btn_cancel事件
-        $(this).parent().next('.guide_btn').children().last().on('click',function(){
-            // console.log(1)
-            $(this).parent().prev().children().children().find('span').css('color','')
-            $(this).parent().prev().children().children().find('i').css({
-                'backgroundPositionX':-64,
-                'backgroundPositionY':-70,
-            })
-            $(this).prev('.btn_ok').css({
-                'cursor': 'not-allowed',
-                'color': '#999',
-                'borderColor':'#cfcfcf',
-                'background':' #fbfbfb'
-            })
+        $(this).prev('.btn_ok').css({
+            'cursor': 'not-allowed',
+            'color': '#999',
+            'borderColor':'#cfcfcf',
+            'background':' #fbfbfb'
         })
-        })
+    })
 })
 
 $(function(){
@@ -313,7 +316,10 @@ $('.son_m').on('click','.som_an a',function(){
 })
 // 点击确定刷新页面
 $('.son_m').on('click','.btn_ok ',function(){
-    window.location.reload()
+    if($(this).css('backgroundColor')=='rgb(255, 133, 92)'){
+        window.location.reload()
+    }
+   
 })
 // 点击取消事件
 $('.son_m').on('click','.btn_cancel',function(){    
