@@ -119,6 +119,15 @@ $(function(){
                 $(this).find('.sl').removeClass('al')
                 $(this).find('.cl').hide()
                 $('.ansery[data-to="'+index+'"]').remove()
+                if($('.ansery').length==0){
+                    // 确定按钮变化
+                    $('.btn_ok').css({
+                        'cursor': 'not-allowed',
+                        'color': '#999',
+                        'borderColor':'#cfcfcf',
+                        'background':' #fbfbfb'
+                    })
+                }
             } 
             if($('.ansery').length>=1){
                 $(this).parents('.guide_main ').find('.btn_ok').css({
