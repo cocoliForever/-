@@ -186,18 +186,18 @@
               success: function (data) {
                 
                 if(data === '用户名密码不匹配'){
-                  if($('#pwd').val() === '') {
-                    $('.error_tips').css('display','block').html('请输入密码')
-                  }else{
+                  // if($('#pwd').val() === '') {
+                  //   $('.error_tips').css('display','block').html('请输入密码')
+                  // }else{
                     $('.error_tips').css('display','block').html('账号和密码不匹配，请重新输入')
-                  }
+                  // }
                 }
                 if(data === '用户名不存在'){
-                  if($('#pwd').val() === '') {
-                    $('.error_tips').css('display','block').html('请输入密码')
-                  }else{
+                  // if($('#pwd').val() === '') {
+                  //   $('.error_tips').css('display','block').html('请输入密码')
+                  // }else{
                     $('.error_tips').css('display','block').html('您填写的账户名不存在请核对后重新填写')
-                  }
+                  // }
                 }
                 if(data === '<META HTTP-EQUIV="Refresh" CONTENT="0; URL=./wodeyihaodian.html">'){
                   $('head').append(data)
