@@ -62,6 +62,8 @@
      name = localStorage.getItem('name')
      if (name) {
        $('.hd_indexprovce a em').text(name)
+     }else{
+       $('.hd_indexprovce a em').text("上海")
      }
   })
   //导航头右边的客户服务一栏分栏下单栏目鼠标浮上去字体颜色变化
