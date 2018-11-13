@@ -453,7 +453,12 @@ body {
 	background: url(https://passport.yhd.com/front-passport/passport/images/login.png?f8e2054) no-repeat -347px -265px;
 	color: #999
 }
-
+.mod_login_wrap .form_item_wrap a.check_agreement {
+	float: left;
+	padding-left: 18px;
+	background: url(https://passport.yhd.com/front-passport/passport/images/login.png?7d16ceb) no-repeat -347px -325px;
+	color: #999;
+}
 .mod_login_wrap .form_item_wrap a.forget_pswd {
 	position: absolute;
 	right: 0;
