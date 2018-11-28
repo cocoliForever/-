@@ -180,7 +180,6 @@ $(function () {
 
 	var wl, hl, s;
 	var $order_lists = null;
-	var $order_content = '';
 	$(function () {
 		// 初始化 右边栏 红色背景的数字 begin ======
 		var leng = $('#toGo').children().length
@@ -276,13 +275,14 @@ $(function () {
 			for (var i = 0; i < $shop_name.length; i++) {
 				var $shopTag = $shop_name.eq(i).text()
 				if ($dataShopTag == $shopTag) {
-					console.log($dataShopTag + '=========对比=========' + $shopTag)
+					// console.log($dataShopTag + '=========对比=========' + $shopTag)
 					var $box = $shop_name.eq(i).parents('.cartBox').find('.order_content')
 					$return_li = $('<ul class="order_lists" id="order_ul7"><li class="list_chk"><input type="checkbox" id="checkbox_8" checked class="son_check"><label for="checkbox_8" class="mark"></label></li><li class="list_con"><div class="list_img"><a href="javascript:;"><img src="' + $url + '" alt=""></a></div><div class="list_text"><a href="javascript:;">' + $content + '</a></div></li><li class="list_info"><p>规格：默认</p><p>尺寸：16*16*3(cm)</p></li><li class="list_price price_dan"><p class="price">￥' + $price + '</p></li><li class="list_amount"><div class="amount_box"><a href="javascript:;" class="reduce reSty">-</a><input type="text" value="1" class="sum"><a href="javascript:;" class="plus">+</a></div></li><li class="list_sum"><p class="sum_price">￥' + $price + '</p></li><li class="list_op"><p class="cang"><a href="javascript:;" class="cangBtn">收藏</a></p><p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p></li></ul>')
 					// $box.append($return_li)
 					$return_li.prependTo($box)
 				}
 			}
+			console.log($par.remove())
 			totalMoney()
 
 

@@ -181,9 +181,9 @@ li.hd_has_child:hover .hd_qrcode_bg{
     position: absolute;
     left: 40%;
     top: 50%;
-    font-size:30px;
-    font-style: unset;
-    color: #ff5e5e;
+    font-size:12px;
+    font-style: normal;
+    color: #333;
     transform: rotateX(-50%) rotateY(-50%);
 }
 .cart_header .logo {
