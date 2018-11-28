@@ -1,0 +1,481 @@
+.ranking_container {
+    min-width: 980px;
+    padding-bottom: 20px;
+    background-color: #ededed;
+}
+ /* 排行榜tab导航  */
+.yhd_ranking_tab_title {
+    padding: 33px 0 20px;
+    text-align: center;
+}
+.yhd_ranking_tab_title .nav {
+    position: relative;
+    display: inline-block;
+    margin: 0 64px;
+    border-bottom: solid 2px #ededed;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'microsoft yahei';
+    line-height: 34px;
+}
+.yhd_ranking_tab_title .cur {
+    border-color: #ed514c;
+    color: #ed514c;
+}
+.yhd_ranking_tab_title .cur:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid dashed dashed dashed;
+    border-color: #ed514c transparent transparent transparent;
+}
+ /* 排行榜tab导航  */
+ .yhd_ranking_tab_content.discount_md {
+    background: #ededed url(http://images/discount_bg.gif?3dfe709) no-repeat top center fixed;
+}
+.yhd_ranking_md {
+    position: relative;
+}
+.yhd_ranking-nav .cate-nav {
+    background: #f7f7f7;
+    width: 1228px;
+    height: 80px;
+    border-bottom: solid 1px #e6e6e6;
+}
+.yhd_ranking_wrap {
+    min-height: 500px;
+}
+.yhd_ranking-nav .cate-nav .cur {
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+}
+
+.yhd_ranking-nav .cate-nav a {
+    font-size: 14px;
+    display: block;
+    float: left;
+    line-height: 86px;
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 122.8px;
+    color: #7b6b6b;
+}
+.yhd_ranking-nav * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.yhd_ranking_md .product_md {
+    margin: 1px -2px 0 0;
+}
+.yhd_ranking_md .no_bottom_line {
+    border-bottom: none 0;
+}
+
+.yhd_ranking_md .box_a {
+    width: 328px;
+    height: 424px;
+    padding: 25px 25px 0;
+    text-align: center;
+}
+.yhd_ranking_md .product_box {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.yhd_ranking_md .product_box:hover {
+    box-shadow: 0 0 40px #ddd inset;
+}
+.yhd_ranking_md .product_box .front.first {
+    width: 40px;
+    height: 54px;
+    background-position: 0 0;
+}
+.yhd_ranking_md .product_box .ranking.front {
+    left: 22px;
+    width: 28px;
+    height: 39px;
+    background: url(http://images/ranking_sprite.png?3dfe709) no-repeat;
+    
+    text-indent: 10000px;
+}
+
+.yhd_ranking_md .product_box .ranking {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    color: #ccc;
+    font-size: 30px;
+    font-family: 'Bodoni MT';
+    line-height: 40px;
+    text-align: left;
+}
+.yhd_ranking_md .box_a .pro_pic {
+    width: 328px;
+    height: 328px;
+}
+
+.yhd_ranking_md .product_box .pro_pic {
+    position: relative;
+    z-index: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 12px;
+}
+.yhd_ranking_md .product_box .pro_pic img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+.yhd_ranking_md .product_box .pro_des {
+    
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+.yhd_ranking_md .product_box .pro_des a {
+    overflow: hidden;
+    color: #666;
+    line-height: 22px;
+}
+.yhd_ranking_md .box_a .bottom_box {
+    position: relative;
+    text-align: left;
+}
+.yhd_ranking_md .product_box .price_box {
+    height: 20px;
+    
+    margin-top: 8px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+.yhd_ranking_md .product_box .discount {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    height: 18px;
+    margin-right: 13px;
+    padding: 0 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #ed514c;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'simsun';
+}
+.yhd_ranking_md .product_box .discount em {
+    font-size: 14px;
+    font-family: 'Tahoma';
+}
+.yhd_ranking_md .product_box .price {
+    display: inline-block;
+    height: 18px;
+    color: #ed514c;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'microsoft yahei';
+}
+.yhd_ranking_md .product_box .price strong {
+    margin-left: 2px;
+    font-size: 18px;
+    font-family: 'Century Gothic';
+}
+.yhd_ranking_md .box_a .other_info {
+    margin-top: 5px;
+}
+.yhd_ranking_md .show_info {
+    color: #999;
+}
+.yhd_ranking_md .box_a .cart_btn {
+    top: 5px;
+    right: 0;
+}
+.yhd_ranking_md .cart_btn {
+    position: absolute;
+    width: 98px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    background-image: -webkit-linear-gradient(90deg,#fe7762,#fb8042);
+    background-image: -moz-linear-gradient(90deg,#fe7762 0%,#fb8042 100%);
+    background-image: -ms-linear-gradient(90deg,#fe7762 0%,#fb8042 100%);
+    background-image: linear-gradient(90deg,#fe7762,#fb8042);
+    background-color: #fe7762;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.yhd_ranking_md .box_b {
+    width: 364px;
+    height: 199px;
+    padding: 25px 30px 0;
+}
+.yhd_ranking_md .product_box .front.second {
+    background-position: -47px 0;
+}
+
+.yhd_ranking_md .product_box .ranking.front {
+    left: 22px;
+    width: 28px;
+    height: 39px;
+    background: url(http://images/ranking_sprite.png?3dfe709) no-repeat;
+   
+    text-indent: 10000px;
+}
+.discount_md .box_b .pro_info_box {
+    margin-top: 10px;
+}
+
+.yhd_ranking_md .box_b .pro_info_box {
+    float: left;
+    width: 170px;
+}
+.yhd_ranking_md .box_b .pro_des {
+    height: 44px;
+    margin: 10px 0;
+}
+.yhd_ranking_md .product_box .pro_des a {
+    overflow: hidden;
+    color: #666;
+    line-height: 22px;
+}
+.pro_des .prod_self {
+    line-height: 14px;
+    background-color: #ffefef;
+    color: #f66;
+    border: 1px solid #f3a3ad;
+    margin-right: 2px;
+    margin-left: 0px;
+    margin-top: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+.yhd_ranking_md .product_box .discount {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    height: 18px;
+    margin-right: 13px;
+    padding: 0 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #ed514c;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'simsun';
+}
+.yhd_ranking_md .product_box .price {
+    display: inline-block;
+    height: 18px;
+    color: #ed514c;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'microsoft yahei';
+}
+.yhd_ranking_md .price_box .day, .yhd_ranking_md .product_box .day {
+    position: relative;
+    top: -2px;
+    font-size: 12px;
+    font-family: 'simsun';
+    margin-left: 10px;
+}
+.yhd_ranking_md .show_info {
+    color: #999;
+}
+.yhd_ranking_md .box_b .pro_pic {
+    float: right;
+    width: 172px;
+    height: 172px;
+}
+
+.yhd_ranking_md .product_box .pro_pic {
+    position: relative;
+    z-index: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 12px;
+}
+.yhd_ranking_md .box_b .pro_pic img {
+    width: 100%;
+    height: 100%;
+}
+.yhd_ranking_md .box_b .cart_btn {
+    bottom: 22px;
+    left: 30px;
+}
+.yhd_ranking_md .cart_btn {
+    position: absolute;
+    width: 98px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    background-image: -webkit-linear-gradient(90deg,#fe7762,#fb8042);
+    background-image: -moz-linear-gradient(90deg,#fe7762 0%,#fb8042 100%);
+    background-image: -ms-linear-gradient(90deg,#fe7762 0%,#fb8042 100%);
+    background-image: linear-gradient(90deg,#fe7762,#fb8042);
+    background-color: #fe7762;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.yhd_ranking_md .product_box {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.yhd_ranking_md .box_c {
+    width: 195px;
+    height: 360px;
+    padding: 25px 25px 0;
+    text-align: center;
+
+}
+.yhd_ranking_md .product_box .ranking {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    color: #ccc;
+    font-size: 30px;
+    font-family: 'Bodoni MT';
+    line-height: 40px;
+    text-align: left;
+}
+.yhd_ranking_md .box_c .pro_pic {
+    width: 194px;
+    height: 194px;
+}
+
+.yhd_ranking_md .product_box .pro_pic {
+    position: relative;
+    z-index: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 12px;
+}
+.yhd_ranking_md .box_c .pro_des {
+    height: 44px;
+    line-height: 20px;
+}
+.yhd_ranking_md .product_box .pro_des a {
+    overflow: hidden;
+    color: #666;
+    line-height: 22px;
+}
+.pro_des .prod_self {
+    line-height: 14px;
+    background-color: #ffefef;
+    color: #f66;
+    border: 1px solid #f3a3ad;
+    margin-right: 2px;
+    margin-left: 0px;
+    margin-top: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+.yhd_ranking_md .product_box .price_box {
+    height: 20px;
+    _overflow: hidden;
+    margin-top: 8px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+.yhd_ranking_md .product_box .discount {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    height: 18px;
+    margin-right: 13px;
+    padding: 0 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #ed514c;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'simsun';
+}
+.yhd_ranking_md .product_box .price {
+    display: inline-block;
+    height: 18px;
+    color: #ed514c;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'microsoft yahei';
+}
+.yhd_ranking_md .product_box .price strong {
+    margin-left: 2px;
+    font-size: 18px;
+    font-family: 'Century Gothic';
+}
+.yhd_ranking_md .price_box .day em, .yhd_ranking_md .product_box .day em {
+    display: inline-block;
+    width: 51px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid #ff5c4d;
+    background-color: #fff8f8;
+    color: #ff5c4d;
+    margin-left: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.yhd_ranking_md .box_c .cart_btn_wrapper {
+    text-align: center;
+}
+.yhd_ranking_md .add_more_product {
+    display: block;
+    width: 134px;
+    height: 25px;
+    margin: 25px auto 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #dbdbdb;
+    _background-color: transparent;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+}
