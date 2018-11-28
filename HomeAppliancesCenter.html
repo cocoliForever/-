@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/resete.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_858329_6yud0r85uox.css">
+    <link rel="stylesheet" href="css/HomeAppliancesCenter.css">
+</head>
+
+<body>
+    <div class="hd_top_bar">
+        <div class="wrap cle arfix">
+            <a href="javascript:;" class="hd_topbar_home">
+                <i class="iconfont icon-home"></i>
+                <span>1号店首页</span>
+            </a>
+            <div class="hd_indxProvce">
+                <a class="hd_topbar_city" id="currProvince" href="javascript:;">
+                    <i class="iconfont  icon-weizhi"></i>
+                    <span>送货地址：</span><em>上海</em>
+                </a>
+            </div>
+            <div class="hd_topbar_right fr">
+                <ul class="fl">
+                    <li id="global_unlogin">
+                        <div class="hd_unlogin">
+                            <span class="hd_hi">Hi,请</span>
+                            <a href="https://passport.yhd.com/passport/login_input.do" class="hd_login_link">登录&nbsp;</a>
+                            <a href="https://passport.yhd.com/passport/register_input.do" class="hd_regist_link">&nbsp;注册</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hd_menu fl">
+                            <a href="javascript:;" target="_blank" rel="nofollow">
+                                <i class="iconfont icon-dingdan"></i>我的订单</a>
+                        </div>
+                    </li>
+                    <li class="hd_has_child hd_cur">
+                        <div class="hd_menu">
+                            <a href="javascript:;" target="_blank">客户服务</a>
+                            <i class="iconfont icon-down"></i>
+                        </div>
+                        <div class="hd_menu_list">
+                            <a href="javascript:;" target="_blank" title="包裹跟踪">包裹跟踪</a>
+                            <a href="javascript:;" target="_blank" title="在线退换货">在线退换货</a>
+                        </div>
+                    </li>
+                    <li class="hd_has_child">
+                        <div class="hd_title">
+                            <a href="javascript:;"><i class="iconfont icon-shouji"></i>APP下载</a>
+                        </div>
+                        <div class="hd_qrcode_bg">
+                            <div class="triangle"></div>
+                            <p>扫描二维码</p>
+                            <p>下载1号店APP</p>
+                            <a href="javascript:;" target="_blank">
+                                <img src="http://img.yihaodianimg.com/front-homepage/index/images/qryhd.png">
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap hd_header">
+        <div class="clearfix">
+            <!-- LOGO部分 -->
+            <div class="hd_logo_area">
+                <a href="javascript:;" class="hd_logo">
+                    <img src="http://d9.yihaodianimg.com/N10/M0A/DB/61/ChEi2lj4TqGAOjXwAAAbSq83IXA88700.png" alt="基础头部logo">
+                </a>
+            </div>
+            <!-- 搜索框部分 -->
+            <div class="hd_header_right">
+                <div class="clearfix">
+                    <div class="hd_head_search">
+                        <div class="hd_search_form" id="hdSearchForm">
+                            <div class="hd_fixed_wrap">
+                                <div class="hd_search_wrap clearfix">
+                                    <input class="hd_search_ipt" name="keyword" id="keyword" type="text" value=""
+                                        placeholder="买小家电上1号店" original="买小家电上1号店" url="//sale.yhd.com/act/DRHrdyxUKlE.html"
+                                        style="color:#333333;" maxlength="100" autocomplete="off">
+                                    <button type="button" class="hd_search_btn">
+                                        <i class="iconfont icon-sou-suo"></i>
+                                    </button>
+                                </div>
+                                <!-- 搜索提示begin -->
+                                <div class="hd_search_tips_result " id="searchSuggest" style="display: block;">
+                                    <div class="hd_search_history_new" style="display: none;">
+                                        <dl class="hd_s_history">
+                                            <dt> <a id="hd_clear_history_record" href="javascript:void(0);"><i class="iconfont icon-lajixiang"></i>清除</a>历史记录</dt>
+                                            <dd><a class="history-list" roll="true" href="javascript:searchMe('保鲜袋');">保鲜袋</a></dd>
+
+                                        </dl>
+                                        <dl class="hd_h_search clearfix"><dt>正在热搜中</dt>
+                                            <dd><a href="javascript:searchMe('酸奶 自营');" class="hd_suggest_item">酸奶 自营</a></dd>
+                                            <dd><a href="javascript:searchMe('黄酒');" class="hd_suggest_item">黄酒</a></dd>
+                                            <dd><a href="javascript:searchMe('风衣男');" class="hd_suggest_item">风衣男</a></dd>
+                                            <dd><a href="javascript:searchMe('苏打水');" class="hd_suggest_item">苏打水</a></dd>
+                                            <dd><a href="javascript:searchMe('牙膏');" class="hd_suggest_item">牙膏</a></dd>
+                                            <dd><a href="javascript:searchMe('夹克男');" class="hd_suggest_item">夹克男</a></dd>
+                                            <dd><a href="javascript:searchMe('洗手液');" class="hd_suggest_item">洗手液</a></dd>
+                                            <dd><a href="javascript:searchMe('剑南春白酒');" class="hd_suggest_item">剑南春白酒</a></dd>
+                                            <dd><a href="javascript:searchMe('休闲裤男');" class="hd_suggest_item">休闲裤男</a></dd>
+                                            <dd><a href="javascript:searchMe('洗面奶');" class="hd_suggest_item">洗面奶</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <!-- 提示end -->
+
+                            </div>
+                            <!-- 推荐 -->
+                            <p id="hotKeywordsShow" class="hd_hot_search"><a title="面包" target="_blank" href="http://search.yhd.com/c0-0/k%25E9%259D%25A2%25E5%258C%2585/">面包</a>
+                                <a title="大闸蟹" target="_blank" href="http://search.yhd.com/c0-0/k%25E5%25A4%25A7%25E9%2597%25B8%25E8%259F%25B9/">大闸蟹</a>
+                                <a title="牙刷" target="_blank" href="http://search.yhd.com/c0-0/k%25E7%2589%2599%25E5%2588%25B7/">牙刷</a>
+                                <a title="牛排" target="_blank" href="http://search.yhd.com/c0-0/k%25E7%2589%259B%25E6%258E%2592/">牛排</a>
+                                <a title="卫生巾" target="_blank" href="http://search.yhd.com/c0-0/k%25E5%258D%25AB%25E7%2594%259F%25E5%25B7%25BE/">卫生巾</a>
+                                <a title="牙膏 自营" target="_blank" href="http://search.yhd.com/c0-0/k%25E7%2589%2599%25E8%2586%258F%2520%25E8%2587%25AA%25E8%2590%25A5/">牙膏
+                                    自营</a> <a title="保鲜袋" target="_blank" href="http://search.yhd.com/c0-0/k%25E4%25BF%259D%25E9%25B2%259C%25E8%25A2%258B/">保鲜袋</a>
+                                <a title="洋河白酒" target="_blank" href="http://search.yhd.com/c0-0/k%25E6%25B4%258B%25E6%25B2%25B3%25E7%2599%25BD%25E9%2585%2592/">洋河白酒</a>
+                                <a title="洋酒" target="_blank" href="http://search.yhd.com/c0-0/k%25E6%25B4%258B%25E9%2585%2592/">洋酒</a>
+                                <a title="纯牛奶" target="_blank" href="http://search.yhd.com/c0-0/k%25E7%25BA%25AF%25E7%2589%259B%25E5%25A5%25B6/">纯牛奶</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hd_mini_cart" id="miniCart">
+                        <a class="hd_prism_cart" href="http://cart.yhd.com/cart/cart.do" data-ref="YHD_TOP_MINICART">
+                            <i class="iconfont icon-gouwuche"></i>
+                            <span>购物车</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="layoutcontainer">
+        <div class="d-layout-area">
+            <div class="d-layout clearfix">
+                <div class=" d-userdefine-layout">
+                    <img src="http://img14.360buyimg.com/cms/jfs/t16753/113/1046869787/43539/d95a5dcd/5ab9b1f7Nef1d0c92.jpg"
+                        alt="">
+                </div>
+                <div class="d-layout-banner">
+                    <ul class="jBanner">
+                        <li><img src="img/slider1.jpg" alt=""></li>
+                        <li><img src="img/slider2.jpg" alt=""></li>
+                        <li><img src="img/slider3.jpg" alt=""></li>
+                        <li><img src="img/slider4.jpg" alt=""></li>
+                        <li><img src="img/slider5.jpg" alt=""></li>
+                    </ul>
+                    <div class="jbannerTab">
+                        <div class="jbannerThumbnail">
+                            <span class="show"></span>
+                            <span class=""></span>
+                            <span class=""></span>
+                            <span class=""></span>
+                            <span class=""></span>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="slide_arrow slide_prev"><span><i class="iconfont icon-left"></i></span></a>
+                    <a href="javascript:;" class="slide_arrow slide_next"><span><i class="iconfont icon-right"></i></span></a>
+                </div>
+                <div class="J_htmlContent">
+                    <img src="img/img_left.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="d-layout-area">
+            <div class="d-layout clearfix" style="width:1300px">
+                <div class="d-userdefine-layout" style="width:1300px">
+                    <!--每日疯抢 -->
+                    <div class="madRush">
+                        <div class="d-content">
+                            <div class="bgImg"></div>
+                        </div>
+                    </div>
+                    <div class="madGoods">
+                        <ul class="d-con current">
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t9025/340/884104341/73996/7c03cf2d/59b85817Nac76b256.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tag" id="ls-tag">限时特惠</div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t8284/363/1326459580/71585/6d3e8013/59b857f2N6ca75622.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="tag" id="ls-tag">爆款直降</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t18595/339/1052523652/77250/b4afe949/5abb0ec6N6dbbddf1.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t14848/365/2076510540/93902/e5883831/5a6947e5N39e16ed8.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t3091/69/1656780187/139816/816bd4a4/57d146a4N0903327f.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t8356/273/1226566780/350971/c28888bd/59b627adN5d7db1dd.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t3871/193/501637202/67656/c6725c75/58534587N53c62548.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17383/125/1470478028/71155/1cb53bc2/5acc5248N6a5f81cd.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="tag" id="ls-tag">今日特价</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22111/358/335827775/51784/fc83afd1/5b0a2e60Nb32bb25f.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-img jPic">
+                                    <a href="http://item.yhd.com/5089269.html" target="_blank" style="width: auto; height: auto;">
+                                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t4006/355/617128870/243021/7f12b70a/58576b93Na6766faa.jpg">
+                                    </a>
+                                </div>
+                                <div class="goods-detail">
+                                    <div class="brand-logo">
+                                        <a href="http://item.yhd.com/5089269.html" target="_blank">AppleiPhone 8
+                                            (A1863)
+                                            64GB 银色 移动联通电信4G手机</a>
+                                    </div>
+                                    <div class="goods-info">
+                                        <div class="goods-price">
+                                            <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">4799.00</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="goods-bar">
+                                        <div class="add-cart">
+                                            <a href="http://item.yhd.com/5089269.html" target="_blank" class="J_replace_url">
+                                                <i class="iconfont icon-gouwuche"></i> 加入购物车</a>
+                                        </div>
+                                        <div class="buy-now"><a href="http://item.yhd.com/5089269.html" target="_blank">立即购买
+                                                <i class="iconfont icon-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- 每周推送 -->
+                    <div class="madRush">
+                        <div class="d-content">
+                            <div class="weekPush"></div>
+                        </div>
+                    </div>
+                    <div class="j-module">
+                        <div class="example">
+                            <img src="http://img10.360buyimg.com/cms/jfs/t17320/218/1238624882/149283/209a98eb/5ac1d8feN8ae28857.jpg"
+                                alt="">
+                            <span class="ex-price" jdprice="5705381" style="left:517px;top:105px;color:#E7214F;">7588.00</span>
+                            <span class="ex-price" jdprice="4331187" style="left:998px;top:105px;color:#E7214F;">9088.00</span>
+                            <span class="ex-price" jdprice="5444700" style="left:509px;top:341px;color:#E7214F;">2499.00</span>
+                            <span class="ex-price" jdprice="1593516" style="left:761px;top:339px;color:#E7214F;">13998.00</span>
+                            <span class="ex-price" jdprice="1892028" style="left:1008px;top:338px;color:#E7214F;">2698.00</span>
+                        </div>
+                    </div>
+                    <!-- 新品上市 -->
+                    <div class="madRush">
+                        <div class="d-content">
+                            <div class="newArrival"></div>
+                        </div>
+                    </div>
+                    <div class="madGoods">
+                        <div class="j-module">
+                            <ul class="d-con lists"">
+                                <li>
+                                    <div class="
+                                goods-img jPic">
+                                <a href="http://item.yhd.com/7357933.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22519/185/2357218296/213888/ff5e9aa3/5b7bd314N6db24355.jpg"
+                                        style="width: 100%; height: auto;">
+                                </a>
+                        </div>
+                        <div class="goods-detail">
+                            <div class="brand-logo"> <a href="http://item.yhd.com/7357933.html" target="_blank">一加手机6
+                                    8GB+128GB 亮瓷黑 全面屏双摄游戏手机 全网通4G
+                                    双卡双待</a> </div>
+                            <div class="goods-info">
+                                <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">3599.00</span></span>
+                                </div>
+                            </div>
+                            <div class="goods-bar">
+                                <div class="add-cart">
+                                    <a href="http://item.yhd.com/7357933.html" target="_blank" class="J_replace_url"><i
+                                            class="iconfont icon-gouweiche"></i> 加入购物车</a>
+                                </div>
+                                <div class="buy-now">
+                                    <a href="http://item.yhd.com/7357933.html" target="_blank">立即购买 <i class="iconfont icon-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic">
+                                <a href="http://item.yhd.com/7357933.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t20437/108/993281744/210070/112e444f/5b1de269Nffd152c6.jpg"
+                                        style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/7341428.html" target="_blank">锤子（smartisan）
+                                        坚果 R1 6G+64GB 碳黑色
+                                        全面屏双摄 全网通4G手机 双卡双待 游戏手机</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">2799.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/7341428.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/7341428.html" target="_blank">立即购买
+                                            <i class="iconfont icon-right"></i> </a></div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="goods-img jPic">
+                                <a href="http://item.yhd.com/7357933.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/7078799.html" target="_blank">【豪华套装】小米MIX2S
+                                        全面屏游戏手机 6GB+64GB 黑色
+                                        全网通4G 陶瓷手机</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">3599.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/7078799.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/7078799.html" target="_blank">立即购买
+                                            <i class="iconfont icon-right"></i>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic">
+                                <a href="//item.yhd.com/7357933.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t16915/296/1042950134/187306/da89b445/5ab9e638N96c296a0.jpg"
+                                        style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/6946605.html" target="_blank">华为
+                                        HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机
+                                        6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum" jdprice="6946605">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买
+                                            <i class="iconfont icon-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="goods-img jPic">
+                                <a href="//item.yhd.com/7357933.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t25882/154/817727910/224844/1100d912/5b7cc388N89201c18.jpg"
+                                        style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/6680137.html" target="_blank">索尼（SONY）ILCE-7M3K
+                                        全画幅微单相机标准套装（约2420万有效像素 4K视频 5轴防抖 α7M3/a7M3/A7 III）</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum">15799.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6680137.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="//item.yhd.com/6680137.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a></div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="goods-img jPic">
+                                <a href="http://item.yhd.com/7357933.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t19900/84/1275552254/103156/954cd638/5b27be09Nf39ac98b.jpg"
+                                        style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/6978397.html" target="_blank">戴森（DYSON）DP04
+                                        空气净化风扇 兼具空气净化器和风扇功能
+                                        原装进口 无叶设计 整屋净化 银白色 智能台式</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum" jdprice="6978397">4455.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6978397.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6978397.html" target="_blank">立即购买
+                                            <i class="iconfont icon-right"></i> </a></div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="madRush">
+                    <div class="d-content">
+                        <div class="goodShop"></div>
+                    </div>
+                </div>
+                <div class="layoutImg">
+                    <img src="https://img14.360buyimg.com/cms/jfs/t19918/202/185660947/55359/9fc2e0a2/5aea6b27N1dd1be1f.jpg">
+                    <img src="https://img10.360buyimg.com/cms/jfs/t22099/182/1003556852/22488/5ba80a9b/5b1e4a44N80b6ea95.jpg">
+                    <img src="https://img14.360buyimg.com/cms/jfs/t19708/43/1470724124/60276/95ceaa59/5acc2378Nd4da4fae.jpg">
+                    <img src="https://img14.360buyimg.com/cms/jfs/t18715/225/1050096604/19034/a2c00266/5ab87067Nf8202046.jpg">
+                </div>
+                <div class="layoutImg_right">
+                    <img src="https://img12.360buyimg.com/cms/jfs/t18442/170/1912056237/68799/4ec4d43a/5add4e5bNde0f1baa.jpg">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1300px">
+            <div class="d-userdefine-layout" style="width:1300px">
+                <div class="madRush">
+                    <div class="d-content">
+                        <div class="mobileCom"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 手机通讯============================== -->
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1000px">
+            <div class="d-userdefine-layout">
+                <div class="madGoods">
+                    <ul class="goodsList">
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <img class="imgList" src="https://img11.360buyimg.com/cms/jfs/t17149/248/2145630964/46203/bd8bc9e0/5ae91c03N91246226.jpg"
+                                alt="" style="width:100%">
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img class="imgList" src="https://img13.360buyimg.com/cms/jfs/t14356/97/340103395/10271/49bbe891/5a2a7f43N18fb57d6.png"
+                                alt="">
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/6946605.html" target="_blank">
+                                    <img class="" src="http://img14.360buyimg.com/n7/jfs/t17137/134/1253764714/149950/acf159b1/5ac1bf58Ndefaac16.jpg"
+                                        alt="华为 HUAWEI P20 AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色 全网通移动联通电信4G手机 双卡双待" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/6946605.html" target="_blank">华为 HUAWEI P20
+                                        AI智慧徕卡双摄全面屏游戏手机 6GB+64GB 亮黑色
+                                        全网通移动联通电信4G手机 双卡双待</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">3388.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/6946605.html" target="_blank"><em></em>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/6946605.html" target="_blank">立即购买<em></em></a></div>
+                                </div>
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 电脑办公=================================== -->
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1300px">
+            <div class="d-userdefine-layout" style="width:1300px">
+                <div class="madRush">
+                    <div class="d-content">
+                        <div class="Co_office"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1000px">
+            <div class="d-userdefine-layout">
+                <div class="madGoods">
+                    <ul class="goodsList lists">
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://img12.360buyimg.com/cms/jfs/t21718/72/1525911380/15867/b29613da/5b2ba16aN2641c42c.jpg"
+                                alt="">
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img">
+                                <a href="http://item.yhd.com/5712532.html" target="_blank">
+                                    <img class="" src="http://img12.360buyimg.com/n7/jfs/t15808/146/2300179444/199272/296c51b4/5a9f4e46Nda9803e8.jpg"
+                                        alt="【黑色键盘套装】微软（Microsoft）Surface Pro（第五代）二合一平板电脑 （Core M3 4G 128G ）" width="168">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="goods-name">
+                                    <a href="http://item.yhd.com/5712532.html" target="_blank">【黑色键盘套装】微软（Microsoft）Surface
+                                        Pro（第五代）二合一平板电脑 （Core
+                                        M3 4G 128G ）</a>
+                                </div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum d-jd-price">6588.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank"><i class="iconfont icon-gouwuche"></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                    <div class="buy-now">
+                                        <a href="http://item.yhd.com/5712532.html" target="_blank">立即购买<i class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 智能数码=========================== -->
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1300px">
+            <div class="d-userdefine-layout" style="width:1300px">
+                <div class="madRush">
+                    <div class="d-content">
+                        <div class="digital"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1000px">
+            <div class="d-userdefine-layout">
+                <div class="madGoods">
+                    <ul class="goodsList lists">
+                        <li style="padding:0">
+                            <img src="https://img12.360buyimg.com/cms/jfs/t21424/89/2583760197/16481/df193b50/5b5ef3e9Ncc7e7533.jpg"
+                                height="100%;display:block" alt="">
+
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="//item.yhd.com/1432660.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t17986/85/1977289353/219284/ce782bc5/5add567fN32ccc250.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="http://item.yhd.com/1432660.html" target="_blank">索尼（SONY）ILCE-7M2
+                                        全画幅微单数码相机单机身(约2430万有效像素 1080P录像 wifi直连 α7M2/a7Mark II)</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1432660" data-cat="652,654,5012" data-fqsp="0" data-venderid="1000000921">7299.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart"><a href="http://item.yhd.com/1432660.html" target="_blank"
+                                            class="J_replace_url"> <i class="iconfont icon-gouwuche"></i> 加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1432660.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i></a></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 家用电器================================ -->
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1300px">
+            <div class="d-userdefine-layout" style="width:1300px">
+                <div class="madRush">
+                    <div class="d-content">
+                        <div class="Household"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-layout-area">
+        <div class="d-layout clearfix" style="width:1000px">
+            <div class="d-userdefine-layout">
+                <div class="madGoods">
+                    <ul class="goodsList lists">
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://img14.360buyimg.com/cms/jfs/t17113/209/935592686/57000/ba238fcb/5ab3840bN6a981558.jpg"
+                                alt="">
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods-img jPic" style="width: auto; height: auto;">
+                                <a href="http://item.yhd.com/1887628.html" target="_blank" style="width: auto; height: auto;">
+                                    <img class="J_imgLazyload" src="http://img14.360buyimg.com/n7/jfs/t22786/109/1458499748/178852/21b228b3/5b61224fN298faa2c.jpg"
+                                        height="168" width="168" style="width: 100%; height: auto;">
+                                </a>
+                            </div>
+                            <div class="goods-detail">
+                                <div class="brand-logo"> <a href="//item.yhd.com/1887628.html" target="_blank">西门子（SIEMENS）8公斤洗烘一体
+                                        变频滚筒洗衣机
+                                        LED显示屏热风除菌（银色）XQG80-WD12G4681W</a> </div>
+                                <div class="goods-info">
+                                    <div class="goods-price"> <span class="jd-price"><em>抢购价：</em>¥<span class="jdNum"
+                                                jdprice="1887628" data-cat="737,794,880" data-fqsp="0" data-venderid="1000001421">4899.00</span></span>
+                                    </div>
+                                </div>
+                                <div class="goods-bar">
+                                    <div class="add-cart">
+                                        <a href="http://item.yhd.com/1887628.html" target="_blank" class="J_replace_url"><i
+                                                class="iconfont icon-gouwuche"></i>加入购物车</a></div>
+                                    <div class="buy-now"><a href="http://item.yhd.com/1887628.html" target="_blank">立即购买<i
+                                                class="iconfont icon-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="ft_wrap">
+        <div class="wrap ft_footer_service clearfix">
+            <a href="javascript:;">
+                <img src="http://d8.yihaodianimg.com/N05/M0B/39/F3/CgQI0lWskgmADBnsAAAPZvcSh3E68900.jpg" alt="">
+                <b>正品保障</b>
+                <span>正品行货 放心选购</span>
+            </a>
+            <a href="javascript:;">
+                <img src="http://d6.yihaodianimg.com/N05/M09/96/23/ChEbulWsk4iADa_aAAAM544hHN818600.jpg" alt="">
+                <b>满86包邮</b>
+                <span>满86包邮 免费运</span>
+            </a>
+            <a href="javascript:;">
+                <img src="http://d9.yihaodianimg.com/N07/M00/2D/8B/CgQIz1WslI-Adao3AAAN5b_ut2I80100.jpg" alt="">
+                <b>售后服务</b>
+                <span>7天无理由退货</span>
+            </a>
+            <a href="javascript:;">
+                <img src="http://d8.yihaodianimg.com/N09/M06/08/C8/ChEi11WsyiyALBbiAAAN9lEEK5M33200.jpg" alt="">
+                <b>准时送达</b>
+                <span>收货时间有你做主</span>
+            </a>
+        </div>
+        <!-- sercice end -->
+        <!-- 服务列表开始 -->
+        <div class="wrap ft_service_link clearfix">
+            <div class="ft_help_list clearfix fl">
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd>
+                        <a href="javascript:;">购物流程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">会员制度</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">订单查询</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">发票制度</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">网站地图</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="javascript:;">货到付款</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">网上支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">礼品卡支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">其他支付</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>配送服务</dt>
+                    <dd>
+                        <a href="javascript:;">配送进度查询</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">上平验货与签收</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后保障</dt>
+                    <dd>
+                        <a href="javascript:;">退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">联系客服</a>
+                    </dd>
+                </dl>
+            </div>
+            <!-- footer 二维码 begin -->
+            <div class="ft_code_wrap clearfix">
+                <div class="ft_mobile_code ciearfix">
+                    <p>APP更优惠</p>
+                    <a href="javascript:;">
+                        <img src="http://img.yihaodianimg.com/front-homepage/index/images/qryhd.png?1=1" alt="APP更优惠二维码">
+                    </a>
+                </div>
+                <div class="ft_mobile_code ciearfix">
+                    <p>APP更优惠</p>
+                    <a href="javascript:;">
+                        <img src="http://img.yihaodianimg.com/front-homepage/index/images/qryhd.png?1=1" alt="APP更优惠二维码">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 服务列表结束 -->
+        <div id="footer">
+            <p class="ft_footer_link"></p>
+            <p class="ft_footer_link">
+                <a href="javascript:;">沪ICP备16050468号</a>
+                |
+                <a href="javascript:;">经营证照</a>
+                |
+                <a href="javascript:;">互联网药品信息服务资格证</a>
+                |
+                <a href="javascript:;">违法和不良信息举报电话 ：0527-88100253</a>
+                |
+                <a href="javascript:;">沪B2-20170039</a>
+                |
+                <a href="javascript:;">沪公网安备 31010502002939号</a>
+                |
+                <a href="javascript:;">友情链接</a>
+                |
+                <a href="javascript:;">出版物经营许可证</a>
+                |
+            </p>
+            <p>Copyright© 1号店网上超市 2007-2017，All Rights Reserved</p>
+            <small class="ft_pic_link">
+                <a href="javascript:;">
+                    <img src="http://d9.yihaodianimg.com/N01/M0A/95/FD/CgQCr1PQy1CAF7vaAABDexsiEYM24800.jpg" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="http://d9.yihaodianimg.com/N08/M06/6C/9C/ChEi1VcfPl2AC1T8AAANFrEfJlw97300.jpg" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="http://d6.yihaodianimg.com/N10/M09/0E/1F/ChEi2lh171KAJrGlAAALl_uZt0E75600.jpg" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="http://d9.yihaodianimg.com/N08/M01/C7/7E/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="http://d9.yihaodianimg.com/N01/M03/A0/40/CgQCrlPYTqCASlHXAAAd82JE0eA31000.png" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="http://img30.360buyimg.com/img/jfs/t16534/130/1965976230/19256/c267b386/5a706bb1Ne3eec0dd.png"
+                        alt="">
+                </a>
+            </small>
+        </div>
+    </div>
+    <!-- end footer -->
+    <script src="./js/jquery-1.12.4.js"> </script>
+    <script src="js/HomeAppliancesCenter.js"></script>
+</body>
+
+</html>

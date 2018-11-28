@@ -1,0 +1,10 @@
+(function($){
+   $(function(){
+       $('h3').on('click',function(){
+         $(this).parent().siblings().find("ul").css("display","none") 
+         $(this).parent().find("ul").stop().slideToggle("slow");
+         $(this).parent().siblings().find("h3").removeClass("on")
+         $(this).addClass("on")
+       })
+   })
+}(jQuery))
