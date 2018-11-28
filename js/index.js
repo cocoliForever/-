@@ -19,7 +19,7 @@
       $('.hd_indexprovce .hd_topbar_city').css('background','#f4f4f4')
     })
     //点击其他区域也能关闭送货地址列表暂未完成
-    $('body,html').on('mousedown', function(){
+    $('body,html').on('mouseup', function(){
       $('.hd_city_select').css('display','none');
       $('.hd_indexprovce .hd_topbar_city').css('background','#f4f4f4')
     })
