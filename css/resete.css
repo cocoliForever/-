@@ -1,7 +1,7 @@
 @charset "UTF-8";body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
 }
 
 body,button,input,select,textarea {
@@ -11,31 +11,30 @@ body,button,input,select,textarea {
 }
 
 input,select,textarea {
-  font-size: 100%
+  font-size: 100%;
 }
 
 a {
   text-decoration: none;
-  color: #333
+  color: #333;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ff4040
+  color: #ff4040;
 }
 
 a:active {
-  background-color: transparent0
+  background-color: transparent;
 }
 
 a.blue_link {
-  color: #06c
+  color: #06c;
 }
 
 a.blue_link:hover {
   color: #f60
 }
-
 .clearfix:after {
   display: block;
   content: ".";
@@ -43,66 +42,77 @@ a.blue_link:hover {
   visibility: hidden;
   clear: both;
   font-size: 0;
-  line-height: 0
+  line-height: 0;
 }
-
-.clearfix {
-  *zoom:1}
-
+.clearfix{
+  *zoom:1;
+}
 img {
   border: 0 none;
-  vertical-align: top
+  vertical-align: top;
 }
 
 em {
-  font-style: normal
+  font-style: normal;
 }
 
 button::-moz-focus-inner {
   padding: 0;
-  border: 0
+  border: 0;
 }
 
 .wrap {
   margin: 0 auto;
-  width: 1228px
+  width: 1228px;
 }
 
 .fl {
-  float: left
+  float: left;
 }
 
 .fr {
-  float: right
+  float: right;
 }
 
 .mt {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .ml {
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .mt5 {
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 .mt10 {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .mb {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .none {
-  display: none
+  display: none;
 }
-
+.bl{
+  display: block;
+}
 .ellipsis {
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.activeColorRed{
+  color:red !important;
+} 
+.cur{
+  background: #ff4040;
+  opacity: 0.8;
+  /* border:solid 2px #fff; */
+}
+body {
+  background-color: #f5f5f5;
 }

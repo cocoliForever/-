@@ -1,0 +1,50 @@
+.container{
+    background: #ffcd69
+}
+.page{
+    height: 631px;
+    margin-bottom: 10px;
+    background: url(https://img12.360buyimg.com/cms/jfs/t25135/178/1721261198/276682/5eca4aa4/5bbab871N55065b29.jpg)
+}
+.content {
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.handset_mi8{
+    margin: 10px 0;
+    position: relative;
+
+}
+.handset_mi8 div{
+    background: url(https://img10.360buyimg.com/cms/jfs/t26401/143/933675416/276044/b8b9c719/5bbcab52Nbe6cb81f.png) no-repeat center center;
+    height: 492px;
+}
+.handset_mi8 .a_link{
+    display: block;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 40px;
+    left: 36px;
+}
+.handset_mi8 .b_link{
+    display: block;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 40px;
+    left: 55%;
+}
+.heading{
+    position: relative;
+}
+.heading img{
+   margin-left: -466px
+    /* vertical-align: top; */
+}
+
+.handset_mi6x a img{
+    width: 1920px;
+    margin-left: -466px;
+}
