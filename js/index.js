@@ -19,6 +19,10 @@
       $('.hd_indexprovce .hd_topbar_city').css('background','#f4f4f4')
     })
     //点击其他区域也能关闭送货地址列表暂未完成
+    $('body,html').on('mousedown', function(){
+      $('.hd_city_select').css('display','none');
+      $('.hd_indexprovce .hd_topbar_city').css('background','#f4f4f4')
+    })
       // $('div').not('div.hd_city_select').on("click",function(){
       //   console.log($('.hd_city_select').css('display'))
       //   if($('.hd_city_select').css('display') === 'block'){
