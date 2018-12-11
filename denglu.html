@@ -97,7 +97,7 @@
                   </p>
                   <a href="https://passport.yhd.com/passport/find_pwd_input.do" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
                 </div>    	
-                <button id="login_button" type="submit" class="login_btn"">登录</button>
+                <button id="login_button" type="submit" class="login_btn">登录</button>
               </div>
               <div class="joint_landing_wrap">
                 <p>更多合作网站账号登录</p>
@@ -129,7 +129,7 @@
           <div class="login_code_title">用<a href="#">1号店APP</a>登录</div>
           <div class="login_code_pic">
             <div class="picture_code" id="login_code_pic">
-              <img  width="180" height="180"  id="login_code_pic">
+              <img  width="180"  height="180" id="login_code_pic">
             </div>
             <div class="shade"></div>
             <div class="meg_error">
@@ -180,25 +180,28 @@
         $('form').validate({
           submitHandler: function () {
             $.ajax({
-              url: 'http://localhost/phpwork/validate/register2.php',
+              url: 'http://localhost/phpwork/validate/checkEmail.php',
               data: $('form').serialize(),
               type: 'POST',
               success: function (data) {
-                
-                if(data === '用户名密码不匹配'){
-                  // if($('#pwd').val() === '') {
-                  //   $('.error_tips').css('display','block').html('请输入密码')
-                  // }else{
-                    $('.error_tips').css('display','block').html('账号和密码不匹配，请重新输入')
-                  // }
+                // alert(data)
+                if (data === 'false') {
+                  alert('用户名或密码错误请从新输入')
                 }
-                if(data === '用户名不存在'){
-                  // if($('#pwd').val() === '') {
-                  //   $('.error_tips').css('display','block').html('请输入密码')
-                  // }else{
-                    $('.error_tips').css('display','block').html('您填写的账户名不存在请核对后重新填写')
-                  // }
-                }
+                // if(data === '用户名密码不匹配'){
+                //   // if($('#pwd').val() === '') {
+                //   //   $('.error_tips').css('display','block').html('请输入密码')
+                //   // }else{
+                //     $('.error_tips').css('display','block').html('账号和密码不匹配，请重新输入')
+                //   // }
+                // }
+                // if(data === '用户名不存在'){
+                //   // if($('#pwd').val() === '') {
+                //   //   $('.error_tips').css('display','block').html('请输入密码')
+                //   // }else{
+                //     $('.error_tips').css('display','block').html('您填写的账户名不存在请核对后重新填写')
+                //   // }
+                // }
                 if(data === '<META HTTP-EQUIV="Refresh" CONTENT="0; URL=./wodeyihaodian.html">'){
                   $('head').append(data)
                 }
