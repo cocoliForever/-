@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,611 +9,693 @@
   <link rel="stylesheet" href="./css/resete.css">
   <link rel="stylesheet" href="./css/olaiya.css">
 </head>
+
 <body>
-    <div class="layout-container">
-      <div class="layout-main" isfixed="0" style="background:#FFFFFF">
-        <div>
-          <div class="J_LayoutWrap d-layout-wrap layout-auto  d-enable " name="新布局_通栏布局（100%）" id="114028318" prototypeid="42" area="" layout_name="insertLayout">
-            <div class="d-layout-row d-clearfix">
-              <div class="J_LayoutArea d-layout" data-region="main">
-                <style type="text/css">
-    [style*="2147483647"] div[hui-mod] {display: none !important;}
-    .j-attent-dialog-wrap{display: none;}
-    .sh-brand-wrap-630128 {
-    font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
-    height: 110px;
-    overflow:hidden;
-    position:relative;
-    }
-    .sh-brand-wrap-630128 img {
-    vertical-align: middle;
-    }
-    .sh-brand-wrap-630128 .sh-brand {
-    position: relative;
-    margin: 0 auto;
-    width: 990px;
-    overflow:hidden;
-    }
-    .sh-brand-wrap-630128 .sh-hot-container {
-        position: absolute;
-        width: 1920px;
-        text-align: center;
-        left: 50%;
-        margin-left: -960px;
-        height: 110px;
-        overflow: hidden;
-    }
-    .sh-brand-wrap-630128 .sh-hot-container .sh-hot-content {
-        display: inline-block;
-        width: fit-content;
-        position: relative;
-    }
-    .sh-brand-wrap-630128 .sh-hot-container .hot-link{
-        display: 'inline-block';
-        position:absolute;
-    }
-    .sh-brand-wrap-630128 .sh-brand .shop-name-box {
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;
-    height: 60px;
-    left: 190px;
-    vertical-align: top;
-    }
-    .sh-brand-wrap-630128 .sh-brand .shop-name-box .shop-name{
-    font-size: 18px;
-    color: #333;
-    }
-    .sh-brand-wrap-630128 .sh-brand .shop-logo-box {
-    position: absolute;
-    top: 50%;
-    margin-top: -40px;
-    }
-    .sh-brand-wrap-630128 .sh-hot-wrap img {
-    width: 180px;
-    height: 60px;
-    }
-    .sh-brand-wrap-630128 .sh-brand .hot-link {
-    display: 'inline-block';
-    position:absolute;
-    }
-    .sh-brand-wrap-630128 .sh-brand .coupons {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -28px;
-    }
-    .sh-brand-wrap-630128 .sh-brand .coupons .coupon {
-    float: left;
-    margin-left: 10px;
-    }
-    .sh-brand-wrap-630128 .sh-brand .follow-me {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    padding-left: 24px;
-    width: 47px;
-    height: 23px;
-    line-height: 23px;
-    color: #000;
-    font-size: 12px;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABZCAMAAABbssnGAAAA/1BMVEUAAAD///////+xGRqxGRqxGRr////uub2xGRr////uub2xGRr///+xGRr////////uub3uub3uub3////uub2xGRruub3uub3////uub2xGRr////uub2xGRruub3////uub2xGRqxGRqxGRqxGRqxGRr////uub2xGRr////uub3kOTzlQEOzHx/++/vsoqbsmJzoaWz9+Pj78vL03t7y2Njv0dHtyMjqwcHtq6/jrKzNbG3GV1jEUFHmTE+/QEG8Oju1Jie6MjP57+/25ub25eXou7zgpKTblJTpfYHRdHXnX2LIXV3mWFvmU1bBSEnBR0i3KSrWhofVg4O6NDWxIW+2AAAAKHRSTlMAl9DQlkxEREQGBgbw8JtMTNCb1tbWmJa3t7fx8fHv1dXVm5yZmktLhfBmHAAAAn5JREFUWMPtmMdy2zAQhlfFIq3eZVuWi+IkAIu61SVLcu92kvd/logAMcT4tgBPHn2Xf3n5ZmcxWMwQfBKRaJriSNN0NJIAmdwpVeU0B4L9CNUhu+9rDqgeB1yUpbpkPc0vXl+OL0Xg8WbER/zkEndG6WwbT3hPCSDBigfi8fLC4gEvSgA/qxWRWOE9EYiydGWPi/dEIc1yLXvWeE8aeM5kz4zi8fu5/Qw0n7cq/UR5MQo8I6oyH3G3xmt/OGOqQAQSohyu2JkPqQoJgJKob94Jeb9R0pS83UMFrcWiRZXIhXTfQ9s/XJTV3YeCXEnZUuL7WXov6khDnda992LHju+LUbPwnBRqBsjkzyxVzvIgSFYtHapJX3No6XHIRUVLl6Kn+c3rdqctAo83Iz7irm073W04tr0NLGUAgxWPtsfzM4tHvMiAGsulLbHEe2pQYOnIHgfvKcBJKJ5j4NmVPV0Lj9/PxJHamaj0U+BFJ/B0LJX5iLvVcfxumAZ/XoYo20t25m1LBQOgLOrJm22/TZQ0ZW/3BJ+vr5Ya+ZDue6j7B5JFvW6SIMiXlS3lPMgYKjv6uFA1YMeO74sZj2UIjgzJxOImyOydE1XO90CQuiA6XKR8zRHR44iLfhJdmmw2vL6aX4nA482Ij/i+RXtTQqY92rrHeyoAJiv+UI+7OxZ/8SIT4iwHVGKA98QhxrIne3p4TwwyLPuyp4/3ZIDnVPZMCR6/n811oLn+p9JPjBeLVvDXhajMJ+5X874/nDlRIA6mKD8G7Mw/iAomQEXUmyGlw42SpsLul8AdjVyiBNtBTaLLj1D3D6Saet2kgv1cUbZU9r6+Fw2koUEawXvxHzpC3Z34XwtFAAAAAElFTkSuQmCC) 0 0 no-repeat;
-    }
-    .sh-brand-wrap-630128 .sh-brand .follow-me:hover {
-    background-position: 0 -33px;
-    }
-    .sh-brand-wrap-630128 .sh-brand .for-light-bg {
-    color: #fff;
-    background-position: 0 -66px;
-    }
-    .sh-brand-wrap-630128 .sh-brand .m-search {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -32px;
-    height: 64px;
-    }
-    .sh-brand-wrap-630128 .sh-brand .m-search .m-kw {
-    margin-right: -6px;
-    padding-left: 5px;
-    width: 164px;
-    height: 32px;
-    vertical-align: top;
-    border: 2px solid #000;
-    }
-    .sh-brand-wrap-630128 .sh-brand .m-search .m-submit {
-    padding: 0 15px;
-    border: 0;
-    height: 38px;
-    vertical-align: top;
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
-    }
-    .sh-brand-wrap-630128 .sh-brand .m-search .m-hw {
-    padding-top: 5px;
-    font-size: 12px;
-    }
-    .sh-brand-wrap-630128 .sh-brand .m-search .m-hw .hw-link {
-    margin-right: 10px;
-    color: #666;
-    }
-    .sh-brand-wrap-630128 .sh-brand .for-black-bg .m-kw {
-    border-color: #b1191a;
-    }
-    .sh-brand-wrap-630128 .sh-brand .for-black-bg .m-submit {
-    background-color: #b1191a;
-    }
-    .sh-brand-wrap-630128 .sh-brand .for-black-bg .m-hw .hw-link {
-    color: #fff;
-    }
-    .sh-brand-wrap-630128 .userDefinedArea {
-     margin: 0 auto;
-    }
-    
-                </style>
-                <div onclick="log('shop_03','mall_03','1000002499','19268','630128')" class="fn-clear  sh-brand-wrap-630128" modeid="19268" instanceid="114028319" module-name="new_shop_signs" style="margin-bottom:0px;;margin-bottom: 0px" origin="0" data-has-point="true">
-                  <div class="mc" style=";">
-                    <div class="j-module sh-brand-wrap" module-function="autoCenter" module-param="{}">
-                      <div class="userDefinedArea" style="width: 1920px; margin-left: -168.5px;" data-title="">
+  <div class="layout-container">
+    <div class="layout-main" isfixed="0" style="background:#FFFFFF">
+      <div>
+        <div class="J_LayoutWrap d-layout-wrap layout-auto  d-enable " name="新布局_通栏布局（100%）" id="114028318" prototypeid="42"
+          area="" layout_name="insertLayout">
+          <div class="d-layout-row d-clearfix">
+            <div class="J_LayoutArea d-layout" data-region="main">
+              <style type="text/css">
+                [style*="2147483647"] div[hui-mod] {
+                  display: none !important;
+                }
+
+                .j-attent-dialog-wrap {
+                  display: none;
+                }
+
+                .sh-brand-wrap-630128 {
+                  font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+                  height: 110px;
+                  overflow: hidden;
+                  position: relative;
+                }
+
+                .sh-brand-wrap-630128 img {
+                  vertical-align: middle;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand {
+                  position: relative;
+                  margin: 0 auto;
+                  width: 990px;
+                  overflow: hidden;
+                }
+
+                .sh-brand-wrap-630128 .sh-hot-container {
+                  position: absolute;
+                  width: 1920px;
+                  text-align: center;
+                  left: 50%;
+                  margin-left: -960px;
+                  height: 110px;
+                  overflow: hidden;
+                }
+
+                .sh-brand-wrap-630128 .sh-hot-container .sh-hot-content {
+                  display: inline-block;
+                  width: fit-content;
+                  position: relative;
+                }
+
+                .sh-brand-wrap-630128 .sh-hot-container .hot-link {
+                  display: 'inline-block';
+                  position: absolute;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .shop-name-box {
+                  position: absolute;
+                  top: 50%;
+                  margin-top: -30px;
+                  height: 60px;
+                  left: 190px;
+                  vertical-align: top;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .shop-name-box .shop-name {
+                  font-size: 18px;
+                  color: #333;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .shop-logo-box {
+                  position: absolute;
+                  top: 50%;
+                  margin-top: -40px;
+                }
+
+                .sh-brand-wrap-630128 .sh-hot-wrap img {
+                  width: 180px;
+                  height: 60px;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .hot-link {
+                  display: 'inline-block';
+                  position: absolute;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .coupons {
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  margin-top: -28px;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .coupons .coupon {
+                  float: left;
+                  margin-left: 10px;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .follow-me {
+                  display: inline-block;
+                  *display: inline;
+                  *zoom: 1;
+                  padding-left: 24px;
+                  width: 47px;
+                  height: 23px;
+                  line-height: 23px;
+                  color: #000;
+                  font-size: 12px;
+                  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABZCAMAAABbssnGAAAA/1BMVEUAAAD///////+xGRqxGRqxGRr////uub2xGRr////uub2xGRr///+xGRr////////uub3uub3uub3////uub2xGRruub3uub3////uub2xGRr////uub2xGRruub3////uub2xGRqxGRqxGRqxGRqxGRr////uub2xGRr////uub3kOTzlQEOzHx/++/vsoqbsmJzoaWz9+Pj78vL03t7y2Njv0dHtyMjqwcHtq6/jrKzNbG3GV1jEUFHmTE+/QEG8Oju1Jie6MjP57+/25ub25eXou7zgpKTblJTpfYHRdHXnX2LIXV3mWFvmU1bBSEnBR0i3KSrWhofVg4O6NDWxIW+2AAAAKHRSTlMAl9DQlkxEREQGBgbw8JtMTNCb1tbWmJa3t7fx8fHv1dXVm5yZmktLhfBmHAAAAn5JREFUWMPtmMdy2zAQhlfFIq3eZVuWi+IkAIu61SVLcu92kvd/logAMcT4tgBPHn2Xf3n5ZmcxWMwQfBKRaJriSNN0NJIAmdwpVeU0B4L9CNUhu+9rDqgeB1yUpbpkPc0vXl+OL0Xg8WbER/zkEndG6WwbT3hPCSDBigfi8fLC4gEvSgA/qxWRWOE9EYiydGWPi/dEIc1yLXvWeE8aeM5kz4zi8fu5/Qw0n7cq/UR5MQo8I6oyH3G3xmt/OGOqQAQSohyu2JkPqQoJgJKob94Jeb9R0pS83UMFrcWiRZXIhXTfQ9s/XJTV3YeCXEnZUuL7WXov6khDnda992LHju+LUbPwnBRqBsjkzyxVzvIgSFYtHapJX3No6XHIRUVLl6Kn+c3rdqctAo83Iz7irm073W04tr0NLGUAgxWPtsfzM4tHvMiAGsulLbHEe2pQYOnIHgfvKcBJKJ5j4NmVPV0Lj9/PxJHamaj0U+BFJ/B0LJX5iLvVcfxumAZ/XoYo20t25m1LBQOgLOrJm22/TZQ0ZW/3BJ+vr5Ya+ZDue6j7B5JFvW6SIMiXlS3lPMgYKjv6uFA1YMeO74sZj2UIjgzJxOImyOydE1XO90CQuiA6XKR8zRHR44iLfhJdmmw2vL6aX4nA482Ij/i+RXtTQqY92rrHeyoAJiv+UI+7OxZ/8SIT4iwHVGKA98QhxrIne3p4TwwyLPuyp4/3ZIDnVPZMCR6/n811oLn+p9JPjBeLVvDXhajMJ+5X874/nDlRIA6mKD8G7Mw/iAomQEXUmyGlw42SpsLul8AdjVyiBNtBTaLLj1D3D6Saet2kgv1cUbZU9r6+Fw2koUEawXvxHzpC3Z34XwtFAAAAAElFTkSuQmCC) 0 0 no-repeat;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .follow-me:hover {
+                  background-position: 0 -33px;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .for-light-bg {
+                  color: #fff;
+                  background-position: 0 -66px;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .m-search {
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  margin-top: -32px;
+                  height: 64px;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .m-search .m-kw {
+                  margin-right: -6px;
+                  padding-left: 5px;
+                  width: 164px;
+                  height: 32px;
+                  vertical-align: top;
+                  border: 2px solid #000;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .m-search .m-submit {
+                  padding: 0 15px;
+                  border: 0;
+                  height: 38px;
+                  vertical-align: top;
+                  background-color: #000;
+                  color: #fff;
+                  cursor: pointer;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .m-search .m-hw {
+                  padding-top: 5px;
+                  font-size: 12px;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .m-search .m-hw .hw-link {
+                  margin-right: 10px;
+                  color: #666;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .for-black-bg .m-kw {
+                  border-color: #b1191a;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .for-black-bg .m-submit {
+                  background-color: #b1191a;
+                }
+
+                .sh-brand-wrap-630128 .sh-brand .for-black-bg .m-hw .hw-link {
+                  color: #fff;
+                }
+
+                .sh-brand-wrap-630128 .userDefinedArea {
+                  margin: 0 auto;
+                }
+              </style>
+              <div onclick="log('shop_03','mall_03','1000002499','19268','630128')" class="fn-clear  sh-brand-wrap-630128"
+                modeid="19268" instanceid="114028319" module-name="new_shop_signs" style="margin-bottom:0px;;margin-bottom: 0px"
+                origin="0" data-has-point="true">
+                <div class="mc">
+                  <div class="j-module sh-brand-wrap" module-function="autoCenter" module-param="{}">
+                    <div class="userDefinedArea" style="width: 1920px; margin-left: -168.5px;" data-title="">
                       <style>
-    .user_olaydz01 { width: 1920px; margin: 0 auto; position: relative; overflow: hidden; font-size: 20px; color: #c5010d; font-family: 宋体; font-weight: normal; text-align: center }
+                        .user_olaydz01 { width: 1920px; margin: 0 auto; position: relative; overflow: hidden; font-size: 20px; color: #c5010d; font-family: 宋体; font-weight: normal; text-align: center }
     .user_olaydz01 .ks-1 { display: block; position: absolute; top: 186px; left: 1095px; }
                       </style>
-                        <div class="user_olaydz01">
-                          <img src="http://img10.360buyimg.com/imgzone/jfs/t18667/191/2571825659/45405/60d3e3f7/5afc1e30Ne772b68a.gif" alt="" usemap="#user_olaydz" style="display:block;border:none;" width="1920" height="110" border="0"> 
-                          <map name="user_olaydz">
-                            <area shape="rect" coords="754,19,994,94" href="//mall.yhd.com/index-1000002499.html" target="_blank" clstag="pageclick|keycount|new_shop_signs_114028319_1|1000002499">
-                            <area shape="rect" coords="1041,9,1436,105" href="//item.yhd.com/4983468.html" target="_blank" clstag="pageclick|keycount|new_shop_signs_114028319_2|1000002499">
-                          </map>
-                          <span class="ks-1" jdprice="4477601">569.00</span> 
-                        </div>
+                      <div class="user_olaydz01">
+                        <img src="http://img10.360buyimg.com/imgzone/jfs/t18667/191/2571825659/45405/60d3e3f7/5afc1e30Ne772b68a.gif"
+                          alt="" usemap="#user_olaydz" style="display:block;border:none;" width="1920" height="110"
+                          border="0">
+                        <map name="user_olaydz">
+                          <area shape="rect" coords="754,19,994,94" href="//mall.yhd.com/index-1000002499.html" target="_blank"
+                            clstag="pageclick|keycount|new_shop_signs_114028319_1|1000002499">
+                          <area shape="rect" coords="1041,9,1436,105" href="//item.yhd.com/4983468.html" target="_blank"
+                            clstag="pageclick|keycount|new_shop_signs_114028319_2|1000002499">
+                        </map>
+                        <span class="ks-1" jdprice="4477601">569.00</span>
                       </div>
                     </div>
-    
-                    <script type="text/javascript">
-                        function importHotZoneData() {
-                            $.each($('.hot-link'), function(index, item) {
-                                var pxArray = $(item).attr('px').split(',');
-                                $(item).css({
-                                    left: pxArray[0] + 'px',
-                                    top: pxArray[1]+ 'px',
-                                    width: pxArray[2] - 2+ 'px',
-                                    height: pxArray[3] - 2+ 'px'
-                                });
-                            });
-                        }
-                        importHotZoneData();
-                        function addAttentHtml(){
-                            var attentHtml = '<div class="j-attent-dialog-wrap">'
-                                    +'<div class="attent-dialog-mask"></div>'
-                                    +'<div class="attent-dialog">'
-                                    +   '<div class="attent-mt">'
-                                    +       '<span class="attent-close"  title="关闭">关闭</span>'
-                                    +       '<span class="attent-title">提示</span>'
-                                    +   '</div>'
-                                    +   '<div class="attent-mc">'
-                                    +       '<div class="attent-con">'
-                                    +           '<span class="attent-msg"></span>'
-                                    +           '<span class="attent-other"></span>'
-                                    +       '</div>'
-                                    +   '</div>'
-                                    +'</div>'
-                                    +'</div><div class="j-attent-tip-wrap attent-tip-wrap"><i></i></div>';
-                    
-                            var jAttWrap = $(".j-attent-dialog-wrap");
-                    
-                            if(jAttWrap.length === 0){
-                                jAttWrap = $(attentHtml).appendTo("body");
-                            }
-                        }
-                        addAttentHtml();
-                        function _seacrh_hot_keyword(obj){
-                            var base_url = "//mall.jd.com/view_search" +  "-737561" + "-1000002499" + "-1000002499"   + "-0-1-0-0-1-1-24.html";
-                            var keyword = $(obj).html();
-                            if(keyword){
-                                keyword = encodeURIComponent(keyword);
-                                keyword = encodeURIComponent(keyword);
-                            }else{
-                                keyword="";
-                            }
-                            var url = base_url + "?keyword="+keyword+"&isGlobalSearch=1";
-                            window.open(url);
-                        }
-                    
-                        function shop_signs_search(obj){
-                            var base_url = "//mall.jd.com/view_search" +  "-737561" + "-1000002499" + "-1000002499"   + "-0-1-0-0-1-1-24.html";
-                            var keyword = $(obj).prev().val();
-                            if(keyword){
-                                keyword = encodeURIComponent(keyword);
-                                keyword = encodeURIComponent(keyword);
-                            }else{
-                                keyword="";
-                            }
-                            var url = base_url + "?keyword="+keyword+"&isGlobalSearch=1";
-                            window.open(url);
-                        }
-                    
-                        $('.m-kw').keydown(function(e){
-                            if(e.keyCode==13){
-                                var base_url = "//mall.jd.com/view_search" +  "-737561" + "-1000002499" + "-1000002499"   + "-0-1-0-0-1-1-24.html";
-                                var keyword = $(this).val();
-                                if(keyword){
-                                    keyword = encodeURIComponent(keyword);
-                                    keyword = encodeURIComponent(keyword);
-                                }else{
-                                    keyword="";
-                                }
-                                var url = base_url + "?keyword="+keyword+"&isGlobalSearch=1";
-                                window.open(url);
-                                return false;
-                            }
-                        });
-                    
-                        function _shop_attention(){
-                            jQuery('#shop-signs-attention').unbind('click');
-                            jQuery('#shop-signs-attention').click(function() {
-                                S_ifollow.follow(this);
-                                var url = "//follow-soa.jd.com/rpc/vender/follow";
-                                url+="?sysName=mall.jd.com&venderId=" +"1000002499";
-                                jQuery.ajax({
-                                    url:url,
-                                    type : 'GET',
-                                    dataType : 'jsonp',
-                                    //jsonp: 'jsonpCallback',
-                                    success:function (data){
-                                        S_ifollow.requestSuccess(data);
-                                    },
-                                    error:function(){
-                    
-                                    }
-                                });
-                            });
-                        }
-                        _shop_attention();
-                    </script>
                   </div>
+
+                  <script type="text/javascript">
+                    function importHotZoneData() {
+                      $.each($('.hot-link'), function (index, item) {
+                        var pxArray = $(item).attr('px').split(',');
+                        $(item).css({
+                          left: pxArray[0] + 'px',
+                          top: pxArray[1] + 'px',
+                          width: pxArray[2] - 2 + 'px',
+                          height: pxArray[3] - 2 + 'px'
+                        });
+                      });
+                    }
+                    importHotZoneData();
+                    function addAttentHtml() {
+                      var attentHtml = '<div class="j-attent-dialog-wrap">'
+                        + '<div class="attent-dialog-mask"></div>'
+                        + '<div class="attent-dialog">'
+                        + '<div class="attent-mt">'
+                        + '<span class="attent-close"  title="关闭">关闭</span>'
+                        + '<span class="attent-title">提示</span>'
+                        + '</div>'
+                        + '<div class="attent-mc">'
+                        + '<div class="attent-con">'
+                        + '<span class="attent-msg"></span>'
+                        + '<span class="attent-other"></span>'
+                        + '</div>'
+                        + '</div>'
+                        + '</div>'
+                        + '</div><div class="j-attent-tip-wrap attent-tip-wrap"><i></i></div>';
+
+                      var jAttWrap = $(".j-attent-dialog-wrap");
+
+                      if (jAttWrap.length === 0) {
+                        jAttWrap = $(attentHtml).appendTo("body");
+                      }
+                    }
+                    addAttentHtml();
+                    function _seacrh_hot_keyword(obj) {
+                      var base_url = "//mall.jd.com/view_search" + "-737561" + "-1000002499" + "-1000002499" + "-0-1-0-0-1-1-24.html";
+                      var keyword = $(obj).html();
+                      if (keyword) {
+                        keyword = encodeURIComponent(keyword);
+                        keyword = encodeURIComponent(keyword);
+                      } else {
+                        keyword = "";
+                      }
+                      var url = base_url + "?keyword=" + keyword + "&isGlobalSearch=1";
+                      window.open(url);
+                    }
+
+                    function shop_signs_search(obj) {
+                      var base_url = "//mall.jd.com/view_search" + "-737561" + "-1000002499" + "-1000002499" + "-0-1-0-0-1-1-24.html";
+                      var keyword = $(obj).prev().val();
+                      if (keyword) {
+                        keyword = encodeURIComponent(keyword);
+                        keyword = encodeURIComponent(keyword);
+                      } else {
+                        keyword = "";
+                      }
+                      var url = base_url + "?keyword=" + keyword + "&isGlobalSearch=1";
+                      window.open(url);
+                    }
+
+                    $('.m-kw').keydown(function (e) {
+                      if (e.keyCode == 13) {
+                        var base_url = "//mall.jd.com/view_search" + "-737561" + "-1000002499" + "-1000002499" + "-0-1-0-0-1-1-24.html";
+                        var keyword = $(this).val();
+                        if (keyword) {
+                          keyword = encodeURIComponent(keyword);
+                          keyword = encodeURIComponent(keyword);
+                        } else {
+                          keyword = "";
+                        }
+                        var url = base_url + "?keyword=" + keyword + "&isGlobalSearch=1";
+                        window.open(url);
+                        return false;
+                      }
+                    });
+
+                    function _shop_attention() {
+                      jQuery('#shop-signs-attention').unbind('click');
+                      jQuery('#shop-signs-attention').click(function () {
+                        S_ifollow.follow(this);
+                        var url = "//follow-soa.jd.com/rpc/vender/follow";
+                        url += "?sysName=mall.jd.com&venderId=" + "1000002499";
+                        jQuery.ajax({
+                          url: url,
+                          type: 'GET',
+                          dataType: 'jsonp',
+                          //jsonp: 'jsonpCallback',
+                          success: function (data) {
+                            S_ifollow.requestSuccess(data);
+                          },
+                          error: function () {
+
+                          }
+                        });
+                      });
+                    }
+                    _shop_attention();
+                  </script>
                 </div>
-                <style type="text/css">
+              </div>
+              <style type="text/css">
                 .sh-head-menu-922476 ul,
                 .sh-head-menu-922476 ol,
                 .sh-head-menu-922476 dl,
                 .sh-head-menu-922476 li,
                 .sh-head-menu-922476 dt,
                 .sh-head-menu-922476 dd {
-                margin: 0;
-                padding: 0;
-                list-style: none;
+                  margin: 0;
+                  padding: 0;
+                  list-style: none;
                 }
+
                 .sh-head-menu-922476 .sh-hd-container {
-                background-color: #fff;
+                  background-color: #fff;
                 }
+
                 .sh-head-menu-922476 a {
-                text-decoration: none;
-                color: #666666;
+                  text-decoration: none;
+                  color: #666666;
                 }
+
                 .sh-head-menu-922476 {
-                width: 100%;
+                  width: 100%;
                 }
+
                 .sh-head-menu-922476 .sh-hd-wrap {
-                font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
-                position: relative;
-                margin: 0 auto;
-                height: 40px;
-                font-size: 14px;
-                color: #333;
-                width: 990px;
+                  font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+                  position: relative;
+                  margin: 0 auto;
+                  height: 40px;
+                  font-size: 14px;
+                  color: #333;
+                  width: 990px;
                 }
+
                 .sh-head-menu-922476 .menu-list {
-                width: 100%;
-                height: 40px;
-                list-style: none;
+                  width: 100%;
+                  height: 40px;
+                  list-style: none;
                 }
+
                 .sh-head-menu-922476 .mc {
-                overflow: visible;
+                  overflow: visible;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu {
-                float: left;
-                line-height: 24px;
-                height: 24px;
-                padding: 8px 0;
-                border-radius: 12px;
+                  float: left;
+                  line-height: 24px;
+                  height: 24px;
+                  padding: 8px 0;
+                  border-radius: 12px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu:hover .arrow,
                 .sh-head-menu-922476 .menu-list .menu .hover .arrow {
-                font-size: 0;
-                line-height: 0;
-                height: 0;
-                width: 0;
-                border-top: 0;
-                border-left: 5px dashed transparent;
-                border-right: 5px dashed transparent;
-                border-bottom: 5px solid #fff;
+                  font-size: 0;
+                  line-height: 0;
+                  height: 0;
+                  width: 0;
+                  border-top: 0;
+                  border-left: 5px dashed transparent;
+                  border-right: 5px dashed transparent;
+                  border-bottom: 5px solid #fff;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu:hover .main-link,
                 .sh-head-menu-922476 .menu-list .menu .hover .main-link {
-                color: #fff !important;
-                background-color: #333;
+                  color: #fff !important;
+                  background-color: #333;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .main-link {
-                position: relative;
-                z-index: 4;
-                display: block;
-                padding: 0 15px;
-                color: #333;
-                border-radius: 12px;
+                  position: relative;
+                  z-index: 4;
+                  display: block;
+                  padding: 0 15px;
+                  color: #333;
+                  border-radius: 12px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .home-link {
-                font-weight:bold;
+                  font-weight: bold;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .arrow {
-                display: inline-block;
-                *display: inline;
-                *zoom: 1;
-                vertical-align: middle;
-                margin-left: 10px;
-                font-size: 0;
-                line-height: 0;
-                height: 0;
-                width: 0;
-                border-bottom: 0;
-                border-left: 5px dashed transparent;
-                border-right: 5px dashed transparent;
-                border-top: 5px solid #666;
+                  display: inline-block;
+                  *display: inline;
+                  *zoom: 1;
+                  vertical-align: middle;
+                  margin-left: 10px;
+                  font-size: 0;
+                  line-height: 0;
+                  height: 0;
+                  width: 0;
+                  border-bottom: 0;
+                  border-left: 5px dashed transparent;
+                  border-right: 5px dashed transparent;
+                  border-top: 5px solid #666;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap {
-                display: none;
-                position: absolute;
-                left: 0;
-                top: 39px;
-                right: 0;
-                z-index: 99;
-                padding: 20px 40px;
-                border: 1px solid #bebab0;
-                background-color: rgba(247, 242, 234, 0.9);
+                  display: none;
+                  position: absolute;
+                  left: 0;
+                  top: 39px;
+                  right: 0;
+                  z-index: 99;
+                  padding: 20px 40px;
+                  border: 1px solid #bebab0;
+                  background-color: rgba(247, 242, 234, 0.9);
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .sub-pannel {
-                float: left;
-                padding: 0;
-                _display: inline;
+                  float: left;
+                  padding: 0;
+                  _display: inline;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .sub-title {
-                margin-bottom: 13px;
-                height: 54px;
-                line-height: 54px;
-                border-bottom: dashed 1px #c9c9c9;
-                padding: 0 20px;
+                  margin-bottom: 13px;
+                  height: 54px;
+                  line-height: 54px;
+                  border-bottom: dashed 1px #c9c9c9;
+                  padding: 0 20px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .sub-list {
-                padding: 0 20px;
+                  padding: 0 20px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .sub-title .sub-tit-link {
-                font-size: 14px;
-                font-weight: bold;
-                color: #333;
-                line-height: 24px;
-                display: inline-block;
-                height: 24px;
-                padding: 0 10px;
-                margin-left: -10px;
-                border-radius: 12px;
-                min-width: 74px;
+                  font-size: 14px;
+                  font-weight: bold;
+                  color: #333;
+                  line-height: 24px;
+                  display: inline-block;
+                  height: 24px;
+                  padding: 0 10px;
+                  margin-left: -10px;
+                  border-radius: 12px;
+                  min-width: 74px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .sub-title .sub-tit-link:hover {
-                border: solid 1px #e4393c;
-                color: #e4393c;
+                  border: solid 1px #e4393c;
+                  color: #e4393c;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .leaf {
-                font-size: 12px;
-                height: 26px;
-                line-height: 26px;
+                  font-size: 12px;
+                  height: 26px;
+                  line-height: 26px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .leaf .leaf-link:hover {
-                color: #c81623;
+                  color: #c81623;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .all-goods-wrap {
-                clear: both;
-                padding-left: 20px;
+                  clear: both;
+                  padding-left: 20px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .sub-menu-wrap .all-goods-wrap .all-goods-link {
-                font-weight: bold;
-                padding-left: 20px;
-                border: solid 1px #666;
-                border-radius: 12px;
-                height: 24px;
-                line-height: 24px;
-                padding: 0 10px;
+                  font-weight: bold;
+                  padding-left: 20px;
+                  border: solid 1px #666;
+                  border-radius: 12px;
+                  height: 24px;
+                  line-height: 24px;
+                  padding: 0 10px;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu:hover .sub-menu-wrap {
-                display: block;
+                  display: block;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .all-goods-link-wrap {
-                clear: both;
-                padding: 23px 20px 0;
+                  clear: both;
+                  padding: 23px 20px 0;
                 }
+
                 .sh-head-menu-922476 .menu-list .menu .all-goods-link {
-                display: inline-block;
-                border: solid 1px #666;
-                height: 24px;
-                line-height: 24px;
-                border-radius: 12px;
-                padding: 0 10px;
-                margin-left: -10px;
-                font-weight:bold;
-                color: #000;
+                  display: inline-block;
+                  border: solid 1px #666;
+                  height: 24px;
+                  line-height: 24px;
+                  border-radius: 12px;
+                  padding: 0 10px;
+                  margin-left: -10px;
+                  font-weight: bold;
+                  color: #000;
                 }
+
                 .sh-head-menu-922476 .s-form {
-                position: absolute;
-                top: 8px;
-                right: 0;
+                  position: absolute;
+                  top: 8px;
+                  right: 0;
                 }
+
                 .sh-head-menu-922476 .s-form .s-inp {
-                padding: 0 0 0 10px;
-                width: 130px;
-                line-height: 22px;
-                height: 22px;
-                background-color: #ffffff;
-                color: #c9c9c9;
-                vertical-align: top;
-                outline: none;
-                border: solid 1px #e1e1e1;
-                border-top-left-radius: 11px;
-                border-bottom-left-radius: 11px;
+                  padding: 0 0 0 10px;
+                  width: 130px;
+                  line-height: 22px;
+                  height: 22px;
+                  background-color: #ffffff;
+                  color: #c9c9c9;
+                  vertical-align: top;
+                  outline: none;
+                  border: solid 1px #e1e1e1;
+                  border-top-left-radius: 11px;
+                  border-bottom-left-radius: 11px;
                 }
+
                 .sh-head-menu-922476 .s-form .s-submit {
-                margin-left: -5px;
-                padding: 0 10px;
-                border: 0;
-                height: 24px;
-                width: 46px;
-                cursor: pointer;
-                border-top-right-radius: 11px;
-                border-bottom-right-radius: 11px;
-                background:#333 url("//img13.360buyimg.com/cms/jfs/t3121/284/4170076300/1201/43e1ad98/583543d4Nc7e0c1a4.png") no-repeat center;
+                  margin-left: -5px;
+                  padding: 0 10px;
+                  border: 0;
+                  height: 24px;
+                  width: 46px;
+                  cursor: pointer;
+                  border-top-right-radius: 11px;
+                  border-bottom-right-radius: 11px;
+                  background: #333 url("//img13.360buyimg.com/cms/jfs/t3121/284/4170076300/1201/43e1ad98/583543d4Nc7e0c1a4.png") no-repeat center;
                 }
-                
-                </style>
-                <div onclick="log('shop_03','mall_03','1000002499','18169','922476')" class="fn-clear  sh-head-menu-922476" modeid="18169" instanceid="114028320" module-name="shop_link" style="margin-bottom:0px;;margin-bottom: 0px" origin="0" data-has-point="true">
-                  <div class="mc" style="overflow: visible;">
-                    <div class="J_ShopHeaderLinkWithDropdown sh-hd-container" style="background-color: #0f0f0f">
-                      <div class="sh-hd-wrap">
-                        <ul class="menu-list">
-                          <li class="menu" clstag="pageclick|keycount|shop_link_114028320_1|1000002499">
-                            <a class="main-link" style="font-weight: bold;color: #ffffff" href="//mall.yhd.com/index-1000002499.html" target="_self">首页</a>
-                          </li>
-                          <li class="menu" clstag="pageclick|keycount|shop_link_114028320_2|1000002499">
-                            <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768666-99-1-20-1.html">所有宝贝</a>
-                          </li>
-                          <li class="menu" clstag="pageclick|keycount|shop_link_114028320_3|1000002499">
-                            <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768666-99-1-20-1.html">本周特惠活动</a>
-                          </li>
-                          <li class="menu" clstag="pageclick|keycount|shop_link_114028320_4|1000002499">
-                            <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768606-99-1-20-1.html">新生塑颜系列</a>
-                          </li>
-                          <li class="menu" clstag="pageclick|keycount|shop_link_114028320_5|1000002499">
-                            <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768464-99-1-20-1.html">多效修护系列</a>
-                          </li>
-                          <li class="menu" clstag="pageclick|keycount|shop_link_114028320_6|1000002499">
-                            <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768465-99-1-20-1.html">水感透白系列</a>
-                          </li>
-                        </ul>
-                        <div class="s-form">
-                          <div class="form-body">
-                            <input type="text" class="J_shopLinkSearchInput s-inp" value="护肤套装" onkeydown="javascript:if(event.keyCode==13) shop_link_search();" maxlength="60" size="60">
-                            <input type="button" onclick="shop_link_search();" class="s-submit">
-                          </div>
+              </style>
+              <div onclick="log('shop_03','mall_03','1000002499','18169','922476')" class="fn-clear  sh-head-menu-922476"
+                modeid="18169" instanceid="114028320" module-name="shop_link" style="margin-bottom:0px;;margin-bottom: 0px"
+                origin="0" data-has-point="true">
+                <div class="mc" style="overflow: visible;">
+                  <div class="J_ShopHeaderLinkWithDropdown sh-hd-container" style="background-color: #0f0f0f">
+                    <div class="sh-hd-wrap">
+                      <ul class="menu-list">
+                        <li class="menu" clstag="pageclick|keycount|shop_link_114028320_1|1000002499">
+                          <a class="main-link" style="font-weight: bold;color: #ffffff" href="//mall.yhd.com/index-1000002499.html"
+                            target="_self">首页</a>
+                        </li>
+                        <li class="menu" clstag="pageclick|keycount|shop_link_114028320_2|1000002499">
+                          <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768666-99-1-20-1.html">所有宝贝</a>
+                        </li>
+                        <li class="menu" clstag="pageclick|keycount|shop_link_114028320_3|1000002499">
+                          <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768666-99-1-20-1.html">本周特惠活动</a>
+                        </li>
+                        <li class="menu" clstag="pageclick|keycount|shop_link_114028320_4|1000002499">
+                          <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768606-99-1-20-1.html">新生塑颜系列</a>
+                        </li>
+                        <li class="menu" clstag="pageclick|keycount|shop_link_114028320_5|1000002499">
+                          <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768464-99-1-20-1.html">多效修护系列</a>
+                        </li>
+                        <li class="menu" clstag="pageclick|keycount|shop_link_114028320_6|1000002499">
+                          <a style="color: #ffffff" class="main-link" target="_blank" href="//mall.yhd.com/view_search-737561-6768465-99-1-20-1.html">水感透白系列</a>
+                        </li>
+                      </ul>
+                      <div class="s-form">
+                        <div class="form-body">
+                          <input type="text" class="J_shopLinkSearchInput s-inp" value="护肤套装" onkeydown="javascript:if(event.keyCode==13) shop_link_search();"
+                            maxlength="60" size="60">
+                          <input type="button" onclick="shop_link_search();" class="s-submit">
                         </div>
                       </div>
                     </div>
-                    <script type="text/javascript">
-                        function shop_link_search(){
-                        var prefix = "//mall.jd.com";
-                        if (window.location.host.indexOf("yhd.com") != -1) {
-                          prefix = "//mall.yhd.com";
-                        }
-                            var base_url = prefix + "/view_search" +  "-737561" + "-1000002499" + "-1000002499"   + "-0-1-0-0-1-1-24.html";
-                            var keyword = $('.J_shopLinkSearchInput').val();
-                            if(keyword){
-                                keyword = encodeURIComponent(keyword);
-                                keyword = encodeURIComponent(keyword);
-                            }else{
-                                keyword="";
-                            }
-                            var url = base_url + "?keyword="+keyword+"&isGlobalSearch=1";
-                            window.location.href = url;
-                        }
-                        function autoHeight(){
-                            var subNode = $(this).find('.sub-pannel'),
-                                row = subNode.length%7 === 0?(subNode.length/7):(subNode.length/7 + 1);
-                            var autoRowHeight = function(row) {
-                                var maxHeight = 0;
-                                for (var i = 0; i < 7; i++) {
-                                    if ($(subNode[row*7 + i]).height() > maxHeight) {
-                                        maxHeight = $(subNode[row*7 + i]).height();
-                                    }
-                                }
-                                for (var i = 0; i < 7; i++) {
-                                    $(subNode[row*7 + i]).height(maxHeight);
-                                }
-                            };
-                    
-                            for (var i = 0; i < row; i++) {
-                                autoRowHeight(i);
-                            }
-                        }
-                        $(function(){
-                            $('.J_ShopHeaderLinkWithDropdown').each(function(idx, dp){
-                                var _this = $(dp);
-                                _this.parents('.mc,.layout-one,.J-layout').css('overflow', 'visible');
-                                _this.parents('.J-layout-area').css('position', 'relative').css('zIndex', 4);
-                            });
-                            $('.all-cate').hover(function(){
-                                autoHeight.call(this);
-                            });
-                        });
-                    </script>
                   </div>
+                  <script type="text/javascript">
+                    function shop_link_search() {
+                      var prefix = "//mall.jd.com";
+                      if (window.location.host.indexOf("yhd.com") != -1) {
+                        prefix = "//mall.yhd.com";
+                      }
+                      var base_url = prefix + "/view_search" + "-737561" + "-1000002499" + "-1000002499" + "-0-1-0-0-1-1-24.html";
+                      var keyword = $('.J_shopLinkSearchInput').val();
+                      if (keyword) {
+                        keyword = encodeURIComponent(keyword);
+                        keyword = encodeURIComponent(keyword);
+                      } else {
+                        keyword = "";
+                      }
+                      var url = base_url + "?keyword=" + keyword + "&isGlobalSearch=1";
+                      window.location.href = url;
+                    }
+                    function autoHeight() {
+                      var subNode = $(this).find('.sub-pannel'),
+                        row = subNode.length % 7 === 0 ? (subNode.length / 7) : (subNode.length / 7 + 1);
+                      var autoRowHeight = function (row) {
+                        var maxHeight = 0;
+                        for (var i = 0; i < 7; i++) {
+                          if ($(subNode[row * 7 + i]).height() > maxHeight) {
+                            maxHeight = $(subNode[row * 7 + i]).height();
+                          }
+                        }
+                        for (var i = 0; i < 7; i++) {
+                          $(subNode[row * 7 + i]).height(maxHeight);
+                        }
+                      };
+
+                      for (var i = 0; i < row; i++) {
+                        autoRowHeight(i);
+                      }
+                    }
+                    $(function () {
+                      $('.J_ShopHeaderLinkWithDropdown').each(function (idx, dp) {
+                        var _this = $(dp);
+                        _this.parents('.mc,.layout-one,.J-layout').css('overflow', 'visible');
+                        _this.parents('.J-layout-area').css('position', 'relative').css('zIndex', 4);
+                      });
+                      $('.all-cate').hover(function () {
+                        autoHeight.call(this);
+                      });
+                    });
+                  </script>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <div class="J_LayoutWrap d-layout-wrap layout-auto  d-enable " name="新布局_通栏布局（100%）" id="116047522" prototypeid="42" area="" layout_name="insertLayout">
-            <div class="d-layout-row d-clearfix">
-              <div class="J_LayoutArea d-layout" data-region="main">
-                <style type="text/css"></style>
-                <div onclick="log('shop_03','mall_03','1000002499','9','21')" class="fn-clear  userdefined-21" modeid="9" instanceid="116047554" module-name="UserDefine" style="margin-bottom: 0px;" origin="0" data-has-point="true">
-                  <div class="mc" style=";">
-                    <div class="j-module" module-function="autoCenter,ridSort" module-param="{}">
-                      <div class="userDefinedArea" style="width: 1920px; margin-left: -168.5px;" data-title="">
-                        <div>
-                          <img class="" src="http://img12.360buyimg.com/cms/jfs/t1/3507/24/6241/140754/5ba229a2E5b2e6473/ed003e21dd821950.jpg!q90" alt="" border="0" style="display:block;border:none;"> 
-                        </div>
-                        <div>
-                          <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/4599/13/6704/110850/5ba36780E007fca55/1749b0f45e0ea364.jpg!q90" alt="" style="display:block;border:none;" border="0"> 
-                        </div>
-                        <div>
-                          <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/4766/33/6595/28878/5ba3677fEbaeae75e/c698856500434e57.jpg!q90" alt="" border="0" style="display:block;border:none;"> 
-                        </div>
-                        <div>
-                          <img class="J_imgLazyload" src="http://img11.360buyimg.com/cms/jfs/t1/2923/32/6737/238782/5ba36780Ecdb708cd/e9bc118311625bc3.jpg!q90" alt="" usemap="#olay_02" style="display:block;border:none;" border="0"> 
-                          <map name="olay_02">
-                            <area shape="rect" coords="480,4,798,477" href="//item.yhd.com/8875227.html" target="_blank" clstag="pageclick|keycount|UserDefine_116047554_1|1000002499">
-                            <area shape="rect" coords="812,6,1120,475" href="//item.yhd.com/8762779.html" target="_blank" clstag="pageclick|keycount|UserDefine_116047554_2|1000002499">
-                            <area shape="rect" coords="1132,8,1442,471" href="//item.yhd.com/8762801.html" target="_blank" clstag="pageclick|keycount|UserDefine_116047554_3|1000002499">
-                            <area shape="rect" coords="486,496,796,990" href="//item.yhd.com/8754642.html" target="_blank" clstag="pageclick|keycount|UserDefine_116047554_4|1000002499">
-                            <area shape="rect" coords="808,498,1116,986" href="//item.yhd.com/8762799.html" target="_blank" clstag="pageclick|keycount|UserDefine_116047554_5|1000002499">
-                            <area shape="rect" coords="1128,492,1436,978" href="//item.yhd.com/100000179999.html" target="_blank" clstag="pageclick|keycount|UserDefine_116047554_6|1000002499">
-                          </map>
-                        </div>
+      </div>
+      <div>
+        <div class="J_LayoutWrap d-layout-wrap layout-auto  d-enable " name="新布局_通栏布局（100%）" id="116047522" prototypeid="42"
+          area="" layout_name="insertLayout">
+          <div class="d-layout-row d-clearfix">
+            <div class="J_LayoutArea d-layout" data-region="main">
+              <style type="text/css"></style>
+              <div onclick="log('shop_03','mall_03','1000002499','9','21')" class="fn-clear  userdefined-21" modeid="9"
+                instanceid="116047554" module-name="UserDefine" style="margin-bottom: 0px;" origin="0" data-has-point="true">
+                <div class="mc">
+                  <div class="j-module" module-function="autoCenter,ridSort" module-param="{}">
+                    <div class="userDefinedArea" style="width: 1920px; margin-left: -168.5px;" data-title="">
+                      <div>
+                        <img class="" src="http://img12.360buyimg.com/cms/jfs/t1/3507/24/6241/140754/5ba229a2E5b2e6473/ed003e21dd821950.jpg!q90"
+                          alt="" border="0" style="display:block;border:none;">
+                      </div>
+                      <div>
+                        <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/4599/13/6704/110850/5ba36780E007fca55/1749b0f45e0ea364.jpg!q90"
+                          alt="" style="display:block;border:none;" border="0">
+                      </div>
+                      <div>
+                        <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/4766/33/6595/28878/5ba3677fEbaeae75e/c698856500434e57.jpg!q90"
+                          alt="" border="0" style="display:block;border:none;">
+                      </div>
+                      <div>
+                        <img class="J_imgLazyload" src="http://img11.360buyimg.com/cms/jfs/t1/2923/32/6737/238782/5ba36780Ecdb708cd/e9bc118311625bc3.jpg!q90"
+                          alt="" usemap="#olay_02" style="display:block;border:none;" border="0">
+                        <map name="olay_02">
+                          <area shape="rect" coords="480,4,798,477" href="//item.yhd.com/8875227.html" target="_blank"
+                            clstag="pageclick|keycount|UserDefine_116047554_1|1000002499">
+                          <area shape="rect" coords="812,6,1120,475" href="//item.yhd.com/8762779.html" target="_blank"
+                            clstag="pageclick|keycount|UserDefine_116047554_2|1000002499">
+                          <area shape="rect" coords="1132,8,1442,471" href="//item.yhd.com/8762801.html" target="_blank"
+                            clstag="pageclick|keycount|UserDefine_116047554_3|1000002499">
+                          <area shape="rect" coords="486,496,796,990" href="//item.yhd.com/8754642.html" target="_blank"
+                            clstag="pageclick|keycount|UserDefine_116047554_4|1000002499">
+                          <area shape="rect" coords="808,498,1116,986" href="//item.yhd.com/8762799.html" target="_blank"
+                            clstag="pageclick|keycount|UserDefine_116047554_5|1000002499">
+                          <area shape="rect" coords="1128,492,1436,978" href="//item.yhd.com/100000179999.html" target="_blank"
+                            clstag="pageclick|keycount|UserDefine_116047554_6|1000002499">
+                        </map>
                       </div>
                     </div>
-                    <script type="text/javascript">
-                      $('area,a').each(function(){
-                            var href = $(this).attr('href');
-                            if(href && href.match(/^\/\/coupon\.jd\.com/)){
-                                $(this).attr('href', href.replace(/to=[\s]*?\/+/ig,'to='));
-                            }
-                        });
-                    </script>
                   </div>
+                  <script type="text/javascript">
+                    $('area,a').each(function () {
+                      var href = $(this).attr('href');
+                      if (href && href.match(/^\/\/coupon\.jd\.com/)) {
+                        $(this).attr('href', href.replace(/to=[\s]*?\/+/ig, 'to='));
+                      }
+                    });
+                  </script>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <div class="J_LayoutWrap d-layout-wrap layout-auto  d-enable " name="新布局_通栏布局（100%）" id="116047523" prototypeid="42" area="" layout_name="insertLayout">
-            <div class="d-layout-row d-clearfix">
-              <div class="J_LayoutArea d-layout" data-region="main">
-                  <style type="text/css"></style>
-                  <div onclick="log('shop_03','mall_03','1000002499','9','21')" class="fn-clear  userdefined-21" modeid="9" instanceid="116047689" module-name="UserDefine" style="margin-bottom: 0px;" origin="0">
-                    <div class="mc" style=";">
-                      <div class="j-module" module-function="autoCenter,ridSort" module-param="{}">
-                        <div class="userDefinedArea" style="width: 1920px; margin-left: -168.5px;" data-title="">
-                        <style>
-                .user_olay01 { position: relative; font-size: 33px; color: #ffffff; font-family: helvetica; font-weight: bold; width: 1920px; }
+      </div>
+      <div>
+        <div class="J_LayoutWrap d-layout-wrap layout-auto  d-enable " name="新布局_通栏布局（100%）" id="116047523" prototypeid="42"
+          area="" layout_name="insertLayout">
+          <div class="d-layout-row d-clearfix">
+            <div class="J_LayoutArea d-layout" data-region="main">
+              <style type="text/css"></style>
+              <div onclick="log('shop_03','mall_03','1000002499','9','21')" class="fn-clear  userdefined-21" modeid="9"
+                instanceid="116047689" module-name="UserDefine" style="margin-bottom: 0px;" origin="0">
+                <div class="mc">
+                  <div class="j-module" module-function="autoCenter,ridSort" module-param="{}">
+                    <div class="userDefinedArea" style="width: 1920px; margin-left: -168.5px;" data-title="">
+                      <style>
+                        .user_olay01 { position: relative; font-size: 33px; color: #ffffff; font-family: helvetica; font-weight: bold; width: 1920px; }
                 .user_olay01 span.jdNum.ks-1 { display: block; position: absolute; top: 822px; left: 886px; white-space: nowrap; width: 150px; height: 50px; z-index: 3; line-height: 50px; }
                 .user_olay02 { position: relative; font-size: 33px; color: #ffffff; font-family: helvetica; font-weight: bold; width: 1920px; }
                 .user_olay02 span.jdNum.ks-1 { display: block; position: absolute; top: 891px; left: 884px; white-space: nowrap; width: 150px; height: 50px; z-index: 3; line-height: 50px; }
@@ -653,429 +736,474 @@
                 .user_olay20 { position: relative; font-size: 36px; color: #dd2d08; font-family: helvetica; font-weight: bold; width: 1920px; }
                 .user_olay20 span.jdNum.ks-1 { display: block; position: absolute; top: 317px; left: 1234px; white-space: nowrap; width: 150px; height: 50px; z-index: 3; line-height: 50px; }
                         </style>
-                        <div>
-                          <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/4915/1/6292/69673/5ba2299fE34e44a2b/ed352b9e998280a4.jpg!q90" alt="" border="0" style="display:block;border:none;"> 
-                        </div>
-                        <div class="user_olay01">
-                          <img class="J_imgLazyload" src="http://img30.360buyimg.com/cms/jfs/t1/3400/33/6230/196050/5ba229a3E2b809a73/92c294bbb7c0409d.jpg!q90" alt="" usemap="#olay_04" style="display:block;border:none;" border="0"> 
-                          <map name="olay_04">
-                            <area shape="rect" coords="480,27,1448,887" href="//item.yhd.com/8762779.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="8762779">899.00</span> 
-                        </div>
-                        <div class="user_olay02">
-                          <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t1/3270/36/6371/194007/5ba229a3E0fc8a398/062be98884065000.jpg!q90" alt="" usemap="#olay_05" style="display:block;border:none;" border="0"> 
-                          <map name="olay_05">
-                            <area shape="rect" coords="488,26,1440,950" href="//item.yhd.com/8762801.html ">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="8762801">329.00</span> 
-                        </div>
-                        <div class="user_olay03">
-                          <img class="J_imgLazyload" src="http://img11.360buyimg.com/cms/jfs/t1/495/35/6622/195830/5ba229a3E062457cf/550b1d2c953cb325.jpg!q90" alt="" usemap="#olay_06" style="display:block;border:none;" border="0"> 
-                          <map name="olay_06">
-                            <area shape="rect" coords="478,78,1448,926" href="//item.yhd.com/8875227.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="8875227">219.00</span> 
-                        </div>
-                        <div class="user_olay04">
-                          <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/540/16/6592/180765/5ba229a3E1c0a6f83/9517374379fd7270.jpg!q90" alt="" usemap="#olay_07" style="display:block;border:none;" border="0"> 
-                          <map name="olay_07">
-                            <area shape="rect" coords="478,71,1444,963" href="//item.yhd.com/8762799.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jdprice="8762799">499.00</span> 
-                        </div>
-                        <div class="user_olay05" style="display:none;">
-                          <img class="" src="http://img14.360buyimg.com/cms/jfs/t1/97/18/7380/147790/5ba229a2E4d0410fc/ea611d88d8a35127.jpg!q90" alt="" usemap="#olay_08" style="display: block; border: none;" border="0"> 
-                          <map name="olay_08">
-                            <area shape="rect" coords="476,16,1418,958" href="//item.yhd.com/8762799.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jdprice="8762799"></span> 
-                        </div>
-                        <div class="user_olay06">
-                          <img class="J_imgLazyload" src="http://img30.360buyimg.com/cms/jfs/t1/873/8/6626/154696/5ba229a2E7bbd5eaf/701e26b521a34d11.jpg!q90" alt="" usemap="#olay_09" style="display:block;border:none;" border="0"> 
-                          <map name="olay_09">
-                            <area shape="rect" coords="484,18,1418,956" href="//item.yhd.com/819172.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="819172">195.00</span> 
-                        </div>
-                        <div class="user_olay07">
-                          <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/5305/20/6378/195710/5ba229a3E5d562978/f37c0283bdb6a591.jpg!q90" alt="" usemap="#olay_10" style="display:block;border:none;" border="0"> 
-                          <map name="olay_10">
-                            <area shape="rect" coords="488,17,1410,1059" href="//item.yhd.com/4894733.html" target="_blank">
-                            <area shape="rect" coords="498,1069,1412,1357" href="//item.yhd.com/100000212104.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="4894733">356.00</span> 
-                        </div>
-                        <div class="user_olay08">
-                          <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/4615/34/6194/154440/5ba229a2Ec8fd712e/527db94d195bb91c.jpg!q90" alt="" usemap="#olay_11" style="display:block;border:none;" border="0"> 
-                          <map name="olay_11">
-                            <area shape="rect" coords="480,37,1426,1021" href="//item.yhd.com/8924305.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jdprice="8924305">439.00</span> 
-                        </div>
-                        <div class="user_olay09" style="display:none;">
-                          <img class="" src="http://img13.360buyimg.com/cms/jfs/t1/4615/34/6194/154440/5ba229a2Ec8fd712e/527db94d195bb91c.jpg!q90" alt="" usemap="#olay_12" style="display: block; border: none;" border="0"> 
-                          <map name="olay_12">
-                            <area shape="rect" coords="484,10,1416,960" href="//item.yhd.com/8924305.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jdprice="8924305">439.00</span> 
-                        </div>
-                        <div class="user_olay10">
-                          <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/5925/25/6207/154049/5ba229a2E49237289/b7de0189ce02c84d.jpg!q90" alt="" usemap="#olay_13" style="display:block;border:none;" border="0"> 
-                          <map name="olay_13">
-                            <area shape="rect" coords="476,7,1426,979" href="//item.yhd.com/4477601.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jdprice="4477601">569.00</span> 
-                        </div>
-                        <div class="user_olay11">
-                          <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/5379/11/6262/150615/5ba229a2Ef165f26f/081b529fb32e1399.jpg!q90" alt="" usemap="#olay_14" style="display:block;border:none;" border="0"> 
-                          <map name="olay_14">
-                            <area shape="rect" coords="480,12,1422,948" href="//item.yhd.com/4477667.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="4477667">359.00</span> 
-                        </div>
-                        <div class="user_olay12">
-                          <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t1/1534/16/6293/105927/5ba229a1Eae4f7832/9f1022b780b2bf7e.jpg!q90" alt="" usemap="#olay_15" style="display:block;border:none;" border="0"> 
-                          <map name="olay_15">
-                            <area shape="rect" coords="478,9,1418,677" href="//item.yhd.com/4477649.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="4477649">185.0</span> 
-                        </div>
-                        <div class="user_olay13">
-                          <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/762/1/6563/155251/5ba229a2Eaf891da0/013383aa3070fb94.jpg!q90" alt="" usemap="#olay_16" style="display:block;border:none;" border="0"> 
-                          <map name="olay_16">
-                            <area shape="rect" coords="472,5,1420,967" href="//item.yhd.com/4712535.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="4712535">229.0</span> 
-                        </div>
-                        <div>
-                          <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/527/6/6579/25786/5ba2299dEf0fd0b81/3d07251dacd05bf5.jpg!q90" alt="" border="0" style="display:block;border:none;"> 
-                        </div>
-                        <div class="user_olay14">
-                          <img class="J_imgLazyload" src="http://img11.360buyimg.com/cms/jfs/t1/411/32/6563/76270/5ba229a0E2ffe460c/1c1ffc292284c6e4.jpg!q90" alt="" usemap="#olay_17" style="display:block;border:none;" border="0"> 
-                          <map name="olay_17">
-                            <area shape="rect" coords="474,18,1444,452" href="//item.yhd.com/6271802.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="6271802">99.00</span> 
-                        </div>
-                        <div class="user_olay15">
-                          <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/4110/20/6207/66443/5ba2299fE2993762b/cbf63cd65a73ae21.jpg!q90" alt="" usemap="#olay_18" style="display:block;border:none;" border="0"> 
-                          <map name="olay_18">
-                            <area shape="rect" coords="486,3,1452,463" href="//item.yhd.com/823043.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="823043">119.00</span> 
-                        </div>
-                        <div class="user_olay16">
-                          <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/jfs/t1/4706/4/6161/77496/5ba229a0Ea58292f6/5a58aff12951390a.jpg!q90" alt="" usemap="#olay_19" style="display:block;border:none;" border="0"> 
-                          <map name="olay_19">
-                            <area shape="rect" coords="474,7,1452,463" href="//item.yhd.com/823030.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="823030">199.00</span> 
-                        </div>
-                        <div class="user_olay17">
-                          <img class="J_imgLazyload" src="http://img30.360buyimg.com/cms/jfs/t1/2892/15/6330/83324/5ba229a0E8909450c/d6c0523ff7c1dcfa.jpg!q90" original="//img13.360buyimg.com/cms/jfs/t1/2892/15/6330/83324/5ba229a0E8909450c/d6c0523ff7c1dcfa.jpg!q90" alt="" usemap="#olay_20" style="display:block;border:none;" border="0"> 
-                          <map name="olay_20">
-                            <area shape="rect" coords="476,3,1448,461" href="//item.yhd.com/819163.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="819163">179.00</span> 
-                        </div>
-                        <div class="user_olay18">
-                          <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/1102/27/6295/58527/5ba2299fEdbd92f0f/9a1a72eb98c76a3b.jpg!q90" alt="" usemap="#olay_21" style="display:block;border:none;" border="0"> 
-                          <map name="olay_21">
-                            <area shape="rect" coords="470,11,1416,467" href="//item.yhd.com/189590.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="189590">109.00</span> 
-                        </div>
-                        <div class="user_olay19">
-                          <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t1/3634/5/6353/53582/5ba2299fE0cbbdbee/07c23ca53a9557b9.jpg!q90" alt="" usemap="#olay_22" style="display:block;border:none;" border="0"> 
-                          <map name="olay_22">
-                            <area shape="rect" coords="464,14,1438,448" href="//item.yhd.com/216132.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="216132">109.00</span> 
-                        </div>
-                        <div class="user_olay20">
-                          <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/jfs/t1/878/1/6692/59599/5ba2299fEf47d5d2d/110ef41096a6b7b5.jpg!q90" original="//img12.360buyimg.com/cms/jfs/t1/878/1/6692/59599/5ba2299fEf47d5d2d/110ef41096a6b7b5.jpg!q90" alt="" usemap="#olay_23" style="display:block;border:none;" border="0"> 
-                          <map name="olay_23">
-                            <area shape="rect" coords="470,13,1448,445" href="//item.yhd.com/189589.html" target="_blank">
-                          </map>
-                        <span class="jdNum ks-1" jshop="price" jdprice="189589">98.00</span> 
-                        </div>
+                      <div>
+                        <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/4915/1/6292/69673/5ba2299fE34e44a2b/ed352b9e998280a4.jpg!q90"
+                          alt="" border="0" style="display:block;border:none;">
+                      </div>
+                      <div class="user_olay01">
+                        <img class="J_imgLazyload" src="http://img30.360buyimg.com/cms/jfs/t1/3400/33/6230/196050/5ba229a3E2b809a73/92c294bbb7c0409d.jpg!q90"
+                          alt="" usemap="#olay_04" style="display:block;border:none;" border="0">
+                        <map name="olay_04">
+                          <area shape="rect" coords="480,27,1448,887" href="//item.yhd.com/8762779.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="8762779">899.00</span>
+                      </div>
+                      <div class="user_olay02">
+                        <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t1/3270/36/6371/194007/5ba229a3E0fc8a398/062be98884065000.jpg!q90"
+                          alt="" usemap="#olay_05" style="display:block;border:none;" border="0">
+                        <map name="olay_05">
+                          <area shape="rect" coords="488,26,1440,950" href="//item.yhd.com/8762801.html ">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="8762801">329.00</span>
+                      </div>
+                      <div class="user_olay03">
+                        <img class="J_imgLazyload" src="http://img11.360buyimg.com/cms/jfs/t1/495/35/6622/195830/5ba229a3E062457cf/550b1d2c953cb325.jpg!q90"
+                          alt="" usemap="#olay_06" style="display:block;border:none;" border="0">
+                        <map name="olay_06">
+                          <area shape="rect" coords="478,78,1448,926" href="//item.yhd.com/8875227.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="8875227">219.00</span>
+                      </div>
+                      <div class="user_olay04">
+                        <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/540/16/6592/180765/5ba229a3E1c0a6f83/9517374379fd7270.jpg!q90"
+                          alt="" usemap="#olay_07" style="display:block;border:none;" border="0">
+                        <map name="olay_07">
+                          <area shape="rect" coords="478,71,1444,963" href="//item.yhd.com/8762799.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jdprice="8762799">499.00</span>
+                      </div>
+                      <div class="user_olay05" style="display:none;">
+                        <img class="" src="http://img14.360buyimg.com/cms/jfs/t1/97/18/7380/147790/5ba229a2E4d0410fc/ea611d88d8a35127.jpg!q90"
+                          alt="" usemap="#olay_08" style="display: block; border: none;" border="0">
+                        <map name="olay_08">
+                          <area shape="rect" coords="476,16,1418,958" href="//item.yhd.com/8762799.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jdprice="8762799"></span>
+                      </div>
+                      <div class="user_olay06">
+                        <img class="J_imgLazyload" src="http://img30.360buyimg.com/cms/jfs/t1/873/8/6626/154696/5ba229a2E7bbd5eaf/701e26b521a34d11.jpg!q90"
+                          alt="" usemap="#olay_09" style="display:block;border:none;" border="0">
+                        <map name="olay_09">
+                          <area shape="rect" coords="484,18,1418,956" href="//item.yhd.com/819172.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="819172">195.00</span>
+                      </div>
+                      <div class="user_olay07">
+                        <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/5305/20/6378/195710/5ba229a3E5d562978/f37c0283bdb6a591.jpg!q90"
+                          alt="" usemap="#olay_10" style="display:block;border:none;" border="0">
+                        <map name="olay_10">
+                          <area shape="rect" coords="488,17,1410,1059" href="//item.yhd.com/4894733.html" target="_blank">
+                          <area shape="rect" coords="498,1069,1412,1357" href="//item.yhd.com/100000212104.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="4894733">356.00</span>
+                      </div>
+                      <div class="user_olay08">
+                        <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/4615/34/6194/154440/5ba229a2Ec8fd712e/527db94d195bb91c.jpg!q90"
+                          alt="" usemap="#olay_11" style="display:block;border:none;" border="0">
+                        <map name="olay_11">
+                          <area shape="rect" coords="480,37,1426,1021" href="//item.yhd.com/8924305.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jdprice="8924305">439.00</span>
+                      </div>
+                      <div class="user_olay09" style="display:none;">
+                        <img class="" src="http://img13.360buyimg.com/cms/jfs/t1/4615/34/6194/154440/5ba229a2Ec8fd712e/527db94d195bb91c.jpg!q90"
+                          alt="" usemap="#olay_12" style="display: block; border: none;" border="0">
+                        <map name="olay_12">
+                          <area shape="rect" coords="484,10,1416,960" href="//item.yhd.com/8924305.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jdprice="8924305">439.00</span>
+                      </div>
+                      <div class="user_olay10">
+                        <img class="J_imgLazyload" src="http://img13.360buyimg.com/cms/jfs/t1/5925/25/6207/154049/5ba229a2E49237289/b7de0189ce02c84d.jpg!q90"
+                          alt="" usemap="#olay_13" style="display:block;border:none;" border="0">
+                        <map name="olay_13">
+                          <area shape="rect" coords="476,7,1426,979" href="//item.yhd.com/4477601.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jdprice="4477601">569.00</span>
+                      </div>
+                      <div class="user_olay11">
+                        <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/5379/11/6262/150615/5ba229a2Ef165f26f/081b529fb32e1399.jpg!q90"
+                          alt="" usemap="#olay_14" style="display:block;border:none;" border="0">
+                        <map name="olay_14">
+                          <area shape="rect" coords="480,12,1422,948" href="//item.yhd.com/4477667.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="4477667">359.00</span>
+                      </div>
+                      <div class="user_olay12">
+                        <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t1/1534/16/6293/105927/5ba229a1Eae4f7832/9f1022b780b2bf7e.jpg!q90"
+                          alt="" usemap="#olay_15" style="display:block;border:none;" border="0">
+                        <map name="olay_15">
+                          <area shape="rect" coords="478,9,1418,677" href="//item.yhd.com/4477649.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="4477649">185.0</span>
+                      </div>
+                      <div class="user_olay13">
+                        <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/762/1/6563/155251/5ba229a2Eaf891da0/013383aa3070fb94.jpg!q90"
+                          alt="" usemap="#olay_16" style="display:block;border:none;" border="0">
+                        <map name="olay_16">
+                          <area shape="rect" coords="472,5,1420,967" href="//item.yhd.com/4712535.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="4712535">229.0</span>
+                      </div>
+                      <div>
+                        <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/527/6/6579/25786/5ba2299dEf0fd0b81/3d07251dacd05bf5.jpg!q90"
+                          alt="" border="0" style="display:block;border:none;">
+                      </div>
+                      <div class="user_olay14">
+                        <img class="J_imgLazyload" src="http://img11.360buyimg.com/cms/jfs/t1/411/32/6563/76270/5ba229a0E2ffe460c/1c1ffc292284c6e4.jpg!q90"
+                          alt="" usemap="#olay_17" style="display:block;border:none;" border="0">
+                        <map name="olay_17">
+                          <area shape="rect" coords="474,18,1444,452" href="//item.yhd.com/6271802.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="6271802">99.00</span>
+                      </div>
+                      <div class="user_olay15">
+                        <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/4110/20/6207/66443/5ba2299fE2993762b/cbf63cd65a73ae21.jpg!q90"
+                          alt="" usemap="#olay_18" style="display:block;border:none;" border="0">
+                        <map name="olay_18">
+                          <area shape="rect" coords="486,3,1452,463" href="//item.yhd.com/823043.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="823043">119.00</span>
+                      </div>
+                      <div class="user_olay16">
+                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/jfs/t1/4706/4/6161/77496/5ba229a0Ea58292f6/5a58aff12951390a.jpg!q90"
+                          alt="" usemap="#olay_19" style="display:block;border:none;" border="0">
+                        <map name="olay_19">
+                          <area shape="rect" coords="474,7,1452,463" href="//item.yhd.com/823030.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="823030">199.00</span>
+                      </div>
+                      <div class="user_olay17">
+                        <img class="J_imgLazyload" src="http://img30.360buyimg.com/cms/jfs/t1/2892/15/6330/83324/5ba229a0E8909450c/d6c0523ff7c1dcfa.jpg!q90"
+                          original="//img13.360buyimg.com/cms/jfs/t1/2892/15/6330/83324/5ba229a0E8909450c/d6c0523ff7c1dcfa.jpg!q90"
+                          alt="" usemap="#olay_20" style="display:block;border:none;" border="0">
+                        <map name="olay_20">
+                          <area shape="rect" coords="476,3,1448,461" href="//item.yhd.com/819163.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="819163">179.00</span>
+                      </div>
+                      <div class="user_olay18">
+                        <img class="J_imgLazyload" src="http://img10.360buyimg.com/cms/jfs/t1/1102/27/6295/58527/5ba2299fEdbd92f0f/9a1a72eb98c76a3b.jpg!q90"
+                          alt="" usemap="#olay_21" style="display:block;border:none;" border="0">
+                        <map name="olay_21">
+                          <area shape="rect" coords="470,11,1416,467" href="//item.yhd.com/189590.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="189590">109.00</span>
+                      </div>
+                      <div class="user_olay19">
+                        <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t1/3634/5/6353/53582/5ba2299fE0cbbdbee/07c23ca53a9557b9.jpg!q90"
+                          alt="" usemap="#olay_22" style="display:block;border:none;" border="0">
+                        <map name="olay_22">
+                          <area shape="rect" coords="464,14,1438,448" href="//item.yhd.com/216132.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="216132">109.00</span>
+                      </div>
+                      <div class="user_olay20">
+                        <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/jfs/t1/878/1/6692/59599/5ba2299fEf47d5d2d/110ef41096a6b7b5.jpg!q90"
+                          original="//img12.360buyimg.com/cms/jfs/t1/878/1/6692/59599/5ba2299fEf47d5d2d/110ef41096a6b7b5.jpg!q90"
+                          alt="" usemap="#olay_23" style="display:block;border:none;" border="0">
+                        <map name="olay_23">
+                          <area shape="rect" coords="470,13,1448,445" href="//item.yhd.com/189589.html" target="_blank">
+                        </map>
+                        <span class="jdNum ks-1" jshop="price" jdprice="189589">98.00</span>
                       </div>
                     </div>
-                    <script type="text/javascript">
-                      $('area,a').each(function(){
-                            var href = $(this).attr('href');
-                            if(href && href.match(/^\/\/coupon\.jd\.com/)){
-                                $(this).attr('href', href.replace(/to=[\s]*?\/+/ig,'to='));
-                            }
-                        });
-                    </script>
                   </div>
+                  <script type="text/javascript">
+                    $('area,a').each(function () {
+                      var href = $(this).attr('href');
+                      if (href && href.match(/^\/\/coupon\.jd\.com/)) {
+                        $(this).attr('href', href.replace(/to=[\s]*?\/+/ig, 'to='));
+                      }
+                    });
+                  </script>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>		
-          <div class="J_LayoutWrap d-layout-wrap  d-enable  d-w990" name="新布局_通栏（990）" id="116047524" prototypeid="33" area="" layout_name="insertLayout">
-            <div class="d-layout-row d-clearfix">
-              <div class="J_LayoutArea d-layout" data-size="990" data-region="main">
-                <style type="text/css"></style>
-                <div onclick="log('shop_03','mall_03','1000002499','9','21')" class="fn-clear  userdefined-21" modeid="9" instanceid="116047552" module-name="UserDefine" style=";margin-bottom: px" origin="0">
-                  <div class="mc" style=";">
-                      <div class="j-module" module-function="autoCenter,ridSort" module-param="{}">
-                        <div class="userDefinedArea" style="width: 990px; margin: 0px auto;" data-title="">
-                          <div>
-                            <a name="movxs"></a>
-                            <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/4481/33/770/32657/5b925b3cEe7c18eda/e8caf540e53f347c.jpg!q90" alt="" style="display:block;border:none;"> 
-                          </div>
-                        </div>
-                      </div>
-                    <script type="text/javascript">
-                      $('area,a').each(function(){
-                            var href = $(this).attr('href');
-                            if(href && href.match(/^\/\/coupon\.jd\.com/)){
-                                $(this).attr('href', href.replace(/to=[\s]*?\/+/ig,'to='));
-                            }
-                        });
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>		
-          <div class="J_LayoutWrap d-layout-wrap  d-enable  d-w990" name="新布局_通栏（990）" id="116047525" prototypeid="33" area="" layout_name="insertLayout">
-            <div class="d-layout-row d-clearfix">
-              <div class="J_LayoutArea d-layout" data-size="990" data-region="main">
-                <style type="text/css">
-    .colorGoodsRec-922473 ul {
-        font-size: 0;
-      }
-    
-      .colorGoodsRec-922473 ul:after {
-        content: '';
-        clear: both;
-        visibility: hidden;
-        display: block;
-        height: 0;
-      }
-    
-      .colorGoodsRec-922473 ul li {
-        width: 240px;
-        height: 340px;
-        float: left;
-        margin-bottom: 10px;
-      }
-    
-      .colorGoodsRec-922473 .jItem {
-        background-color: #fff;
-      }
-    
-      .colorGoodsRec-922473 .jPic a {
-        display: block;
-        height: 240px;
-        padding-top: 30px;
-        text-align: center;
-      }
-    
-      .colorGoodsRec-922473 .jDesc {
-        font-size: 12px;
-        height: 30px;
-        line-height: 15px;
-        overflow: hidden;
-        width: 240px;
-        word-wrap: break-word;
-        margin: 12px 0 3px;
-      }
-    
-      .colorGoodsRec-922473 .jBtnArea {
-        height: 25px;
-        line-height: 25px;
-        position: relative;
-        padding-left: 54px;
-        background-color: #fff;
-      }
-    
-      .colorGoodsRec-922473 .jBtnArea .jdPrice {
-        font-size: 18px;
-        color: #e4393c;
-        height: 100%;
-        padding-top: 3px;
-        padding-left: 4px;
-      }
-    
-      .colorGoodsRec-922473 .jBtnArea .goods-btn {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        height: 25px;
-      }
-    
-      .colorGoodsRec-922473 .jBtnArea .goods-btn a {
-        display: block;
-        color: #489f9f;
-        background-color: #fff;
-        font-size: 14px;
-        padding: 0 10px 0 5px;
-        height: 100%;
-        position: relative;
-        font-weight: bold;
-        line-height: 25px;
-      }
-    
-      .colorGoodsRec-922473 .jBtnArea .goods-promtag {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 25px;
-        line-height: 25px;
-        width: 50px;
-        background-color: #fff;
-        color: #489f9f;
-        font-size: 14px;
-        text-align: center;
-      }
-    
-      .colorGoodsRec-922473 .jBtnArea .goods-promtag i {
-        position: absolute;
-        height: 0;
-        width: 0;
-        display: block;
-        border: 5px transparent solid;
-        border-right-width: 0;
-        border-left-color: #fff;
-        top: 8px;
-        right: -5px;
-      }
-    
-                </style>
-                <div onclick="log('shop_03','mall_03','1000002499','36','922473')" class="fn-clear  colorGoodsRec-922473" modeid="36" instanceid="116047528" module-name="GoodsRec" style=";margin-bottom: 0px" origin="0" needreplenishment="0">
-                  <div class="mc" style=";">
-                    <div class="j-module" module-function="autoFill,addEllipsis" module-param="{autoFillNode:'li', xInner:10, yInner:0, minWidth:' ', xOuter:0, yOuter:' ', isEqual:false, length:'',title: '.goods-promtag', count: 3,text:''}" style="overflow: hidden; padding-bottom: 0px;">
-                      <ul>
-                        <li style="margin-left: 0px; margin-right: 0px; margin-top: 0px; width: 240px;">
-                          <div class="jItem">
-                            <div class="jPic">
-                              <a href="//item.yhd.com/823030.html" target="_blank">
-                                <img class="J_imgLazyload" src="http://img11.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90" width="240" height="240" original="//img13.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90" alt="玉兰油OLAY眼霜新生塑颜金纯系列15ml（淡化细纹 提拉紧致 新老包装随机发送）">
-                              </a>
-                            </div>
-                            <div class="jDesc">
-                              <a href="//item.yhd.com/823030.html" target="_blank">
-                                玉兰油OLAY眼霜新生塑颜金纯系列15ml（淡化细纹 提拉紧致 新老包装随机发送）
-                              </a>
-                            </div>
-                            <div class="jBtnArea" style="padding-left: 1px;">
-                              <div class="jdPrice">
-                                <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="823030">199.00</span>
-                              </div>
-                              <p class="goods-btn">
-                                <a href="//item.yhd.com/823030.html" target="_blank">
-                                  <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg" alt="立即抢购">
-                                </a>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li style="margin-left: 10px; margin-right: 0px; margin-top: 0px; width: 240px;">
-                          <div class="jItem">
-                            <div class="jPic">
-                              <a href="//item.yhd.com/819172.html" target="_blank">
-                                <img class="J_imgLazyload" src="http://img11.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90" width="240" height="240" original="//img30.360buyimg.com/n1/jfs/t15904/60/2454289530/300072/7f8c21c8/5ab0e19bN45ffb5f7.jpg!q90" alt="玉兰油OLAY面霜新生塑颜金纯系列明星大红瓶面霜50g（细致毛孔 紧致提拉 新老包装随机发送）">
-                              </a>
-                            </div>
-                            <div class="jDesc">
-                              <a href="//item.yhd.com/819172.html" target="_blank">
-                                玉兰油OLAY面霜新生塑颜金纯系列明星大红瓶面霜50g（细致毛孔 紧致提拉 新老包装随机发送）
-                              </a>
-                            </div>
-                            <div class="jBtnArea" style="padding-left: 1px;">
-                              <div class="jdPrice">
-                                <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="819172">199.00</span>
-                              </div>
-                              <p class="goods-btn">
-                                <a href="//item.yhd.com/819172.html" target="_blank">
-                                  <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q1.jpg" original="//img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg" alt="立即抢购">
-                                </a>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li style="margin-left: 10px; margin-right: 0px; margin-top: 0px; width: 240px;">
-                          <div class="jItem">
-                            <div class="jPic">
-                              <a href="//item.yhd.com/819155.html" target="_blank">
-                                <img class="J_imgLazyload" src="http://img11.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90" width="240" height="240" original="//img30.360buyimg.com/n1/jfs/t16240/44/2437114750/279492/174abd50/5aa7cee5N07174ec8.jpg!q90" alt="玉兰油OLAY洗面奶新生塑颜焕活深彻洁面乳125g（深层补水清洁 细致毛孔 男女通用 新老包装随机发）">
-                              </a>
-                            </div>
-                            <div class="jDesc">
-                              <a href="//item.yhd.com/819155.html" target="_blank">
-                                玉兰油OLAY洗面奶新生塑颜焕活深彻洁面乳125g（深层补水清洁 细致毛孔 男女通用 新老包装随机发）
-                              </a>
-                            </div>
-                            <div class="jBtnArea" style="padding-left: 1px;">
-                              <div class="jdPrice">
-                                <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="819155">199.00</span>
-                              </div>
-                              <p class="goods-btn">
-                                <a href="//item.yhd.com/819155.html" target="_blank">
-                                  <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q1.jpg" original="//img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg" alt="立即抢购">
-                                </a>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li style="margin-left: 10px; margin-right: 0px; margin-top: 0px; width: 240px;">
-                          <div class="jItem">
-                            <div class="jPic">
-                              <a href="//item.yhd.com/819163.html" target="_blank">
-                                <img class="J_imgLazyload" src="http://img10.360buyimg.com/n1/jfs/t15883/199/2209433219/274687/c10433c1/5aa7cf27N25532173.jpg!q1" width="240" height="240" original="//img10.360buyimg.com/n1/jfs/t15883/199/2209433219/274687/c10433c1/5aa7cf27N25532173.jpg!q90" alt="玉兰油OLAY爽肤水新生塑颜金纯活能水150ml（大红水 保湿 细滑紧致 新老包装随机发送）">
-                              </a>
-                            </div>
-                            <div class="jDesc">
-                              <a href="//item.yhd.com/819163.html" target="_blank">
-                                玉兰油OLAY爽肤水新生塑颜金纯活能水150ml（大红水 保湿 细滑紧致 新老包装随机发送）
-                              </a>
-                            </div>
-                            <div class="jBtnArea" style="padding-left: 1px;">
-                              <div class="jdPrice">
-                                <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="819163">199.00</span>
-                              </div>
-                              <p class="goods-btn">
-                                <a href="//item.yhd.com/819163.html" target="_blank">
-                                  <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q1.jpg" original="//img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg" alt="立即抢购">
-                                </a>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <script>
-                      jQuery(function() {
-                        jQuery('div[class*="colorGoodsRec"]').each(function(i, module) {
-                          var jModule = jQuery(module),
-                            jBtnArea = jModule.find('.jBtnArea');
-                          jBtnArea.each(function() {
-                            var _this = jQuery(this),
-                              jPromTag = _this.find('.goods-promtag');
-                            if (jPromTag.length === 0) {
-                              _this.css('padding-left', '1px');
-                            }
-                          });
-                        });
-                      });
-                    </script>
-                  </div>
-                </div>
-                <style type="text/css"></style>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div>
+        <div class="J_LayoutWrap d-layout-wrap  d-enable  d-w990" name="新布局_通栏（990）" id="116047524" prototypeid="33"
+          area="" layout_name="insertLayout">
+          <div class="d-layout-row d-clearfix">
+            <div class="J_LayoutArea d-layout" data-size="990" data-region="main">
+              <style type="text/css"></style>
+              <div onclick="log('shop_03','mall_03','1000002499','9','21')" class="fn-clear  userdefined-21" modeid="9"
+                instanceid="116047552" module-name="UserDefine" origin="0">
+                <div class="mc">
+                  <div class="j-module" module-function="autoCenter,ridSort" module-param="{}">
+                    <div class="userDefinedArea" style="width: 990px; margin: 0px auto;" data-title="">
+                      <div>
+                        <a name="movxs"></a>
+                        <img class="J_imgLazyload" src="http://img20.360buyimg.com/cms/jfs/t1/4481/33/770/32657/5b925b3cEe7c18eda/e8caf540e53f347c.jpg!q90"
+                          alt="" style="display:block;border:none;">
+                      </div>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    $('area,a').each(function () {
+                      var href = $(this).attr('href');
+                      if (href && href.match(/^\/\/coupon\.jd\.com/)) {
+                        $(this).attr('href', href.replace(/to=[\s]*?\/+/ig, 'to='));
+                      }
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="J_LayoutWrap d-layout-wrap  d-enable  d-w990" name="新布局_通栏（990）" id="116047525" prototypeid="33"
+          area="" layout_name="insertLayout">
+          <div class="d-layout-row d-clearfix">
+            <div class="J_LayoutArea d-layout" data-size="990" data-region="main">
+              <style type="text/css">
+                .colorGoodsRec-922473 ul {
+                  font-size: 0;
+                }
+
+                .colorGoodsRec-922473 ul:after {
+                  content: '';
+                  clear: both;
+                  visibility: hidden;
+                  display: block;
+                  height: 0;
+                }
+
+                .colorGoodsRec-922473 ul li {
+                  width: 240px;
+                  height: 340px;
+                  float: left;
+                  margin-bottom: 10px;
+                }
+
+                .colorGoodsRec-922473 .jItem {
+                  background-color: #fff;
+                }
+
+                .colorGoodsRec-922473 .jPic a {
+                  display: block;
+                  height: 240px;
+                  padding-top: 30px;
+                  text-align: center;
+                }
+
+                .colorGoodsRec-922473 .jDesc {
+                  font-size: 12px;
+                  height: 30px;
+                  line-height: 15px;
+                  overflow: hidden;
+                  width: 240px;
+                  word-wrap: break-word;
+                  margin: 12px 0 3px;
+                }
+
+                .colorGoodsRec-922473 .jBtnArea {
+                  height: 25px;
+                  line-height: 25px;
+                  position: relative;
+                  padding-left: 54px;
+                  background-color: #fff;
+                }
+
+                .colorGoodsRec-922473 .jBtnArea .jdPrice {
+                  font-size: 18px;
+                  color: #e4393c;
+                  height: 100%;
+                  padding-top: 3px;
+                  padding-left: 4px;
+                }
+
+                .colorGoodsRec-922473 .jBtnArea .goods-btn {
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  height: 25px;
+                }
+
+                .colorGoodsRec-922473 .jBtnArea .goods-btn a {
+                  display: block;
+                  color: #489f9f;
+                  background-color: #fff;
+                  font-size: 14px;
+                  padding: 0 10px 0 5px;
+                  height: 100%;
+                  position: relative;
+                  font-weight: bold;
+                  line-height: 25px;
+                }
+
+                .colorGoodsRec-922473 .jBtnArea .goods-promtag {
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  height: 25px;
+                  line-height: 25px;
+                  width: 50px;
+                  background-color: #fff;
+                  color: #489f9f;
+                  font-size: 14px;
+                  text-align: center;
+                }
+
+                .colorGoodsRec-922473 .jBtnArea .goods-promtag i {
+                  position: absolute;
+                  height: 0;
+                  width: 0;
+                  display: block;
+                  border: 5px transparent solid;
+                  border-right-width: 0;
+                  border-left-color: #fff;
+                  top: 8px;
+                  right: -5px;
+                }
+              </style>
+              <div onclick="log('shop_03','mall_03','1000002499','36','922473')" class="fn-clear  colorGoodsRec-922473"
+                modeid="36" instanceid="116047528" module-name="GoodsRec" origin="0" needreplenishment="0">
+                <div class="mc">
+                  <div class="j-module" module-function="autoFill,addEllipsis" module-param="{autoFillNode:'li', xInner:10, yInner:0, minWidth:' ', xOuter:0, yOuter:' ', isEqual:false, length:'',title: '.goods-promtag', count: 3,text:''}"
+                    style="overflow: hidden; padding-bottom: 0px;">
+                    <ul>
+                      <li style="margin-left: 0px; margin-right: 0px; margin-top: 0px; width: 240px;">
+                        <div class="jItem">
+                          <div class="jPic">
+                            <a href="//item.yhd.com/823030.html" target="_blank">
+                              <img class="J_imgLazyload" src="http://img11.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90"
+                                width="240" height="240" original="//img13.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90"
+                                alt="玉兰油OLAY眼霜新生塑颜金纯系列15ml（淡化细纹 提拉紧致 新老包装随机发送）">
+                            </a>
+                          </div>
+                          <div class="jDesc">
+                            <a href="//item.yhd.com/823030.html" target="_blank">
+                              玉兰油OLAY眼霜新生塑颜金纯系列15ml（淡化细纹 提拉紧致 新老包装随机发送）
+                            </a>
+                          </div>
+                          <div class="jBtnArea" style="padding-left: 1px;">
+                            <div class="jdPrice">
+                              <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="823030">199.00</span>
+                            </div>
+                            <p class="goods-btn">
+                              <a href="//item.yhd.com/823030.html" target="_blank">
+                                <img class="J_imgLazyload" src="http://img14.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg"
+                                  alt="立即抢购">
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="margin-left: 10px; margin-right: 0px; margin-top: 0px; width: 240px;">
+                        <div class="jItem">
+                          <div class="jPic">
+                            <a href="//item.yhd.com/819172.html" target="_blank">
+                              <img class="J_imgLazyload" src="http://img11.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90"
+                                width="240" height="240" original="//img30.360buyimg.com/n1/jfs/t15904/60/2454289530/300072/7f8c21c8/5ab0e19bN45ffb5f7.jpg!q90"
+                                alt="玉兰油OLAY面霜新生塑颜金纯系列明星大红瓶面霜50g（细致毛孔 紧致提拉 新老包装随机发送）">
+                            </a>
+                          </div>
+                          <div class="jDesc">
+                            <a href="//item.yhd.com/819172.html" target="_blank">
+                              玉兰油OLAY面霜新生塑颜金纯系列明星大红瓶面霜50g（细致毛孔 紧致提拉 新老包装随机发送）
+                            </a>
+                          </div>
+                          <div class="jBtnArea" style="padding-left: 1px;">
+                            <div class="jdPrice">
+                              <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="819172">199.00</span>
+                            </div>
+                            <p class="goods-btn">
+                              <a href="//item.yhd.com/819172.html" target="_blank">
+                                <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q1.jpg"
+                                  original="//img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg"
+                                  alt="立即抢购">
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="margin-left: 10px; margin-right: 0px; margin-top: 0px; width: 240px;">
+                        <div class="jItem">
+                          <div class="jPic">
+                            <a href="//item.yhd.com/819155.html" target="_blank">
+                              <img class="J_imgLazyload" src="http://img11.360buyimg.com/n1/jfs/t15220/171/2512036349/239742/cd5b4e90/5aa7d143N426dca5a.jpg!q90"
+                                width="240" height="240" original="//img30.360buyimg.com/n1/jfs/t16240/44/2437114750/279492/174abd50/5aa7cee5N07174ec8.jpg!q90"
+                                alt="玉兰油OLAY洗面奶新生塑颜焕活深彻洁面乳125g（深层补水清洁 细致毛孔 男女通用 新老包装随机发）">
+                            </a>
+                          </div>
+                          <div class="jDesc">
+                            <a href="//item.yhd.com/819155.html" target="_blank">
+                              玉兰油OLAY洗面奶新生塑颜焕活深彻洁面乳125g（深层补水清洁 细致毛孔 男女通用 新老包装随机发）
+                            </a>
+                          </div>
+                          <div class="jBtnArea" style="padding-left: 1px;">
+                            <div class="jdPrice">
+                              <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="819155">199.00</span>
+                            </div>
+                            <p class="goods-btn">
+                              <a href="//item.yhd.com/819155.html" target="_blank">
+                                <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q1.jpg"
+                                  original="//img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg"
+                                  alt="立即抢购">
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="margin-left: 10px; margin-right: 0px; margin-top: 0px; width: 240px;">
+                        <div class="jItem">
+                          <div class="jPic">
+                            <a href="//item.yhd.com/819163.html" target="_blank">
+                              <img class="J_imgLazyload" src="http://img10.360buyimg.com/n1/jfs/t15883/199/2209433219/274687/c10433c1/5aa7cf27N25532173.jpg!q1"
+                                width="240" height="240" original="//img10.360buyimg.com/n1/jfs/t15883/199/2209433219/274687/c10433c1/5aa7cf27N25532173.jpg!q90"
+                                alt="玉兰油OLAY爽肤水新生塑颜金纯活能水150ml（大红水 保湿 细滑紧致 新老包装随机发送）">
+                            </a>
+                          </div>
+                          <div class="jDesc">
+                            <a href="//item.yhd.com/819163.html" target="_blank">
+                              玉兰油OLAY爽肤水新生塑颜金纯活能水150ml（大红水 保湿 细滑紧致 新老包装随机发送）
+                            </a>
+                          </div>
+                          <div class="jBtnArea" style="padding-left: 1px;">
+                            <div class="jdPrice">
+                              <span class="jRmb">￥</span> <span class="jdNum" jshop="price" jdprice="819163">199.00</span>
+                            </div>
+                            <p class="goods-btn">
+                              <a href="//item.yhd.com/819163.html" target="_blank">
+                                <img class="J_imgLazyload" src="http://img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q1.jpg"
+                                  original="//img12.360buyimg.com/cms/jfs/t3298/228/4028120579/1230/b2ef1efe/57fca9f7N20433ca8.png!q90.jpg"
+                                  alt="立即抢购">
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <script>
+                    jQuery(function () {
+                      jQuery('div[class*="colorGoodsRec"]').each(function (i, module) {
+                        var jModule = jQuery(module),
+                          jBtnArea = jModule.find('.jBtnArea');
+                        jBtnArea.each(function () {
+                          var _this = jQuery(this),
+                            jPromTag = _this.find('.goods-promtag');
+                          if (jPromTag.length === 0) {
+                            _this.css('padding-left', '1px');
+                          }
+                        });
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+              <style type="text/css"></style>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

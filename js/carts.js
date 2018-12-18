@@ -246,7 +246,7 @@ $(function () {
 				}, 900)
 				// 这里判断当删除或者收藏时，最后一个时，将本快内容全部删除
 				if ($a.parent().children().length == 1) {
-					$(this).parents('.cartBox').fadeOut(2100)
+					$a.parents('.cartBox').fadeOut(2100)
 				}
 			})
 
@@ -260,7 +260,7 @@ $(function () {
 
 		// 反向添加到购物车列表======================
 
-		$('.tp_add_cart').on('click', function () {
+		$('#toGO').on('click', '.tp_add_cart', function () {
 			var $par = $(this).parents('li.clearfix')
 			// 找到当前点击的小列表的对应店名字
 			var $dataShopTag = $par.attr('data-shopTag')
